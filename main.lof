@@ -3,9 +3,17 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Process of crystallization of water.\relax }}{3}{figure.caption.19}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Crystallization rate versus temperature.\relax }}{11}{figure.caption.69}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.1}{\ignorespaces General structure of an OpenFOAM case.\relax }}{14}{figure.caption.80}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Flowchart of integration procedure. \textit {buoyantBoussinesqPimpleFoam}\relax }}{16}{figure.caption.87}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

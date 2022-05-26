@@ -16,5 +16,159 @@
   {}
 \endgroup
 
-\datalist[entry]{nyt/global//global/global}\enddatalist
+\datalist[entry]{nyt/global//global/global}
+  \entry{bourdillon_2016}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=BA}{%
+         family={Bourdillon},
+         familyi={B\bibinitperiod},
+         given={Arnaud},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BA1}
+    \strng{fullhash}{BA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{labeldatesource}{}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{title}{investigation towards a coupling between population balance
+  and solidification models}
+    \list{institution}{1}{%
+      {Cranfield University}%
+    }
+    \field{type}{phdthesis}
+    \field{year}{2016}
+  \endentry
+
+  \entry{huang_wang_li_2020}{article}{}
+    \name{author}{3}{}{%
+      {{hash=HC}{%
+         family={Huang},
+         familyi={H\bibinitperiod},
+         given={Chengyu},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=WW}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Wenhua},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=LW}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Weizhong},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HCWWLW1}
+    \strng{fullhash}{HCWWLW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2020}
+    \field{labeldatesource}{}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \verb{doi}
+    \verb 10.3390/app10093308
+    \endverb
+    \field{number}{9}
+    \field{pages}{3308}
+    \field{title}{A Novel 2D Model for Freezing Phase Change Simulation during
+  Cryogenic Fracturing Considering Nucleation Characteristics}
+    \field{volume}{10}
+    \field{journaltitle}{Applied Sciences}
+    \field{year}{2020}
+  \endentry
+
+  \entry{ickes_welti_hoose_lohmann_2015}{article}{}
+    \name{author}{4}{}{%
+      {{hash=IL}{%
+         family={Ickes},
+         familyi={I\bibinitperiod},
+         given={Luisa},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=WA}{%
+         family={Welti},
+         familyi={W\bibinitperiod},
+         given={Andre},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=HC}{%
+         family={Hoose},
+         familyi={H\bibinitperiod},
+         given={Corinna},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=LU}{%
+         family={Lohmann},
+         familyi={L\bibinitperiod},
+         given={Ulrike},
+         giveni={U\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{IL+1}
+    \strng{fullhash}{ILWAHCLU1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2015}
+    \field{labeldatesource}{}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \verb{doi}
+    \verb 10.1039/c4cp04184d
+    \endverb
+    \field{number}{8}
+    \field{pages}{5514\bibrangedash 5537}
+    \field{title}{Classical nucleation theory of homogeneous freezing of water:
+  thermodynamic and kinetic parameters}
+    \field{volume}{17}
+    \field{journaltitle}{Physical Chemistry Chemical Physics}
+    \field{year}{2015}
+  \endentry
+
+  \entry{wu_lai_zhang_2015}{article}{}
+    \name{author}{3}{}{%
+      {{hash=WD}{%
+         family={Wu},
+         familyi={W\bibinitperiod},
+         given={Daoyong},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=LY}{%
+         family={Lai},
+         familyi={L\bibinitperiod},
+         given={Yuanming},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=ZM}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Mingyi},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WDLYZM1}
+    \strng{fullhash}{WDLYZM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2015}
+    \field{labeldatesource}{}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \verb{doi}
+    \verb 10.1016/j.ijheatmasstransfer.2015.03.044
+    \endverb
+    \field{pages}{699\bibrangedash 709}
+    \field{title}{Heat and mass transfer effects of ice growth mechanisms in a
+  fully saturated soil}
+    \field{volume}{86}
+    \field{journaltitle}{International Journal of Heat and Mass Transfer}
+    \field{year}{2015}
+  \endentry
+\enddatalist
 \endinput

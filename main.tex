@@ -38,16 +38,19 @@ headsepline, % Uncomment to get a line under the header
 %consistentlayout, % Uncomment to change the layout of the declaration, abstract and acknowledgements pages to match the default layout
 ]{MastersDoctoralThesis} % The class file specifying the document structure
 \usepackage{pdfpages}
-
+\usepackage{booktabs}
 \usepackage[utf8]{inputenc} % Required for inputting international characters
 \usepackage[T1]{fontenc} % Output font encoding for international characters
-
+\usepackage{longtable}
 \usepackage{mathpazo} % Use the Palatino font by default
-
+\usepackage{amsmath}
 \usepackage[backend=bibtex,style=authoryear,natbib=true]{biblatex} % Use the bibtex backend with the authoryear citation style (which resembles APA)
-
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows,positioning}
+\usepackage{forest}
 \addbibresource{example.bib} % The filename of the bibliography
-
+\usepackage{indentfirst}
 \usepackage[autostyle=true]{csquotes} % Required to generate language-dependent quotes in the bibliography
 
 %----------------------------------------------------------------------------------------
@@ -170,8 +173,12 @@ headsepline, % Uncomment to get a line under the header
 
 \begin{abstract}
 \addchaptertocentry{\abstractname} % Add the abstract to the table of contents
-Phase-changes, but specifically solidification processes are of great interest in automotive industry for the windshield washer tank design. This Master thesis will produce a comprehensive state of the art of current used methods to effectively represent solidification processes. \\
-The content of this thesis is organized in the following way: the
+Phase change materials (PCMs) are of great interest within the automotive industry field. Not only when used in thermal management applications but also in different areas where these materials are of vital importance for both a safe and comfortable driving. For such objective, the present project arises from the idea of understanding solidification processes in windshield washer tanks. In this context, this master's thesis produces a comprehensive state of the art of some of the current numerical methods to effectively represent water solidification. 
+\linebreak
+\indent An OpenFOAM 21.12. solver based on a multi-phase solver, multi-component incompressible solver based on a volume of fluid method is adapted to deal with diffusive-convective phase change. So as to reach this goal, an implementation of the enthalpy-porosity techinque is carried out. The work of Voller is closely followed, and a detailed explanation of the used equations and the assumptions taken is given. Validation of the model is accomplished by comparing the results with the authors in Bourdillon and Kowaleski and Rebow.
+\linebreak
+\indent On a second stage, a 2D semi-empirical model based on the work of Lee is adapted to account for the nucleation characteristics during the process of the water phase change. Validation of the model is done by comparing the obtained results to Neumann solutions for classical Stefan problem. \\
+Finally, the current work is extended to couple a fluid region in which the liquid undergoes a phase-change and a solid region. This is done in the context of a conjugate heat transfer environment. 
 
 \end{abstract}
 
@@ -181,7 +188,9 @@ The content of this thesis is organized in the following way: the
 
 \begin{acknowledgements}
 \addchaptertocentry{\acknowledgementname} % Add the acknowledgements to the table of contents
-The acknowledgments and the people to thank go here, don't forget to include your project advisor\ldots
+My first and biggest thanks goes to my supervisors, Dr. Robert Castilla and Dr. Gustavo Raush for their invaluable help throughout this work. 
+\linebreak
+I would like to thank my family and all my workmates in Barcelona Technical Center S.L. for giving me support in the darkest hours.
 \end{acknowledgements}
 
 %----------------------------------------------------------------------------------------
@@ -270,7 +279,7 @@ $\omega$ & angular frequency & \si{\radian} \\
 %----------------------------------------------------------------------------------------
 
 \printbibliography[heading=bibintoc]
-
+\include{example.bib}
 %----------------------------------------------------------------------------------------
 
 \end{document}  

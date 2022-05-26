@@ -15,30 +15,69 @@
 \setcounter{secnumdepth}{4}
 %----------------------------------------------------------------------------------------
 
-\section{Thesis Statement}
+\section{Thesis Statement. Background and motivation}
 
-Enthalpy-porosity for modeling the melting process and UDF (user defined function) to describe the expansion of PCM (phase-change material) as a result of the variation between the solid and liquid density.
+During the last decade, the use of phase change materials has been growing in the automotive industry. \newline
+These substances release or absorb large amounts of latent heat when they go through a change in their physical state, as the material reaches its specific phase change temperature. Thus, in the process of latent heat release or absorption, the temperature of the PCM remains constant. Therefore, PCMs are considered to be efficient in terms of thermal storage. \newline
+\indent On the other hand, the use of these materials is not exclusive for thermal management. It is of relevant importance when used in conjunction with soap in the windshield wiper system of the car. In such zone, problems involving solidification are of considerable relevance. And this is mainly due to a volumetric expansion originated by the thermal effects within the PCM which at its turn, generates stresses in the polymeric tank in which is bottled up.
+\newline
+\indent Therefore, this master's thesis main objective aims to study different numerical techniques to represent solidification process and, specially, pure water phase change. This is accomplished by first imlementing an enthalpy-porosity technique within the frame of a multi-phase incompressible solver based on volume-of-fluid (VOF) method for interface tracking. The objective of this first stage is to apply sensible and latent heat as source terms in the energy equation. On a second term, a 2D semi-empirical model based on the work of Lee is adapted to account for the nucleation characteristics occured during the water phase transition. 
+\indent The final stage of this thesis is devoted to an implementation of a multiregion solver to calculate conjugate heat transfer problems between solid and fluid zones with the singularity of being, the fluid zone, capable of handling phase change materials. 
 
-Numerical modeling of a solid-liquid phase change in a closed 2D cavity with density change, elastic wall and natural convection.
+
 
 %----------------------------------------------------------------------------------------
 
 \section{Phase-Change Process}
-\subsection{Freezing Phenomena}
+A complex interaction of the molecular forces generate water to behave in a curious way when it gets frozen into ice. The vast majority of substances, when they are cooled, become more dense in the frozen state than when liquid. However, when cooled under a specific temperature, water begins to expand and, once it starts freezing, it becomes less dense than water. 
+\newline
+\subsection{Phase diagram of ice}
+Ice crystals undergo different kinds of structures. Called ice Ih, in the form of hexagonal ice and, manifested in six cornered snow flakes, is the natural ice found in earth. However, at lower pressures below 2 kbar, many other ice structures may exist.
+\newline
+The ice phase diagram shown below, points out the conditions of stability for all ice phases. As it is cleared out, the line between the water and ice Ih is an equilibrium line with a negative slope, consequence of having, the solid, lower density than the liquid. These equilibrium lines extend in the form of metastable phase boundaries into the area of stability of other ice phases.
+Although there are at least 11 crystalline ice shapes, the only which is found in naturally on earth is the hexagonal form. 
+\newline
+As a remark, the implication that there is a rise on the pressure would not propitiate ice formation at 0ºC, instead water would need to be cooled down.
+\subsection{Properties of ice}
+Ice, when subjected to visible light conditions, is transparent and has the lowest index of refraction for the sodium spectrum of any known crystalline material[].
+\newline
+Mechanically, ice behaves like a viscoelastic material with a non linear law. Pollycrystalline ice subjected to stress, deforms elastically, followed by a transient creep and finally, a secondary creep in the form of steady viscous flow is obtained.
+\newline
+As pointed out in [], the surface of ice Ih near the melting point has many dangling broken bounds that boost the presence of a liquid-like layer and as a consequence, low friction on such surface. Variation of density of ice with phase at 110 K and some physical properties of ice Ih at 0ºC are described in the tables below.
+\newline
 
-\LaTeX{} is not a \textsc{wysiwyg} (What You See is What You Get) program, unlike word processors such as Microsoft Word or Apple's Pages. Instead, a document written for \LaTeX{} is actually a simple, plain text file that contains \emph{no formatting}. You tell \LaTeX{} how you want the formatting in the finished document by writing in simple commands amongst the text, for example, if I want to use \emph{italic text for emphasis}, I write the \verb|\emph{text}| command and put the text I want in italics in between the curly braces. This means that \LaTeX{} is a \enquote{mark-up} language, very much like HTML.
+\subsection{Freezing phenomena}
+Time-temperature diagram for freezing of pure water (ABCDE) and aqueous solutions (AB'C'D'E') show the physical process that occurs during the solidification. The first stage, from A to B, belongs to undercooling, also called supercooling, and it is arisen below the freezing point $T_f$, which is equal to the melting point, $T_m$. This point is referred to a non equilibrium point and it is analogous to an activation energy necessary for the nucleation process. Before nucleation process, pure water may need to be cooled down several degrees. At point B, the system nucleates and releases its latent heat faster than the heat which is being removed from itself.
+\newline
+From C to D, the horizontal axis shows the evolution of the crystal growth in time. At C, there exists the nucleation point and, from there through D, latent heat gets removed out of the system at constant temperature. In this way, the mixture, which is in a partially frozen state, does not cool until all the potentially freezable water has crystallized.
 
 
-\subsection{State of Art. Numerical Methods}
+\begin{figure}[h]
+	\label{fig:boat1}
+	\centering	
+	\includegraphics[width=0.6\textwidth]{crystallization_of_water.png}
+	\caption{Process of crystallization of water.}
+\end{figure} 
+
+\section{Mechanisms of Heat Transfer. Heat convection}
+The process of water freezing in enclosures is common in engineering. When there exist temperature gradients within the liquid phase in the process of solidification, a natural buoyancy driven flow is initiated and such behavior is determined to affect the shape of the liquid/solid interface as well as the progress of solidification.
+\newline
+Indeed, these temperature differences in the liquid cause density variations so that the natural motion occurs. Boussinesq approximation can be validly used for fluids whose density varies linearly with temperature. However, pure water exhibits a maximum in its density when it ranges between 0ºC and 4ºC. Beyond this last temperature, and known as density inversion point, density decreases in a nonlinear manner as the temperature passes through the freezing point. In convective heat transfer, surroundings of the temperature where the aforementioned maximum happens to be, behave in a complex manner leading to fully control the process of growth of the solid phase.
+\newline
+
 \subsection{Stefan Problem}
-\section{Conjugate Heat Transfer}
-\subsection{Mechanisms of Heat Transfer}
-\subsubsection{Heat Conduction}
-\subsubsection{Heat Convection}
+
+%%TO BE IMPLEMENTED AT THE END
+\section{Conjugate Heat Transfer. Heat conduction}
+
 \subsection{Governing Equations}
 \subsubsection{Governing Equations for the Fluid}
+
 \subsubsection{Governing Equations for the Solid}
-\subsection{Boundary Conditions}
+
+\begin{equation}
+	\frac{\partial}{\partial x_{i}}\left(\rho u_{i} T\right)=\frac{\partial}{\partial x_{i}}\left(\frac{k}{C_{p}} \frac{\partial u_{j}}{\partial x_{j}}\right)
+\end{equation}
 %----------------------------------------------------------------------------------------
 %
 %\section{Getting Started with this Template}
