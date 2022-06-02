@@ -131,6 +131,75 @@
     \field{year}{2015}
   \endentry
 
+  \entry{kowalewski_rebow_1999}{article}{}
+    \name{author}{2}{}{%
+      {{hash=KTA}{%
+         family={KOWALEWSKI},
+         familyi={K\bibinitperiod},
+         given={T.\bibnamedelima A.},
+         giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=RM}{%
+         family={REBOW},
+         familyi={R\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KTARM1}
+    \strng{fullhash}{KTARM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1999}
+    \field{labeldatesource}{}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \verb{doi}
+    \verb 10.1080/10618569908940874
+    \endverb
+    \field{number}{3-4}
+    \field{pages}{193\bibrangedash 210}
+    \field{title}{Freezing of Water in a Differentially Heated Cubic Cavity}
+    \field{volume}{11}
+    \field{journaltitle}{International Journal of Computational Fluid Dynamics}
+    \field{year}{1999}
+  \endentry
+
+  \entry{vasilyev_vasilyeva_2020}{article}{}
+    \name{author}{2}{}{%
+      {{hash=VV}{%
+         family={Vasilyev},
+         familyi={V\bibinitperiod},
+         given={Vasily},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=VM}{%
+         family={Vasilyeva},
+         familyi={V\bibinitperiod},
+         given={Maria},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{VVVM1}
+    \strng{fullhash}{VVVM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2020}
+    \field{labeldatesource}{}
+    \field{sortinit}{V}
+    \field{sortinithash}{V}
+    \verb{doi}
+    \verb 10.3390/math8111924
+    \endverb
+    \field{number}{11}
+    \field{pages}{1924}
+    \field{title}{An Accurate Approximation of the Two-Phase Stefan Problem
+  with Coefficient Smoothing}
+    \field{volume}{8}
+    \field{journaltitle}{Mathematics}
+    \field{year}{2020}
+  \endentry
+
   \entry{wu_lai_zhang_2015}{article}{}
     \name{author}{3}{}{%
       {{hash=WD}{%
@@ -169,6 +238,46 @@
     \field{volume}{86}
     \field{journaltitle}{International Journal of Heat and Mass Transfer}
     \field{year}{2015}
+  \endentry
+
+  \entry{zhao_zhao_xu_2018}{article}{}
+    \name{author}{3}{}{%
+      {{hash=ZY}{%
+         family={Zhao},
+         familyi={Z\bibinitperiod},
+         given={Y.},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=ZC}{%
+         family={Zhao},
+         familyi={Z\bibinitperiod},
+         given={C.Y.},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=XZ}{%
+         family={Xu},
+         familyi={X\bibinitperiod},
+         given={Z.G.},
+         giveni={Z\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ZYZCXZ1}
+    \strng{fullhash}{ZYZCXZ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{labeldatesource}{}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \verb{doi}
+    \verb 10.1016/j.compfluid.2017.05.032
+    \endverb
+    \field{pages}{94\bibrangedash 101}
+    \field{title}{Numerical study of solid-liquid phase change by phase field
+  method}
+    \field{volume}{164}
+    \field{journaltitle}{Computers & Fluids}
+    \field{year}{2018}
   \endentry
 \enddatalist
 \endinput

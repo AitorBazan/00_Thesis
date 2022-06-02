@@ -179,7 +179,12 @@ where the thermal diffusivity, $\gamma$, is defined as:
 
 \subsection{Case Description.}
 Here a squared geometry is created.
-
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=.55\linewidth]{CF_GEOM.png}	
+	\label{}
+	\caption{Geometry of the case.}
+\end{figure} 
 
 \subsection{Hypotheses And Assumptions}
 
@@ -266,6 +271,33 @@ Here a squared geometry is created.
 \end{table}
 
 \subsection{Validation of Results and Conclusions}
+\begin{figure}[h!]
+	\begin{subfigure}{\linewidth}
+	\includegraphics[width=.55\linewidth]{BBPF_T_1500s.png}\hfill
+	\includegraphics[width=.55\linewidth]{CF_T_1500s_comp.png}	
+	\caption{Temperature magnitude comparison at t = 1500s. Left: BuoyantBoussinesqPimpleFoam. Right: NCMF}
+	\label{BBPF_NCMF}
+	\end{subfigure}\par\medskip
+	\begin{subfigure}{\linewidth}
+	\includegraphics[width=.55\linewidth]{BBPF_U_1500s.png}\hfill
+	\includegraphics[width=.55\linewidth]{CF_U_1500s_comp.png}	
+	\caption{Velocity magnitude comparison at t = 1500s. Left: BuoyantBoussinesqPimpleFoam. Right: NCMF}
+	\end{subfigure}\par\medskip
+	\caption{Comparison between BuoyantBoussinesqPimpleFoam and NCMF*}
+\end{figure} 
+NCMF*: Natural convection modified solver.
+\begin{table}[h!]
+	\begin{tabular}{@{}lllll@{}}
+		\toprule[1pt]
+		\multicolumn{1}{c}{\textbf{t = 100s}} & \multicolumn{1}{c}{\textbf{t = 250s}} & \multicolumn{1}{c}{\textbf{t = 1500s}} \\ \midrule[2pt] 
+		\includegraphics[width=.25\linewidth]{CF_T_100s.png} & \includegraphics[width=.25\linewidth]{CF_T_250s.png} & \includegraphics[width=.25\linewidth]{CF_T_1500s.png} & \includegraphics[width=.0658\linewidth]{t.png} \\
+		\includegraphics[width=.25\linewidth]{CF_U_100s.png} & \includegraphics[width=.25\linewidth]{CF_U_250s.png} & \includegraphics[width=.25\linewidth]{CF_U_1500s.png} & \includegraphics[width=.0658\linewidth]{u.png} \\
+		\includegraphics[width=.25\linewidth]{CF_rho_100s.png} & \includegraphics[width=.25\linewidth]{CF_rho_250s.png} & \includegraphics[width=.25\linewidth]{CF_rho_1500s.png} & \includegraphics[width=.0558\linewidth]{rho.png} \\ \bottomrule[1pt]		
+	\end{tabular}
+	\centering
+	\caption{Numerical results of Natural convection modified solver between \textit{t = 100s} and \textit{1500s}.}	
+	\label{fig:resultsNCMF}
+\end{table}
 In order to compare consistently the obtained results with those of the literature, the following dimensionless values are pointed out:
 \begin{equation}
 	\tilde{T}=\frac{T-T_{\text {cold }}}{T_{\text {hot }}-T_{\text {cold }}}=\frac{T-273}{10}
@@ -316,9 +348,14 @@ In this thesis, only the Lee model will be considered for further explanation.
 
 
 \subsection{Governing Equations}
+The solution of the system of equations given by the multiphase solver relies on a pressure-velocity coupling loop based on PISO (\textit{Pressure-Implicit with Splitting of Operators}). In order to give more stability to the solution and to simplify the boundary conditions, the pressure is treated by using a modified pressure:
+\newline
+Therefore, due to the commented before, the buoyancy terms appearing on the RHS of the momentum equation, are implemented on the pressure equation.
 
 \subsubsection{Momentum Equation}
+
 \subsubsection{Pressure Equation}
+
 \subsubsection{Energy Equation}
 
 \section{Case Description.}
@@ -450,3 +487,46 @@ In the case of polynomial density variation it is settled in a similar manner. T
 	\label{fig:boat5}
 \end{table}
 \subsection{Validation of Results and Conclusions}
+The validation of the phase change problem is achieved by different methodologies. First, the enthalpy-porosity method is compared with available data found in the thesis of \cite{bourdillon_2016} and \cite{kowalewski_rebow_1999}. For the Lee model based on the \textit{Classical Nucleation Theory}, the results are validated against the analytical solution given by the Neumann solutions of the Stefan problem.
+
+
+\subsubsection{Stefan Problem}
+The Stefan problem, is an initial boundary value problem of a parabolic differential equation with discontinuous coefficients on the phase transitions interfaces [\cite{vasilyev_vasilyeva_2020}]. The analytical solution to the classical Stefan problem exists in a limited range of idealized situations. Some of them involve semi-infinite or infinite regions with simple and boundary conditions. Based on the work of \cite{vasilyev_vasilyeva_2020} and \cite{zhao_zhao_xu_2018}, a two-region solidification process in a semi-infinite region is used to study the feasibility of the VOF-Lee model based on the Nucleation Theory.
+\subsubsection*{One-dimensional problem}
+In seek of simplification, and recalling the 1D problem as shown in the figure:
+
+the initial conditions are expressed as:
+\begin{equation}
+	u_{0}(x)=u_{0}, \quad t=0, \quad x \in[0, L],
+\end{equation}
+while the boundary conditions are the shown below:
+\begin{equation}
+u(0, t)=-15ºC, \quad \frac{\partial u}{\partial x}(L, t)=0, \quad t>0
+\end{equation}
+
+The discontinuous exact solutions are:
+\begin{equation}
+	\begin{cases}T_{l}(x, t)=\frac{\operatorname{erfc}\left(\frac{x}{2 \sqrt{a_{1} t}}\right)}{\operatorname{erfc}\left(\lambda \sqrt{\frac{a_{\mathrm{s}}}{a_{1}}}\right)}\left(T_{\mathrm{m}}-T_{0}\right)+T_{0}, & x<\xi(t), \\ 
+	T_{\mathrm{s}}(\chi, t)=\frac{\operatorname{erf}\left(\frac{x}{2 \sqrt{a_{\mathrm{s}} t}}\right)}{\operatorname{erf \cdot\lambda }}\left(T_{\mathrm{m}}-T_{\mathrm{b}}\right)+T_{\mathrm{b}},& x \geq \xi(t)  .\end{cases}
+\end{equation}
+By using a phase change interface condition, a solution to the trascendental equation may be found:
+\begin{equation}
+	\frac{e^{-\lambda^{2}}}{\operatorname{erf}(\lambda)}+\frac{k_{\mathrm{l}}}{k_{\mathrm{s}}} \sqrt{\frac{a_{\mathrm{s}}}{a_{1}}} \frac{T_{\mathrm{m}}-T_{0}}{T_{\mathrm{m}}-T_{\mathrm{b}}} \frac{e^{-\frac{a_{\mathrm{s}}}{a_{1}} \lambda^{2}}}{\operatorname{erfc}\left(\lambda \sqrt{\frac{a_{\mathrm{s}}}{a_{1}}}\right)}=\frac{\lambda L \sqrt{\pi}}{c_{\mathrm{ps}}\left(T_{\mathrm{m}}-T_{\mathrm{b}}\right)}
+\end{equation}
+The secant method is used as the iterative scheme to find the root of the given function with $tol<1e-12$. The root of $\gamma$ is 0.2204835149063661
+
+The evolution of the interface is:
+\begin{equation}
+	X(t)=2 \lambda \sqrt{a_{\mathrm{s}} t}
+\end{equation}
+%The discontinuous exact solution is of the form [\cite{vasilyev_vasilyeva_2020}:
+%\begin{equation}
+%	u(x, t)= \begin{cases}g\left[\operatorname{erf}\left(\frac{\xi}{2 a_{1} \sqrt{t}}\right)-\operatorname{erf}\left(\frac{x}{2 a_{1} \sqrt{t}}\right)\right] / \operatorname{erf}\left(\frac{\xi}{2 a_{1} \sqrt{t}}\right), & x \geq \xi(t), \\ u_{0}\left[\operatorname{erf}\left(\frac{x}{2 a_{2} \sqrt{t}}\right)-\operatorname{erf}\left(\frac{\xi}{2 a_{2} \sqrt{t}}\right)\right] /\left[1-\operatorname{erf}\left(\frac{\xi}{2 a_{2} \sqrt{t}}\right)\right], & x<\xi(t) .\end{cases}
+%\end{equation}
+%
+%By using a phase change interface condition, it is possible to find a solution to the trascendental equation.
+%\begin{equation}
+%	\frac{k_{1}}{a_{1}} g \frac{\exp \left(-\left(\frac{\gamma}{2 a_{1}}\right)^{2}\right)}{\operatorname{erf}\left(\frac{\gamma}{2 a_{1}}\right)}+\frac{k_{2}}{a_{2}} u_{0} \frac{\exp \left(-\left(\frac{\gamma}{2 a_{2}}\right)^{2}\right)}{1-\operatorname{erf}\left(\frac{\gamma}{2 a_{2}}\right)}+\gamma D \frac{\sqrt{\pi}}{2}=0
+%\end{equation}
+%
+%The secant method is used as the iterative scheme to find the root of the given function with $tol<1e-12$. The root of $\gamma$ is 0.00032622525325939834

@@ -24,7 +24,7 @@ These substances release or absorb large amounts of latent heat when they go thr
 \indent Therefore, this master's thesis main objective aims to study different numerical techniques to represent solidification process and, specially, pure water phase change. This is accomplished by first imlementing an enthalpy-porosity technique within the frame of a multi-phase incompressible solver based on volume-of-fluid (VOF) method for interface tracking. The objective of this first stage is to apply sensible and latent heat as source terms in the energy equation. On a second term, a 2D semi-empirical model based on the work of Lee is adapted to account for the nucleation characteristics occured during the water phase transition. 
 \indent The final stage of this thesis is devoted to an implementation of a multiregion solver to calculate conjugate heat transfer problems between solid and fluid zones with the singularity of being, the fluid zone, capable of handling phase change materials. 
 
-
+The next chapters are mainly focused on describing phase-change phenomena and heat transfer mechanisms used along the completion of this master's thesis.
 
 %----------------------------------------------------------------------------------------
 
@@ -64,20 +64,12 @@ The process of water freezing in enclosures is common in engineering. When there
 \newline
 Indeed, these temperature differences in the liquid cause density variations so that the natural motion occurs. Boussinesq approximation can be validly used for fluids whose density varies linearly with temperature. However, pure water exhibits a maximum in its density when it ranges between 0ºC and 4ºC. Beyond this last temperature, and known as density inversion point, density decreases in a nonlinear manner as the temperature passes through the freezing point. In convective heat transfer, surroundings of the temperature where the aforementioned maximum happens to be, behave in a complex manner leading to fully control the process of growth of the solid phase.
 \newline
-
-\subsection{Stefan Problem}
-
+%%INSERT EQ OF CONVECTION
 %%TO BE IMPLEMENTED AT THE END
 \section{Conjugate Heat Transfer. Heat conduction}
+Conjugate heat transfer is referred to the heat transfer between solids and fluids. Heat transfer in fluids is occurred mainly through a combination of two mechanisms: convection, due to a random motion of particles (diffusion) and advection, due to the bulk motion of the fluid. On the other hand, heat transfer in solids is mainly driven by conduction which accounts for the vibration and collision of the particles forming the solid.
 
-\subsection{Governing Equations}
-\subsubsection{Governing Equations for the Fluid}
 
-\subsubsection{Governing Equations for the Solid}
-
-\begin{equation}
-	\frac{\partial}{\partial x_{i}}\left(\rho u_{i} T\right)=\frac{\partial}{\partial x_{i}}\left(\frac{k}{C_{p}} \frac{\partial u_{j}}{\partial x_{j}}\right)
-\end{equation}
 %----------------------------------------------------------------------------------------
 %
 %\section{Getting Started with this Template}

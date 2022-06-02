@@ -4,6 +4,9 @@
 
 \section{Methodology}
 \section{OpenFOAM: chtMultiphaseInterFOAM. Conjugate Heat Transfer}
+chtMultiphaseInterFoam is a new solver derived from the chtMultiRegionFoam. It is implemented to cope with transient fluid flow and solid heat conduction with conjugate heat transfer between regions.
+The solution follows a sequential strategy: equations of the fluid are first solved using the temperatures of the solid of the preceding loop to set the boundary conditions for the fluid part.Then, the equation for the solid is solved with the temperatures of the fluid to define lately the boundary conditions of the solid. This process is iteratively executed until convergence is reached.
+The solid 
 \subsection{Control Loop}
 \subsection{Governing Equations of the Fluid Region}
 \subsubsection{Momentum Equation}
@@ -11,6 +14,37 @@
 \subsubsection{Energy Equation}
 \subsection{Governing Equations of the Solid Region}
 \subsubsection{Energy Equation}
+
 \subsection{Case Setup}
+\subsubsection{Boundary conditions}
+At the interface between solid and liquid regions, it is required to set an appropriate boundary condition which couples the energy equations in these areas.
+\newline
+Considering two cells at each side of the interface such as in the Figure
+\newline
+where $T_c$ and $T_p$ is the temperature at the cell center and on the patch (2D boundary) accordingly. $q_1$ is the heat flux going out of the $cell_1$ and $q_2$ the heat flux entering the $cell_2$. The energy conservation in this zone constrains the temperature and heat fluxes to be equat at both sides of the interface. 
+Then, temperature, in magnitude yields as
+\begin{equation}
+	T_{p, 1}=T_{p, 2}=T_{p},
+\end{equation}
+and as well, for the fluxes
+\begin{equation}
+q_{1}^{\prime \prime}=q_{2}^{\prime \prime}=q^{\prime \prime}
+\end{equation}
+while the magnitude for the heat fluxes is derived from the one-dimensional expression for the Fourier's law and it gives
+\begin{equation}
+-\left.k_{1} \frac{\partial T}{\partial n}\right|_{\text {side } 1}=-\left.k_{2} \frac{\partial T}{\partial n}\right|_{\text {side } 2}
+\end{equation}
+where $\kappa$ is the termal conductivity and $n$ the direction normal to the patch.
+Discretizing linearly the temperature gradient of the previous equation, and with respect of the scheme of the Figure [], the differential equation that yields 
+\begin{equation}
+k_{1} \Delta_{1}\left(T_{c, 1}-T_{p}\right)=k_{2} \Delta_{2}\left(T_{p}-T_{c, 2}\right)
+\end{equation}
+where the temperatures and fluxes at the center of the patches are described as
+\begin{equation}
+\begin{gathered}
+T_{p}=\frac{k_{1} \Delta_{1} T_{c, 1}+k_{2} \Delta_{2} T_{c, 2}}{k_{1} \Delta_{1}+k_{2} \Delta_{2}} \\
+q^{\prime \prime}=k_{1} \Delta_{1}\left(T_{c, 1}-T_{p}\right)=k_{2} \Delta_{2}\left(T_{p}-T_{c, 2}\right) .
+\end{gathered}
+\end{equation}
 \subsection{Validation of Results and Conclusions}
 
