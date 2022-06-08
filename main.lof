@@ -3,23 +3,31 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Process of crystallization of water.\relax }}{3}{figure.caption.19}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Phase-change comparison.\relax }}{2}{figure.caption.10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Process of crystallization of water.\relax }}{4}{figure.caption.15}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Crystallization rate versus temperature.\relax }}{11}{figure.caption.64}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Crystallization rate versus temperature.\relax }}{11}{figure.caption.60}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces General structure of an OpenFOAM case.\relax }}{14}{figure.caption.75}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces General structure of an OpenFOAM case.\relax }}{15}{figure.caption.77}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Flowchart of integration procedure. \textit {buoyantBoussinesqPimpleFoam}\relax }}{16}{figure.caption.82}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Geometry of the case.\relax }}{17}{figure.caption.84}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Geometry of the case.\relax }}{18}{figure.caption.95}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Flowchart of integration procedure. \textit {buoyantBoussinesqPimpleFoam}\relax }}{20}{figure.caption.101}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Comparison between BuoyantBoussinesqPimpleFoam and NCMF*\relax }}{20}{figure.caption.108}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Comparison between BuoyantBoussinesqPimpleFoam and NCMF*\relax }}{24}{figure.caption.128}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Adimensional magnitudes comparison.\relax }}{26}{figure.caption.135}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Adimensional magnitudes comparison.\relax }}{32}{figure.caption.164}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Flowchart of the conjugate heat transfer solver.\cite {sugimoto_kuramae_matsumoto_watanabe_2021}\relax }}{36}{figure.caption.188}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

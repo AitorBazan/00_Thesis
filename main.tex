@@ -177,11 +177,12 @@ headsepline, % Uncomment to get a line under the header
 \addchaptertocentry{\abstractname} % Add the abstract to the table of contents
 Phase change materials (PCMs) are of great interest within the automotive industry field. Not only when used in thermal management applications but also in different areas where these materials are of vital importance for both a safe and comfortable driving. For such objective, the present project arises from the idea of understanding solidification processes in windshield washer tanks. In this context, this master's thesis produces a comprehensive state of the art of some of the current numerical methods to effectively represent water solidification. 
 \linebreak
-\indent An OpenFOAM 21.12. solver based on a multi-phase solver, multi-component incompressible solver based on a volume of fluid method is adapted to deal with diffusive-convective phase change. So as to reach this goal, an implementation of the enthalpy-porosity techinque is carried out. The work of Voller is closely followed, and a detailed explanation of the used equations and the assumptions taken is given. Validation of the model is accomplished by comparing the results with the authors in Bourdillon and Kowaleski and Rebow.
+\indent An OpenFOAM 21.12. solver based on a multi-phase solver, multi-component incompressible solver based on a volume of fluid method is adapted to deal with diffusive-convective phase change. So as to reach this goal, an implementation of the enthalpy-porosity techinque is carried out. The work of Voller et al. is closely followed, and a detailed explanation of the used equations and the assumptions taken is given. Validation of the model is accomplished by comparing the results with the authors in Bourdillon and Kowaleski and Rebow.
 \linebreak
 \indent On a second stage, a 2D semi-empirical model based on the work of Lee is adapted to account for the nucleation characteristics during the process of the water phase change. Validation of the model is done by comparing the obtained results to Neumann solutions for classical Stefan problem. \\
 Finally, the current work is extended to couple a fluid region in which the liquid undergoes a phase-change and a solid region. This is done in the context of a conjugate heat transfer environment. 
 
+\textbf{Keywords:} PCMs, multip-phase, Enthalpy-porosity technique, Lee model, Stefan problem, conjugate heat transfer, OpenFOAM.
 \end{abstract}
 
 %----------------------------------------------------------------------------------------
@@ -204,46 +205,6 @@ I would like to thank my family and all my workmates in Barcelona Technical Cent
 \listoffigures % Prints the list of figures
 
 \listoftables % Prints the list of tables
-
-%----------------------------------------------------------------------------------------
-%	ABBREVIATIONS
-%----------------------------------------------------------------------------------------
-
-\begin{abbreviations}{ll} % Include a list of abbreviations (a table of two columns)
-
-\textbf{LAH} & \textbf{L}ist \textbf{A}bbreviations \textbf{H}ere\\
-\textbf{WSF} & \textbf{W}hat (it) \textbf{S}tands \textbf{F}or\\
-
-\end{abbreviations}
-
-%----------------------------------------------------------------------------------------
-%	PHYSICAL CONSTANTS/OTHER DEFINITIONS
-%----------------------------------------------------------------------------------------
-
-\begin{constants}{lr@{${}={}$}l} % The list of physical constants is a three column table
-
-% The \SI{}{} command is provided by the siunitx package, see its documentation for instructions on how to use it
-
-Speed of Light & $c_{0}$ & \SI{2.99792458e8}{\meter\per\second} (exact)\\
-%Constant Name & $Symbol$ & $Constant Value$ with units\\
-
-\end{constants}
-
-%----------------------------------------------------------------------------------------
-%	SYMBOLS
-%----------------------------------------------------------------------------------------
-
-\begin{symbols}{lll} % Include a list of Symbols (a three column table)
-
-$a$ & distance & \si{\meter} \\
-$P$ & power & \si{\watt} (\si{\joule\per\second}) \\
-%Symbol & Name & Unit \\
-
-\addlinespace % Gap to separate the Roman symbols from the Greek
-
-$\omega$ & angular frequency & \si{\radian} \\
-
-\end{symbols}
 
 %-------------------------------------------------------------------
 %----------------------------------------------------------------------------------------
@@ -279,7 +240,6 @@ $\omega$ & angular frequency & \si{\radian} \\
 %----------------------------------------------------------------------------------------
 %	BIBLIOGRAPHY
 %----------------------------------------------------------------------------------------
-
 \printbibliography[heading=bibintoc]
 \include{example.bib}
 %----------------------------------------------------------------------------------------

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2021.12.9)  30 MAY 2022 15:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2021.12.9)  8 JUN 2022 16:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1292,6 +1292,12 @@ File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 ) (main.aux
 (Chapters/Chapter1.aux) (Chapters/Chapter2.aux) (Chapters/Chapter3.aux
 
+LaTeX Warning: Label `3.9' multiply defined.
+
+
+LaTeX Warning: Label `fig:waterProperties' multiply defined.
+
+
 LaTeX Warning: Label `fig:waterProperties' multiply defined.
 
 
@@ -1302,6 +1308,9 @@ LaTeX Warning: Label `fig:boat4' multiply defined.
 
 
 LaTeX Warning: Label `fig:boat5' multiply defined.
+
+
+LaTeX Warning: Label `3.5' multiply defined.
 
 ) (Chapters/Chapter4.aux) (Chapters/Chapter5.aux) (Chapters/Chapter6.aux)
 (Appendices/AppendixA.aux) (example.bib.aux))
@@ -1485,7 +1494,7 @@ LaTeX Info: Redefining \nameref on input line 97.
 
 pdfTeX warning: miktex-pdflatex (file ./Cover TFM English.pdf): PDF inclusion: 
 found PDF version <1.7>, but at most version <1.5> allowed
-<Cover TFM English.pdf, id=294, 597.55246pt x 845.07718pt>
+<Cover TFM English.pdf, id=302, 597.55246pt x 845.07718pt>
 File: Cover TFM English.pdf Graphic file (type pdf)
 <use Cover TFM English.pdf>
 Package pdftex.def Info: Cover TFM English.pdf  used on input line 98.
@@ -1506,7 +1515,7 @@ found PDF version <1.7>, but at most version <1.5> allowed
 
 pdfTeX warning: miktex-pdflatex (file ./Cover TFM English.pdf): PDF inclusion: 
 found PDF version <1.7>, but at most version <1.5> allowed
-<Cover TFM English.pdf, id=297, page=1, 597.55246pt x 845.07718pt>
+<Cover TFM English.pdf, id=305, page=1, 597.55246pt x 845.07718pt>
 File: Cover TFM English.pdf Graphic file (type pdf)
 <use Cover TFM English.pdf, page 1>
 Package pdftex.def Info: Cover TFM English.pdf , page1 used on input line 98.
@@ -1593,7 +1602,7 @@ ion.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 178--184
-\T1/ppl/m/n/10.95 Bour-dil-lon and Kowaleski and Re-bow.
+\T1/ppl/m/n/10.95 au-thors in Bour-dil-lon and Kowaleski and Re-bow.
  []
 
 1: section
@@ -1606,7 +1615,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 178--184
  Acknowledgements
 --------------------
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--196
+Underfull \hbox (badness 10000) in paragraph at lines 194--197
 \T1/ppl/m/n/10.95 tavo Raush for their in-valu-able help through-out this work.
 
  []
@@ -1620,7 +1629,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 193--196
 \tf@toc=\write7
 \openout7 = `main.toc'.
 
- [10] (main.lof)
+ [10] (main.lof
+Overfull \hbox (115.80656pt too wide) in paragraph at lines 30--30
+ [][] [][][]\T1/ppl/m/n/10.95 Flowchart of the con-ju-gate heat trans-fer solve
+r.[][][] [][]  
+ []
+
+)
 \tf@lof=\write8
 \openout8 = `main.lof'.
 
@@ -1640,31 +1655,44 @@ Underfull \hbox (badness 10000) in paragraph at lines 193--196
 
 ]
 1: section
-[15] [16
-
-]
-1: section
-[17] [18
-
-]
-1: section
-[19] [20
-
-]
-1: section
 \openout2 = `Chapters/Chapter1.aux'.
 
 (Chapters/Chapter1.tex
 Chapter 1.
 
-Overfull \hbox (3.06508pt too wide) in paragraph at lines 20--26
+Overfull \hbox (3.06508pt too wide) in paragraph at lines 20--27
 \T1/ppl/m/n/10.95 These sub-stances re-lease or ab-sorb large amounts of la-ten
 t heat when they go through
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--34
+LaTeX Warning: Reference `phasechanges' on page 1 undefined on input line 33.
 
+
+LaTeX Warning: Citation 'krabbenhoft_damkilde_nazem_2006' on page 1 undefined o
+n input line 33.
+
+
+Overfull \hbox (0.67776pt too wide) in paragraph at lines 33--34
+\T1/ppl/m/n/10.95 of tem-per-a-ture gen-er-ated within a nar-row tem-per-a-ture
+ range near the freez-ing point.
+ []
+
+<Figures//isothermal_phasechange.png, id=527, 391.4625pt x 347.04657pt>
+File: Figures//isothermal_phasechange.png Graphic file (type png)
+<use Figures//isothermal_phasechange.png>
+Package pdftex.def Info: Figures//isothermal_phasechange.png  used on input lin
+e 38.
+(pdftex.def)             Requested size: 202.01454pt x 179.09372pt.
+<Figures//non_iso_phasechange.png, id=528, 386.19281pt x 329.73187pt>
+File: Figures//non_iso_phasechange.png Graphic file (type png)
+<use Figures//non_iso_phasechange.png>
+Package pdftex.def Info: Figures//non_iso_phasechange.png  used on input line 4
+5.
+(pdftex.def)             Requested size: 202.01454pt x 172.47787pt.
+
+Overfull \hbox (2.0805pt too wide) in paragraph at lines 36--49
+[]$[]$  $[]$ 
  []
 
 1: section
@@ -1672,75 +1700,82 @@ Underfull \hbox (badness 10000) in paragraph at lines 32--34
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 42--48
+Underfull \hbox (badness 10000) in paragraph at lines 63--65
 
  []
 
-<Figures//crystallization_of_water.png, id=545, 1897.0875pt x 1678.27pt>
+[2 <./Figures//isothermal_phasechange.png (PNG copy)> <./Figures//non_iso_phase
+change.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 73--79
+
+ []
+
+<Figures//crystallization_of_water.png, id=538, 1897.0875pt x 1678.27pt>
 File: Figures//crystallization_of_water.png Graphic file (type png)
 <use Figures//crystallization_of_water.png>
 Package pdftex.def Info: Figures//crystallization_of_water.png  used on input l
-ine 58.
+ine 88.
 (pdftex.def)             Requested size: 242.4199pt x 214.44394pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--69
+Underfull \hbox (badness 10000) in paragraph at lines 94--100
 
  []
 
-[2]) [3 <./Figures//crystallization_of_water.png>]
+[3]) [4 <./Figures//crystallization_of_water.png>]
 \openout2 = `Chapters/Chapter2.aux'.
 
  (Chapters/Chapter2.tex
-[4
+Chapter 2.
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--14
+
+ []
+
+1: section
+[5
 
 
 
 
 ]
-Chapter 2.
-1: section
-[5]
-Overfull \hbox (5.87393pt too wide) in paragraph at lines 42--45
+Overfull \hbox (5.87393pt too wide) in paragraph at lines 44--47
 []\T1/ppl/m/n/10.95 The vol-ume of fluid method takes rel-e-vance when flu-ids 
 co-ex-ist with other phases.
  []
 
 [6]
-Overfull \hbox (2.25043pt too wide) in paragraph at lines 108--111
+Overfull \hbox (2.25043pt too wide) in paragraph at lines 117--120
 \T1/ppl/m/n/10.95 The co-ef-fi-cient $\OML/zplm/m/it/10.95 C[]$ \T1/ppl/m/n/10.
 95 might be in-ter-preted as a time rate and must be em-pir-i-cally tunned.
  []
 
 [7]
 
-LaTeX Warning: Reference `2.29' on page 8 undefined on input line 137.
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 162.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 153.
+(hyperref)                removing `subscript' on input line 162.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 153.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 153.
+(hyperref)                removing `math shift' on input line 162.
 
 [8] [9]
-Overfull \hbox (2.67596pt too wide) in paragraph at lines 209--210
+Overfull \hbox (2.67596pt too wide) in paragraph at lines 218--219
 []\T1/ppl/m/n/10.95 The ki-netic part of the nu-cle-ation rate is in-tro-duced 
 in the form of wa-ter molecules
  []
 
-<Figures//crystallization_rate.png, id=633, 402.00188pt x 282.30469pt>
+<Figures//crystallization_rate.png, id=632, 402.00188pt x 282.30469pt>
 File: Figures//crystallization_rate.png Graphic file (type png)
 <use Figures//crystallization_rate.png>
 Package pdftex.def Info: Figures//crystallization_rate.png  used on input line 
-244.
+253.
 (pdftex.def)             Requested size: 242.4199pt x 170.23701pt.
 [10] [11 <./Figures//crystallization_rate.png (PNG copy)>]) [12]
 \openout2 = `Chapters/Chapter3.aux'.
@@ -1749,12 +1784,8 @@ Package pdftex.def Info: Figures//crystallization_rate.png  used on input line
 (Chapters/Chapter3.tex
 Chapter 3.
 
-Package caption Warning: \label without proper reference on input line 60.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig:structureOF' on page 13 undefined on input line 9
-.
+LaTeX Warning: Citation 'moukalled_mangani_darwish_2016' on page 13 undefined o
+n input line 13.
 
 1: section
 [13
@@ -1763,191 +1794,324 @@ LaTeX Warning: Reference `fig:structureOF' on page 13 undefined on input line 9
 
 
 ]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 5
-9.
+
+LaTeX Warning: Reference `fig:structureOF' on page 14 undefined on input line 3
+6.
+
+[14]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 8
+6.
  (/home/aitor/.miktex/texmfs/install/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-Overfull \hbox (2.5447pt too wide) in paragraph at lines 67--68
+Overfull \hbox (2.5447pt too wide) in paragraph at lines 94--95
 []\T1/ppl/m/n/10.95 The "con-stant" di-rec-tory con-tains all the in-for-ma-tio
 n typ-i-cally re-gard-ing the phys-
  []
 
-[14
+[15
 
-] [15]
-Overfull \hbox (7.04004pt too wide) in paragraph at lines 102--102
+] [16]
+<Figures//CF_GEOM.png, id=689, 1148.29pt x 797.98125pt>
+File: Figures//CF_GEOM.png Graphic file (type png)
+<use Figures//CF_GEOM.png>
+Package pdftex.def Info: Figures//CF_GEOM.png  used on input line 119.
+(pdftex.def)             Requested size: 222.21722pt x 154.41853pt.
+ [17 <./Figures//CF_GEOM.png (PNG copy)>] [18]
+
+LaTeX Warning: Reference `polydens' on page 19 undefined on input line 201.
+
+[19]
+Overfull \hbox (7.04004pt too wide) in paragraph at lines 235--235
  [][]\T1/ppl/m/n/10.95 Temperature 
  []
 
-[16]
-<Figures//CF_GEOM.png, id=685, 1148.29pt x 797.98125pt>
-File: Figures//CF_GEOM.png Graphic file (type png)
-<use Figures//CF_GEOM.png>
-Package pdftex.def Info: Figures//CF_GEOM.png  used on input line 184.
-(pdftex.def)             Requested size: 222.21722pt x 154.41853pt.
+[20
+
+]
+
+LaTeX Warning: Citation 'berberovic_van hinsberg_jakirlic_roisman_tropea_2009' 
+on page 21 undefined on input line 295.
+
+
+LaTeX Warning: Reference `label' on page 21 undefined on input line 315.
+
+
+LaTeX Warning: Citation 'rhie_chow_1983' on page 21 undefined on input line 320
+.
+
+[21]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[17]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-Overfull \hbox (23.16533pt too wide) in paragraph at lines 245--253
+[22] [23]
+Overfull \hbox (23.16533pt too wide) in paragraph at lines 422--430
  [][] 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Figures//BBPF_T_1500s.png, id=699, 963.6pt x 542.025pt>
+<Figures//BBPF_T_1500s.png, id=742, 963.6pt x 542.025pt>
 File: Figures//BBPF_T_1500s.png Graphic file (type png)
 <use Figures//BBPF_T_1500s.png>
-Package pdftex.def Info: Figures//BBPF_T_1500s.png  used on input line 276.
+Package pdftex.def Info: Figures//BBPF_T_1500s.png  used on input line 454.
 (pdftex.def)             Requested size: 222.21722pt x 124.99394pt.
-<Figures//CF_T_1500s_comp.png, id=700, 963.6pt x 542.025pt>
+<Figures//CF_T_1500s_comp.png, id=743, 963.6pt x 542.025pt>
 File: Figures//CF_T_1500s_comp.png Graphic file (type png)
 <use Figures//CF_T_1500s_comp.png>
-Package pdftex.def Info: Figures//CF_T_1500s_comp.png  used on input line 277.
+Package pdftex.def Info: Figures//CF_T_1500s_comp.png  used on input line 455.
 (pdftex.def)             Requested size: 222.21722pt x 124.99394pt.
 
-Overfull \hbox (40.40536pt too wide) in paragraph at lines 276--278
+Overfull \hbox (40.40536pt too wide) in paragraph at lines 454--456
 [][] [] 
  []
 
-<Figures//BBPF_U_1500s.png, id=701, 963.6pt x 542.025pt>
+<Figures//BBPF_U_1500s.png, id=744, 963.6pt x 542.025pt>
 File: Figures//BBPF_U_1500s.png Graphic file (type png)
 <use Figures//BBPF_U_1500s.png>
-Package pdftex.def Info: Figures//BBPF_U_1500s.png  used on input line 282.
+Package pdftex.def Info: Figures//BBPF_U_1500s.png  used on input line 460.
 (pdftex.def)             Requested size: 222.21722pt x 124.99394pt.
-<Figures//CF_U_1500s_comp.png, id=702, 963.6pt x 542.025pt>
+<Figures//CF_U_1500s_comp.png, id=745, 963.6pt x 542.025pt>
 File: Figures//CF_U_1500s_comp.png Graphic file (type png)
 <use Figures//CF_U_1500s_comp.png>
-Package pdftex.def Info: Figures//CF_U_1500s_comp.png  used on input line 283.
+Package pdftex.def Info: Figures//CF_U_1500s_comp.png  used on input line 461.
 (pdftex.def)             Requested size: 222.21722pt x 124.99394pt.
 
-Overfull \hbox (40.40536pt too wide) in paragraph at lines 282--284
+Overfull \hbox (40.40536pt too wide) in paragraph at lines 460--462
 [][] [] 
  []
 
-[18 <./Figures//CF_GEOM.png (PNG copy)>]
+[24
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+ <./Figures//BBPF_T_1500s.png> <./Figures//CF_T_1500s_comp.png> <./Figures//BBP
+F_U_1500s.png> <./Figures//CF_U_1500s_comp.png>] [25]
+<Figures//temperature_xpos_conv.png, id=762, 462.528pt x 346.896pt>
+File: Figures//temperature_xpos_conv.png Graphic file (type png)
+<use Figures//temperature_xpos_conv.png>
+Package pdftex.def Info: Figures//temperature_xpos_conv.png  used on input line
+ 497.
+(pdftex.def)             Requested size: 202.01454pt x 151.51254pt.
+<Figures//temperature_ypos_conv.png, id=763, 462.528pt x 346.896pt>
+File: Figures//temperature_ypos_conv.png Graphic file (type png)
+<use Figures//temperature_ypos_conv.png>
+Package pdftex.def Info: Figures//temperature_ypos_conv.png  used on input line
+ 503.
+(pdftex.def)             Requested size: 202.01454pt x 151.51254pt.
+<Figures//xvel_xpos_conv.png, id=764, 462.528pt x 346.896pt>
+File: Figures//xvel_xpos_conv.png Graphic file (type png)
+<use Figures//xvel_xpos_conv.png>
+Package pdftex.def Info: Figures//xvel_xpos_conv.png  used on input line 507.
+(pdftex.def)             Requested size: 202.01454pt x 151.51254pt.
+<Figures//xvel_ypos_conv.png, id=765, 462.528pt x 346.896pt>
+File: Figures//xvel_ypos_conv.png Graphic file (type png)
+<use Figures//xvel_ypos_conv.png>
+Package pdftex.def Info: Figures//xvel_ypos_conv.png  used on input line 511.
+(pdftex.def)             Requested size: 202.01454pt x 151.51254pt.
+<Figures//yvel_xpos_conv.png, id=766, 462.528pt x 346.896pt>
+File: Figures//yvel_xpos_conv.png Graphic file (type png)
+<use Figures//yvel_xpos_conv.png>
+Package pdftex.def Info: Figures//yvel_xpos_conv.png  used on input line 515.
+(pdftex.def)             Requested size: 202.01454pt x 151.51254pt.
+<Figures//yvel_ypos_conv.png, id=767, 462.528pt x 346.896pt>
+File: Figures//yvel_ypos_conv.png Graphic file (type png)
+<use Figures//yvel_ypos_conv.png>
+Package pdftex.def Info: Figures//yvel_ypos_conv.png  used on input line 519.
+(pdftex.def)             Requested size: 202.01454pt x 151.51254pt.
 
-<Figures//CF_T_100s.png, id=709, 642.4pt x 642.4pt>
+Overfull \hbox (2.0805pt too wide) in paragraph at lines 495--522
+[]$[]$  $[]$
+ []
+
+
+Overfull \hbox (2.0805pt too wide) in paragraph at lines 495--522
+[]$ $[]$
+ []
+
+
+Overfull \hbox (2.0805pt too wide) in paragraph at lines 495--522
+[]$ $[]$ 
+ []
+
+<Figures//CF_T_100s.png, id=768, 642.4pt x 642.4pt>
 File: Figures//CF_T_100s.png Graphic file (type png)
 <use Figures//CF_T_100s.png>
-Package pdftex.def Info: Figures//CF_T_100s.png  used on input line 293.
+Package pdftex.def Info: Figures//CF_T_100s.png  used on input line 529.
 (pdftex.def)             Requested size: 101.00726pt x 101.00209pt.
-<Figures//CF_T_250s.png, id=710, 642.4pt x 642.4pt>
+<Figures//CF_T_250s.png, id=769, 642.4pt x 642.4pt>
 File: Figures//CF_T_250s.png Graphic file (type png)
 <use Figures//CF_T_250s.png>
-Package pdftex.def Info: Figures//CF_T_250s.png  used on input line 293.
+Package pdftex.def Info: Figures//CF_T_250s.png  used on input line 529.
 (pdftex.def)             Requested size: 101.00726pt x 101.00209pt.
-<Figures//CF_T_1500s.png, id=711, 642.4pt x 642.4pt>
+<Figures//CF_T_1500s.png, id=770, 642.4pt x 642.4pt>
 File: Figures//CF_T_1500s.png Graphic file (type png)
 <use Figures//CF_T_1500s.png>
-Package pdftex.def Info: Figures//CF_T_1500s.png  used on input line 293.
+Package pdftex.def Info: Figures//CF_T_1500s.png  used on input line 529.
 (pdftex.def)             Requested size: 101.00726pt x 101.00209pt.
-<Figures//t.png, id=712, 90.3375pt x 347.79938pt>
+<Figures//t.png, id=771, 90.3375pt x 347.79938pt>
 File: Figures//t.png Graphic file (type png)
 <use Figures//t.png>
-Package pdftex.def Info: Figures//t.png  used on input line 293.
+Package pdftex.def Info: Figures//t.png  used on input line 529.
 (pdftex.def)             Requested size: 26.58345pt x 102.34518pt.
-<Figures//CF_U_100s.png, id=713, 642.4pt x 642.4pt>
+<Figures//CF_U_100s.png, id=772, 642.4pt x 642.4pt>
 File: Figures//CF_U_100s.png Graphic file (type png)
 <use Figures//CF_U_100s.png>
-Package pdftex.def Info: Figures//CF_U_100s.png  used on input line 294.
+Package pdftex.def Info: Figures//CF_U_100s.png  used on input line 530.
 (pdftex.def)             Requested size: 101.00726pt x 101.00209pt.
-<Figures//CF_U_250s.png, id=714, 642.4pt x 642.4pt>
+<Figures//CF_U_250s.png, id=773, 642.4pt x 642.4pt>
 File: Figures//CF_U_250s.png Graphic file (type png)
 <use Figures//CF_U_250s.png>
-Package pdftex.def Info: Figures//CF_U_250s.png  used on input line 294.
+Package pdftex.def Info: Figures//CF_U_250s.png  used on input line 530.
 (pdftex.def)             Requested size: 101.00726pt x 101.00209pt.
-<Figures//CF_U_1500s.png, id=715, 642.4pt x 642.4pt>
+<Figures//CF_U_1500s.png, id=774, 642.4pt x 642.4pt>
 File: Figures//CF_U_1500s.png Graphic file (type png)
 <use Figures//CF_U_1500s.png>
-Package pdftex.def Info: Figures//CF_U_1500s.png  used on input line 294.
+Package pdftex.def Info: Figures//CF_U_1500s.png  used on input line 530.
 (pdftex.def)             Requested size: 101.00726pt x 101.00209pt.
-<Figures//u.png, id=716, 88.07906pt x 345.54094pt>
+<Figures//u.png, id=775, 88.07906pt x 345.54094pt>
 File: Figures//u.png Graphic file (type png)
 <use Figures//u.png>
-Package pdftex.def Info: Figures//u.png  used on input line 294.
+Package pdftex.def Info: Figures//u.png  used on input line 530.
 (pdftex.def)             Requested size: 26.58345pt x 104.28523pt.
-<Figures//CF_rho_100s.png, id=717, 642.4pt x 642.4pt>
+<Figures//CF_rho_100s.png, id=776, 642.4pt x 642.4pt>
 File: Figures//CF_rho_100s.png Graphic file (type png)
 <use Figures//CF_rho_100s.png>
-Package pdftex.def Info: Figures//CF_rho_100s.png  used on input line 295.
+Package pdftex.def Info: Figures//CF_rho_100s.png  used on input line 531.
 (pdftex.def)             Requested size: 101.00726pt x 101.00209pt.
-<Figures//CF_rho_250s.png, id=718, 642.4pt x 642.4pt>
+<Figures//CF_rho_250s.png, id=777, 642.4pt x 642.4pt>
 File: Figures//CF_rho_250s.png Graphic file (type png)
 <use Figures//CF_rho_250s.png>
-Package pdftex.def Info: Figures//CF_rho_250s.png  used on input line 295.
+Package pdftex.def Info: Figures//CF_rho_250s.png  used on input line 531.
 (pdftex.def)             Requested size: 101.00726pt x 101.00209pt.
-<Figures//CF_rho_1500s.png, id=719, 642.4pt x 642.4pt>
+<Figures//CF_rho_1500s.png, id=778, 642.4pt x 642.4pt>
 File: Figures//CF_rho_1500s.png Graphic file (type png)
 <use Figures//CF_rho_1500s.png>
-Package pdftex.def Info: Figures//CF_rho_1500s.png  used on input line 295.
+Package pdftex.def Info: Figures//CF_rho_1500s.png  used on input line 531.
 (pdftex.def)             Requested size: 101.00726pt x 101.00209pt.
-<Figures//rho.png, id=720, 93.34875pt x 430.60875pt>
+<Figures//rho.png, id=779, 93.34875pt x 430.60875pt>
 File: Figures//rho.png Graphic file (type png)
 <use Figures//rho.png>
-Package pdftex.def Info: Figures//rho.png  used on input line 295.
+Package pdftex.def Info: Figures//rho.png  used on input line 531.
 (pdftex.def)             Requested size: 22.54538pt x 103.99869pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[19]
-Overfull \hbox (2.55566pt too wide) in paragraph at lines 328--330
-[]\T1/ppl/m/n/10.95 IcoReactingMultiphaseInterFoam solver is a mul-ti-phase, mu
-l-ti-com-po-nent in-com-
- []
+[26
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 328--330
-
- []
-
-[20 <./Figures//BBPF_T_1500s.png> <./Figures//CF_T_1500s_comp.png> <./Figures//
-BBPF_U_1500s.png> <./Figures//CF_U_1500s_comp.png>] [21 <./Figures//CF_T_100s.p
-ng (PNG copy)> <./Figures//CF_T_250s.png (PNG copy)> <./Figures//CF_T_1500s.png
- (PNG copy)> <./Figures//t.png (PNG copy)> <./Figures//CF_U_100s.png (PNG copy)
-> <./Figures//CF_U_250s.png (PNG copy)> <./Figures//CF_U_1500s.png (PNG copy)> 
-<./Figures//u.png (PNG copy)> <./Figures//CF_rho_100s.png (PNG copy)> <./Figure
-s//CF_rho_250s.png (PNG copy)> <./Figures//CF_rho_1500s.png (PNG copy)> <./Figu
-res//rho.png (PNG copy)>] [22]
-Overfull \hbox (4.90416pt too wide) in paragraph at lines 427--428
+ <./Figures//temperature_xpos_conv.png> <./Figures//temperature_ypos_conv.png> 
+<./Figures//xvel_xpos_conv.png> <./Figures//xvel_ypos_conv.png> <./Figures//yve
+l_xpos_conv.png> <./Figures//yvel_ypos_conv.png>] [27 <./Figures//CF_T_100s.png
+ (PNG copy)> <./Figures//CF_T_250s.png (PNG copy)> <./Figures//CF_T_1500s.png (
+PNG copy)> <./Figures//t.png (PNG copy)> <./Figures//CF_U_100s.png (PNG copy)> 
+<./Figures//CF_U_250s.png (PNG copy)> <./Figures//CF_U_1500s.png (PNG copy)> <.
+/Figures//u.png (PNG copy)> <./Figures//CF_rho_100s.png (PNG copy)> <./Figures/
+/CF_rho_250s.png (PNG copy)> <./Figures//CF_rho_1500s.png (PNG copy)> <./Figure
+s//rho.png (PNG copy)>]
+Overfull \hbox (4.90416pt too wide) in paragraph at lines 547--548
 \T1/ppl/m/n/10.95 the in-ter-phase. Thus, a smooth tran-si-tion be-tween phase 
 prop-er-ties must be achieved. 
  []
 
 
-Overfull \hbox (23.16533pt too wide) in paragraph at lines 459--470
+Overfull \hbox (2.55566pt too wide) in paragraph at lines 577--578
+[]\T1/ppl/m/n/10.95 IcoReactingMultiphaseInterFoam solver is a mul-ti-phase, mu
+l-ti-com-po-nent in-com-
+ []
+
+[28
+
+]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (23.16533pt too wide) in paragraph at lines 693--704
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[23]
 
-LaTeX Warning: Command \textordmasculine invalid in math mode on input line 504
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Figures//temperature_xpos_EL.png, id=806, 462.528pt x 346.896pt>
+File: Figures//temperature_xpos_EL.png Graphic file (type png)
+<use Figures//temperature_xpos_EL.png>
+Package pdftex.def Info: Figures//temperature_xpos_EL.png  used on input line 7
+29.
+(pdftex.def)             Requested size: 202.01454pt x 151.51254pt.
+<Figures//temperature_ypos_EL.png, id=807, 462.528pt x 346.896pt>
+File: Figures//temperature_ypos_EL.png Graphic file (type png)
+<use Figures//temperature_ypos_EL.png>
+Package pdftex.def Info: Figures//temperature_ypos_EL.png  used on input line 7
+35.
+(pdftex.def)             Requested size: 202.01454pt x 151.51254pt.
+<Figures//xvel_xpos_EL.png, id=808, 462.528pt x 346.896pt>
+File: Figures//xvel_xpos_EL.png Graphic file (type png)
+<use Figures//xvel_xpos_EL.png>
+Package pdftex.def Info: Figures//xvel_xpos_EL.png  used on input line 739.
+(pdftex.def)             Requested size: 202.01454pt x 151.51254pt.
+<Figures//xvel_ypos_EL.png, id=809, 462.528pt x 346.896pt>
+File: Figures//xvel_ypos_EL.png Graphic file (type png)
+<use Figures//xvel_ypos_EL.png>
+Package pdftex.def Info: Figures//xvel_ypos_EL.png  used on input line 743.
+(pdftex.def)             Requested size: 202.01454pt x 151.51254pt.
+<Figures//yvel_xpos_EL.png, id=810, 462.528pt x 346.896pt>
+File: Figures//yvel_xpos_EL.png Graphic file (type png)
+<use Figures//yvel_xpos_EL.png>
+Package pdftex.def Info: Figures//yvel_xpos_EL.png  used on input line 747.
+(pdftex.def)             Requested size: 202.01454pt x 151.51254pt.
+<Figures//yvel_ypos_EL.png, id=811, 462.528pt x 346.896pt>
+File: Figures//yvel_ypos_EL.png Graphic file (type png)
+<use Figures//yvel_ypos_EL.png>
+Package pdftex.def Info: Figures//yvel_ypos_EL.png  used on input line 751.
+(pdftex.def)             Requested size: 202.01454pt x 151.51254pt.
+
+Overfull \hbox (2.0805pt too wide) in paragraph at lines 727--754
+[]$[]$  $[]$
+ []
+
+
+Overfull \hbox (2.0805pt too wide) in paragraph at lines 727--754
+[]$ $[]$
+ []
+
+
+Overfull \hbox (2.0805pt too wide) in paragraph at lines 727--754
+[]$ $[]$ 
+ []
+
+[29]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[30]
+
+LaTeX Warning: Command \textordmasculine invalid in math mode on input line 770
 .
 
 
-LaTeX Warning: Command \textordmasculine invalid in math mode on input line 504
+LaTeX Warning: Command \textordmasculine invalid in math mode on input line 770
 .
 
 Missing character: There is no º in font pplr7t!
-[24]) [25]
+[31] [32 <./Figures//temperature_xpos_EL.png> <./Figures//temperature_ypos_EL.p
+ng> <./Figures//xvel_xpos_EL.png> <./Figures//xvel_ypos_EL.png> <./Figures//yve
+l_xpos_EL.png> <./Figures//yvel_ypos_EL.png>]) [33]
 \openout2 = `Chapters/Chapter4.aux'.
 
- (Chapters/Chapter4.tex [26
+ (Chapters/Chapter4.tex
+[34
 
 
 
@@ -1955,22 +2119,44 @@ Missing character: There is no º in font pplr7t!
 ]
 Chapter 4.
 1: section
-[27]) [28]
+[35]
+<Figures//CHT_flowchart.png, id=869, 749.04843pt x 495.35063pt>
+File: Figures//CHT_flowchart.png Graphic file (type png)
+<use Figures//CHT_flowchart.png>
+Package pdftex.def Info: Figures//CHT_flowchart.png  used on input line 43.
+(pdftex.def)             Requested size: 404.02908pt x 267.19058pt.
+
+
+LaTeX Warning: Citation 'sugimoto_kuramae_matsumoto_watanabe_2021' on page 36 u
+ndefined on input line 45.
+
+
+LaTeX Warning: Citation 'sugimoto_kuramae_matsumoto_watanabe_2021' on page 36 u
+ndefined on input line 45.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--45
+ []\T1/ppl/m/sc/10 Figure 4.1: |\T1/ppl/m/n/10 Flowchart of the con-ju-gate hea
+t trans-fer 
+ []
+
+[36 <./Figures//CHT_flowchart.png (PNG copy)>]) [37]
 \openout2 = `Chapters/Chapter5.aux'.
 
  (Chapters/Chapter5.tex
-Chapter 5.
-)
-1: section
-[29
+[38
 
 
 
 
 ]
+Chapter 5.
+)
+1: section
+[39]
 \openout2 = `Chapters/Chapter6.aux'.
 
- (Chapters/Chapter6.tex [30
+ (Chapters/Chapter6.tex [40
 
 
 
@@ -1979,10 +2165,10 @@ Chapter 5.
 Chapter 6.
 )
 1: section
-[31]
+[41]
 \openout2 = `Appendices/AppendixA.aux'.
 
- (Appendices/AppendixA.tex [32
+ (Appendices/AppendixA.tex [42
 
 
 
@@ -1991,7 +2177,7 @@ Chapter 6.
 Appendix A.
 )
 1: section
-[33] [34
+[43] [44
 
 
 
@@ -1999,7 +2185,7 @@ Appendix A.
 ! Misplaced alignment tab character &.
 <argument> Computers &
                        Fluids
-l.283 \printbibliography[heading=bibintoc]
+l.243 \printbibliography[heading=bibintoc]
                                           
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2009,7 +2195,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 1: section
-[35]
+[45]
 \openout2 = `example.bib.aux'.
 
 
@@ -2024,19 +2210,24 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: EFF1EB9A4D0F274DED30E2C9E3D22FC5;13200.
+(rerunfilecheck)             Checksum: B08EB576608DEEA52CA6ADBFC0664A79;13932.
+
+Package biblatex Warning: Please (re)run BibTeX on the file(s):
+(biblatex)                main
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 54637 strings out of 478696
- 1250091 string characters out of 2850191
- 1704912 words of memory out of 3000000
- 71663 multiletter control sequences out of 15000+600000
- 467611 words of font info for 134 fonts, out of 8000000 for 9000
+ 54908 strings out of 478696
+ 1255272 string characters out of 2850191
+ 1716455 words of memory out of 3000000
+ 71876 multiletter control sequences out of 15000+600000
+ 479085 words of font info for 154 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 133i,20n,133p,1841b,2874s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 133i,20n,133p,1841b,2876s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/home/aitor/.miktex/texmfs/install/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 {/home/aitor/.miktex/texmfs/install/fonts/enc/dvips/base/8r.enc}</home/aitor/.m
 iktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></home/aitor/.mi
@@ -2048,12 +2239,13 @@ fs/install/fonts/type1/public/mathpazo/fplmri.pfb></home/aitor/.miktex/texmfs/i
 nstall/fonts/type1/public/cm-super/sftt1000.pfb></home/aitor/.miktex/texmfs/ins
 tall/fonts/type1/public/cm-super/sftt1095.pfb></home/aitor/.miktex/texmfs/insta
 ll/fonts/type1/urw/palatino/uplb8a.pfb></home/aitor/.miktex/texmfs/install/font
-s/type1/urw/palatino/uplr8a.pfb></home/aitor/.miktex/texmfs/install/fonts/type1
-/urw/palatino/uplr8a.pfb></home/aitor/.miktex/texmfs/install/fonts/type1/urw/pa
-latino/uplri8a.pfb>
-Output written on main.pdf (57 pages, 3192242 bytes).
+s/type1/urw/palatino/uplbi8a.pfb></home/aitor/.miktex/texmfs/install/fonts/type
+1/urw/palatino/uplr8a.pfb></home/aitor/.miktex/texmfs/install/fonts/type1/urw/p
+alatino/uplr8a.pfb></home/aitor/.miktex/texmfs/install/fonts/type1/urw/palatino
+/uplri8a.pfb>
+Output written on main.pdf (61 pages, 3796276 bytes).
 PDF statistics:
- 946 PDF objects out of 1000 (max. 8388607)
- 239 named destinations out of 1000 (max. 500000)
- 704 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1045 PDF objects out of 1200 (max. 8388607)
+ 273 named destinations out of 1000 (max. 500000)
+ 795 words of extra memory for PDF output out of 10000 (max. 10000000)
 

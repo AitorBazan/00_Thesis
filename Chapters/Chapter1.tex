@@ -22,6 +22,7 @@ These substances release or absorb large amounts of latent heat when they go thr
 \indent On the other hand, the use of these materials is not exclusive for thermal management. It is of relevant importance when used in conjunction with soap in the windshield wiper system of the car. In such zone, problems involving solidification are of considerable relevance. And this is mainly due to a volumetric expansion originated by the thermal effects within the PCM which at its turn, generates stresses in the polymeric tank in which is bottled up.
 \newline
 \indent Therefore, this master's thesis main objective aims to study different numerical techniques to represent solidification process and, specially, pure water phase change. This is accomplished by first imlementing an enthalpy-porosity technique within the frame of a multi-phase incompressible solver based on volume-of-fluid (VOF) method for interface tracking. The objective of this first stage is to apply sensible and latent heat as source terms in the energy equation. On a second term, a 2D semi-empirical model based on the work of Lee is adapted to account for the nucleation characteristics occured during the water phase transition. 
+\newline
 \indent The final stage of this thesis is devoted to an implementation of a multiregion solver to calculate conjugate heat transfer problems between solid and fluid zones with the singularity of being, the fluid zone, capable of handling phase change materials. 
 
 The next chapters are mainly focused on describing phase-change phenomena and heat transfer mechanisms used along the completion of this master's thesis.
@@ -29,7 +30,37 @@ The next chapters are mainly focused on describing phase-change phenomena and he
 %----------------------------------------------------------------------------------------
 
 \section{Phase-Change Process}
-A complex interaction of the molecular forces generate water to behave in a curious way when it gets frozen into ice. The vast majority of substances, when they are cooled, become more dense in the frozen state than when liquid. However, when cooled under a specific temperature, water begins to expand and, once it starts freezing, it becomes less dense than water. 
+The phase-change is usually modelled by a sudden change in enthalpy per unit of temperature generated within a narrow temperature range near the freezing point. Often, this process is assumed to behave in a characteristic temperature, as shown in Fig. \ref{phasechanges}, leading to a moving boundary problem. However, at a given critical temperature, both fluid and solid phases may coexist giving a state called mushy region. In this case, one speaks of a non-linear diffusion problem rather than a moving boundary problem \cite{krabbenhoft_damkilde_nazem_2006}. 
+ 
+\begin{figure}
+	\begin{subfigure}{0.50\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{isothermal_phasechange.png}\hfill
+		\caption{Isothermal phase-change.} 
+		\label{1.1a}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}{0.50\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{non_iso_phasechange.png}	
+		\caption{Non-isothermal phase-change.}
+		\label{1.1b}
+	\end{subfigure}
+\caption{Phase-change comparison.}
+\label{1.1}
+\end{figure}
+
+As briefly introduced, two types of phase-change are used to describe the way the latent heat is released or absorbed during freezing or melting processes:
+\begin{itemize}
+	\item \textbf{Non-isothermal phase-change:} the phase-change takes place within a temperature range yielding a transition zone between a solid and a liquid phase called mushy zone. Typically, the thickness of this region is straightfully proportional to the temperature range in wich the phase-change occurs.
+	\item \textbf{Isothermal phase-change:} the phase-change is arisen instantaneously at the melting temperature. The release or absorption of the latent heat occurs at this point in which, consequently, there is no transition zone between solid and liquid phases. At this point, there is a narrow line, mainly derived from the discretization of the computational domain, characterizing the phase-change phenomena.
+\end{itemize}
+As an important remark, when the mushy region is sufficiently narrow, the isothermal assumption is usually a good approximation. However, despite of the fact of being a convenient approach it may lead to significant complication when it comes to numerical solution techniques. 
+\newline
+Along the next chapters, a more detailed description on existing techniques that deal with such non-trivial phenomena will be given.
+
+\subsection{Water phase-change}
+In a similar manner, the water phase-change takes place. A complex interaction of the molecular forces generate water to behave in a curious way when it gets frozen into ice. The vast majority of substances, when they are cooled, become more dense in the frozen state than when liquid. However, when cooled under a specific temperature, water begins to expand and, once it starts freezing, it becomes less dense than water. 
 \newline
 \subsection{Phase diagram of ice}
 Ice crystals undergo different kinds of structures. Called ice Ih, in the form of hexagonal ice and, manifested in six cornered snow flakes, is the natural ice found in earth. However, at lower pressures below 2 kbar, many other ice structures may exist.
@@ -53,11 +84,11 @@ From C to D, the horizontal axis shows the evolution of the crystal growth in ti
 
 
 \begin{figure}[h]
-	\label{fig:boat1}
-	\centering	
+	\label{1.2}	\centering	
 	\includegraphics[width=0.6\textwidth]{crystallization_of_water.png}
 	\caption{Process of crystallization of water.}
 \end{figure} 
+
 
 \section{Mechanisms of Heat Transfer. Heat convection}
 The process of water freezing in enclosures is common in engineering. When there exist temperature gradients within the liquid phase in the process of solidification, a natural buoyancy driven flow is initiated and such behavior is determined to affect the shape of the liquid/solid interface as well as the progress of solidification.

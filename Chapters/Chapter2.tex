@@ -10,6 +10,8 @@
 \section{State of Art. Numerical Methods} %Description of general numerical methods for phase change 
 Considering the PCM density as constant in the model might be thought as a reasonable assumption in some cases, in others where thermo-mechanical coupling between the fluid and its container is intended, it makes impossible to account for some physical behaviors which may result from expansion or contraction during the phase change of the material. However, the main goal of this thesis is not to present a method that represents thermo-mechanical coupling but a technique that ensures volume expansion due to density changes through the fluid domain.
 To reach this point, it is important to point some of the numerous researches that have been conducted in order to investigate the problem of solidification and melting. 
+\newline
+
 At the present, the main numerical methods representing the treatment of liquid-solid phase change are divided into these categories:
 \begin{itemize}
 	\item Surface tracking methods,
@@ -44,18 +46,21 @@ The volume of fluid method takes relevance when fluids coexist with other phases
 This is sometimes seen as the conservation of the mixture components along the path of a fluid region. The equation which allows that is described as:
 \begin{equation}
 	\frac{\partial \gamma_{\text {phase }}}{\partial t}+\frac{\partial\left(\gamma_{\text {phase }} u_{j}\right)}{\partial x_{j}}=0
+	\label{2.1}
 \end{equation}
 In which $\alpha_{phase}$ corresponds to the phase fraction and it applies
 \begin{equation}
 	\gamma_{phase}= \begin{cases}
 		0 & =\text { solid PCM } \\ 0<\gamma_{phase}<1 & =\text { cell contains the interface } \\ 1 & =\text { liquid } \mathrm{PCM}
 	\end{cases}
+	\label{2.2}
 \end{equation}
 
 \subsection{Enthalpy-Porosity Model. Governing Equations}
 The energy equation based on the enthalpy formulation for convective-diffusive heat transfer states that,
 \begin{equation}
 	\frac{\partial \rho h}{\partial t}+\frac{\partial}{\partial x_{j}}\left(\rho u_{j} h\right)=\frac{\partial}{\partial x_{j}}\left(\lambda \frac{\partial}{\partial x_{j}} T\right)
+	\label{2.3}
 \end{equation}
 
 where \textit{u} is the velocity component and $\lambda$ is the thermal conductivity of the fluid. \textit{h} can be expressed as a function of its latent heat and the specific sensible parts,
@@ -64,12 +69,14 @@ However, the enthalpy-porosity method describes the enthalpy \textit{h} of the m
 The release of the latent heat is dependent on the stage of the phase change, and must be restricted to the phase change material.
 \begin{equation}
 	h=\int_{T_{r}}^{T} c_{p} d T+\alpha_{\ell} L
+	\label{2.4}
 \end{equation}
 where the latent heat is is driven by the evolution of the liquid $\alpha_{l}$. The phase transition is modelled by expressing the liquid volume fraction as a function of the temperature,
 \begin{equation}
 	\alpha_{l}= \begin{cases}
 		1 & T>T_{l i q} \\ \frac{T-T_{\text {sol }}}{T_{\text {liq }}-T_{\text {sol }}+\varepsilon} & T_{\text {sol }}<T<T_{l i q} \\ 0 & T<T_{\text {sol }}
 	\end{cases}
+	\label{2.5}
 \end{equation}
 For seek of brevity on the following expressions, it is adapted the term $\gamma_{phase}$ to $\gamma_{l}$ 
 If expression 2.4 is replaced in 2.3,
@@ -78,6 +85,7 @@ If expression 2.4 is replaced in 2.3,
 		&\frac{\partial\left(\rho c_{p} T + \gamma_{l} \alpha_{l} L\right)}{\partial t}+\frac{\partial\left(\rho u_{j} c_{p} T + u_{j}\gamma_{l} \alpha_{l} L\right)}{\partial x_{j}} \\
 		&=\frac{\partial}{\partial x_{j}}\left(\lambda \frac{\partial T}{\partial x_{j}}\right) 
 	\end{aligned}
+	\label{2.6}
 \end{equation}
 Rearranging terms, it yields,
 \begin{equation}
@@ -85,31 +93,32 @@ Rearranging terms, it yields,
 		\frac{\partial (\rho C_{p} T)}{\partial t}+ \frac{\partial (u_{j}\rho C_{p} T)}{\partial x_{j}}+L\left[\frac{\partial (\rho \alpha_{l}\gamma_{l})}{\partial t}+ \frac{\partial (u_{j}\rho \alpha_{l}\gamma_{l})}{\partial x_{j}}\right]=\frac{\partial}{\partial x_{j}}\left(\lambda \frac{\partial T}{\partial x_{j}}\right)  \\
 		S = -L\left[\frac{\partial (\rho \alpha_{l}\gamma_{l})}{\partial t}+ \frac{\partial (u_{j}\rho \alpha_{l}\gamma_{l})}{\partial x_{j}}\right]
 	\end{aligned}
+	\label{2.7}
 \end{equation}
 The momentum equation is discussed in detail in the sub-chapter \textit{Interphase porosity models}.
 
 \subsection{Lee model}
-The Lee model is based in the liquid-vapour mass transfer. Governed by the vapour transport equation \ref{3.1}, this model is applicable during melting or solidification of a fluid.
+The Lee model is based in the liquid-vapour mass transfer. Governed by the vapour transport equation \ref{2.8}, this model is applicable during melting or solidification of a fluid.
 \begin{equation}
-\label{3.1}
 \frac{\partial}{\partial t}\left(\alpha_{i} \rho_{i}\right)+\nabla\left(\alpha_{i} \rho_{i} {u}_{i}\right)=S_{m _i}
+\label{2.8}
 \end{equation}
 \textit{$\rho_i$} and \textbf{$u_i$} are the fluid density and fluid velocity of the \textit{i{th}} phase. Moreover, $S_{m_i}$ is the mass source which takes on a zero value at the interface.
 \newline
 During melting, $T_l$ > $T_{sat}$,
 \begin{equation}
-\label{3.2}
 \frac{d m_{s l}}{d t}=C_{f} \rho_{s} \alpha_{s}\left(\frac{T_{s}-T_{s a t}}{T_{s a t}}\right)
+\label{2.9}
 \end{equation}
 During solidification, $T_l$ < $T_sat$
 \begin{equation}
-\label{3.3}
+\label{2.10}
 \frac{d m_{l s}}{d t}=C_{f} \rho_{l} \alpha_{l}\left(\frac{T_{s a t}-T_{l}}{T_{s a t}}\right)
 \end{equation}
 The coefficient $C_f$ might be interpreted as a time rate and must be empirically tunned. Its magnitude is expressed in $\frac{1}{s}$. $\alpha$ represents the phase volume fraction. $\frac{d m_{i}}{d t}$ are the mass transfer rates from one phase to another. The subscripts \textit{"s"}, \textit{"l"}, refer to solid and liquid phases respectively. \textit{$T_{sat}$}, is the phase transition temperature which, in case of pure water would be 273.15 K.
-The source term of \ref{3.1} is then calculated as,
+The source term of \ref{2.8} is then calculated as,
 \begin{equation}
-\label{3.4}
+\label{2.11}
 S_{m_{i}}=\left\{\begin{array}{lr}
 \frac{d m_{s l}}{d t}-\frac{d m_{l s}}{d t}, & \text { for water phase } \\
 \frac{d m_{l s}}{d t}-\frac{d m_{s l}}{d t}, & \text { for ice phase }
@@ -118,7 +127,7 @@ S_{m_{i}}=\left\{\begin{array}{lr}
 \subsubsection{Momentum Equation}
 In the momentum equation, the flow is modelled as,
 \begin{equation}
-\label{3.5}
+\label{2.12}
 \begin{aligned}
 &\frac{\partial\left(\rho {u}_{i}\right)}{\partial t}+\frac{\partial\left(\rho {u}_{i} {u}_{j}\right)}{\partial x_{j}} \\
 &\quad=-\alpha_{i} \nabla p+\frac{\partial}{\partial x_{j}}\left(\mu \frac{\partial {u}_{i}}{\partial x_{j}}\right)+F_{\sigma i}+S_{u_{i}}
@@ -126,7 +135,7 @@ In the momentum equation, the flow is modelled as,
 \end{equation}
 The source term for the momentum equation can be written as,
 \begin{equation}
-\label{3.6}
+\label{2.13}
 S_{u_{i}}=\left\{\begin{array}{cr}
 \frac{d m_{s l}}{d t} \textbf{$u_{l}$}-\frac{d m_{l s}}{d t} \textbf{$u_{s},$} & \text { for water phase } \\
 \frac{d m_{l s}}{d t} \textbf{$u_{s}$}-\frac{d m_{s l}}{d t} \textbf{$u_{l}$}, & \text { for ice phase }
@@ -138,12 +147,12 @@ The source terms related to interphase porosity (\ref{2.29}) may be added to the
 \subsubsection{Energy Equation}
 The energy equation for the Lee model can be described as,
 \begin{equation}
-\label{3.7}
+\label{2.14}
 \frac{\partial (\rho C_{p} T)}{\partial t}+\nabla \cdot\left(u_{j}\rho C_{p} T\right)=\nabla \cdot\left(k_{i} \nabla T_{i}\right)+S_{H_{i}}
 \end{equation}
 where the heat source term due to mass transfer in the energy equation is calculated as,
 \begin{equation}
-\label{3.8}
+\label{2.15}
 S_{h_{i}}=\left\{\begin{array}{lr}
 \frac{d m_{s l}}{d t} H_{L,} & \text { for water phase } \\
 \frac{d m_{l s}}{d t} H_{L} & \text { for ice phase }
@@ -162,17 +171,17 @@ As a remark, in this thesis a brief introduction of this theory is given. Howeve
 \subsubsection*{Thermodynamic component}
 This thermodynamic component seeks for the number of critical embryos formed per unit of volume at a specific temperature. A decrease in the enthalpy, and consequently a change in Gibbs free energy required to form an ice embryo containing water molecules generates an energy barrier to nucleation. However, for ice embryo formation, this barrier needs to be overcome. 
 \begin{equation}
-\label{3.9}
+\label{2.16}
 \Delta G_{C}=\underbrace{\Delta G_{V}}_{\text {volume term }}+\underbrace{\Delta G_{S}}_{\text {surface term }}
 \end{equation}
 \begin{equation}
-\label{3.10}
+\label{2.17}
 \Delta G_{c}=-\frac{4}{3} \cdot \frac{\pi r^{3}}{\Omega} \cdot \Delta g_{v}+4 \pi r^{2} \gamma_{s f}
 \end{equation}
 where $r$ is the radius of a simplified spherical embryo, $\gamma_{sf}$ the interfacial tension between phases $\Omega$ the volume of a single molecule $
 \left(\Omega=V_{m, w} / N_{A}\right)$, $V_{m, w}$ is the molar volume and $\Delta g_{v}$ represents the decrease in volume of the Gibbs free energy of a molecule and is defined as:
 \begin{equation}
-\label{3.11}
+\label{2.18}
 \Delta g_{v}=\frac{\Delta_{m} H_{1}}{N_{A}} \frac{\Delta T}{T^{*}}
 \end{equation}
 where $\Delta_{m} H_{1}$ is the molar latent heat of crystallization, $N_{A}$ is the Avogadro's number, $T^{*}$ is the freezing temperature and $\delta T=T^* - T$, the degree of supercooling.
@@ -185,53 +194,53 @@ The critical radius exists when the global enthalpy variation gets negative.
 \newline
 By differentiating Eq. \ref{3.10} and setting $\frac{d(\Delta G_c)}{dr} = 0$, the critical radius is defined as:
 \begin{equation}
-\label{3.12}
+\label{2.19}
 r_{c r i t}=\frac{2 \gamma_{s f} T^{*} V_{m, w}}{\Delta_{m} H_{1} \Delta T}
 \end{equation}
 Then, if subsituting Eq. \ref{3.11} and \ref{3.12} in Eq. \ref{3.10}, it is obtained the energy barrier:
 \begin{equation}
-\label{3.13}
+\label{2.20}
 \Delta G_{c r i t}=\frac{16 \pi}{3} \cdot \frac{\gamma_{s f}^{3} V_{m, w}^{2} T^{2}}{\Delta_{m} H_{1}^{2} \Delta T^{2}}=\frac{1}{3}\left(4 \pi r_{c r i t}^{2} \gamma_{s f}\right)
 \end{equation}
 In \cite{huang_wang_li_2020}, the expression concerning the variation of Gibbs function for the phase change does not include the molar volume of water but a shape coefficient of nucleation. It involves the influence of the contact angle when going from a uniform state to an inhomogeneous. This shape factor is defined as:
 \begin{equation}
-\label{3.13a}
+\label{2.21}
 \alpha_{e y}=\frac{2-3 \cos \theta+\cos \theta^{3}}{4}
 \end{equation}
 
 Temperature and saturation dependent number of ice embryos per unit volume of water may be expressed in a Boltzmann distribution form using $\Delta G$:
 \begin{equation}
-\label{3.14}
+\label{2.22}
 N_{\mathrm{embryo}}\left[\mathrm{m}^{-3}\right]=N_{\mathrm{l}} \cdot \exp \left(-\frac{\Delta G}{k_{\mathrm{B}} T}\right)
 \end{equation}
 where $N_{1}$ is a volume-based number density of water molecules in the liquid phase.
 \subsubsection*{Kinetic component}
 The kinetic part of the nucleation rate is introduced in the form of water molecules flux. This is expressed as a Boltzmann distribution such that:
 \begin{equation}
-\label{3.15}
+\label{2.23}
 \Phi=\frac{k_{B} T}{h} \cdot \exp \left(-\frac{\Delta g}{k_{\mathrm{B}} T}\right)
 \end{equation}
 where \textit{h} is the Planck's physical constant, and $\Delta g$ the activation energy for the transfer of a water molecule across the phase boundary.
 \newline
 The rate at which the water molecules are transferred into an ince embryo is defined as:
 \begin{equation}
-\label{3.16}
+\label{2.24}
 K=n_{\mathrm{s}} \cdot 4 \pi r_{\text {embryo }}^{2} \cdot Z \cdot \Phi
 \end{equation}
 where $n_s$ is the number of molecules and $4 \pi r_{\text {embryo }}^{2}$ is the surface area of the critical embryo and \textit{Z} a kinetic prefactor. For seek of simplification, the authors of the theory suggest that the product of these terms are close to unity. Thus, considering this change, the equation yields as:
 \begin{equation}
-\label{3.17}
+\label{2.25}
 K=\Phi
 \end{equation}
 \subsubsection*{Nucleation rate}
-Combining the thermodynamic component Eq. \ref{3.14} and the kinetic one \ref{3.17}, the formulation of the nucleation rate can be expressed as:
+Combining the thermodynamic component Eq. \ref{3.14} and the kinetic one \ref{2.25}, the formulation of the nucleation rate can be expressed as:
 \begin{equation}
-\label{3.18}
+\label{2.26}
 J_{\mathrm{hom}}\left[\mathrm{m}^{-3} \cdot \mathrm{s}^{-1}\right]=\underbrace{K}_{\text {Kinetics }} \cdot \underbrace{N_{\mathrm{l}} \cdot \exp \left(-\frac{\Delta G}{k_{\mathrm{B}} T}\right)}_{\text {Number of embryos }}
 \end{equation}
 As a final step, inserting Eq. \ref{3.17} into Eq. \ref{3.18}, the nucleation rate is expressed in the form of:
 \begin{equation}
-\label{3.19}
+\label{2.27}
 \begin{aligned}
 J_{\mathrm{hom}}\left[\mathrm{m}^{-3} \cdot \mathrm{s}^{-1}\right]
 =& \frac{k_{B} T}{h} \cdot \underbrace{\exp \left(-\frac{\Delta g^{\#}}{k_{\mathrm{B}} T}\right)}_{\text {diffusion of molecules effect }} \\ 
@@ -247,7 +256,7 @@ Fig. \ref{fig:boat2} characterizes the variation of the crystallization rate in 
 \end{figure} 
 Finally, the coefficient $C_f$ that appears on Equations \ref{3.2} and \ref{3.3} as commented above, is defined for the Lee model as:
 \begin{equation}
-\label{3.20}
+\label{2.28}
 C_f=J_{\mathrm{hom}} \cdot V_{l}
 \end{equation}
 where $V_{l}$ is the volume of water in each cell.
@@ -262,27 +271,30 @@ The two source terms as specified above,
 S_{y}=-A v \\
 S_{z}=-A w
 \end{array}\right.
+\label{2.29}
 \end{equation}
 Then, to specify a term for the function A, it is used the \textit{Carman-Koseny equation}, which is derived from the Darcy law. The former expresses the gradient for the pressure as a combination of the velocity, \textbf{u}, and the porosity, $\lambda$. The coefficient \textit{C} depends on the morphology of the medium.
 \begin{equation}
 gradP=-\left(\frac{C(1-\lambda)^{2}}{\lambda^{3}}\right) \mathbf{u}
+\label{2.30}
 \end{equation}
 To avoid division by zero, \textit{q} is added to the equations shown 
 \begin{equation}
 A=-\left(\frac{C(1-\lambda)^{2}}{\lambda^{3}+q}\right)
+\label{2.31}
 \end{equation}
 The source terms $S_{y}$ and $S_{z}$ are added in the Eq. \ref{3.32} and \ref{3.33}. The source term $S_{b}$ corresponds to the body forces of the fluid and will be discused later on this thesis.
 \begin{equation}
 	\begin{aligned}
 		\frac{\partial(\rho v)}{\partial t}+\operatorname{div}(\rho \mathbf{u} v)=\operatorname{div}(\mu \operatorname{grad} v)-\frac{\partial P}{\partial y}+S_{y} 
 	\end{aligned}
-	\label{3.32}
+	\label{2.32}
 \end{equation}
 \begin{equation}
 	\begin{aligned}
 		\frac{\partial(\rho w)}{\partial t}+\operatorname{div}(\rho \mathbf{u} w)=\operatorname{div}(\mu \operatorname{grad} w)-\frac{\partial P}{\partial z}+S_{z}+S_{b}
 	\end{aligned}
-	\label{3.33}
+	\label{2.33}
 \end{equation}
 \subsubsection{Surface tension model}
 The surface tension is only specified on a phase pair basis. In this version of OpenFOAM, it is present a constant model for a given $\sigma$.
