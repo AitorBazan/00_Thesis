@@ -3,35 +3,41 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {table}{\numberline {1.1}{\ignorespaces Variation of ice density for every phase at 110K.\relax }}{4}{table.caption.15}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {3.1}{\ignorespaces Boundary conditions for natural convection case.\relax }}{23}{table.caption.120}%
+\addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {3.2}{\ignorespaces Water properties for natural convection.\relax }}{23}{table.caption.122}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces Parameters to recover continuity, momentum and energy equations.\relax }}{20}{table.caption.80}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {3.3}{\ignorespaces Discretization schemes.\relax }}{23}{table.caption.124}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces Boundary conditions for natural convection case.\relax }}{30}{table.caption.127}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {3.4}{\ignorespaces Solvers for the discretised equations.\relax }}{24}{table.caption.125}%
+\contentsline {table}{\numberline {3.3}{\ignorespaces Water properties for natural convection.\relax }}{31}{table.caption.129}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {3.5}{\ignorespaces Parameters for the discretised equations.\relax }}{24}{table.caption.126}%
+\contentsline {table}{\numberline {3.4}{\ignorespaces Discretization schemes.\relax }}{31}{table.caption.131}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {3.6}{\ignorespaces Numerical results of Natural convection modified solver between \textit {t = 100s} and \textit {1500s}.\relax }}{27}{table.caption.136}%
+\contentsline {table}{\numberline {3.5}{\ignorespaces Solvers for the discretised equations.\relax }}{32}{table.caption.132}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {3.7}{\ignorespaces Boundary conditions for natural convection case.\relax }}{29}{table.caption.154}%
+\contentsline {table}{\numberline {3.6}{\ignorespaces Parameters for the discretised equations.\relax }}{32}{table.caption.133}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {3.8}{\ignorespaces Boundary conditions for natural convection case.\relax }}{29}{table.caption.155}%
+\contentsline {table}{\numberline {3.7}{\ignorespaces Numerical results of Natural convection modified solver between \textit {t = 100s} and \textit {1500s}.\relax }}{35}{table.caption.143}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {3.9}{\ignorespaces Water properties for natural convection.\relax }}{30}{table.caption.157}%
+\contentsline {table}{\numberline {3.8}{\ignorespaces Boundary conditions for natural convection case.\relax }}{39}{table.caption.164}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {3.10}{\ignorespaces Water properties for solidification.\relax }}{30}{table.caption.158}%
+\contentsline {table}{\numberline {3.9}{\ignorespaces Boundary conditions for natural convection case.\relax }}{39}{table.caption.165}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {3.11}{\ignorespaces Discretization schemes.\relax }}{30}{table.caption.160}%
+\contentsline {table}{\numberline {3.10}{\ignorespaces Water properties for natural convection.\relax }}{40}{table.caption.167}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {3.12}{\ignorespaces Solvers for the discretised equations.\relax }}{31}{table.caption.161}%
+\contentsline {table}{\numberline {3.11}{\ignorespaces Water properties for solidification.\relax }}{40}{table.caption.168}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {3.13}{\ignorespaces Parameters for the discretised equations.\relax }}{31}{table.caption.162}%
+\contentsline {table}{\numberline {3.12}{\ignorespaces Discretization schemes.\relax }}{40}{table.caption.170}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {3.13}{\ignorespaces Solvers for the discretised equations.\relax }}{41}{table.caption.171}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {3.14}{\ignorespaces Parameters for the discretised equations.\relax }}{41}{table.caption.172}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

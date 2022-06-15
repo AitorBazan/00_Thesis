@@ -12,25 +12,31 @@ Considering the PCM density as constant in the model might be thought as a reaso
 To reach this point, it is important to point some of the numerous researches that have been conducted in order to investigate the problem of solidification and melting. 
 \newline
 
-At the present, the main numerical methods representing the treatment of liquid-solid phase change are divided into these categories:
+At the present, the main used numerical methods representing the treatment of liquid-solid phase change are divided into these categories:
 \begin{itemize}
-	\item Surface tracking methods,
-	\item Volume tracking methods,
-	\item Moving mesh methods,
+	\item Front tracking method,
+	\subitem Volume-of-fluid method,
+	\subitem Level set method,
+	\item Enthalpy method,
+	\item Phase field method.
 \end{itemize}
-\subsection*{Surface tracking methods}
-
-\subsection*{Volume tracking methods}
-
-\subsection*{Moving mesh methods}
-
+\subsection{Front tracking method}
+Several studies are carried out with this method. Juric et al. [\cite{juric_tryggvason_1996}], presented a front-tracking method based on a finite differentce approach of the heat equation and an explicit tracking of the fluid-solid interface to simulate time dependent two-dimensional dendritic solidification of pure substances. In similar fields, Al-Rawahi et al. [\cite{al-rawahi_tryggvason_2002}] underwent also simulations of dendritic growth of pure substances by using front-tracking methods in which the fluid-solid interface was tracked explicitly and the release of latent heat during solidification was calculated with the normal temperature gradient near the interface. Garimella et al. [\cite{i_garimella_simpson_2003}] proposed an explicit interface-tracking scheme involving reconstruction and advection of the moving interface in a fixed grid to solve moving-boundary problems associated with phase-change phenomena. As they describe, the movement of the interface is tackled first by advection and tracking of the interface, later by the calculation of normal velocities near the interface region and finally, by solding the governing equations for the existing phases.
+\subsection*{Volume-of-fluid method}
+Initially introduced by Harlow et al. [\cite{harlow_welch_1965}], a technique called the marker and cell method tracked the interface by wightless particles which were transported convectively by the velocity of the fluid. Cells that were filled with marked particles were considered occupied by the fluid while, contrarily, these which were not filled with marked particles were not occupied by fluid. Later in time, the idea was extended to track the interface based on phase fractions in the volume-of-fluid method which is discussed in detail below.
+\subsection*{Level set method}
+In the field of the current technique, Tan et al. [\cite{tan_zabaras_2007}] conducted a level set method combining properties of both fixed domain and front-tracking methods to model the microstructure evolution in multi-component alloy solidification. Phase interface is tracked by solving the multi-phase level set equations. From this tracked interface, a diffused one is constructed by means of the level set functions. Volume-averaging methods are latter used to solve energy, species and momentum equations.  Rauschenberger et al. [\cite{rauschenberger_criscione_eisenschmidt_kintea_jakirlic_tukovic_roisman_weigand_tropea_2013}] pursued a comparative assessment between a Level set approach and a volume-of-fluid method to track interfaces in the context of dendritic ice growth in supercooled water. The Level Set method is used as an implicit tracking of the moving boundary.
+\subsection{Enthalpy method}
+In 2004, Esen et al. [\cite{esen_kutluay_2004}] worked out an enthalpy method based on finite difference approximations applied to the Stefan problem. An enthalpy function is defined representing the total heat content per unit of mass of the material. The need of tracking the interface between the fluid and the solid phase is thereby removed when using such formulation. El Ganaoui et al. [\cite{el ganaoui_lamazouade_bontoux_morvan_2002}] presented an enthalpy-porosity formulation on a fixed grid framework for liquid-to-solid phase transition. The method is extended to solve time-dependent solutal convection in the melt during directional solidification that undergo the majority of alloys. Within the alloy research field, Voller et al. [\cite{voller_2008}] developed an enthalpy fixed grid method for dendritic growth modeling in under-cooled binary alloys. This method is devoted to couple explicit finite differences expressing the conservation of enthalpy and solute to an iterative scheme which enforces node-to-node consistency between solute, liquid-fraction, enthalpy and under-cooling interface.
+\subsection{Phase field method}
+Emerged as an approach to model and predict mesoscale morphological and microstructure evolution in materials, Chen et al. [\cite{chen_2002}] reviews some phase-field models used to describe various materials processes including solidification, crack propagation and dislocation microstructures among others. This paper describes the capability of phase-field methods to predict the evolution of arbirtary morphologies and complex microstructures without explicitly tracking the evolution of the interface.
 \section{Solidification methods}
-The challenge of a numerical investigation of a solidification process is to capture the free surface for the flow of the phase change material and, at the same time, account for the moving boundary induced by the phase change within the PCM. The free surface may be handled by the volume-of-fluid (VOF), originally introduced by [ref Hirt]. VOF relies on the definition of a transport indicator function within the finite volume method's framework.
+The challenge of a numerical investigation of a solidification process is to capture the free surface for the flow of the phase change material and, at the same time, account for the moving boundary induced by the phase change within the PCM. The free surface may be handled by the volume-of-fluid (VOF), originally introduced by [\cite{hirt_nichols_1981}]. VOF relies on the definition of a transport indicator function within the finite volume method's framework.
 Simultaneously, and in order to account for the phase changes, some of the used models are based on meso-scale. This is the phenomena occurring between microscopic and continuum length scales and, in the current context, the complex micro structure generated during the solidification is approximated as liquid, mushy (intermediate state), and solid regions. Mushy region is thereby described as an averaged value of the liquid and solid properties.
 \newline
-\indent One of the most used methods is the enthalpy-porosity technique, originally developed by Voller and Prakash [ref. Voller], which uses the typical conservation equations on a fixed Eulerian grid. The main concepts underlaying such method are: on the one side, an additional source term to the energy conservation equation is applied to describe the release of latent heat. On the other side, the solidification effects on the mass transport are modelled as a porosity variable and this is introduced as a Darcy-type source term to the momentum equation.
+\indent One of the most used methods is the enthalpy-porosity technique, originally developed by Voller and Prakash [\cite{voller_prakash_1987}], which uses the typical conservation equations on a fixed Eulerian grid. The main concepts underlaying such method are: on the one side, an additional source term to the energy conservation equation is applied to describe the release of latent heat. On the other side, the solidification effects on the mass transport are modelled as a porosity variable and this is introduced as a Darcy-type source term to the momentum equation.
 \newline
-\indent Some of the studies found on this topic, the coupling of both VOF and enthalpy-porosity methods are mainly related to casting processes. Rösler and Brüggermann [ref] introduced a numerical model for a solid-liquid phase change inside a latent heat thermal energy storage. Richter et al. [ref] worked out a method for the simultaneous moult filling and solidification process which settles the developing of free surface flow and the liquid-solid phase transition under the volume-of-fluid and enthalpy-porosity methods.
+\indent Some of the studies found on this topic, the coupling of both VOF and enthalpy-porosity methods are mainly related to casting processes. Rösler and Brüggermann [\cite{rösler_brüggemann_2011}] introduced a numerical model for a solid-liquid phase change inside a latent heat thermal energy storage. Richter et al. [ref] worked out a method for the simultaneous moult filling and solidification process which settles the developing of free surface flow and the liquid-solid phase transition under the volume-of-fluid and enthalpy-porosity methods.
 However, no adaptation of these methods to purely solidification processes has been found. Therefore, and, the objectives of this research are:
 \begin{itemize}
 	\item To introduce a new solver based on the coupling of VOF and enthalpy-porosity techniques which covers the relevant physical effects during the process of solidification.
@@ -41,21 +47,32 @@ Numerical methods commented are briefly described next.
 %% Present Lee model
 On the other hand, semi-empirical methods ...
 \subsection{Volume-of-Fluid Method: General Aspects}
-The volume of fluid method takes relevance when fluids coexist with other phases. An example could be the ice (solid phase) advancing front within the liquid phase. The surface in between both phases needs to be solved by means of the volume of fluid technique.
+The Volume-of-fluid method (VOF) is a numerical method based on an Eulerian approach to track the free surface in a two-phase flow.
+The VOF method, developed by Hirt and Nichols in 1981 \cite{hirt_nichols_1981}, takes relevance when fluids coexist with other phases. An example could be the ice (solid phase) advancing front within the liquid phase. The surface in between both phases needs to be solved by means of the volume of fluid technique.
 \newline
 This is sometimes seen as the conservation of the mixture components along the path of a fluid region. The equation which allows that is described as:
 \begin{equation}
-	\frac{\partial \gamma_{\text {phase }}}{\partial t}+\frac{\partial\left(\gamma_{\text {phase }} u_{j}\right)}{\partial x_{j}}=0
+	\frac{\partial \alpha_{\text {phase }}}{\partial t}+\frac{\partial\left(\alpha_{\text {phase }} u_{j}\right)}{\partial x_{j}}=0
 	\label{2.1}
 \end{equation}
 In which $\alpha_{phase}$ corresponds to the phase fraction and it applies
 \begin{equation}
-	\gamma_{phase}= \begin{cases}
-		0 & =\text { solid PCM } \\ 0<\gamma_{phase}<1 & =\text { cell contains the interface } \\ 1 & =\text { liquid } \mathrm{PCM}
+	\alpha_{phase}= \begin{cases}
+		0 & =\text { solid PCM } \\ 0<\alpha_{phase}<1 & =\text { cell contains the interface } \\ 1 & =\text { liquid } \mathrm{PCM}
 	\end{cases}
 	\label{2.2}
 \end{equation}
-
+\clearpage
+As Eq. \ref{2.1} exposes, the principle that lies behind the method is the definition of the phase field ($\alpha$), which has a value between '0' and '1'. The value of '1' corresponds to any point filled with fluid and zero otherwise. Thus, the average value of $\alpha$	in a cell indicates the fractional volume of that cell occupied by the fluid. Consequently, if a cell has an average value of $\alpha=1$ implies a fully filled cell of fluid and oppositely, a value of $\alpha=0$ means that the fluid is not present in the cell. However, a cell presenting an average value between 0 and 1 would lead the presence of an interface in that region as it is clearly seen in Fig. \ref{2.1fig}.
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=.55\linewidth]{Volume-of-Fluid-approach.jpg}	
+	\label{2.1fig}
+	\caption{Volume-of-fluid approach.}
+\end{figure} 
+Near the interface, it clearly exists a jump in the fluid properties that need to be corrected by properly averaging phase properties in that region.
+\newline
+In the present study, this method is used in conjunction with other techniques to carry out some cases undergoing phase-transition phenomena.
 \subsection{Enthalpy-Porosity Model. Governing Equations}
 The energy equation based on the enthalpy formulation for convective-diffusive heat transfer states that,
 \begin{equation}

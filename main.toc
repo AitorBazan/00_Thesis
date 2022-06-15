@@ -11,140 +11,158 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.1}Thesis Statement. Background and motivation}{1}{section.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}Phase-Change Process}{1}{section.9}%
+\contentsline {section}{\numberline {1.2}Phase-Change Process}{2}{section.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.1}Water phase-change}{2}{subsection.11}%
+\contentsline {subsection}{\numberline {1.2.1}Water phase-change}{3}{subsection.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.2}Phase diagram of ice}{2}{subsection.12}%
+\contentsline {subsection}{\numberline {1.2.2}Phase diagram of ice}{3}{subsection.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.3}Properties of ice}{3}{subsection.13}%
+\contentsline {subsection}{\numberline {1.2.3}Properties of ice}{3}{subsection.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.4}Freezing phenomena}{3}{subsection.14}%
+\contentsline {subsection}{\numberline {1.2.4}Freezing phenomena}{4}{subsection.16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.3}Mechanisms of Heat Transfer. Heat convection}{3}{section.16}%
+\contentsline {section}{\numberline {1.3}Mechanisms of Heat Transfer. Heat convection}{5}{section.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.4}Conjugate Heat Transfer. Heat conduction}{4}{section.17}%
+\contentsline {section}{\numberline {1.4}Conjugate Heat Transfer. Heat conduction}{5}{section.19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Numerical Methods for Phase-Change Phenomena}{5}{chapter.18}%
+\contentsline {chapter}{\numberline {2}Numerical Methods for Phase-Change Phenomena}{7}{chapter.20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}State of Art. Numerical Methods}{5}{section.19}%
+\contentsline {section}{\numberline {2.1}State of Art. Numerical Methods}{7}{section.21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Solidification methods}{5}{section.23}%
+\contentsline {subsection}{\numberline {2.1.1}Front tracking method}{7}{subsection.22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}Volume-of-Fluid Method: General Aspects}{6}{subsection.24}%
+\contentsline {subsection}{\numberline {2.1.2}Enthalpy method}{8}{subsection.25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.2}Enthalpy-Porosity Model. Governing Equations}{6}{subsection.27}%
+\contentsline {subsection}{\numberline {2.1.3}Phase field method}{9}{subsection.26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.3}Lee model}{7}{subsection.33}%
+\contentsline {section}{\numberline {2.2}Solidification methods}{9}{section.27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.3.1}Momentum Equation}{8}{subsubsection.38}%
+\contentsline {subsection}{\numberline {2.2.1}Volume-of-Fluid Method: General Aspects}{10}{subsection.28}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.3.2}Energy Equation}{8}{subsubsection.41}%
+\contentsline {subsection}{\numberline {2.2.2}Enthalpy-Porosity Model. Governing Equations}{11}{subsection.32}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.3.3}Classical nucleation theory. The coefficient $C_f$.}{8}{subsubsection.44}%
+\contentsline {subsection}{\numberline {2.2.3}Lee model}{12}{subsection.38}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.4}Interphase porosity models}{11}{subsection.62}%
+\contentsline {subsubsection}{\numberline {2.2.3.1}Momentum Equation}{13}{subsubsection.43}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.4.1}Surface tension model}{12}{subsubsection.68}%
+\contentsline {subsubsection}{\numberline {2.2.3.2}Energy Equation}{13}{subsubsection.46}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Numerical Simulation of Solidification Process}{13}{chapter.69}%
+\contentsline {subsubsection}{\numberline {2.2.3.3}Classical nucleation theory. The coefficient $C_f$.}{13}{subsubsection.49}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}OpenFOAM. General Aspects}{13}{section.70}%
+\contentsline {subsection}{\numberline {2.2.4}Interphase porosity models}{17}{subsection.67}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.1}The finite volume method}{13}{subsection.71}%
+\contentsline {subsubsection}{\numberline {2.2.4.1}Surface tension model}{17}{subsubsection.73}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.2}OpenFOAM functioning}{14}{subsection.76}%
+\contentsline {chapter}{\numberline {3}Numerical Simulation of Solidification Process}{19}{chapter.74}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.3}Boundary Conditions Directory}{15}{subsection.78}%
+\contentsline {section}{\numberline {3.1}OpenFOAM. General Aspects}{19}{section.75}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.4}Constant Properties Directory}{15}{subsection.79}%
+\contentsline {subsection}{\numberline {3.1.1}The finite volume method}{19}{subsection.76}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.5}System Directory}{15}{subsection.80}%
+\contentsline {subsection}{\numberline {3.1.2}OpenFOAM functioning}{20}{subsection.82}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Solidification process. Methodology}{16}{section.81}%
+\contentsline {subsubsection}{\numberline {3.1.2.1}Boundary Conditions Directory}{21}{subsubsection.84}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}OpenFOAM: BuoyantBoussinesqPimpleFOAM. Natural Convection solver}{17}{section.82}%
+\contentsline {subsubsection}{\numberline {3.1.2.2}Constant Properties Directory}{21}{subsubsection.85}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.1}Case Description}{17}{subsection.83}%
+\contentsline {subsubsection}{\numberline {3.1.2.3}System Directory}{21}{subsubsection.86}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.2}Hypotheses And Assumptions}{17}{subsection.85}%
+\contentsline {section}{\numberline {3.2}Solidification process. Methodology}{22}{section.87}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.3}Governing Equations}{18}{subsection.88}%
+\contentsline {section}{\numberline {3.3}OpenFOAM: BuoyantBoussinesqPimpleFOAM. Natural Convection solver}{23}{section.88}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.3.3.1}Momentum Equation}{18}{subsubsection.90}%
+\contentsline {subsection}{\numberline {3.3.1}Case Description}{23}{subsection.89}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.3.3.2}Temperature Equation}{19}{subsubsection.97}%
+\contentsline {subsection}{\numberline {3.3.2}Hypotheses And Assumptions}{23}{subsection.91}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.4}Solver descripton. Control Loop}{19}{subsection.100}%
+\contentsline {subsection}{\numberline {3.3.3}Governing Equations}{24}{subsection.94}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.5}Code implementations}{20}{subsection.102}%
+\contentsline {subsubsection}{\numberline {3.3.3.1}Momentum Equation}{25}{subsubsection.96}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.6}Case Setup}{22}{subsection.118}%
+\contentsline {subsubsection}{\numberline {3.3.3.2}Temperature Equation}{25}{subsubsection.103}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.7}Validation of Results and Conclusions}{24}{subsection.127}%
+\contentsline {subsection}{\numberline {3.3.4}Solver descripton. Control Loop}{26}{subsection.106}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}OpenFOAM: IcoReactingMultiphaseInterFOAM. Phase-Change Process}{28}{section.137}%
+\contentsline {subsection}{\numberline {3.3.5}Code implementations}{27}{subsection.108}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}Case Description.}{28}{section.138}%
+\contentsline {subsection}{\numberline {3.3.6}Case Setup}{29}{subsection.124}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5.1}Hypotheses And Assumptions}{28}{subsection.139}%
+\contentsline {subsection}{\numberline {3.3.7}Validation of Results and Conclusions}{32}{subsection.134}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5.2}Governing Equations}{28}{subsection.145}%
+\contentsline {section}{\numberline {3.4}OpenFOAM: IcoReactingMultiphaseInterFOAM. Phase-Change Process}{36}{section.144}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.5.2.1}Momentum Equation}{28}{subsubsection.146}%
+\contentsline {section}{\numberline {3.5}Case Description.}{36}{section.145}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.5.2.2}Energy Equation}{28}{subsubsection.147}%
+\contentsline {subsection}{\numberline {3.5.1}Hypotheses And Assumptions}{36}{subsection.147}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5.3}Solver description. Control Loop}{28}{subsection.148}%
+\contentsline {subsection}{\numberline {3.5.2}Governing Equations}{37}{subsection.153}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5.4}Phase models}{29}{subsection.149}%
+\contentsline {subsubsection}{\numberline {3.5.2.1}Momentum Equation}{37}{subsubsection.154}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5.5}Mass transfer models}{29}{subsection.150}%
+\contentsline {subsubsection}{\numberline {3.5.2.2}Energy Equation}{37}{subsubsection.155}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5.6}Code implementations}{29}{subsection.151}%
+\contentsline {subsection}{\numberline {3.5.3}Solver description. Control Loop}{37}{subsection.156}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5.7}Case Setup}{29}{subsection.152}%
+\contentsline {subsection}{\numberline {3.5.4}Phase models}{37}{subsection.157}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5.8}Validation of Results and Conclusions}{30}{subsection.163}%
+\contentsline {subsection}{\numberline {3.5.5}Mass transfer models}{38}{subsection.158}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.5.8.1}Stefan Problem}{31}{subsubsection.165}%
+\contentsline {subsection}{\numberline {3.5.6}Code implementations}{38}{subsection.159}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.5.8.2}Interface height}{33}{subsubsection.171}%
+\contentsline {subsection}{\numberline {3.5.7}Case Setup}{39}{subsection.162}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Numerical Simulation of Heat Transfer}{35}{chapter.173}%
+\contentsline {subsection}{\numberline {3.5.8}Validation of Results and Conclusions}{39}{subsection.173}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}OpenFOAM: chtMultiphaseInterFOAM. Conjugate Heat Transfer}{35}{section.174}%
+\contentsline {subsubsection}{\numberline {3.5.8.1}Stefan Problem}{41}{subsubsection.176}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.1}Case description}{36}{subsection.181}%
+\contentsline {subsubsection}{\numberline {3.5.8.2}Interface height}{44}{subsubsection.182}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.2}Hypotheses And Assumptions}{36}{subsection.182}%
+\contentsline {chapter}{\numberline {4}Numerical Simulation of Heat Transfer}{45}{chapter.184}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.3}Governing Equations of the Fluid Region}{36}{subsection.183}%
+\contentsline {section}{\numberline {4.1}OpenFOAM: chtMultiphaseInterFOAM. Conjugate Heat Transfer}{45}{section.185}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.4}Governing Equations of the Solid Region}{36}{subsection.184}%
+\contentsline {subsection}{\numberline {4.1.1}Case description}{46}{subsection.192}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.1.4.1}Energy Equation}{36}{subsubsection.185}%
+\contentsline {subsection}{\numberline {4.1.2}Hypotheses And Assumptions}{46}{subsection.193}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.5}Solver description. Control Loop}{36}{subsection.187}%
+\contentsline {subsection}{\numberline {4.1.3}Governing Equations of the Fluid Region}{46}{subsection.194}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.6}Code implementations}{37}{subsection.189}%
+\contentsline {subsection}{\numberline {4.1.4}Governing Equations of the Solid Region}{46}{subsection.195}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.7}Case Setup}{37}{subsection.190}%
+\contentsline {subsubsection}{\numberline {4.1.4.1}Energy Equation}{46}{subsubsection.196}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.1.7.1}Boundary conditions}{37}{subsubsection.191}%
+\contentsline {subsection}{\numberline {4.1.5}Solver description. Control Loop}{46}{subsection.198}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.8}Validation of Results and Conclusions}{37}{subsection.197}%
+\contentsline {subsection}{\numberline {4.1.6}Code implementations}{47}{subsection.200}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Conclusions}{39}{chapter.198}%
+\contentsline {subsection}{\numberline {4.1.7}Case Setup}{47}{subsection.201}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Future Works}{41}{chapter.199}%
+\contentsline {subsubsection}{\numberline {4.1.7.1}Boundary conditions}{47}{subsubsection.202}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}}{43}{appendix.200}%
+\contentsline {subsection}{\numberline {4.1.8}Validation of Results and Conclusions}{47}{subsection.208}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}Enthalpy-porosity library}{43}{section.201}%
+\contentsline {chapter}{\numberline {5}Conclusions}{49}{chapter.209}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}Lee-Nucleation library}{43}{section.202}%
+\contentsline {chapter}{\numberline {6}Future Works}{51}{chapter.210}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.3}chtMultiphaseInterFoam solver}{43}{section.203}%
+\contentsline {chapter}{\numberline {A}Appendix A: Solidification models}{53}{appendix.211}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{45}{appendix*.204}%
+\contentsline {section}{\numberline {A.1}Enthalpy-porosity library}{53}{section.212}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.1.1}mySolidificationMeltingSource.H}{53}{subsection.213}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.1.2}mySolidificationMeltingSource.C}{59}{subsection.214}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.1.3}mySolidificationMeltingSourceTemplates.C}{64}{subsection.215}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.2}Lee-Nucleation library}{67}{section.216}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.2.1}LeeCNT.H}{67}{subsection.217}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.2.2}LeeCNT.C}{73}{subsection.218}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.3}Python code for Stefan Problem}{81}{section.219}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {B}Appendix B: Solver implementations}{87}{appendix.220}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.1}chtMultiphaseInterFoam solver}{87}{section.221}%

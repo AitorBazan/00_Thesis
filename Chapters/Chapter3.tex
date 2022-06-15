@@ -25,6 +25,20 @@ The continuity equation, the Navier-Stokes equations and, the heat equation stat
 \end{equation}
 where $V_{P}$ is the control volume cell, $\phi$ may be any scalar or vectorial variable of the continuum, $\Gamma_{\phi}$ is the diffusivity of the variable and $S_{\phi}$ is a source term. 
 \newline
+In order to recover the continuity, momentum and energy equations, the parameters shown in table \ref{fig:transportEq.} need to be shaped in the transport equation.
+\begin{table}[h!]
+	\begin{tabular}{@{}lllll@{}}
+		\toprule[1pt]
+		\textbf{Equation} & \textbf{$\phi$} & \textbf{$\Gamma_{\phi}$} & \textbf{$S_{\phi}$}  \\ \midrule[2pt]
+		\textbf{Continuity} & 1 & 0 & 0  \\
+		\textbf{Momentum} & $\vec{u}u$ & $\nu$ & -$\nabla p$\\
+		\textbf{Energy} & $C_{p}T$ & $\kappa$ & 0\\ \bottomrule[1pt]		
+	\end{tabular}
+	\centering
+	\caption{Parameters to recover continuity, momentum and energy equations.}	
+	\label{fig:transportEq.}
+\end{table}
+
 The fluid variable is defined as a ratio of itself integrated along the volume cell. Thus, it yelds the following form,
 \begin{equation}
 \phi=\phi_{P}=\frac{1}{V_{p}} \int_{V_{P}} \phi(x) d V
@@ -88,11 +102,11 @@ In the folder structure tree shown in Fig. \ref{fig:structureOF}, it is shown a 
 	\caption{General structure of an OpenFOAM case.}
 \end{figure}
 
-\subsection{Boundary Conditions Directory}
+\subsubsection{Boundary Conditions Directory}
 The "0" directory gathers all the boundary conditions at time zero and the initial conditions to set up the case. As the simulation starts running, the information of these fields is saved in folders at every timestep.
-\subsection{Constant Properties Directory}
+\subsubsection{Constant Properties Directory}
 The "constant" directory contains all the information typically regarding the physical properties which are kept constant through the simulation. Moreover, once the dictionary \textit{blockMeshDict} is run, OpenFOAM creates a folder called \textit{polyMesh} containing all the information relevant to the mesh (points, faces,...) 
-\subsection{System Directory}
+\subsubsection{System Directory}
 This folder contains the files required by the control of the solver and the solution itself. The most common files are:
 \begin{itemize}
 	\item \textbf{blockMeshDict:} in this file the parameters required to build up the computational domain, the mesh and the boundaries are found. The command \textbf{blockMesh} executes this dictionary creating the \textit{polyMesh} folder commented above.
@@ -143,7 +157,7 @@ On the other hand, the Rayleigh number is referred to the time scale relation be
 \end{equation}
 Being \textit{g}, the gravity, \textit{$\beta$}, the coefficient of thermal expansion, \textit{$\nu$}, the kinematic viscosity, \textit{$\alpha$}, the thermal diffusivity, and \textit{$T_{s}$} and \textit{$T_{\mathrm{inf}}$}, the temperature on the wall surface and the temperature of the fluid far from the wall accordingly.
 \newline
-In the current case-scenario, a Prandtl close to 7 and a Rayleigh of 2517629 determine a convective heat transfer.
+In the current case-scenario, a Prandtl close to 7 and a Rayleigh of 2517629 determine a convective heat transfer. The values used to estimate the Rayleigh number calculation are: $\beta = 6.734e-5 K^{-1}$, $\nu = 1.003e-6 m^{2}.s^{-1}$, $\alpha = 1.435e-7 m^{2}.s^{-1}$, $T_{s} = 283 K$, $T_{inf} = 273 K$ and $x = 0.038 m$. The values used for the laminar Prandtl number calculation are: $\mu = 0.001003 Kg.m^{-1}.s^{-1}$, $\lambda = 0.6 W.m^{-1}.K^{-1}$ and $C_{p}=4182 J.Kg.K^{-1}$.
 \newline
 \textbf{Newtonian fluid:} The viscosity of the fluid is assumed to be constant.
 \newline
@@ -191,14 +205,14 @@ where the polynomial expression from $\rho$ is:
 		&+8.78462866500416 .10^{-5} \times T^{3} 
 		-6.62139792627547 .10^{-7} \times T^{4}
 	\end{aligned}
-	\label{3.9}
+	\label{3.9a}
 \end{equation}
 As it will be pointed out later, the native solver uses the Boussinesq approximation to account for the buoyancy effects. However, this linear assumption is only valid as the density variations meet:
 \begin{equation}
 \frac{\Delta \rho}{\rho_{r}}<<1
 \label{3.10}
 \end{equation}
-Therefore, to account for the inversion points present during the freezing process, a density variation like the described in \ref{polydens} is implemented in the solver.
+Therefore, to account for the inversion points present during the freezing process, a density variation like the described in \ref{3.9a} is implemented in the solver.
 
 \subsubsection{Temperature Equation}
 The temperature equation representing the convection phenomena yields as:
@@ -312,7 +326,7 @@ If one tries to describe the discretized pressure equation in \textit{buoyantBou
 	\Phi_{f}^{\nu+1}=\Phi_{u}^{\nu+1} - \left[(\textbf{g} \cdot \textbf{x})_{f}\left(\nabla \rho_{r}{ }^{n+1}\right)_{f}+(\textbf{g} \cdot \textbf{x})_{f}\left(\nabla \rho(T){ }^{n+1}\right)_{f}\right]\frac{\left|\textbf{S}_{f}\right|}{\left(a_{P}\right)_{f}}
 	\label{3.20}
 \end{equation}
-A face flux calculated by the term \textbf{H}(\textbf{v}), appearing in equation \ref{label}
+A face flux calculated by the term \textbf{H}(\textbf{v}), appearing in equation \ref{3.16}
 \begin{equation}
 \Phi_{u}^{\nu+1}=\Phi_{f}^{\nu+1} + \left(\frac{H\left(\textbf{v}^{\nu}\right)}{a_{P}}\right)_{f} \cdot \textbf{S}_{f}+\left(\frac{1}{a_{P}}\right)_{f}\operatorname{ddt} \operatorname{PhiCorr}\left(\textbf{v}^{\nu}, \Phi^{\nu}\right)
 \label{3.21}
@@ -354,7 +368,15 @@ p = p_{r g h} + (\rho_{r}-\rho(T))\textbf{g}\cdot \textbf{x}
  
 \subsection{Case Setup}
 Once the implementation is done, a first case is studied with the existing solver, \textit{buoyantBoussinesqPimpleFoam}. 
-The boundary conditions, thermophysical properties and some other solver parameters are described along the following subsections:
+The boundary conditions, thermophysical properties and some other solver parameters are described along the following subsections.
+\newline
+As commented before, all studies are calculated on a computational domain of \textit{38mm x 38mm}. 
+\begin{figure}[h]
+	\label{3.43}	\centering	
+	\includegraphics[width=0.6\textwidth]{domain.png}
+	\caption{Setting of computational domain.}
+\end{figure} 
+
 \subsubsection*{Boundary conditions}
 Five boundaries are defined in the current case:
 \newline
@@ -380,6 +402,7 @@ Five boundaries are defined in the current case:
 	\caption{Boundary conditions for natural convection case.}	
 	\label{fig:boundaryCdsNaturalConvection}
 \end{table}
+
 
 \subsubsection*{Thermophysical properties}
 \begin{table}[h!]
@@ -537,9 +560,13 @@ In order to compare consistently the obtained results with those of the literatu
 
 \clearpage
 \section{OpenFOAM: IcoReactingMultiphaseInterFOAM. Phase-Change Process}
-The solidification process is assessed in the framework of an existing multiphase solver. 
+The solidification process is assessed in this section with two elaborated models. Both of the models are implemented within a multiphase solver based on the volume of fluid technique. This technique aims to capture interface and enhances contact angle and surface tension for each phase. Thus, the first model is based on the coupling of the VOF and the enthalpy-porosity method. To accomplish the inclusion of the enthalpy-porosity method, a library in which the latent heat is implemented as an explicit source term for the energy equation in the solver. On the other hand, the second model uses the VOF method combined with a semi-empirical model based on the work of Lee. The empirical constant is adapted here to be used in conjunction with the use of the \textit{Classical Nucleation Theory}.
 \section{Case Description.}
-In the context of the solidification process, two regular geomtries are created: A squared and cylindrical plane geometries. 
+Two regular geomtries are created: a squared cavity, used in the pure convection case and cylindrical plane geometry. Both geometries test both solidification models.
+\begin{figure}[h!]
+	\includegraphics[width=0.6\linewidth]{cylinder_geom.png}\hfill	
+	\caption{Cylinder.}\label{3.4efig}
+\end{figure}
 
 \subsection{Hypotheses And Assumptions}
 To carry out the phase-transition process, some assumptions are taken into account so as to simplify the multiphysics ocurring during such arising phenomena. 
@@ -570,18 +597,20 @@ The solution of the system of equations given by the multiphase solver relies on
 Therefore, due to the commented before, the buoyancy terms appearing on the RHS of the momentum equation, are implemented on the pressure equation.
 
 \subsubsection{Momentum Equation}
-
+The momentum equation has the same terms as per each one of the models.
 \subsubsection{Energy Equation}
+On the other side, the energy equation slightly differs from one model to the other. As pointed out before, here there are recalled both energy equations.
 
 \subsection{Solver description. Control Loop}
 IcoReactingMultiphaseInterFoam solver is a multiphase, multicomponent incompressible solver based on volume of fluid method. The solver captures the interfaces and includes contact angle and surface tension effects for each phase. Moreover, this solver supports mass and heat transfer across phases.
 \subsection{Phase models}
-The solver presents three phase model types:
+The solver allows for the use of three phase model types:
 \begin{itemize}
 	\item \textbf{pureStaticSolidPhaseModel:} For pure static phase, like a solid.
 	\item \textbf{pureMovingPhaseModel:} For pure moving phase, like a fluid.
 	\item \textbf{multiComponentMovingPhaseModel:} For multi-component moving phase, like a multi-component fluid.
 \end{itemize}
+In the current case-scenario, the \textit{pureStaticSolidPhaseModel} is selected for the solid phase and the \textit{pureMovingPhaseModel} is used for the liquid phase. 
 \subsection{Mass transfer models}
 For each pair of phases, two mass transfer models might be used:
 \begin{itemize}
@@ -596,7 +625,27 @@ In this thesis, only the Lee model will be considered for further explanation.
 
 
 
+
 \subsection{Code implementations}
+Within the entrophy-porosity model, the source term belonging to the calculation of the latent heat is added within the OpenFOAM framework. The energy equation of the solver shown in [ref].
+\begin{figure}[h!]
+	\includegraphics[width=0.6\linewidth]{TEqn.png}\hfill	
+	\caption{Energy equation of IcoReactingMultiphaseInterFoam.}\label{}
+\end{figure}
+In the RHS of the equation, the solver calls the library \textit{mySolidificationMeltingSource} that calculates the latent heat source term as it appears in the Energy equation shown below.
+\begin{figure}[h!]
+	\includegraphics[width=0.6\linewidth]{solidificationMeltingSource.png}\hfill	
+	\caption{Latent heat source term present in mySolidificationMeltingSource library.}\label{}
+\end{figure}
+This library is adapted to be used in this solver. It exists in the context of being used for other solvers. Here, the alpha variable showing up in the calculation is obtained through a linear expression that gives the amount of energy contained in the fluid cell above the melting point. This is divided by the latent heat to obtain the liquid fraction. Then, this fraction is constained between 0 and 1. 
+\newline
+The latent heat source term is afterwards weighted by the volume fraction calculated by means of the transport equation in the context of the volume of fluid method as it appears in Richter et al. 
+\newline
+
+The \textbf{rhoCpPhi} term, which is called in this library, is created in \textit{createFields.H} as a variable field so that it can be called from everywhere within the code.
+ 
+The implemented library can be found in the Appendix \ref{AppendixA}. 
+
 \subsection{Case Setup}
 \subsubsection*{Boundary conditions}
 
@@ -607,7 +656,7 @@ The initial conditions for the velocity and temperature fields are inherited fro
 		\toprule[1pt]
 		\textbf{Boundary} & \textbf{Conditions}  \\ \midrule[2pt]
 		Left & $\frac{\partial \alpha_{l}}{\partial n} = 0, \frac{\partial \alpha_{s}}{\partial n} = 0    $  \\
-		Right & $\alpha_{l} = inletOutlet* (1), \alpha_{l} = inletOutlet (0) $ \\
+		Right & $\alpha_{l} = 1, \alpha_{l} = 0 $ \\
 		Upper & $\frac{\partial \alpha_{l}}{\partial n} = 0, \frac{\partial \alpha_{s}}{\partial n} = 0$  \\
 		Bottom & $\frac{\partial \alpha_{l}}{\partial n} = 0, \frac{\partial \alpha_{s}}{\partial n} = 0 $  \\ \bottomrule[1pt]		
 	\end{tabular}
@@ -615,7 +664,7 @@ The initial conditions for the velocity and temperature fields are inherited fro
 	\caption{Boundary conditions for natural convection case.}	
 	\label{fig:boundaryCdsCavity}
 \end{table}
-*inletOutlet is normally the same as zero gradient but it switches to fixed value if the velocity vector next to the boundary aims inside the domain.
+
 For the cylinder:
 \begin{table}[h!]
 	\begin{tabular}{@{}lllll@{}}
@@ -722,7 +771,44 @@ For the cylinder:
 \end{table}
 
 \subsection{Validation of Results and Conclusions}
-The validation of the phase change problem is achieved by different methodologies. First, the enthalpy-porosity method is compared with available data found in the thesis of \cite{bourdillon_2016} and \cite{kowalewski_rebow_1999}. For the Lee model based on the \textit{Classical Nucleation Theory}, the results are validated against the analytical solution given by the Neumann solutions of the Stefan problem.
+The validation of the phase change problem is achieved by different methodologies. First, the enthalpy-porosity method is compared with available data found in the thesis of \cite{bourdillon_2016} and \cite{kowalewski_rebow_1999}. 
+
+\begin{figure}[h!]
+	\begin{subfigure}{0.50\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{temperature_xpos_conv.png}\hfill
+		\caption{Temperature along horizontal line.} \label{3.4afig}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}{0.50\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{temperature_ypos_conv.png}	
+		\caption{Temperature along vertical line.}\label{3.4bfig}
+	\end{subfigure}
+	\begin{subfigure}{0.50\textwidth}
+		\includegraphics[width=\linewidth]{xvel_xpos_conv.png}\hfill
+		\caption{U-velocity along horizontal line.}\label{3.4cfig}
+	\end{subfigure}
+	\begin{subfigure}{0.50\textwidth}
+		\includegraphics[width=\linewidth]{xvel_ypos_conv.png}	
+		\caption{U-velocity along vertical line.}\label{3.4dfig}
+	\end{subfigure}
+	\begin{subfigure}{0.50\textwidth}
+		\includegraphics[width=\linewidth]{yvel_xpos_conv.png}\hfill	
+		\caption{V-velocity along horizontal line.}\label{3.4efig}
+	\end{subfigure}
+	\begin{subfigure}{0.50\textwidth}
+		\includegraphics[width=\linewidth]{yvel_ypos_conv.png}	
+		\caption{V-velocity along vertical line.}\label{3.4ffig}
+	\end{subfigure}
+	\caption{Adimensional magnitudes comparison.}
+	\label{3.4fig}
+\end{figure} 
+
+
+
+
+For the Lee model based on the \textit{Classical Nucleation Theory}, the results are validated against the analytical solution given by the Neumann solutions of the Stefan problem.
 \begin{figure}[h!]
 	\begin{subfigure}{0.50\textwidth}
 		\centering
@@ -782,7 +868,7 @@ By using a phase change interface condition, a solution to the trascendental equ
 	\label{3.41}
 \end{equation}
 The secant method is used as the iterative scheme to find the root of the given function with $tol<1e-12$. The root of $\gamma$ is 0.2204835149063661
-
+In the following figures, the accuracy of the method is tested trhough comparison with exact solutions to the Stefan problem.
 
 %The discontinuous exact solution is of the form [\cite{vasilyev_vasilyeva_2020}:
 %\begin{equation}
