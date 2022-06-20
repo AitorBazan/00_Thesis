@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "*Dict": "OpenFOAM",
+        "*Properties": "OpenFOAM",
+        "fvSchemes": "OpenFOAM",
+        "fvSolution": "OpenFOAM",
+        "**/constant/g": "OpenFOAM",
+        "**/0/*": "OpenFOAM",
+        "reactionTypes.H": "cpp",
+        "thermoPhysicsTypes.H": "cpp",
+        "myThermoPhysicsTypes.H": "cpp"
+    }
+}

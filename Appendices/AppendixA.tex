@@ -4,19 +4,72 @@
 
 \label{AppendixA} % For referencing this appendix elsewhere, use \ref{AppendixA}
 
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyleCPP}{
+	belowcaptionskip=1\baselineskip,
+	otherkeywords={--, **},
+	breaklines=true,
+	frame=none,
+	numbers=none, 
+	basicstyle=\footnotesize\ttfamily,
+	keywordstyle=\bfseries\color{green!40!black},
+	commentstyle=\itshape\color{purple!40!black},
+	identifierstyle=\color{blue},
+	backgroundcolor=\color{gray!10!white},
+}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystylePython}{
+	backgroundcolor=\color{backcolour},   
+	commentstyle=\color{codegreen},
+	keywordstyle=\color{magenta},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codepurple},
+	basicstyle=\footnotesize,
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,                    
+	keepspaces=true,                 
+	numbers=left,                    
+	numbersep=5pt,                  
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false,                  
+	tabsize=2
+}
 \section{Enthalpy-porosity library}
+\label{Enthalpy-porosity library}
 \subsection{mySolidificationMeltingSource.H}
-\includepdf[pages=1-5]{mySolidificationMeltingSource_H.pdf}
+\lstinputlisting[language=C++,style=mystyleCPP]{code/src/fvOptions/sources/derived/solidificationMeltingSource/mySolidificationMeltingSource.H}
 \subsection{mySolidificationMeltingSource.C}
-\includepdf[pages=1-4]{mySolidificationMeltingSource_C.pdf}
+\lstinputlisting[language=C++,style=mystyleCPP]{code/src/fvOptions/sources/derived/solidificationMeltingSource/mySolidificationMeltingSource.C}
 \subsection{mySolidificationMeltingSourceTemplates.C}
-\includepdf[pages=1-2]{mySolidificationMeltingSourceTemplates.pdf}
+\lstinputlisting[language=C++,style=mystyleCPP]{code/src/fvOptions/sources/derived/solidificationMeltingSource/mySolidificationMeltingSourceTemplates.C}
 \section{Lee-Nucleation library}
+\label{Lee-Nucleation library}
 \subsection{LeeCNT.H}
-\includepdf[pages=1-5]{LeeCNT_H.pdf}
+\lstinputlisting[language=C++,style=mystyleCPP]{code/src/phaseSystemModels/multiphaseInter/phasesSystem/massTransferModels/LeeCNT.H}
 \subsection{LeeCNT.C}
-\includepdf[pages=1-7]{LeeCNT_C.pdf}
+\lstinputlisting[language=C++,style=mystyleCPP]{code/src/phaseSystemModels/multiphaseInter/phasesSystem/massTransferModels/LeeCNT.C}
+\subsection{Library header files}
+\lstinputlisting[language=C++,style=mystyleCPP]{code/src/phaseSystemModels/multiphaseInter/phasesSystem/InterfaceCompositionModel/myInterfaceCompositionModels.C}
+\lstinputlisting[language=C++,style=mystyleCPP]{code/src/thermophysicalModels/basic/rhoThermo/myRhoThermos.C}
+\lstinputlisting[language=C++,style=mystyleCPP]{code/src/thermophysicalModels/reactionThermo/rhoReactionThermo/myRhoReactionThermos.C}
+\section{equationOfState}
+\label{equationOfState}
+\subsubsection*{equationOfState}
+\lstinputlisting[language=C++,style=mystyleCPP]{code/src/thermophysicalModels/specie/equationOfState/bPolynomial/bPolynomial.C}
+\lstinputlisting[language=C++,style=mystyleCPP]{code/src/thermophysicalModels/specie/equationOfState/bPolynomial/bPolynomial.H}
+\lstinputlisting[language=C++,style=mystyleCPP]{code/src/thermophysicalModels/specie/equationOfState/bPolynomial/bPolynomialI.H}
 \section{Python code for Stefan Problem}
-\includepdf[pages=1-4]{data_plotter_stefan.pdf}
-
-
+\label{Python code for Stefan Problem}
+\lstinputlisting[language=Python,style=mystylePython]{code/python_post/Interface_height.py}
+\lstinputlisting[language=Python,style=mystylePython]{code/python_post/data_plotter_stefan.py}
+\clearpage

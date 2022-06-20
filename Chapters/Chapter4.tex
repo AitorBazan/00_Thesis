@@ -89,7 +89,7 @@ The first change is the way in which the fluid is solver. In figure \ref{label}.
 	\centering
 	\includegraphics[width=0.4\linewidth]{fluid_loop.png}	
 	\label{4.3fig}
-	\caption{.}
+	\caption{Control loop for the fluid region in CHT.}
 \end{figure} 
 \newline
 On the other side, the energy equation is adapted so it can cope with multiphase fluids in the scope of multi region solvers. In the way of building up the equation, some of the terms that are newly introduced are the buoyancy energy, $\rho(U\&g)$, and the pressure terms $\nabla \cdot (\textbf{u}p)$ and the viscous dissipation term, $\nabla \cdot (\boldsymbol{\tau} \cdot \textbf{u})$, where $\tau$, the viscous stress tensor is calculated in the upper part of the code as the product of 2 by both the dynamic viscosity and the strain rate tensor.
@@ -114,7 +114,7 @@ If substituting terms, it yields:
 	\centering
 	\includegraphics[width=0.9\linewidth]{TEqn_CHT.png}	
 	\label{4.4fig}
-	\caption{.}
+	\caption{Energy equation for the fluid in CHT.}
 \end{figure} 
 \subsection{Case Setup}
 The case geometry is a plane cylinder, taking profit form the fluid mesh generated for the solidification case presented in the previous section. However, in this section, symmetry conditions are applied on the vertical axis (axis Y) so as to reduce the computational cost. 

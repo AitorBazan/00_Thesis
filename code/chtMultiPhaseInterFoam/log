@@ -1,0 +1,63 @@
+Making dependency list for source file chtMultiPhaseInterFoam.C
+g++ -std=c++11 -m64 -pthread -DOPENFOAM=2106 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -Wno-unknown-pragmas  -O3  -DNoRepository -ftemplate-depth-100 -I/home/aitor/OpenFOAM/aitor-v2106/src/thermophysicalModels/specie/lnInclude -I/home/aitor/OpenFOAM/aitor-v2106/src/thermophysicalModels/basic/lnInclude -I/home/aitor/OpenFOAM/aitor-v2106/src/phaseSystemModels/multiphaseInter/phasesSystem/lnInclude -I/opt/OpenFOAM-v2106/src/phaseSystemModels/multiphaseInter/phasesSystem/lnInclude -I/opt/OpenFOAM-v2106/src/phaseSystemModels/multiphaseInter/compressibleMultiPhaseTurbulenceModels/lnInclude -I./fluid -I./solid -I./porousFluid -I./porousSolid -I./include -I/opt/OpenFOAM-v2106/src/finiteVolume/lnInclude -I/opt/OpenFOAM-v2106/src/meshTools/lnInclude -I/opt/OpenFOAM-v2106/src/sampling/lnInclude -I/opt/OpenFOAM-v2106/src/fvOptions/lnInclude -I/opt/OpenFOAM-v2106/src/transportModels/compressible/lnInclude -I/opt/OpenFOAM-v2106/src/thermophysicalModels/basic/lnInclude -I/opt/OpenFOAM-v2106/src/thermophysicalModels/specie/lnInclude -I/opt/OpenFOAM-v2106/src/thermophysicalModels/reactionThermo/lnInclude -I/opt/OpenFOAM-v2106/src/thermophysicalModels/solidThermo/lnInclude -I/opt/OpenFOAM-v2106/src/thermophysicalModels/chemistryModel/lnInclude -I/opt/OpenFOAM-v2106/src/ODE/lnInclude -I/opt/OpenFOAM-v2106/src/dynamicFvMesh/lnInclude -I/opt/OpenFOAM-v2106/src/combustionModels/lnInclude -I/opt/OpenFOAM-v2106/src/TurbulenceModels/turbulenceModels/lnInclude -I/opt/OpenFOAM-v2106/src/TurbulenceModels/compressible/lnInclude -I/opt/OpenFOAM-v2106/src/thermophysicalModels/radiation/lnInclude -I/opt/OpenFOAM-v2106/src/regionModels/regionModel/lnInclude -I/opt/OpenFOAM-v2106/src/overset/lnInclude -I/opt/OpenFOAM-v2106/applications/solvers/multiphase/interFoam -I/home/aitor/OpenFOAM/aitor-v2106/src/fvOptions/lnInclude -iquote. -IlnInclude -I/opt/OpenFOAM-v2106/src/OpenFOAM/lnInclude -I/opt/OpenFOAM-v2106/src/OSspecific/POSIX/lnInclude   -fPIC -c chtMultiPhaseInterFoam.C -o Make/linux64GccDPInt32Opt/chtMultiPhaseInterFoam.o
+In file included from chtMultiPhaseInterFoam.C:116:
+./fluid/alphaCourantNo.H: In function ‘int main(int, char**)’:
+./fluid/alphaCourantNo.H:35:8: warning: unused variable ‘maxAlphaCo’ [-Wunused-variable]
+   35 | scalar maxAlphaCo
+      |        ^~~~~~~~~~
+./fluid/alphaCourantNo.H:40:8: warning: unused variable ‘maxAlphaDdt’ [-Wunused-variable]
+   40 | scalar maxAlphaDdt
+      |        ^~~~~~~~~~~
+./fluid/alphaCourantNo.H:45:8: warning: unused variable ‘maxDiff’ [-Wunused-variable]
+   45 | scalar maxDiff
+      |        ^~~~~~~
+In file included from chtMultiPhaseInterFoam.C:133:
+./fluid/setRegionFluidFields.H:10:21: warning: unused variable ‘Cp’ [-Wunused-variable]
+   10 |     volScalarField& Cp = CpFluid[i];
+      |                     ^~
+./fluid/setRegionFluidFields.H:15:25: warning: unused variable ‘rhoCpPhi’ [-Wunused-variable]
+   15 |     surfaceScalarField& rhoCpPhi = rhoCpPhiFluid[i];
+      |                         ^~~~~~~~
+./fluid/setRegionFluidFields.H:19:21: warning: unused variable ‘dpdt’ [-Wunused-variable]
+   19 |     volScalarField& dpdt = dpdtFluid[i];
+      |                     ^~~~
+./fluid/setRegionFluidFields.H:27:32: warning: unused variable ‘rad’ [-Wunused-variable]
+   27 |     radiation::radiationModel& rad = radiation[i];
+      |                                ^~~
+./fluid/setRegionFluidFields.H:47:28: warning: unused variable ‘pressureControl’ [-Wunused-variable]
+   47 |     const pressureControl& pressureControl = pressureControls[i];
+      |                            ^~~~~~~~~~~~~~~
+./fluid/setRegionFluidFields.H:49:20: warning: unused variable ‘pimple’ [-Wunused-variable]
+   49 |     pimpleControl& pimple = pimpleFluid[i];
+      |                    ^~~~~~
+./fluid/setRegionFluidFields.H:52:10: warning: unused variable ‘ddtCorr’ [-Wunused-variable]
+   52 |     bool ddtCorr = ddtCorrFluid[i];
+      |          ^~~~~~~
+In file included from chtMultiPhaseInterFoam.C:161:
+./fluid/setRegionFluidFields.H:10:21: warning: unused variable ‘Cp’ [-Wunused-variable]
+   10 |     volScalarField& Cp = CpFluid[i];
+      |                     ^~
+./fluid/setRegionFluidFields.H:15:25: warning: unused variable ‘rhoCpPhi’ [-Wunused-variable]
+   15 |     surfaceScalarField& rhoCpPhi = rhoCpPhiFluid[i];
+      |                         ^~~~~~~~
+./fluid/setRegionFluidFields.H:19:21: warning: unused variable ‘dpdt’ [-Wunused-variable]
+   19 |     volScalarField& dpdt = dpdtFluid[i];
+      |                     ^~~~
+./fluid/setRegionFluidFields.H:27:32: warning: unused variable ‘rad’ [-Wunused-variable]
+   27 |     radiation::radiationModel& rad = radiation[i];
+      |                                ^~~
+./fluid/setRegionFluidFields.H:47:28: warning: unused variable ‘pressureControl’ [-Wunused-variable]
+   47 |     const pressureControl& pressureControl = pressureControls[i];
+      |                            ^~~~~~~~~~~~~~~
+./fluid/setRegionFluidFields.H:49:20: warning: unused variable ‘pimple’ [-Wunused-variable]
+   49 |     pimpleControl& pimple = pimpleFluid[i];
+      |                    ^~~~~~
+./fluid/setRegionFluidFields.H:52:10: warning: unused variable ‘ddtCorr’ [-Wunused-variable]
+   52 |     bool ddtCorr = ddtCorrFluid[i];
+      |          ^~~~~~~
+chtMultiPhaseInterFoam.C:126:24: warning: unused variable ‘firstIter’ [-Wunused-variable]
+  126 |             const bool firstIter = (oCorr == 0);
+      |                        ^~~~~~~~~
+g++ -std=c++11 -m64 -pthread -DOPENFOAM=2106 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -Wno-unknown-pragmas  -O3  -DNoRepository -ftemplate-depth-100 -I/home/aitor/OpenFOAM/aitor-v2106/src/thermophysicalModels/specie/lnInclude -I/home/aitor/OpenFOAM/aitor-v2106/src/thermophysicalModels/basic/lnInclude -I/home/aitor/OpenFOAM/aitor-v2106/src/phaseSystemModels/multiphaseInter/phasesSystem/lnInclude -I/opt/OpenFOAM-v2106/src/phaseSystemModels/multiphaseInter/phasesSystem/lnInclude -I/opt/OpenFOAM-v2106/src/phaseSystemModels/multiphaseInter/compressibleMultiPhaseTurbulenceModels/lnInclude -I./fluid -I./solid -I./porousFluid -I./porousSolid -I./include -I/opt/OpenFOAM-v2106/src/finiteVolume/lnInclude -I/opt/OpenFOAM-v2106/src/meshTools/lnInclude -I/opt/OpenFOAM-v2106/src/sampling/lnInclude -I/opt/OpenFOAM-v2106/src/fvOptions/lnInclude -I/opt/OpenFOAM-v2106/src/transportModels/compressible/lnInclude -I/opt/OpenFOAM-v2106/src/thermophysicalModels/basic/lnInclude -I/opt/OpenFOAM-v2106/src/thermophysicalModels/specie/lnInclude -I/opt/OpenFOAM-v2106/src/thermophysicalModels/reactionThermo/lnInclude -I/opt/OpenFOAM-v2106/src/thermophysicalModels/solidThermo/lnInclude -I/opt/OpenFOAM-v2106/src/thermophysicalModels/chemistryModel/lnInclude -I/opt/OpenFOAM-v2106/src/ODE/lnInclude -I/opt/OpenFOAM-v2106/src/dynamicFvMesh/lnInclude -I/opt/OpenFOAM-v2106/src/combustionModels/lnInclude -I/opt/OpenFOAM-v2106/src/TurbulenceModels/turbulenceModels/lnInclude -I/opt/OpenFOAM-v2106/src/TurbulenceModels/compressible/lnInclude -I/opt/OpenFOAM-v2106/src/thermophysicalModels/radiation/lnInclude -I/opt/OpenFOAM-v2106/src/regionModels/regionModel/lnInclude -I/opt/OpenFOAM-v2106/src/overset/lnInclude -I/opt/OpenFOAM-v2106/applications/solvers/multiphase/interFoam -I/home/aitor/OpenFOAM/aitor-v2106/src/fvOptions/lnInclude -iquote. -IlnInclude -I/opt/OpenFOAM-v2106/src/OpenFOAM/lnInclude -I/opt/OpenFOAM-v2106/src/OSspecific/POSIX/lnInclude   -fPIC -Xlinker --add-needed -Xlinker --no-as-needed  Make/linux64GccDPInt32Opt/fluid/compressibleCourantNo.o Make/linux64GccDPInt32Opt/solid/solidRegionDiffNo.o Make/linux64GccDPInt32Opt/chtMultiPhaseInterFoam.o -L/opt/OpenFOAM-v2106/platforms/linux64GccDPInt32Opt/lib \
+    -lfiniteVolume -lfvOptions -lmeshTools -lsampling -lcompressibleTransportModels -lfluidThermophysicalModels -lspecie -lreactionThermophysicalModels -lsolidThermo -lsolidSpecie -ltwoPhaseProperties -lchemistryModel -lODE -lcombustionModels -lturbulenceModels -lcompressibleTurbulenceModels -lradiationModels -lregionModels -lincompressibleMultiphaseSystems -loverset -ldynamicFvMesh -lcompressibleMultiPhaseTurbulenceModels -L/home/aitor/OpenFOAM/aitor-v2106/platforms/linux64GccDPInt32Opt/lib -lMySpecie -lMyFluidThermophysicalModels -lMyIncompressibleMultiphaseSystems -lMyFvOptions -lOpenFOAM -ldl  \
+     -lm -o /home/aitor/OpenFOAM/aitor-v2106/platforms/linux64GccDPInt32Opt/bin/chtMultiPhaseInterFoam

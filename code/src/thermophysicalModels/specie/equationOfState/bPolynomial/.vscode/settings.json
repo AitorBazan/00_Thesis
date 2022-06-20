@@ -1,0 +1,16 @@
+{
+    "files.associations": {
+        "*Dict": "OpenFOAM",
+        "*Properties": "OpenFOAM",
+        "fvSchemes": "OpenFOAM",
+        "fvSolution": "OpenFOAM",
+        "**/constant/g": "OpenFOAM",
+        "**/0/*": "OpenFOAM",
+        "icoPolynomial.C": "cpp",
+        "icoPolynomial.H": "cpp",
+        "icoPolynomialI.H": "cpp",
+        "bPolynomial.C": "cpp",
+        "bPolynomial.H": "cpp",
+        "bPolynomialI.H": "cpp"
+    }
+}

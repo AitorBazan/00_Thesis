@@ -1,0 +1,8 @@
+SOURCE = \
+fluid/compressibleCourantNo.C \
+fluid/alphaCourantNo.C \
+fluid/ddtAlphaNo.C \
+solid/solidRegionDiffNo.C \
+chtMultiPhaseInterFoam.C \
+
+# sources

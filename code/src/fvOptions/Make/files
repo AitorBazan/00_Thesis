@@ -1,0 +1,7 @@
+
+derivedSources=sources/derived
+
+$(derivedSources)/solidificationMeltingSource/mySolidificationMeltingSource.C
+
+
+LIB = $(FOAM_USER_LIBBIN)/libMyFvOptions

@@ -1,0 +1,3 @@
+rhoReactionThermo/myRhoReactionThermos.C
+
+LIB = $(FOAM_USER_LIBBIN)/libMyReactionThermophysicalModels

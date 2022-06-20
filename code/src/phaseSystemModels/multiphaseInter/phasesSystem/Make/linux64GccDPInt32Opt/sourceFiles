@@ -1,0 +1,7 @@
+SOURCE = \
+multiphaseSystem/multiphaseSystemCHT.C \
+multiphaseSystem/multiphaseSystemCHTNew.C \
+multiphaseSystem/multiphaseSystemsCHT.C \
+InterfaceCompositionModel/myInterfaceCompositionModels.C \
+
+# sources

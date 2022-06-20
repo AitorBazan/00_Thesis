@@ -1,0 +1,4 @@
+SOURCE = \
+$(derivedSources)/solidificationMeltingSource/mySolidificationMeltingSource.C \
+
+# sources

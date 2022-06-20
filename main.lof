@@ -25,35 +25,35 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces General structure of an OpenFOAM case.\relax }}{23}{figure.caption.89}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces General structure of an OpenFOAM case.\relax }}{24}{figure.caption.89}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Geometric characteristics.\relax }}{25}{figure.caption.96}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Geometric characteristics.\relax }}{26}{figure.caption.96}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Flowchart of integration procedure. \textit {buoyantBoussinesqPimpleFoam}\relax }}{28}{figure.caption.113}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Flowchart of integration procedure. \textit {buoyantBoussinesqPimpleFoam}\relax }}{29}{figure.caption.113}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Setting of computational domain.\relax }}{31}{figure.caption.131}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Setting of computational domain.\relax }}{32}{figure.caption.131}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Comparison between BuoyantBoussinesqPimpleFoam and NCMF*\relax }}{33}{figure.caption.140}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Comparison between BuoyantBoussinesqPimpleFoam and NCMF*\relax }}{34}{figure.caption.140}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Adimensional magnitudes comparison.\relax }}{35}{figure.caption.147}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Adimensional magnitudes comparison.\relax }}{36}{figure.caption.147}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Cylinder.\relax }}{37}{figure.caption.151}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Cylinder.\relax }}{38}{figure.caption.151}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Energy equation of IcoReactingMultiphaseInterFoam.\relax }}{40}{figure.caption.168}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Energy equation of IcoReactingMultiphaseInterFoam.\relax }}{41}{figure.caption.168}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Latent heat source term present in mySolidificationMeltingSource library.\relax }}{40}{figure.caption.169}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Latent heat source term present in mySolidificationMeltingSource library.\relax }}{41}{figure.caption.169}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.10}{\ignorespaces \textbf {rhoCpPhi} field in \textit {createFields.H}\relax }}{41}{figure.caption.170}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces \textbf {rhoCpPhi} field in \textit {createFields.H}\relax }}{42}{figure.caption.170}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Function used to ask for the required user inputs.\relax }}{41}{figure.caption.171}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Function used to ask for the required user inputs.\relax }}{42}{figure.caption.171}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.12}{\ignorespaces Numerical results of temperature profiles in center position of cylindrical geometry.\relax }}{45}{figure.caption.187}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Adimensional magnitudes comparison.\relax }}{48}{figure.caption.189}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Adimensional magnitudes comparison.\relax }}{49}{figure.caption.189}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Numerical solutions of the Lee model-CNT vs Neumann analytical solutions.\relax }}{50}{figure.caption.197}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Numerical solutions of the Lee model-CNT vs Neumann analytical solutions.\relax }}{51}{figure.caption.197}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Numerical solutions of the Lee model-CNT vs Neumann analytical solutions for interface position.\relax }}{51}{figure.caption.201}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Numerical solutions of the Lee model-CNT vs Neumann analytical solutions for interface position.\relax }}{52}{figure.caption.201}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
@@ -61,9 +61,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Flowchart of the conjugate heat transfer solver \cite {sugimoto_kuramae_matsumoto_watanabe_2021}.\relax }}{56}{figure.caption.222}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces .\relax }}{57}{figure.caption.224}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Control loop for the fluid region in CHT.\relax }}{57}{figure.caption.224}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces .\relax }}{58}{figure.caption.228}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Energy equation for the fluid in CHT.\relax }}{58}{figure.caption.228}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

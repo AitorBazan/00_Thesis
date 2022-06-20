@@ -1,0 +1,17 @@
+{
+    "files.associations": {
+        "*Dict": "OpenFOAM",
+        "*Properties": "OpenFOAM",
+        "fvSchemes": "OpenFOAM",
+        "fvSolution": "OpenFOAM",
+        "**/constant/g": "OpenFOAM",
+        "**/0/*": "OpenFOAM",
+        "solidificationMeltingSource.C": "cpp",
+        "solidificationMeltingSource.H": "cpp",
+        "solidificationMeltingSourceTemplates.C": "cpp",
+        "mySolidificationMeltingSource.C": "cpp",
+        "mySolidificationMeltingSource.H": "cpp",
+        "mySolidificationMeltingSourceTemplates.C": "cpp",
+        "cmath": "cpp"
+    }
+}

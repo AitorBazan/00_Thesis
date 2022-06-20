@@ -1,0 +1,16 @@
+{
+    "files.associations": {
+        "*Dict": "OpenFOAM",
+        "*Properties": "OpenFOAM",
+        "fvSchemes": "OpenFOAM",
+        "fvSolution": "OpenFOAM",
+        "**/constant/g": "OpenFOAM",
+        "**/0/*": "OpenFOAM",
+        "polynomialTransport.C": "cpp",
+        "IAPWSTransport.C": "cpp",
+        "polynomialTransport.H": "cpp",
+        "IAPWSTransport.H": "cpp",
+        "polynomialTransportI.H": "cpp",
+        "IAPWSTransportI.H": "cpp"
+    }
+}
