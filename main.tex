@@ -44,19 +44,22 @@ headsepline, % Uncomment to get a line under the header
 \usepackage{longtable}
 \usepackage{mathpazo} % Use the Palatino font by default
 \usepackage{amsmath}
-\usepackage[backend=bibtex,style=authoryear,natbib=true]{biblatex} % Use the bibtex backend with the authoryear citation style (which resembles APA)
+%\usepackage[backend=bibtex,style=authoryear,natbib=true]{biblatex} % Use the bibtex backend with the authoryear citation style (which resembles APA)
+\usepackage[backend=biber,style=numeric]{biblatex}
 \usepackage{graphicx}
 \usepackage{subcaption}
 \usepackage{tikz}
 \usetikzlibrary{shapes,arrows,positioning}
 \usepackage{listings}
+\usepackage{tabularray}
+\usepackage{adjustbox}
 \usepackage{forest}
 \usepackage{indentfirst}
 \usepackage[autostyle=true]{csquotes} % Required to generate language-dependent quotes in the bibliography
 \usepackage{biblatex}
 \addbibresource{example.bib} % The filename of the bibliography
-
-
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
 %----------------------------------------------------------------------------------------
 %	MARGIN SETTINGS
 %----------------------------------------------------------------------------------------
@@ -208,6 +211,8 @@ I would like to thank my family and all my workmates in Barcelona Technical Cent
 
 \listoftables % Prints the list of tables
 
+
+
 %-------------------------------------------------------------------
 %----------------------------------------------------------------------------------------
 %	THESIS CONTENT - CHAPTERS
@@ -229,7 +234,11 @@ I would like to thank my family and all my workmates in Barcelona Technical Cent
 %----------------------------------------------------------------------------------------
 %	THESIS CONTENT - APPENDICES
 %----------------------------------------------------------------------------------------
-
+\include{example.bib}
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+\printbibliography
 \appendix % Cue to tell LaTeX that the following "chapters" are Appendices
 
 % Include the appendices of the thesis as separate files from the Appendices folder
@@ -239,12 +248,6 @@ I would like to thank my family and all my workmates in Barcelona Technical Cent
 \include{Appendices/AppendixB}
 %\include{Appendices/AppendixC}
 
-%----------------------------------------------------------------------------------------
-%	BIBLIOGRAPHY
-%----------------------------------------------------------------------------------------
-
-
-\printbibliography
-\include{example.bib}
+%\include{example.bib}
 %----------------------------------------------------------------------------------------
 \end{document}  

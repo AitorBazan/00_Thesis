@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2021.12.9)  15 JUN 2022 23:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2021.12.9)  20 JUN 2022 16:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -497,7 +497,7 @@ Package biblatex Info: ... file 'blx-dm.def' found.
 File: blx-dm.def 2020/12/31 v3.16 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex style data model...
-Package biblatex Info: ... file 'authoryear.dbx' not found.
+Package biblatex Info: ... file 'numeric.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \c@afterword=\count349
@@ -588,20 +588,10 @@ Package biblatex Info: ... file 'blx-compat.def' found.
 (/home/aitor/.miktex/texmfs/install/tex/latex/biblatex/blx-compat.def
 File: blx-compat.def 2020/12/31 v3.16 biblatex compatibility (PK/MW)
 )
-Package biblatex Info: Trying to load BibTeX backend compatibility...
-Package biblatex Info: ... file 'blx-bibtex.def' found.
-
-(/home/aitor/.miktex/texmfs/install/tex/latex/biblatex/blx-bibtex.def
-File: blx-bibtex.def 2020/12/31 v3.16 biblatex compatibility (PK/MW)
-
-
-Package biblatex Warning: Using fall-back BibTeX(8) backend:
-(biblatex)                functionality may be reduced/unavailable.
-
-)
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
- (/home/aitor/.miktex/texmfs/install/tex/latex/biblatex/biblatex.def
+
+(/home/aitor/.miktex/texmfs/install/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2020/12/31 v3.16 biblatex compatibility (PK/MW)
 \c@textcitecount=\count417
 \c@textcitetotal=\count418
@@ -617,19 +607,11 @@ File: biblatex.def 2020/12/31 v3.16 biblatex compatibility (PK/MW)
 \biburllcskip=\muskip21
 \c@smartand=\count425
 )
-Package biblatex Info: Trying to load natbib compatibility...
-Package biblatex Info: ... file 'blx-natbib.def' found.
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
 
-(/home/aitor/.miktex/texmfs/install/tex/latex/biblatex/blx-natbib.def
-File: blx-natbib.def 2020/12/31 v3.16 biblatex compatibility (PK/MW)
-Package biblatex Info: Delimiter 'nameyeardelim' in context '' already defined,
- overwriting.
-)
-Package biblatex Info: Trying to load bibliography style 'authoryear'...
-Package biblatex Info: ... file 'authoryear.bbx' found.
-
-(/home/aitor/.miktex/texmfs/install/tex/latex/biblatex/bbx/authoryear.bbx
-File: authoryear.bbx 2020/12/31 v3.16 biblatex bibliography style (PK/MW)
+(/home/aitor/.miktex/texmfs/install/tex/latex/biblatex/bbx/numeric.bbx
+File: numeric.bbx 2020/12/31 v3.16 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
 
@@ -638,18 +620,22 @@ File: standard.bbx 2020/12/31 v3.16 biblatex bibliography style (PK/MW)
 \c@bbx:relatedcount=\count426
 \c@bbx:relatedtotal=\count427
 ))
-Package biblatex Info: Trying to load citation style 'authoryear'...
-Package biblatex Info: ... file 'authoryear.cbx' found.
+Package biblatex Info: Trying to load citation style 'numeric'...
+Package biblatex Info: ... file 'numeric.cbx' found.
 
-(/home/aitor/.miktex/texmfs/install/tex/latex/biblatex/cbx/authoryear.cbx
-File: authoryear.cbx 2020/12/31 v3.16 biblatex citation style (PK/MW)
+(/home/aitor/.miktex/texmfs/install/tex/latex/biblatex/cbx/numeric.cbx
+File: numeric.cbx 2020/12/31 v3.16 biblatex citation style (PK/MW)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
 Package biblatex Info: Redefining '\footcitetext'.
 Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
 Package biblatex Info: Redefining '\textcite'.
 Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
 )
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
@@ -1047,7 +1033,7 @@ File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 (/home/aitor/.miktex/texmfs/install/tex/latex/listings/listings.cfg
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
-Package scrhack Info: loading listings hack on input line 53.
+Package scrhack Info: loading listings hack on input line 54.
 
 (/home/aitor/.miktex/texmfs/install/tex/latex/koma-script/listings.hak
 File: listings.hak 2021/11/13 v3.35 KOMA-Script scrhack part (hacking package l
@@ -1063,6 +1049,153 @@ Package scrhack Info: redefining \lstlistoflistings on input line 143.
 )
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
 
+(/home/aitor/.miktex/texmfs/install/tex/latex/tabularray/tabularray.sty
+Package: tabularray 2021-12-01 v2021Q Typeset tabulars and arrays with LaTeX3
+\l__tblr_a_int=\count459
+\l__tblr_c_int=\count460
+\l__tblr_r_int=\count461
+\l__tblr_d_dim=\dimen305
+\l__tblr_h_dim=\dimen306
+\l__tblr_o_dim=\dimen307
+\l__tblr_p_dim=\dimen308
+\l__tblr_q_dim=\dimen309
+\l__tblr_r_dim=\dimen310
+\l__tblr_s_dim=\dimen311
+\l__tblr_t_dim=\dimen312
+\l__tblr_v_dim=\dimen313
+\l__tblr_w_dim=\dimen314
+\l__tblr_a_box=\box103
+\l__tblr_b_box=\box104
+\l__tblr_c_box=\box105
+\l__tblr_d_box=\box106
+\g__tblr_table_count_int=\count462
+\c@rownum=\count463
+\c@colnum=\count464
+\c@rowcount=\count465
+\c@colcount=\count466
+\abovesep=\dimen315
+\belowsep=\dimen316
+\leftsep=\dimen317
+\rightsep=\dimen318
+\g_tblr_level_int=\count467
+\g__tblr_data_row_key_count_int=\count468
+\g__tblr_data_column_key_count_int=\count469
+\g__tblr_data_cell_key_count_int=\count470
+\g__tblr_array_int=\count471
+\l__tblr_key_count_int=\count472
+\l__tblr_key_quotient_int=\count473
+\l__tblr_key_quotient_two_int=\count474
+\l__tblr_key_remainder_int=\count475
+\g__tblr_data_str_value_count_int=\count476
+\rulewidth=\dimen319
+\l__multicolumn_cell_number_int=\count477
+\l__tblr_strut_ht_box=\box107
+\l__tblr_strut_dp_box=\box108
+\g__tblr_cell_wd_dim=\dimen320
+\g__tblr_cell_ht_dim=\dimen321
+\g__tblr_cell_head_dim=\dimen322
+\g__tblr_cell_foot_dim=\dimen323
+\l__column_target_dim=\dimen324
+\l__tblr_caption_box=\box109
+\l__tblr_caption_left_box=\box110
+\l__tblr_row_head_box=\box111
+\l__tblr_row_foot_box=\box112
+\l__tblr_row_head_foot_dim=\dimen325
+\tablewidth=\dimen326
+\l__tblr_table_firsthead_box=\box113
+\l__tblr_table_middlehead_box=\box114
+\l__tblr_table_lasthead_box=\box115
+\l__tblr_table_firstfoot_box=\box116
+\l__tblr_table_middlefoot_box=\box117
+\l__tblr_table_lastfoot_box=\box118
+\l__tblr_remain_height_dim=\dimen327
+\l__tblr_long_from_int=\count478
+\l__tblr_long_to_int=\count479
+\l__tblr_curr_i_int=\count480
+\l__tblr_prev_i_int=\count481
+\l__tblr_table_page_int=\count482
+\l__tblr_table_head_box=\box119
+\l__tblr_table_foot_box=\box120
+\l__tblr_table_head_foot_dim=\dimen328
+\l__tblr_table_head_body_foot_dim=\dimen329
+\l__tblr_table_box=\box121
+\l__tblr_table_hlines_box=\box122
+\l__tblr_hline_box=\box123
+\l__tblr_row_box=\box124
+\l__tblr_col_o_wd_dim=\dimen330
+\l__tblr_col_b_wd_dim=\dimen331
+\l__tblr_hline_leftskip_dim=\dimen332
+\l__tblr_hline_rightskip_dim=\dimen333
+\l__tblr_row_ht_dim=\dimen334
+\l__tblr_row_dp_dim=\dimen335
+\l__tblr_row_abovesep_dim=\dimen336
+\l__tblr_row_belowsep_dim=\dimen337
+\l__tblr_row_vlines_box=\box125
+\l__tblr_vline_box=\box126
+\l__tblr_cell_box=\box127
+\l__row_upper_dim=\dimen338
+\l__row_lower_dim=\dimen339
+\l__row_vpace_dim=\dimen340
+\l__tblr_vline_aboveskip_dim=\dimen341
+\l__tblr_vline_belowskip_dim=\dimen342
+\l__tblr_cell_wd_dim=\dimen343
+\l__tblr_cell_ht_dim=\dimen344
+\l__tblr_diag_box=\box128
+)
+(/home/aitor/.miktex/texmfs/install/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2020/08/19 v1.3 Adjusting TeX boxes (trim, clip, ...)
+
+(/home/aitor/.miktex/texmfs/install/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
+
+(/home/aitor/.miktex/texmfs/install/tex/generic/xkeyval/xkeyval.tex
+(/home/aitor/.miktex/texmfs/install/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks42
+\XKV@tempa@toks=\toks43
+)
+\XKV@depth=\count483
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/home/aitor/.miktex/texmfs/install/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(/home/aitor/.miktex/texmfs/install/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
+
+(/home/aitor/.miktex/texmfs/install/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box129
+)
+\tc@llx=\dimen345
+\tc@lly=\dimen346
+\tc@urx=\dimen347
+\tc@ury=\dimen348
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+(/home/aitor/.miktex/texmfs/install/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen349
+\adjbox@Height=\dimen350
+\adjbox@Depth=\dimen351
+\adjbox@Totalheight=\dimen352
+\adjbox@pwidth=\dimen353
+\adjbox@pheight=\dimen354
+\adjbox@pdepth=\dimen355
+\adjbox@ptotalheight=\dimen356
+
+(/home/aitor/.miktex/texmfs/install/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count484
+)
+(/home/aitor/.miktex/texmfs/install/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box130
+\sift@deathcycles=\count485
+\@vwid@loff=\dimen357
+\@vwid@roff=\dimen358
+))
 (/home/aitor/.miktex/texmfs/install/tex/latex/forest/forest.sty
 Package: forest 2017/07/14 v2.1.5 Drawing (linguistic) trees
 
@@ -1078,11 +1211,11 @@ File: tikzlibrarycalc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ctions.code.tex
 (/home/aitor/.miktex/texmfs/install/tex/generic/pgf/libraries/pgflibraryfpu.cod
 e.tex)
-\pgf@intersect@solutions=\count459
+\pgf@intersect@solutions=\count486
 ) (/home/aitor/.miktex/texmfs/install/tex/latex/pgfopts/pgfopts.sty
 Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
-\pgfopts@list@add@a@toks=\toks42
-\pgfopts@list@add@b@toks=\toks43
+\pgfopts@list@add@a@toks=\toks44
+\pgfopts@list@add@b@toks=\toks45
 )
 (/home/aitor/.miktex/texmfs/install/tex/latex/elocalloc/elocalloc.sty
 Package: elocalloc 2016/12/15 v0.03 local allocation for LaTeX 2015+ (DPC)
@@ -1095,68 +1228,68 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
 (/home/aitor/.miktex/texmfs/install/tex/latex/inlinedef/inlinedef.sty
 Package: inlinedef 2008/07/10 v1.0 Inlined expansions within definitions
-\ID@toks=\toks44
-\ID@count=\count460
+\ID@toks=\toks46
+\ID@count=\count487
 )
-\ID@usercommands=\toks45
-\safeloop@depth=\count461
-\safeRKloop@depth=\count462
-\forest@temp@dimen=\dimen305
-\forest@temp@count=\count463
-\forest@n=\count464
-\forest@temp@global@count=\count465
-\forest@temp@toks=\toks46
-\forest@temparray@M=\count466
-\forest@temparray@N=\count467
-\forest@global@temparray@M=\count468
-\forest@global@temparray@N=\count469
-\forest@isnum@count=\count470
-\forest@isdim@nonintpart=\count471
-\forest@isdim@dimen=\dimen306
-\forest@sort@m=\count472
-\forest@sort@k=\count473
-\forest@sort@p=\count474
-\bracket@content=\toks47
-\bracket@afterthought=\toks48
-\forest@node@maxid=\count475
-\forest@process@left@M=\count476
-\forest@process@left@N=\count477
-\forest@process@right@M=\count478
-\forest@process@right@N=\count479
-\forest@process@saved@M=\count480
-\forest@process@saved@N=\count481
-\forest@process@result@M=\count482
-\forest@process@result@N=\count483
-\forest@process@n=\count484
-\forest@nodewalk@branch@toks=\toks49
-\forest@nodewalk@shortsteps@resolution=\toks50
-\forest@do@dynamics=\toks51
-\forest@box=\box103
-\forest@xg=\dimen307
-\forest@yg=\dimen308
-\forest@xs=\dimen309
-\forest@ys=\dimen310
-\forest@pi@toks=\toks52
-\forest@segment@toks=\toks53
-\forest@PIi@toks=\toks54
-\forest@PIii@toks=\toks55
+\ID@usercommands=\toks47
+\safeloop@depth=\count488
+\safeRKloop@depth=\count489
+\forest@temp@dimen=\dimen359
+\forest@temp@count=\count490
+\forest@n=\count491
+\forest@temp@global@count=\count492
+\forest@temp@toks=\toks48
+\forest@temparray@M=\count493
+\forest@temparray@N=\count494
+\forest@global@temparray@M=\count495
+\forest@global@temparray@N=\count496
+\forest@isnum@count=\count497
+\forest@isdim@nonintpart=\count498
+\forest@isdim@dimen=\dimen360
+\forest@sort@m=\count499
+\forest@sort@k=\count500
+\forest@sort@p=\count501
+\bracket@content=\toks49
+\bracket@afterthought=\toks50
+\forest@node@maxid=\count502
+\forest@process@left@M=\count503
+\forest@process@left@N=\count504
+\forest@process@right@M=\count505
+\forest@process@right@N=\count506
+\forest@process@saved@M=\count507
+\forest@process@saved@N=\count508
+\forest@process@result@M=\count509
+\forest@process@result@N=\count510
+\forest@process@n=\count511
+\forest@nodewalk@branch@toks=\toks51
+\forest@nodewalk@shortsteps@resolution=\toks52
+\forest@do@dynamics=\toks53
+\forest@box=\box131
+\forest@xg=\dimen361
+\forest@yg=\dimen362
+\forest@xs=\dimen363
+\forest@ys=\dimen364
+\forest@pi@toks=\toks54
+\forest@segment@toks=\toks55
+\forest@PIi@toks=\toks56
+\forest@PIii@toks=\toks57
 \forest@copy@in=\read5
 \forest@copy@out=\write5
-\forest@externalize@max@outer@n=\count485
-\forest@externalize@inner@n=\count486
+\forest@externalize@max@outer@n=\count512
+\forest@externalize@inner@n=\count513
 )
 (/home/aitor/.miktex/texmfs/install/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 )
 (/home/aitor/.miktex/texmfs/install/tex/latex/csquotes/csquotes.sty
 Package: csquotes 2021-02-22 v5.2l context-sensitive quotations (JAW)
-\csq@reset=\count487
-\csq@gtype=\count488
-\csq@glevel=\count489
-\csq@qlevel=\count490
-\csq@maxlvl=\count491
-\csq@tshold=\count492
-\csq@ltx@everypar=\toks56
+\csq@reset=\count514
+\csq@gtype=\count515
+\csq@glevel=\count516
+\csq@qlevel=\count517
+\csq@maxlvl=\count518
+\csq@tshold=\count519
+\csq@ltx@everypar=\toks58
 
 (/home/aitor/.miktex/texmfs/install/tex/latex/csquotes/csquotes.def
 File: csquotes.def 2021-02-22 v5.2l csquotes generic definitions (JAW)
@@ -1187,9 +1320,9 @@ Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 (/home/aitor/.miktex/texmfs/install/tex/latex/auxhook/auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
-\@linkdim=\dimen311
-\Hy@linkcounter=\count493
-\Hy@pagecounter=\count494
+\@linkdim=\dimen365
+\Hy@linkcounter=\count520
+\Hy@pagecounter=\count521
 
 (/home/aitor/.miktex/texmfs/install/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2021-06-07 v7.00m Hyperref: PDFDocEncoding definition (HO)
@@ -1205,7 +1338,7 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 (/home/aitor/.miktex/texmfs/install/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count495
+\Hy@SavedSpaceFactor=\count522
 
 (/home/aitor/.miktex/texmfs/install/tex/latex/hyperref/puenc.def
 File: puenc.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (HO)
@@ -1219,9 +1352,9 @@ Package hyperref Info: Plain pages OFF on input line 4207.
 Package hyperref Info: Backreferencing OFF on input line 4212.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4445.
-\c@Hy@tempcnt=\count496
+\c@Hy@tempcnt=\count523
 LaTeX Info: Redefining \url on input line 4804.
-\XeTeXLinkMargin=\dimen312
+\XeTeXLinkMargin=\dimen366
 
 (/home/aitor/.miktex/texmfs/install/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -1230,9 +1363,9 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count497
-\Field@Width=\dimen313
-\Fld@charsize=\dimen314
+\Fld@menulength=\count524
+\Field@Width=\dimen367
+\Fld@charsize=\dimen368
 Package hyperref Info: Hyper figures OFF on input line 6076.
 Package hyperref Info: Link nesting OFF on input line 6081.
 Package hyperref Info: Hyper index ON on input line 6084.
@@ -1247,13 +1380,13 @@ LaTeX Info: Redefining \pageref on input line 6150.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count498
-\c@Item=\count499
-\c@Hfootnote=\count500
+\Hy@abspage=\count525
+\c@Item=\count526
+\c@Hfootnote=\count527
 )
 Package scrhack Info: hyperref hack deactivated because of
 (scrhack)             detection of hyperref version, that doesn't
-(scrhack)             need that hack, on input line 99.
+(scrhack)             need that hack, on input line 66.
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 (/home/aitor/.miktex/texmfs/install/tex/latex/hyperref/hpdftex.def
@@ -1264,8 +1397,8 @@ Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
 kage
 with kernel methods
 )
-\Fld@listcount=\count501
-\c@bookmark@seq@number=\count502
+\Fld@listcount=\count528
+\c@bookmark@seq@number=\count529
 
 (/home/aitor/.miktex/texmfs/install/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
@@ -1278,107 +1411,47 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip85
 )
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 99.
-Package hyperref Info: Option `hypertexnames' set `false' on input line 99.
-Package hyperref Info: Option `colorlinks' set `true' on input line 99.
-Package hyperref Info: Option `unicode' set `true' on input line 99.
-Package hyperref Info: Option `breaklinks' set `true' on input line 99.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 102.
+Package hyperref Info: Option `hypertexnames' set `false' on input line 102.
+Package hyperref Info: Option `colorlinks' set `true' on input line 102.
+Package hyperref Info: Option `unicode' set `true' on input line 102.
+Package hyperref Info: Option `breaklinks' set `true' on input line 102.
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
-LaTeX Font Info:    Trying to load font information for T1+ppl on input line 99
-.
+LaTeX Font Info:    Trying to load font information for T1+ppl on input line 10
+2.
  (/home/aitor/.miktex/texmfs/install/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 ) (main.aux
 (Chapters/Chapter1.aux) (Chapters/Chapter2.aux) (Chapters/Chapter3.aux
 
-LaTeX Warning: Label `fig:transportEq.' multiply defined.
+LaTeX Warning: Label `BBPF_NCMF' multiply defined.
 
 
-LaTeX Warning: Label `3.4efig' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `fig:waterProperties' multiply defined.
-
-
-LaTeX Warning: Label `fig:waterProperties' multiply defined.
-
-
-LaTeX Warning: Label `fig:boat3' multiply defined.
-
-
-LaTeX Warning: Label `fig:boat4' multiply defined.
-
-
-LaTeX Warning: Label `fig:boat5' multiply defined.
-
-
-LaTeX Warning: Label `3.4afig' multiply defined.
-
-
-LaTeX Warning: Label `sub@3.4afig' multiply defined.
-
-
-LaTeX Warning: Label `3.4bfig' multiply defined.
-
-
-LaTeX Warning: Label `sub@3.4bfig' multiply defined.
-
-
-LaTeX Warning: Label `3.4cfig' multiply defined.
-
-
-LaTeX Warning: Label `sub@3.4cfig' multiply defined.
-
-
-LaTeX Warning: Label `3.4dfig' multiply defined.
-
-
-LaTeX Warning: Label `sub@3.4dfig' multiply defined.
-
-
-LaTeX Warning: Label `3.4efig' multiply defined.
-
-
-LaTeX Warning: Label `sub@3.4efig' multiply defined.
-
-
-LaTeX Warning: Label `3.4ffig' multiply defined.
-
-
-LaTeX Warning: Label `sub@3.4ffig' multiply defined.
-
-
-LaTeX Warning: Label `3.4fig' multiply defined.
-
-
-LaTeX Warning: Label `3.5' multiply defined.
+LaTeX Warning: Label `sub@BBPF_NCMF' multiply defined.
 
 ) (Chapters/Chapter4.aux) (Chapters/Chapter5.aux) (Chapters/Chapter6.aux)
-(Appendices/AppendixA.aux) (Appendices/AppendixB.aux) (example.bib.aux))
+(example.bib.aux) (Appendices/AppendixA.aux) (Appendices/AppendixB.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
 
 
 LaTeX hooks Warning: Generic hook
@@ -1395,21 +1468,21 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 99.
+or `english'. on input line 102.
 
 (/home/aitor/.miktex/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count503
-\scratchdimen=\dimen315
-\scratchbox=\box104
-\nofMPsegments=\count504
-\nofMParguments=\count505
-\everyMPshowfont=\toks57
-\MPscratchCnt=\count506
-\MPscratchDim=\dimen316
-\MPnumerator=\count507
-\makeMPintoPDFobject=\count508
-\everyMPtoPDFconversion=\toks58
+\scratchcounter=\count530
+\scratchdimen=\dimen369
+\scratchbox=\box132
+\nofMPsegments=\count531
+\nofMParguments=\count532
+\everyMPshowfont=\toks59
+\MPscratchCnt=\count533
+\MPscratchDim=\dimen370
+\MPnumerator=\count534
+\makeMPintoPDFobject=\count535
+\everyMPtoPDFconversion=\toks60
 ) (/home/aitor/.miktex/texmfs/install/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1459,14 +1532,14 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package scrlayer Info: Setting magic \footheight to \baselineskip while
-(scrlayer)             \begin{document} on input line 99.
-Package scrbase Info: activating english \abbrevname on input line 99.
-Package scrbase Info: activating english \byname on input line 99.
-Package scrbase Info: activating english \acknowledgementname on input line 99.
-
-Package scrbase Info: activating english \authorshipname on input line 99.
-Package scrbase Info: activating english \constantsname on input line 99.
-Package scrbase Info: activating english \symbolsname on input line 99.
+(scrlayer)             \begin{document} on input line 102.
+Package scrbase Info: activating english \abbrevname on input line 102.
+Package scrbase Info: activating english \byname on input line 102.
+Package scrbase Info: activating english \acknowledgementname on input line 102
+.
+Package scrbase Info: activating english \authorshipname on input line 102.
+Package scrbase Info: activating english \constantsname on input line 102.
+Package scrbase Info: activating english \symbolsname on input line 102.
 (/home/aitor/.miktex/texmfs/install/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
 
@@ -1493,9 +1566,6 @@ File: english.lbx 2020/12/31 v3.16 biblatex localization (PK/MW)
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-Package biblatex Info: Input encoding 'utf8' specified.
-Package biblatex Info: Data encoding 'utf8' specified.
-(biblatex)             No need to reencode data.
 Package biblatex Info: Document encoding is UTF8 ....
 Package biblatex Info: ... and expl3
 (biblatex)             2021-11-22 L3 programming layer (loader) 
@@ -1505,18 +1575,23 @@ Package biblatex Info: ... and expl3
 (/home/aitor/.miktex/texmfs/install/tex/latex/biblatex/blx-case-expl3.sty
 Package: blx-case-expl3 2020/12/31 v3.16 expl3 case changing code for biblatex
 )
-\openout3 = `main-blx.bib'.
+\openout3 = `main.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
 
 (main.bbl)
-Package biblatex Info: Reference section=0 on input line 99.
-Package biblatex Info: Reference segment=0 on input line 99.
-\c@lstlisting=\count509
-Package scrhack Info: undefining \float@addtolists on input line 99.
-Package hyperref Info: Link coloring ON on input line 99.
- (/home/aitor/.miktex/texmfs/install/tex/latex/hyperref/nameref.sty
+Package biblatex Info: Reference section=0 on input line 102.
+Package biblatex Info: Reference segment=0 on input line 102.
+\c@lstlisting=\count536
+Package scrhack Info: undefining \float@addtolists on input line 102.
+
+(/home/aitor/.miktex/texmfs/install/tex/latex/ninecolors/ninecolors.sty
+Package: ninecolors 2021/05/24 v2021C Select colors with proper color contrast
+)
+Package hyperref Info: Link coloring ON on input line 102.
+
+(/home/aitor/.miktex/texmfs/install/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
 (/home/aitor/.miktex/texmfs/install/tex/latex/refcount/refcount.sty
@@ -1526,11 +1601,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count510
+\c@section@level=\count537
 )
-LaTeX Info: Redefining \ref on input line 99.
-LaTeX Info: Redefining \pageref on input line 99.
-LaTeX Info: Redefining \nameref on input line 99.
+LaTeX Info: Redefining \ref on input line 102.
+LaTeX Info: Redefining \pageref on input line 102.
+LaTeX Info: Redefining \nameref on input line 102.
  (main.out) (main.out)
 \@outlinefile=\write6
 \openout6 = `main.out'.
@@ -1539,10 +1614,10 @@ LaTeX Info: Redefining \nameref on input line 99.
 
 pdfTeX warning: miktex-pdflatex (file ./Cover TFM English.pdf): PDF inclusion: 
 found PDF version <1.7>, but at most version <1.5> allowed
-<Cover TFM English.pdf, id=338, 597.55246pt x 845.07718pt>
+<Cover TFM English.pdf, id=346, 597.55246pt x 845.07718pt>
 File: Cover TFM English.pdf Graphic file (type pdf)
 <use Cover TFM English.pdf>
-Package pdftex.def Info: Cover TFM English.pdf  used on input line 100.
+Package pdftex.def Info: Cover TFM English.pdf  used on input line 103.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 
 
@@ -1550,7 +1625,7 @@ pdfTeX warning: miktex-pdflatex (file ./Cover TFM English.pdf): PDF inclusion:
 found PDF version <1.7>, but at most version <1.5> allowed
 File: Cover TFM English.pdf Graphic file (type pdf)
 <use Cover TFM English.pdf>
-Package pdftex.def Info: Cover TFM English.pdf  used on input line 100.
+Package pdftex.def Info: Cover TFM English.pdf  used on input line 103.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 
 
@@ -1560,26 +1635,26 @@ found PDF version <1.7>, but at most version <1.5> allowed
 
 pdfTeX warning: miktex-pdflatex (file ./Cover TFM English.pdf): PDF inclusion: 
 found PDF version <1.7>, but at most version <1.5> allowed
-<Cover TFM English.pdf, id=341, page=1, 597.55246pt x 845.07718pt>
+<Cover TFM English.pdf, id=349, page=1, 597.55246pt x 845.07718pt>
 File: Cover TFM English.pdf Graphic file (type pdf)
 <use Cover TFM English.pdf, page 1>
-Package pdftex.def Info: Cover TFM English.pdf , page1 used on input line 100.
+Package pdftex.def Info: Cover TFM English.pdf , page1 used on input line 103.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 File: Cover TFM English.pdf Graphic file (type pdf)
 <use Cover TFM English.pdf, page 1>
-Package pdftex.def Info: Cover TFM English.pdf , page1 used on input line 100.
+Package pdftex.def Info: Cover TFM English.pdf , page1 used on input line 103.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: Cover TFM English.pdf Graphic file (type pdf)
 <use Cover TFM English.pdf, page 1>
-Package pdftex.def Info: Cover TFM English.pdf , page1 used on input line 100.
+Package pdftex.def Info: Cover TFM English.pdf , page1 used on input line 103.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: Cover TFM English.pdf Graphic file (type pdf)
 <use Cover TFM English.pdf, page 1>
-Package pdftex.def Info: Cover TFM English.pdf , page1 used on input line 100.
+Package pdftex.def Info: Cover TFM English.pdf , page1 used on input line 103.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: Cover TFM English.pdf Graphic file (type pdf)
 <use Cover TFM English.pdf, page 1>
-Package pdftex.def Info: Cover TFM English.pdf , page1 used on input line 100.
+Package pdftex.def Info: Cover TFM English.pdf , page1 used on input line 103.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 [1
 
@@ -1596,40 +1671,40 @@ Package pdftex.def Info: Cover TFM English.pdf , page1 used on input line 100.
  Declaration of Authorship
 --------------------
 LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 1
-57.
+60.
 (/home/aitor/.miktex/texmfs/install/tex/latex/psnfss/ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 162--163
+Underfull \hbox (badness 10000) in paragraph at lines 165--166
 
  []
 
 1: section
 LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 1
-72.
+75.
 (/home/aitor/.miktex/texmfs/install/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
 LaTeX Font Info:    Trying to load font information for OML+zplm on input line 
-172.
+175.
 
 (/home/aitor/.miktex/texmfs/install/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 
-172.
+175.
 
 (/home/aitor/.miktex/texmfs/install/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 
-172.
+175.
 
 (/home/aitor/.miktex/texmfs/install/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
 LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 
-172.
+175.
 
 (/home/aitor/.miktex/texmfs/install/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
@@ -1640,23 +1715,23 @@ File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
  Abstract
 --------------------
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--186
+Underfull \hbox (badness 10000) in paragraph at lines 183--189
 \T1/ppl/m/n/12 ter so-lid-i-fi-ca-tion.
  []
 
 
-Overfull \hbox (21.54291pt too wide) in paragraph at lines 180--186
+Overfull \hbox (21.54291pt too wide) in paragraph at lines 183--189
 []\T1/ppl/m/n/12 An Open-FOAM 21.12. solver based on a multi-phase solver, mult
 i-component
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--186
+Underfull \hbox (badness 10000) in paragraph at lines 183--189
 \T1/ppl/m/n/12 Kowaleski and Re-bow.
  []
 
 
-Overfull \hbox (4.23949pt too wide) in paragraph at lines 187--188
+Overfull \hbox (4.23949pt too wide) in paragraph at lines 190--191
 []\T1/ppl/b/n/12 Keywords: \T1/ppl/m/n/12 PCMs, multip-phase, Enthalpy-porosity
  tech-nique, Lee model,
  []
@@ -1671,7 +1746,7 @@ Overfull \hbox (4.23949pt too wide) in paragraph at lines 187--188
  Acknowledgements
 --------------------
 
-Underfull \hbox (badness 1769) in paragraph at lines 196--199
+Underfull \hbox (badness 1769) in paragraph at lines 199--202
 \T1/ppl/m/n/12 Dr. Gus-tavo Raush for their in-valu-able help through-out this 
 work.
  []
@@ -1700,15 +1775,9 @@ Heat Trans-
  [11] [12
 
 ] (main.lof
-Overfull \hbox (12.90753pt too wide) in paragraph at lines 28--28
+Overfull \hbox (12.90753pt too wide) in paragraph at lines 36--36
  [][] [][][]\T1/ppl/m/n/12 Comparison be-tween Buoy-ant-Boussi-nesqPim-ple-Foam
  and NCMF*[][] [][]  
- []
-
-
-Overfull \hbox (165.65468pt too wide) in paragraph at lines 44--44
- [][] [][][]\T1/ppl/m/n/12 Flowchart of the con-ju-gate heat trans-fer solver.[
-][][] [][]  
  []
 
 )
@@ -1725,6 +1794,18 @@ Overfull \hbox (2.79147pt too wide) in paragraph at lines 12--12
  en-ergy equa- 
  []
 
+
+Overfull \hbox (9.89449pt too wide) in paragraph at lines 42--42
+ [][] [][][]\T1/ppl/m/n/12 Numerical re-sults of ve-loc-ity dis-tri-bu-tions fo
+r Enthalpy-porosity 
+ []
+
+
+Overfull \hbox (6.65521pt too wide) in paragraph at lines 50--50
+ [][] [][][]\T1/ppl/m/n/12 Numerical re-sults of al-pha frac-tion for Enthalpy-
+porosity model 
+ []
+
 )
 \tf@lot=\write9
 \openout9 = `main.lot'.
@@ -1739,80 +1820,101 @@ Overfull \hbox (2.79147pt too wide) in paragraph at lines 12--12
 
 (Chapters/Chapter1.tex
 Chapter 1.
+<Figures//buoyancy_roadmap.png, id=667, 652.68843pt x 217.5628pt>
+File: Figures//buoyancy_roadmap.png Graphic file (type png)
+<use Figures//buoyancy_roadmap.png>
+Package pdftex.def Info: Figures//buoyancy_roadmap.png  used on input line 31.
+(pdftex.def)             Requested size: 404.02908pt x 134.68172pt.
+<Figures//EP_roadmap.png, id=668, 670.75594pt x 161.85469pt>
+File: Figures//EP_roadmap.png Graphic file (type png)
+<use Figures//EP_roadmap.png>
+Package pdftex.def Info: Figures//EP_roadmap.png  used on input line 37.
+(pdftex.def)             Requested size: 404.02908pt x 97.49141pt.
 
-LaTeX Warning: Citation 'krabbenhoft_damkilde_nazem_2006' on page 1 undefined o
-n input line 33.
+Underfull \hbox (badness 1354) in paragraph at lines 38--38
+ []\T1/ppl/m/sc/10.95 Figure 1.2: |\T1/ppl/m/n/10.95 Work-path for la-tent heat
+ im-ple-men-ta-tion in 
+ []
+
+<Figures//icoreacting_roadmap.png, id=669, 846.16125pt x 249.18094pt>
+File: Figures//icoreacting_roadmap.png Graphic file (type png)
+<use Figures//icoreacting_roadmap.png>
+Package pdftex.def Info: Figures//icoreacting_roadmap.png  used on input line 4
+3.
+(pdftex.def)             Requested size: 404.02908pt x 118.97812pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 1: section
 [1
 
 
-]
-<Figures//isothermal_phasechange.png, id=610, 391.4625pt x 347.04657pt>
+] [2 <./Figures//buoyancy_roadmap.png (PNG copy)> <./Figures//EP_roadmap.png (P
+NG copy)> <./Figures//icoreacting_roadmap.png (PNG copy)>]
+<Figures//cht_roadmap.png, id=680, 660.21657pt x 394.47375pt>
+File: Figures//cht_roadmap.png Graphic file (type png)
+<use Figures//cht_roadmap.png>
+Package pdftex.def Info: Figures//cht_roadmap.png  used on input line 50.
+(pdftex.def)             Requested size: 404.02908pt x 241.41112pt.
+<Figures//isothermal_phasechange.png, id=683, 391.4625pt x 347.04657pt>
 File: Figures//isothermal_phasechange.png Graphic file (type png)
 <use Figures//isothermal_phasechange.png>
 Package pdftex.def Info: Figures//isothermal_phasechange.png  used on input lin
-e 38.
+e 66.
 (pdftex.def)             Requested size: 202.01454pt x 179.09372pt.
-<Figures//non_iso_phasechange.png, id=611, 386.19281pt x 329.73187pt>
+<Figures//non_iso_phasechange.png, id=684, 386.19281pt x 329.73187pt>
 File: Figures//non_iso_phasechange.png Graphic file (type png)
 <use Figures//non_iso_phasechange.png>
-Package pdftex.def Info: Figures//non_iso_phasechange.png  used on input line 4
-5.
+Package pdftex.def Info: Figures//non_iso_phasechange.png  used on input line 7
+3.
 (pdftex.def)             Requested size: 202.01454pt x 172.47787pt.
 
-Overfull \hbox (2.28003pt too wide) in paragraph at lines 36--49
+Overfull \hbox (2.28003pt too wide) in paragraph at lines 64--77
 []$[]$  $[]$ 
  []
 
+[3
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--65
+ <./Figures//cht_roadmap.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 91--93
 
  []
 
-[2 <./Figures//isothermal_phasechange.png (PNG copy)> <./Figures//non_iso_phase
-change.png (PNG copy)>]
-<Figures//phase_diagram_ice.png, id=617, 411.78844pt x 434.37282pt>
+<Figures//phase_diagram_ice.png, id=691, 411.78844pt x 434.37282pt>
 File: Figures//phase_diagram_ice.png Graphic file (type png)
 <use Figures//phase_diagram_ice.png>
-Package pdftex.def Info: Figures//phase_diagram_ice.png  used on input line 72.
-
+Package pdftex.def Info: Figures//phase_diagram_ice.png  used on input line 100
+.
 (pdftex.def)             Requested size: 202.01454pt x 213.0964pt.
+[4 <./Figures//isothermal_phasechange.png (PNG copy)> <./Figures//non_iso_phase
+change.png (PNG copy)>]
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-LaTeX Warning: Citation 'akyurt_zaki_habeebullah_2002' on page 3 undefined on i
-nput line 79.
-
-
-LaTeX Warning: Citation 'akyurt_zaki_habeebullah_2002' on page 3 undefined on i
-nput line 83.
-
-[3 <./Figures//phase_diagram_ice.png (PNG copy)>]
-<Figures//crystallization_of_water.png, id=622, 1897.0875pt x 1678.27pt>
+[5 <./Figures//phase_diagram_ice.png (PNG copy)>] [6]
+<Figures//crystallization_of_water.png, id=707, 1897.0875pt x 1678.27pt>
 File: Figures//crystallization_of_water.png Graphic file (type png)
 <use Figures//crystallization_of_water.png>
 Package pdftex.def Info: Figures//crystallization_of_water.png  used on input l
-ine 112.
+ine 140.
 (pdftex.def)             Requested size: 242.4199pt x 214.44394pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 118--124
+Underfull \hbox (badness 10000) in paragraph at lines 155--160
 
  []
 
-[4]) [5 <./Figures//crystallization_of_water.png>]
+[7
+
+ <./Figures//crystallization_of_water.png>]) [8]
 \openout2 = `Chapters/Chapter2.aux'.
 
  (Chapters/Chapter2.tex
-[6
-
-
-
-
-]
 Chapter 2.
 
 Overfull \hbox (2.6352pt too wide) in paragraph at lines 11--14
@@ -1825,109 +1927,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--14
 
  []
 
-
-LaTeX Warning: Citation 'juric_tryggvason_1996' on page 7 undefined on input li
-ne 24.
-
-
-LaTeX Warning: Citation 'al-rawahi_tryggvason_2002' on page 7 undefined on inpu
-t line 24.
-
-
-LaTeX Warning: Citation 'i_garimella_simpson_2003' on page 7 undefined on input
- line 24.
-
-
-Overfull \hbox (57.06314pt too wide) in paragraph at lines 24--25
-[]\T1/ppl/m/n/12 Several stud-ies are car-ried out with this method. Ju-ric et 
-al. [[]],
- []
-
 1: section
-[7]
-
-LaTeX Warning: Citation 'harlow_welch_1965' on page 8 undefined on input line 2
-6.
+[9
 
 
-LaTeX Warning: Citation 'tan_zabaras_2007' on page 8 undefined on input line 28
-.
 
 
-LaTeX Warning: Citation 'rauschenberger_criscione_eisenschmidt_kintea_jakirlic_
-tukovic_roisman_weigand_tropea_2013' on page 8 undefined on input line 28.
-
-
-Overfull \hbox (26.94548pt too wide) in paragraph at lines 28--29
-\T1/ppl/m/n/12 front-tracking meth-ods to model the mi-crostruc-ture evo-lu-tio
-n in multi-component
+]
+Overfull \hbox (1.2183pt too wide) in paragraph at lines 26--27
+\T1/ppl/m/n/12 and cell method tracked the in-ter-face by wight-less par-ti-cle
+s which were trans-
  []
 
-
-Overfull \hbox (145.83124pt too wide) in paragraph at lines 28--29
-\T1/ppl/m/n/12 al. [[]]
- []
-
-
-Overfull \hbox (12.49881pt too wide) in paragraph at lines 28--29
-\T1/ppl/m/n/12 pur-sued a com-par-a-tive as-sess-ment be-tween a Level set ap-p
-roach and a volume-
- []
-
-
-LaTeX Warning: Citation 'esen_kutluay_2004' on page 8 undefined on input line 3
-0.
-
-
-LaTeX Warning: Citation 'el ganaoui_lamazouade_bontoux_morvan_2002' on page 8 u
-ndefined on input line 30.
-
-
-LaTeX Warning: Citation 'voller_2008' on page 8 undefined on input line 30.
-
-[8]
-
-LaTeX Warning: Citation 'chen_2002' on page 9 undefined on input line 32.
-
-
-LaTeX Warning: Citation 'hirt_nichols_1981' on page 9 undefined on input line 3
-4.
-
-
-LaTeX Warning: Citation 'voller_prakash_1987' on page 9 undefined on input line
- 37.
-
-
-LaTeX Warning: Citation 'rÃ¶sler_brÃ¼ggemann_2011' on page 9 undefined on input
- line 39.
-
-
-Overfull \hbox (20.76726pt too wide) in paragraph at lines 34--41
-\T1/ppl/m/n/12 and Brüg-ger-mann [[]] in-tro-duced a nu-mer-i-cal model
- []
-
-[9]
-
-LaTeX Warning: Citation 'hirt_nichols_1981' on page 10 undefined on input line 
-51.
-
-[10]
-
-Package caption Warning: \label without proper reference on input line 70.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `2.1fig' on page 11 undefined on input line 66.
-
-<Figures//Volume-of-Fluid-approach.jpg, id=664, 481.8pt x 305.64188pt>
+[10] [11] [12]
+<Figures//Volume-of-Fluid-approach.jpg, id=776, 481.8pt x 305.64188pt>
 File: Figures//Volume-of-Fluid-approach.jpg Graphic file (type jpg)
 <use Figures//Volume-of-Fluid-approach.jpg>
 Package pdftex.def Info: Figures//Volume-of-Fluid-approach.jpg  used on input l
 ine 69.
 (pdftex.def)             Requested size: 222.21722pt x 140.9654pt.
-[11
+ [13
 
- <./Figures//Volume-of-Fluid-approach.jpg>] [12]
+ <./Figures//Volume-of-Fluid-approach.jpg>] [14]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 179.
@@ -1940,18 +1961,21 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 179.
 
-[13] [14] [15]
-<Figures//crystallization_rate.png, id=744, 402.00188pt x 282.30469pt>
+[15] [16] [17]
+
+LaTeX Warning: Reference `fig:boat2' on page 18 undefined on input line 267.
+
+<Figures//crystallization_rate.png, id=852, 402.00188pt x 282.30469pt>
 File: Figures//crystallization_rate.png Graphic file (type png)
 <use Figures//crystallization_rate.png>
 Package pdftex.def Info: Figures//crystallization_rate.png  used on input line 
 270.
 (pdftex.def)             Requested size: 242.4199pt x 170.23701pt.
- [16 <./Figures//crystallization_rate.png (PNG copy)>]) [17]
+[18 <./Figures//crystallization_rate.png (PNG copy)>]) [19]
 \openout2 = `Chapters/Chapter3.aux'.
 
 
-(Chapters/Chapter3.tex [18
+(Chapters/Chapter3.tex [20
 
 
 
@@ -1964,34 +1988,39 @@ Overfull \hbox (0.85788pt too wide) in paragraph at lines 7--8
 im-u-la-tions based
  []
 
-
-LaTeX Warning: Citation 'moukalled_mangani_darwish_2016' on page 19 undefined o
-n input line 13.
-
 1: section
-[19]
+[21]
 
-LaTeX Warning: Reference `fig:structureOF' on page 20 undefined on input line 5
+LaTeX Warning: Reference `fig:transportEq.' on page 22 undefined on input line 
+28.
+
+
+LaTeX Warning: Reference `fig:structureOF' on page 22 undefined on input line 5
 0.
 
-[20]
+[22]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
 00.
  (/home/aitor/.miktex/texmfs/install/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-) [21
+) [23
 
 ]
-[22]
+[24]
 Overfull \hbox (13.47061pt too wide) in paragraph at lines 124--124
 []\T1/ppl/b/n/17.28 OpenFOAM: Buoy-ant-Boussi-nesqPim-ple-FOAM.
  []
 
-<Figures//CF_GEOM.png, id=796, 1148.29pt x 797.98125pt>
+<Figures//CF_GEOM.png, id=905, 1148.29pt x 797.98125pt>
 File: Figures//CF_GEOM.png Graphic file (type png)
 <use Figures//CF_GEOM.png>
-Package pdftex.def Info: Figures//CF_GEOM.png  used on input line 133.
+Package pdftex.def Info: Figures//CF_GEOM.png  used on input line 134.
 (pdftex.def)             Requested size: 222.21722pt x 154.41853pt.
+<Figures//mesh_cavity.png, id=906, 642.4pt x 642.4pt>
+File: Figures//mesh_cavity.png Graphic file (type png)
+<use Figures//mesh_cavity.png>
+Package pdftex.def Info: Figures//mesh_cavity.png  used on input line 135.
+(pdftex.def)             Requested size: 141.41264pt x 141.40685pt.
 
 Package scrlayer-scrpage Warning: \headheight to low.
 (scrlayer-scrpage)                At least 28.99998pt needed,
@@ -2001,425 +2030,872 @@ Package scrlayer-scrpage Warning: \headheight to low.
 (scrlayer-scrpage)                e.g., setting geometry's option
 (scrlayer-scrpage)                `head=28.99998pt'.
 (scrlayer-scrpage)                I'll also decrease \topmargin on input line 1
-49.
+53.
 
 
 Overfull \vbox (8.33836pt too high) has occurred while \output is active []
 
 
-[23 <./Figures//CF_GEOM.png (PNG copy)>] [24]
-Overfull \hbox (33.84262pt too wide) in paragraph at lines 234--235
+[25 <./Figures//CF_GEOM.png (PNG copy)> <./Figures//mesh_cavity.png>] [26]
+
+LaTeX Warning: Reference `3.9a' on page 27 undefined on input line 219.
+
+
+Overfull \hbox (33.84262pt too wide) in paragraph at lines 238--239
 []\T1/ppl/m/n/12 The \T1/ppl/m/it/12 buoy-ant-Boussi-nesqPim-ple-Foam \T1/ppl/m
 /n/12 is a solver used to solve non-steady buoyancy-
  []
 
-[25] [26]
-Overfull \hbox (7.71515pt too wide) in paragraph at lines 249--249
+[27]
+Overfull \hbox (7.71515pt too wide) in paragraph at lines 253--253
  [][]\T1/ppl/m/n/12 Temperature 
  []
 
-[27
-
-]
-
-LaTeX Warning: Citation 'berberovic_van hinsberg_jakirlic_roisman_tropea_2009' 
-on page 28 undefined on input line 309.
-
-
-LaTeX Warning: Citation 'rhie_chow_1983' on page 28 undefined on input line 334
-.
-
-[28]
-Overfull \hbox (15.8919pt too wide) detected at line 355
+[28] [29]
+Overfull \hbox (15.8919pt too wide) detected at line 359
 [][][][]
  []
 
-<Figures//domain.png, id=838, 409.53pt x 281.55188pt>
+<Figures//domain.png, id=945, 409.53pt x 281.55188pt>
 File: Figures//domain.png Graphic file (type png)
 <use Figures//domain.png>
-Package pdftex.def Info: Figures//domain.png  used on input line 376.
+Package pdftex.def Info: Figures//domain.png  used on input line 380.
 (pdftex.def)             Requested size: 242.4199pt x 166.66835pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[29]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Overfull \hbox (28.59023pt too wide) in paragraph at lines 429--440
+[30] [31 <./Figures//domain.png (PNG copy)>] [32]
+Overfull \hbox (59.52701pt too wide) in paragraph at lines 451--459
  [][] 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[30 <./Figures//domain.png (PNG copy)>] [31]
-Overfull \hbox (59.52701pt too wide) in paragraph at lines 445--453
- [][] 
- []
-
-<Figures//BBPF_T_1500s.png, id=861, 963.6pt x 542.025pt>
+<Figures//BBPF_T_1500s.png, id=970, 963.6pt x 542.025pt>
 File: Figures//BBPF_T_1500s.png Graphic file (type png)
 <use Figures//BBPF_T_1500s.png>
-Package pdftex.def Info: Figures//BBPF_T_1500s.png  used on input line 477.
+Package pdftex.def Info: Figures//BBPF_T_1500s.png  used on input line 483.
 (pdftex.def)             Requested size: 222.21722pt x 124.99394pt.
-<Figures//CF_T_1500s_comp.png, id=862, 963.6pt x 542.025pt>
+<Figures//CF_T_1500s_comp.png, id=971, 963.6pt x 542.025pt>
 File: Figures//CF_T_1500s_comp.png Graphic file (type png)
 <use Figures//CF_T_1500s_comp.png>
-Package pdftex.def Info: Figures//CF_T_1500s_comp.png  used on input line 478.
-(pdftex.def)             Requested size: 222.21722pt x 124.99394pt.
-
-Overfull \hbox (40.40536pt too wide) in paragraph at lines 477--479
-[][] [] 
- []
-
-<Figures//BBPF_U_1500s.png, id=863, 963.6pt x 542.025pt>
-File: Figures//BBPF_U_1500s.png Graphic file (type png)
-<use Figures//BBPF_U_1500s.png>
-Package pdftex.def Info: Figures//BBPF_U_1500s.png  used on input line 483.
-(pdftex.def)             Requested size: 222.21722pt x 124.99394pt.
-<Figures//CF_U_1500s_comp.png, id=864, 963.6pt x 542.025pt>
-File: Figures//CF_U_1500s_comp.png Graphic file (type png)
-<use Figures//CF_U_1500s_comp.png>
-Package pdftex.def Info: Figures//CF_U_1500s_comp.png  used on input line 484.
+Package pdftex.def Info: Figures//CF_T_1500s_comp.png  used on input line 484.
 (pdftex.def)             Requested size: 222.21722pt x 124.99394pt.
 
 Overfull \hbox (40.40536pt too wide) in paragraph at lines 483--485
 [][] [] 
  []
 
-[32
+<Figures//BBPF_U_1500s.png, id=972, 963.6pt x 542.025pt>
+File: Figures//BBPF_U_1500s.png Graphic file (type png)
+<use Figures//BBPF_U_1500s.png>
+Package pdftex.def Info: Figures//BBPF_U_1500s.png  used on input line 489.
+(pdftex.def)             Requested size: 222.21722pt x 124.99394pt.
+<Figures//CF_U_1500s_comp.png, id=973, 963.6pt x 542.025pt>
+File: Figures//CF_U_1500s_comp.png Graphic file (type png)
+<use Figures//CF_U_1500s_comp.png>
+Package pdftex.def Info: Figures//CF_U_1500s_comp.png  used on input line 490.
+(pdftex.def)             Requested size: 222.21722pt x 124.99394pt.
+
+Overfull \hbox (40.40536pt too wide) in paragraph at lines 489--491
+[][] [] 
+ []
+
+[33
 
  <./Figures//BBPF_T_1500s.png> <./Figures//CF_T_1500s_comp.png> <./Figures//BBP
-F_U_1500s.png> <./Figures//CF_U_1500s_comp.png>] [33]
-<Figures//temperature_xpos_conv.png, id=881, 462.528pt x 346.896pt>
+F_U_1500s.png> <./Figures//CF_U_1500s_comp.png>] [34]
+<Figures//temperature_xpos_conv.png, id=990, 462.528pt x 346.896pt>
 File: Figures//temperature_xpos_conv.png Graphic file (type png)
 <use Figures//temperature_xpos_conv.png>
 Package pdftex.def Info: Figures//temperature_xpos_conv.png  used on input line
- 520.
+ 527.
 (pdftex.def)             Requested size: 202.01454pt x 151.51254pt.
-<Figures//temperature_ypos_conv.png, id=882, 462.528pt x 346.896pt>
+<Figures//temperature_ypos_conv.png, id=991, 462.528pt x 346.896pt>
 File: Figures//temperature_ypos_conv.png Graphic file (type png)
 <use Figures//temperature_ypos_conv.png>
 Package pdftex.def Info: Figures//temperature_ypos_conv.png  used on input line
- 526.
+ 533.
 (pdftex.def)             Requested size: 202.01454pt x 151.51254pt.
-<Figures//xvel_xpos_conv.png, id=883, 462.528pt x 346.896pt>
+<Figures//xvel_xpos_conv.png, id=992, 462.528pt x 346.896pt>
 File: Figures//xvel_xpos_conv.png Graphic file (type png)
 <use Figures//xvel_xpos_conv.png>
-Package pdftex.def Info: Figures//xvel_xpos_conv.png  used on input line 530.
+Package pdftex.def Info: Figures//xvel_xpos_conv.png  used on input line 537.
 (pdftex.def)             Requested size: 202.01454pt x 151.51254pt.
-<Figures//xvel_ypos_conv.png, id=884, 462.528pt x 346.896pt>
+<Figures//xvel_ypos_conv.png, id=993, 462.528pt x 346.896pt>
 File: Figures//xvel_ypos_conv.png Graphic file (type png)
 <use Figures//xvel_ypos_conv.png>
-Package pdftex.def Info: Figures//xvel_ypos_conv.png  used on input line 534.
+Package pdftex.def Info: Figures//xvel_ypos_conv.png  used on input line 541.
 (pdftex.def)             Requested size: 202.01454pt x 151.51254pt.
-<Figures//yvel_xpos_conv.png, id=885, 462.528pt x 346.896pt>
+<Figures//yvel_xpos_conv.png, id=994, 462.528pt x 346.896pt>
 File: Figures//yvel_xpos_conv.png Graphic file (type png)
 <use Figures//yvel_xpos_conv.png>
-Package pdftex.def Info: Figures//yvel_xpos_conv.png  used on input line 538.
+Package pdftex.def Info: Figures//yvel_xpos_conv.png  used on input line 545.
 (pdftex.def)             Requested size: 202.01454pt x 151.51254pt.
-<Figures//yvel_ypos_conv.png, id=886, 462.528pt x 346.896pt>
+<Figures//yvel_ypos_conv.png, id=995, 462.528pt x 346.896pt>
 File: Figures//yvel_ypos_conv.png Graphic file (type png)
 <use Figures//yvel_ypos_conv.png>
-Package pdftex.def Info: Figures//yvel_ypos_conv.png  used on input line 542.
+Package pdftex.def Info: Figures//yvel_ypos_conv.png  used on input line 549.
 (pdftex.def)             Requested size: 202.01454pt x 151.51254pt.
 
-Overfull \hbox (2.28003pt too wide) in paragraph at lines 518--545
+Overfull \hbox (2.28003pt too wide) in paragraph at lines 525--552
 []$[]$  $[]$
  []
 
 
-Overfull \hbox (2.28003pt too wide) in paragraph at lines 518--545
+Overfull \hbox (2.28003pt too wide) in paragraph at lines 525--552
 []$ $[]$
  []
 
 
-Overfull \hbox (2.28003pt too wide) in paragraph at lines 518--545
+Overfull \hbox (2.28003pt too wide) in paragraph at lines 525--552
 []$ $[]$ 
  []
 
-<Figures//CF_T_100s.png, id=887, 642.4pt x 642.4pt>
+<Figures//CF_T_100s.png, id=996, 642.4pt x 642.4pt>
 File: Figures//CF_T_100s.png Graphic file (type png)
 <use Figures//CF_T_100s.png>
-Package pdftex.def Info: Figures//CF_T_100s.png  used on input line 552.
+Package pdftex.def Info: Figures//CF_T_100s.png  used on input line 559.
 (pdftex.def)             Requested size: 101.00726pt x 101.00209pt.
-<Figures//CF_T_250s.png, id=888, 642.4pt x 642.4pt>
+<Figures//CF_T_250s.png, id=997, 642.4pt x 642.4pt>
 File: Figures//CF_T_250s.png Graphic file (type png)
 <use Figures//CF_T_250s.png>
-Package pdftex.def Info: Figures//CF_T_250s.png  used on input line 552.
+Package pdftex.def Info: Figures//CF_T_250s.png  used on input line 559.
 (pdftex.def)             Requested size: 101.00726pt x 101.00209pt.
-<Figures//CF_T_1500s.png, id=889, 642.4pt x 642.4pt>
+<Figures//CF_T_1500s.png, id=998, 642.4pt x 642.4pt>
 File: Figures//CF_T_1500s.png Graphic file (type png)
 <use Figures//CF_T_1500s.png>
-Package pdftex.def Info: Figures//CF_T_1500s.png  used on input line 552.
+Package pdftex.def Info: Figures//CF_T_1500s.png  used on input line 559.
 (pdftex.def)             Requested size: 101.00726pt x 101.00209pt.
-<Figures//t.png, id=890, 90.3375pt x 347.79938pt>
+<Figures//t.png, id=999, 90.3375pt x 347.79938pt>
 File: Figures//t.png Graphic file (type png)
 <use Figures//t.png>
-Package pdftex.def Info: Figures//t.png  used on input line 552.
+Package pdftex.def Info: Figures//t.png  used on input line 559.
 (pdftex.def)             Requested size: 26.58345pt x 102.34518pt.
-<Figures//CF_U_100s.png, id=891, 642.4pt x 642.4pt>
+<Figures//CF_U_100s.png, id=1000, 642.4pt x 642.4pt>
 File: Figures//CF_U_100s.png Graphic file (type png)
 <use Figures//CF_U_100s.png>
-Package pdftex.def Info: Figures//CF_U_100s.png  used on input line 553.
+Package pdftex.def Info: Figures//CF_U_100s.png  used on input line 560.
 (pdftex.def)             Requested size: 101.00726pt x 101.00209pt.
-<Figures//CF_U_250s.png, id=892, 642.4pt x 642.4pt>
+<Figures//CF_U_250s.png, id=1001, 642.4pt x 642.4pt>
 File: Figures//CF_U_250s.png Graphic file (type png)
 <use Figures//CF_U_250s.png>
-Package pdftex.def Info: Figures//CF_U_250s.png  used on input line 553.
+Package pdftex.def Info: Figures//CF_U_250s.png  used on input line 560.
 (pdftex.def)             Requested size: 101.00726pt x 101.00209pt.
-<Figures//CF_U_1500s.png, id=893, 642.4pt x 642.4pt>
+<Figures//CF_U_1500s.png, id=1002, 642.4pt x 642.4pt>
 File: Figures//CF_U_1500s.png Graphic file (type png)
 <use Figures//CF_U_1500s.png>
-Package pdftex.def Info: Figures//CF_U_1500s.png  used on input line 553.
+Package pdftex.def Info: Figures//CF_U_1500s.png  used on input line 560.
 (pdftex.def)             Requested size: 101.00726pt x 101.00209pt.
-<Figures//u.png, id=894, 88.07906pt x 345.54094pt>
+<Figures//u.png, id=1003, 88.07906pt x 345.54094pt>
 File: Figures//u.png Graphic file (type png)
 <use Figures//u.png>
-Package pdftex.def Info: Figures//u.png  used on input line 553.
+Package pdftex.def Info: Figures//u.png  used on input line 560.
 (pdftex.def)             Requested size: 26.58345pt x 104.28523pt.
-<Figures//CF_rho_100s.png, id=895, 642.4pt x 642.4pt>
+<Figures//CF_rho_100s.png, id=1004, 642.4pt x 642.4pt>
 File: Figures//CF_rho_100s.png Graphic file (type png)
 <use Figures//CF_rho_100s.png>
-Package pdftex.def Info: Figures//CF_rho_100s.png  used on input line 554.
+Package pdftex.def Info: Figures//CF_rho_100s.png  used on input line 561.
 (pdftex.def)             Requested size: 101.00726pt x 101.00209pt.
-<Figures//CF_rho_250s.png, id=896, 642.4pt x 642.4pt>
+<Figures//CF_rho_250s.png, id=1005, 642.4pt x 642.4pt>
 File: Figures//CF_rho_250s.png Graphic file (type png)
 <use Figures//CF_rho_250s.png>
-Package pdftex.def Info: Figures//CF_rho_250s.png  used on input line 554.
+Package pdftex.def Info: Figures//CF_rho_250s.png  used on input line 561.
 (pdftex.def)             Requested size: 101.00726pt x 101.00209pt.
-<Figures//CF_rho_1500s.png, id=897, 642.4pt x 642.4pt>
+<Figures//CF_rho_1500s.png, id=1006, 642.4pt x 642.4pt>
 File: Figures//CF_rho_1500s.png Graphic file (type png)
 <use Figures//CF_rho_1500s.png>
-Package pdftex.def Info: Figures//CF_rho_1500s.png  used on input line 554.
+Package pdftex.def Info: Figures//CF_rho_1500s.png  used on input line 561.
 (pdftex.def)             Requested size: 101.00726pt x 101.00209pt.
-<Figures//rho.png, id=898, 93.34875pt x 430.60875pt>
+<Figures//rho.png, id=1007, 93.34875pt x 430.60875pt>
 File: Figures//rho.png Graphic file (type png)
 <use Figures//rho.png>
-Package pdftex.def Info: Figures//rho.png  used on input line 554.
+Package pdftex.def Info: Figures//rho.png  used on input line 561.
 (pdftex.def)             Requested size: 22.54538pt x 103.99869pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[34
+[35
 
  <./Figures//temperature_xpos_conv.png> <./Figures//temperature_ypos_conv.png> 
 <./Figures//xvel_xpos_conv.png> <./Figures//xvel_ypos_conv.png> <./Figures//yve
-l_xpos_conv.png> <./Figures//yvel_ypos_conv.png>] [35 <./Figures//CF_T_100s.png
+l_xpos_conv.png> <./Figures//yvel_ypos_conv.png>] [36 <./Figures//CF_T_100s.png
  (PNG copy)> <./Figures//CF_T_250s.png (PNG copy)> <./Figures//CF_T_1500s.png (
 PNG copy)> <./Figures//t.png (PNG copy)> <./Figures//CF_U_100s.png (PNG copy)> 
 <./Figures//CF_U_250s.png (PNG copy)> <./Figures//CF_U_1500s.png (PNG copy)> <.
 /Figures//u.png (PNG copy)> <./Figures//CF_rho_100s.png (PNG copy)> <./Figures/
 /CF_rho_250s.png (PNG copy)> <./Figures//CF_rho_1500s.png (PNG copy)> <./Figure
 s//rho.png (PNG copy)>]
-Overfull \hbox (23.0436pt too wide) in paragraph at lines 562--562
+Overfull \hbox (23.0436pt too wide) in paragraph at lines 569--569
 []\T1/ppl/b/n/17.28 OpenFOAM: IcoRe-act-ing-Mul-ti-pha-seIn-ter-FOAM.
  []
 
-<Figures//cylinder_geom.png, id=913, 642.4pt x 642.4pt>
+<Figures//cylinder_geom.png, id=1022, 642.4pt x 642.4pt>
 File: Figures//cylinder_geom.png Graphic file (type png)
 <use Figures//cylinder_geom.png>
-Package pdftex.def Info: Figures//cylinder_geom.png  used on input line 567.
+Package pdftex.def Info: Figures//cylinder_geom.png  used on input line 575.
 (pdftex.def)             Requested size: 242.4199pt x 242.41875pt.
-[36
 
- <./Figures//cylinder_geom.png>]
-Overfull \hbox (1.31088pt too wide) in paragraph at lines 605--606
+Overfull \hbox (20.38057pt too wide) in paragraph at lines 580--588
+\T1/ppl/m/n/12 nar Prandtl num-ber cal-cu-la-tion are: $\OML/zplm/m/it/12  \OT
+1/zplm/m/n/12 = \OT1/ppl/m/n/12 0.001003\OML/zplm/m/it/12 Kg\OT1/ppl/m/n/12 .\O
+ML/zplm/m/it/12 m[]\OT1/ppl/m/n/12 .\OML/zplm/m/it/12 s[]$\T1/ppl/m/n/12 , $\OM
+L/zplm/m/it/12  \OT1/zplm/m/n/12 = \OT1/ppl/m/n/12 0.6\OML/zplm/m/it/12 W\OT1/
+ppl/m/n/12 .\OML/zplm/m/it/12 m[]\OT1/ppl/m/n/12 .\OML/zplm/m/it/12 K[]$
+ []
+
+[37
+
+ <./Figures//cylinder_geom.png>] [38]
+Overfull \hbox (1.31088pt too wide) in paragraph at lines 628--630
 []\T1/ppl/m/n/12 IcoReactingMultiphaseInterFoam solver is a mul-ti-phase, mul-t
 i-com-po-nent
  []
 
-[37]
-<Figures//TEqn.png, id=929, 450.18187pt x 164.86594pt>
+<Figures//TEqn.png, id=1039, 450.18187pt x 164.86594pt>
 File: Figures//TEqn.png Graphic file (type png)
 <use Figures//TEqn.png>
-Package pdftex.def Info: Figures//TEqn.png  used on input line 632.
+Package pdftex.def Info: Figures//TEqn.png  used on input line 669.
 (pdftex.def)             Requested size: 242.4199pt x 88.77972pt.
-<Figures//solidificationMeltingSource.png, id=930, 709.90219pt x 214.55156pt>
+<Figures//solidificationMeltingSource.png, id=1040, 713.66624pt x 216.81pt>
 File: Figures//solidificationMeltingSource.png Graphic file (type png)
 <use Figures//solidificationMeltingSource.png>
 Package pdftex.def Info: Figures//solidificationMeltingSource.png  used on inpu
-t line 637.
-(pdftex.def)             Requested size: 242.4199pt x 73.26411pt.
+t line 676.
+(pdftex.def)             Requested size: 323.22449pt x 98.19547pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 630--644
+LaTeX Warning: Citation 'richter_turnow_kornev_hassel_2016' on page 39 undefine
+d on input line 682.
+
+
+Overfull \hbox (23.14316pt too wide) in paragraph at lines 666--684
+\T1/ppl/m/n/12 fluid method as it ap-pears in Richter et al. [[]]. 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 666--684
 
  []
 
-[38 <./Figures//TEqn.png (PNG copy)> <./Figures//solidificationMeltingSource.pn
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[39]
+<Figures//rhocpphicreate.png, id=1047, 333.49594pt x 238.64156pt>
+File: Figures//rhocpphicreate.png Graphic file (type png)
+<use Figures//rhocpphicreate.png>
+Package pdftex.def Info: Figures//rhocpphicreate.png  used on input line 688.
+(pdftex.def)             Requested size: 242.4199pt x 173.47496pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Figures//LeeCNT.png, id=1049, 537.50812pt x 568.37344pt>
+File: Figures//LeeCNT.png Graphic file (type png)
+<use Figures//LeeCNT.png>
+Package pdftex.def Info: Figures//LeeCNT.png  used on input line 699.
+(pdftex.def)             Requested size: 242.4199pt x 256.33807pt.
+[40 <./Figures//TEqn.png (PNG copy)> <./Figures//solidificationMeltingSource.pn
 g (PNG copy)>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+[41 <./Figures//rhocpphicreate.png (PNG copy)> <./Figures//LeeCNT.png (PNG copy
+)>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Overfull \hbox (59.52701pt too wide) in paragraph at lines 742--753
- [][] 
+[42]
+Underfull \vbox (badness 10000) detected at line 843
  []
 
+<Figures//T_1600s_EP_cavity.png, id=1067, 642.4pt x 642.4pt>
+File: Figures//T_1600s_EP_cavity.png Graphic file (type png)
+<use Figures//T_1600s_EP_cavity.png>
+Package pdftex.def Info: Figures//T_1600s_EP_cavity.png  used on input line 843
+.
+(pdftex.def)             Requested size: 101.00726pt x 101.00209pt.
+<Figures//T_1600s_CNT_cavity.png, id=1068, 642.4pt x 642.4pt>
+File: Figures//T_1600s_CNT_cavity.png Graphic file (type png)
+<use Figures//T_1600s_CNT_cavity.png>
+Package pdftex.def Info: Figures//T_1600s_CNT_cavity.png  used on input line 84
+3.
+(pdftex.def)             Requested size: 101.00726pt x 101.00209pt.
+<Figures//T_scale_EP_cavity.png, id=1069, 170.6375pt x 676.5275pt>
+File: Figures//T_scale_EP_cavity.png Graphic file (type png)
+<use Figures//T_scale_EP_cavity.png>
+Package pdftex.def Info: Figures//T_scale_EP_cavity.png  used on input line 844
+.
+(pdftex.def)             Requested size: 26.58345pt x 105.38715pt.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Underfull \vbox (badness 10000) detected at line 845
+ []
 
+<Figures//T_1700s_EP_cavity.png, id=1070, 642.4pt x 642.4pt>
+File: Figures//T_1700s_EP_cavity.png Graphic file (type png)
+<use Figures//T_1700s_EP_cavity.png>
+Package pdftex.def Info: Figures//T_1700s_EP_cavity.png  used on input line 845
+.
+(pdftex.def)             Requested size: 101.00726pt x 101.00209pt.
+<Figures//T_1700s_CNT_cavity.png, id=1071, 642.4pt x 642.4pt>
+File: Figures//T_1700s_CNT_cavity.png Graphic file (type png)
+<use Figures//T_1700s_CNT_cavity.png>
+Package pdftex.def Info: Figures//T_1700s_CNT_cavity.png  used on input line 84
+5.
+(pdftex.def)             Requested size: 101.00726pt x 101.00209pt.
+File: Figures//T_scale_EP_cavity.png Graphic file (type png)
+<use Figures//T_scale_EP_cavity.png>
+Package pdftex.def Info: Figures//T_scale_EP_cavity.png  used on input line 845
+.
+(pdftex.def)             Requested size: 26.58345pt x 105.38715pt.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Underfull \vbox (badness 10000) detected at line 846
+ []
 
+<Figures//T_1800s_EP_cavity.png, id=1072, 642.4pt x 642.4pt>
+File: Figures//T_1800s_EP_cavity.png Graphic file (type png)
+<use Figures//T_1800s_EP_cavity.png>
+Package pdftex.def Info: Figures//T_1800s_EP_cavity.png  used on input line 846
+.
+(pdftex.def)             Requested size: 101.00726pt x 101.00209pt.
+<Figures//T_1800s_CNT_cavity.png, id=1073, 642.4pt x 642.4pt>
+File: Figures//T_1800s_CNT_cavity.png Graphic file (type png)
+<use Figures//T_1800s_CNT_cavity.png>
+Package pdftex.def Info: Figures//T_1800s_CNT_cavity.png  used on input line 84
+6.
+(pdftex.def)             Requested size: 101.00726pt x 101.00209pt.
+File: Figures//T_scale_EP_cavity.png Graphic file (type png)
+<use Figures//T_scale_EP_cavity.png>
+Package pdftex.def Info: Figures//T_scale_EP_cavity.png  used on input line 847
+.
+(pdftex.def)             Requested size: 26.58345pt x 105.38715pt.
 
-Overfull \hbox (13.43143pt too wide) in paragraph at lines 774--775
+Overfull \hbox (13.43143pt too wide) in paragraph at lines 837--853
 []\T1/ppl/m/n/12 The val-i-da-tion of the phase change prob-lem is achieved by 
 dif-fer-ent method-
  []
 
-[39]
-File: Figures//temperature_xpos_conv.png Graphic file (type png)
-<use Figures//temperature_xpos_conv.png>
-Package pdftex.def Info: Figures//temperature_xpos_conv.png  used on input line
- 779.
-(pdftex.def)             Requested size: 202.01454pt x 151.51254pt.
-File: Figures//temperature_ypos_conv.png Graphic file (type png)
-<use Figures//temperature_ypos_conv.png>
-Package pdftex.def Info: Figures//temperature_ypos_conv.png  used on input line
- 785.
-(pdftex.def)             Requested size: 202.01454pt x 151.51254pt.
-File: Figures//xvel_xpos_conv.png Graphic file (type png)
-<use Figures//xvel_xpos_conv.png>
-Package pdftex.def Info: Figures//xvel_xpos_conv.png  used on input line 789.
-(pdftex.def)             Requested size: 202.01454pt x 151.51254pt.
-File: Figures//xvel_ypos_conv.png Graphic file (type png)
-<use Figures//xvel_ypos_conv.png>
-Package pdftex.def Info: Figures//xvel_ypos_conv.png  used on input line 793.
-(pdftex.def)             Requested size: 202.01454pt x 151.51254pt.
-File: Figures//yvel_xpos_conv.png Graphic file (type png)
-<use Figures//yvel_xpos_conv.png>
-Package pdftex.def Info: Figures//yvel_xpos_conv.png  used on input line 797.
-(pdftex.def)             Requested size: 202.01454pt x 151.51254pt.
-File: Figures//yvel_ypos_conv.png Graphic file (type png)
-<use Figures//yvel_ypos_conv.png>
-Package pdftex.def Info: Figures//yvel_ypos_conv.png  used on input line 801.
-(pdftex.def)             Requested size: 202.01454pt x 151.51254pt.
-
-Overfull \hbox (2.28003pt too wide) in paragraph at lines 777--804
-[]$[]$  $[]$
+[43]
+Underfull \vbox (badness 10000) detected at line 859
  []
 
+<Figures//U_1600s_EP_cavity.png, id=1080, 642.4pt x 642.4pt>
+File: Figures//U_1600s_EP_cavity.png Graphic file (type png)
+<use Figures//U_1600s_EP_cavity.png>
+Package pdftex.def Info: Figures//U_1600s_EP_cavity.png  used on input line 859
+.
+(pdftex.def)             Requested size: 101.00726pt x 101.00209pt.
+<Figures//U_1600s_CNT_cavity.png, id=1081, 642.4pt x 642.4pt>
+File: Figures//U_1600s_CNT_cavity.png Graphic file (type png)
+<use Figures//U_1600s_CNT_cavity.png>
+Package pdftex.def Info: Figures//U_1600s_CNT_cavity.png  used on input line 85
+9.
+(pdftex.def)             Requested size: 101.00726pt x 101.00209pt.
+<Figures//U_scale_1600s_cavity.png, id=1082, 170.6375pt x 676.5275pt>
+File: Figures//U_scale_1600s_cavity.png Graphic file (type png)
+<use Figures//U_scale_1600s_cavity.png>
+Package pdftex.def Info: Figures//U_scale_1600s_cavity.png  used on input line 
+860.
+(pdftex.def)             Requested size: 26.58345pt x 105.38715pt.
 
-Overfull \hbox (2.28003pt too wide) in paragraph at lines 777--804
-[]$ $[]$
+Underfull \vbox (badness 10000) detected at line 861
  []
 
+<Figures//U_1700s_EP_cavity.png, id=1083, 642.4pt x 642.4pt>
+File: Figures//U_1700s_EP_cavity.png Graphic file (type png)
+<use Figures//U_1700s_EP_cavity.png>
+Package pdftex.def Info: Figures//U_1700s_EP_cavity.png  used on input line 861
+.
+(pdftex.def)             Requested size: 101.00726pt x 101.00209pt.
+<Figures//U_1700s_CNT_cavity.png, id=1084, 642.4pt x 642.4pt>
+File: Figures//U_1700s_CNT_cavity.png Graphic file (type png)
+<use Figures//U_1700s_CNT_cavity.png>
+Package pdftex.def Info: Figures//U_1700s_CNT_cavity.png  used on input line 86
+1.
+(pdftex.def)             Requested size: 101.00726pt x 101.00209pt.
+<Figures//U_scale_1700s_cavity.png, id=1085, 170.6375pt x 676.5275pt>
+File: Figures//U_scale_1700s_cavity.png Graphic file (type png)
+<use Figures//U_scale_1700s_cavity.png>
+Package pdftex.def Info: Figures//U_scale_1700s_cavity.png  used on input line 
+861.
+(pdftex.def)             Requested size: 26.58345pt x 105.38715pt.
 
-Overfull \hbox (2.28003pt too wide) in paragraph at lines 777--804
-[]$ $[]$ 
+Underfull \vbox (badness 10000) detected at line 862
  []
+
+<Figures//U_1800s_EP_cavity.png, id=1086, 642.4pt x 642.4pt>
+File: Figures//U_1800s_EP_cavity.png Graphic file (type png)
+<use Figures//U_1800s_EP_cavity.png>
+Package pdftex.def Info: Figures//U_1800s_EP_cavity.png  used on input line 862
+.
+(pdftex.def)             Requested size: 101.00726pt x 101.00209pt.
+<Figures//U_1800s_CNT_cavity.png, id=1087, 642.4pt x 642.4pt>
+File: Figures//U_1800s_CNT_cavity.png Graphic file (type png)
+<use Figures//U_1800s_CNT_cavity.png>
+Package pdftex.def Info: Figures//U_1800s_CNT_cavity.png  used on input line 86
+2.
+(pdftex.def)             Requested size: 101.00726pt x 101.00209pt.
+<Figures//U_scale_1800s_cavity.png, id=1088, 170.6375pt x 676.5275pt>
+File: Figures//U_scale_1800s_cavity.png Graphic file (type png)
+<use Figures//U_scale_1800s_cavity.png>
+Package pdftex.def Info: Figures//U_scale_1800s_cavity.png  used on input line 
+863.
+(pdftex.def)             Requested size: 26.58345pt x 105.38715pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 10000) detected at line 875
+ []
+
+<Figures//alpha_1600s_EP_cavity.png, id=1089, 642.4pt x 642.4pt>
+File: Figures//alpha_1600s_EP_cavity.png Graphic file (type png)
+<use Figures//alpha_1600s_EP_cavity.png>
+Package pdftex.def Info: Figures//alpha_1600s_EP_cavity.png  used on input line
+ 875.
+(pdftex.def)             Requested size: 101.00726pt x 101.00209pt.
+<Figures//alpha_1600s_CNT_cavity.png, id=1090, 642.4pt x 642.4pt>
+File: Figures//alpha_1600s_CNT_cavity.png Graphic file (type png)
+<use Figures//alpha_1600s_CNT_cavity.png>
+Package pdftex.def Info: Figures//alpha_1600s_CNT_cavity.png  used on input lin
+e 875.
+(pdftex.def)             Requested size: 101.00726pt x 101.00209pt.
+<Figures//alpha_scale_cavity.png, id=1091, 170.6375pt x 676.5275pt>
+File: Figures//alpha_scale_cavity.png Graphic file (type png)
+<use Figures//alpha_scale_cavity.png>
+Package pdftex.def Info: Figures//alpha_scale_cavity.png  used on input line 87
+6.
+(pdftex.def)             Requested size: 26.58345pt x 105.38715pt.
+
+Underfull \vbox (badness 10000) detected at line 877
+ []
+
+<Figures//alpha_1700s_EP_cavity.png, id=1092, 642.4pt x 642.4pt>
+File: Figures//alpha_1700s_EP_cavity.png Graphic file (type png)
+<use Figures//alpha_1700s_EP_cavity.png>
+Package pdftex.def Info: Figures//alpha_1700s_EP_cavity.png  used on input line
+ 877.
+(pdftex.def)             Requested size: 101.00726pt x 101.00209pt.
+<Figures//alpha_1700s_CNT_cavity.png, id=1093, 642.4pt x 642.4pt>
+File: Figures//alpha_1700s_CNT_cavity.png Graphic file (type png)
+<use Figures//alpha_1700s_CNT_cavity.png>
+Package pdftex.def Info: Figures//alpha_1700s_CNT_cavity.png  used on input lin
+e 877.
+(pdftex.def)             Requested size: 101.00726pt x 101.00209pt.
+File: Figures//alpha_scale_cavity.png Graphic file (type png)
+<use Figures//alpha_scale_cavity.png>
+Package pdftex.def Info: Figures//alpha_scale_cavity.png  used on input line 87
+7.
+(pdftex.def)             Requested size: 26.58345pt x 105.38715pt.
+
+Underfull \vbox (badness 10000) detected at line 878
+ []
+
+<Figures//alpha_1800s_EP_cavity.png, id=1094, 642.4pt x 642.4pt>
+File: Figures//alpha_1800s_EP_cavity.png Graphic file (type png)
+<use Figures//alpha_1800s_EP_cavity.png>
+Package pdftex.def Info: Figures//alpha_1800s_EP_cavity.png  used on input line
+ 878.
+(pdftex.def)             Requested size: 101.00726pt x 101.00209pt.
+<Figures//alpha_1800s_CNT_cavity.png, id=1095, 642.4pt x 642.4pt>
+File: Figures//alpha_1800s_CNT_cavity.png Graphic file (type png)
+<use Figures//alpha_1800s_CNT_cavity.png>
+Package pdftex.def Info: Figures//alpha_1800s_CNT_cavity.png  used on input lin
+e 878.
+(pdftex.def)             Requested size: 101.00726pt x 101.00209pt.
+File: Figures//alpha_scale_cavity.png Graphic file (type png)
+<use Figures//alpha_scale_cavity.png>
+Package pdftex.def Info: Figures//alpha_scale_cavity.png  used on input line 87
+9.
+(pdftex.def)             Requested size: 26.58345pt x 105.38715pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Figures//temperature_time_center.png, id=1096, 462.528pt x 346.896pt>
+File: Figures//temperature_time_center.png Graphic file (type png)
+<use Figures//temperature_time_center.png>
+Package pdftex.def Info: Figures//temperature_time_center.png  used on input li
+ne 887.
+(pdftex.def)             Requested size: 282.81912pt x 212.12497pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 10000) detected at line 896
+ []
+
+<Figures//T_100s_EP.png, id=1097, 642.4pt x 642.4pt>
+File: Figures//T_100s_EP.png Graphic file (type png)
+<use Figures//T_100s_EP.png>
+Package pdftex.def Info: Figures//T_100s_EP.png  used on input line 896.
+(pdftex.def)             Requested size: 101.00726pt x 101.00209pt.
+<Figures//T_100s_CNT.png, id=1098, 642.4pt x 642.4pt>
+File: Figures//T_100s_CNT.png Graphic file (type png)
+<use Figures//T_100s_CNT.png>
+Package pdftex.def Info: Figures//T_100s_CNT.png  used on input line 896.
+(pdftex.def)             Requested size: 101.00726pt x 101.00209pt.
+<Figures//T_scale_100s_EP.png, id=1099, 170.6375pt x 676.5275pt>
+File: Figures//T_scale_100s_EP.png Graphic file (type png)
+<use Figures//T_scale_100s_EP.png>
+Package pdftex.def Info: Figures//T_scale_100s_EP.png  used on input line 897.
+(pdftex.def)             Requested size: 26.58345pt x 105.38715pt.
+
+Underfull \vbox (badness 10000) detected at line 898
+ []
+
+<Figures//T_300s_EP.png, id=1100, 642.4pt x 642.4pt>
+File: Figures//T_300s_EP.png Graphic file (type png)
+<use Figures//T_300s_EP.png>
+Package pdftex.def Info: Figures//T_300s_EP.png  used on input line 898.
+(pdftex.def)             Requested size: 101.00726pt x 101.00209pt.
+<Figures//T_300s_CNT.png, id=1101, 642.4pt x 642.4pt>
+File: Figures//T_300s_CNT.png Graphic file (type png)
+<use Figures//T_300s_CNT.png>
+Package pdftex.def Info: Figures//T_300s_CNT.png  used on input line 899.
+(pdftex.def)             Requested size: 101.00726pt x 101.00209pt.
+<Figures//T_scale_300s_EP.png, id=1102, 170.6375pt x 676.5275pt>
+File: Figures//T_scale_300s_EP.png Graphic file (type png)
+<use Figures//T_scale_300s_EP.png>
+Package pdftex.def Info: Figures//T_scale_300s_EP.png  used on input line 900.
+(pdftex.def)             Requested size: 26.58345pt x 105.38715pt.
+
+Underfull \vbox (badness 10000) detected at line 901
+ []
+
+<Figures//U_100s_EP.png, id=1103, 642.4pt x 642.4pt>
+File: Figures//U_100s_EP.png Graphic file (type png)
+<use Figures//U_100s_EP.png>
+Package pdftex.def Info: Figures//U_100s_EP.png  used on input line 901.
+(pdftex.def)             Requested size: 101.00726pt x 101.00209pt.
+<Figures//U_100s_CNT.png, id=1104, 642.4pt x 642.4pt>
+File: Figures//U_100s_CNT.png Graphic file (type png)
+<use Figures//U_100s_CNT.png>
+Package pdftex.def Info: Figures//U_100s_CNT.png  used on input line 901.
+(pdftex.def)             Requested size: 101.00726pt x 101.00209pt.
+<Figures//U_scale_100s_EP.png, id=1105, 170.6375pt x 676.5275pt>
+File: Figures//U_scale_100s_EP.png Graphic file (type png)
+<use Figures//U_scale_100s_EP.png>
+Package pdftex.def Info: Figures//U_scale_100s_EP.png  used on input line 901.
+(pdftex.def)             Requested size: 22.54538pt x 89.37622pt.
+
+Underfull \vbox (badness 10000) detected at line 902
+ []
+
+<Figures//U_300s_EP.png, id=1106, 642.4pt x 642.4pt>
+File: Figures//U_300s_EP.png Graphic file (type png)
+<use Figures//U_300s_EP.png>
+Package pdftex.def Info: Figures//U_300s_EP.png  used on input line 902.
+(pdftex.def)             Requested size: 101.00726pt x 101.00209pt.
+<Figures//U_300s_CNT.png, id=1107, 642.4pt x 642.4pt>
+File: Figures//U_300s_CNT.png Graphic file (type png)
+<use Figures//U_300s_CNT.png>
+Package pdftex.def Info: Figures//U_300s_CNT.png  used on input line 902.
+(pdftex.def)             Requested size: 101.00726pt x 101.00209pt.
+<Figures//U_scale_300s_EP.png, id=1108, 170.6375pt x 676.5275pt>
+File: Figures//U_scale_300s_EP.png Graphic file (type png)
+<use Figures//U_scale_300s_EP.png>
+Package pdftex.def Info: Figures//U_scale_300s_EP.png  used on input line 902.
+(pdftex.def)             Requested size: 22.54538pt x 89.37622pt.
+
+Underfull \vbox (badness 10000) detected at line 903
+ []
+
+<Figures//alpha_100s_EP.png, id=1109, 642.4pt x 642.4pt>
+File: Figures//alpha_100s_EP.png Graphic file (type png)
+<use Figures//alpha_100s_EP.png>
+Package pdftex.def Info: Figures//alpha_100s_EP.png  used on input line 903.
+(pdftex.def)             Requested size: 101.00726pt x 101.00209pt.
+<Figures//alpha_100s_CNT.png, id=1110, 642.4pt x 642.4pt>
+File: Figures//alpha_100s_CNT.png Graphic file (type png)
+<use Figures//alpha_100s_CNT.png>
+Package pdftex.def Info: Figures//alpha_100s_CNT.png  used on input line 903.
+(pdftex.def)             Requested size: 101.00726pt x 101.00209pt.
+File: Figures//alpha_scale_cavity.png Graphic file (type png)
+<use Figures//alpha_scale_cavity.png>
+Package pdftex.def Info: Figures//alpha_scale_cavity.png  used on input line 90
+3.
+(pdftex.def)             Requested size: 22.54538pt x 89.37622pt.
+
+Underfull \vbox (badness 10000) detected at line 904
+ []
+
+<Figures//alpha_300s_EP.png, id=1111, 642.4pt x 642.4pt>
+File: Figures//alpha_300s_EP.png Graphic file (type png)
+<use Figures//alpha_300s_EP.png>
+Package pdftex.def Info: Figures//alpha_300s_EP.png  used on input line 904.
+(pdftex.def)             Requested size: 101.00726pt x 101.00209pt.
+<Figures//alpha_300s_CNT.png, id=1112, 642.4pt x 642.4pt>
+File: Figures//alpha_300s_CNT.png Graphic file (type png)
+<use Figures//alpha_300s_CNT.png>
+Package pdftex.def Info: Figures//alpha_300s_CNT.png  used on input line 904.
+(pdftex.def)             Requested size: 101.00726pt x 101.00209pt.
+File: Figures//alpha_scale_cavity.png Graphic file (type png)
+<use Figures//alpha_scale_cavity.png>
+Package pdftex.def Info: Figures//alpha_scale_cavity.png  used on input line 90
+4.
+(pdftex.def)             Requested size: 22.54538pt x 89.37622pt.
+
+LaTeX Warning: Float too large for page by 18.27953pt on input line 909.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures//temperature_xpos_EL.png, id=945, 462.528pt x 346.896pt>
+<Figures//temperature_xpos_EL.png, id=1113, 462.528pt x 346.896pt>
 File: Figures//temperature_xpos_EL.png Graphic file (type png)
 <use Figures//temperature_xpos_EL.png>
-Package pdftex.def Info: Figures//temperature_xpos_EL.png  used on input line 8
-15.
+Package pdftex.def Info: Figures//temperature_xpos_EL.png  used on input line 9
+16.
 (pdftex.def)             Requested size: 202.01454pt x 151.51254pt.
-<Figures//temperature_ypos_EL.png, id=946, 462.528pt x 346.896pt>
+<Figures//temperature_ypos_EL.png, id=1114, 462.528pt x 346.896pt>
 File: Figures//temperature_ypos_EL.png Graphic file (type png)
 <use Figures//temperature_ypos_EL.png>
-Package pdftex.def Info: Figures//temperature_ypos_EL.png  used on input line 8
-21.
+Package pdftex.def Info: Figures//temperature_ypos_EL.png  used on input line 9
+22.
 (pdftex.def)             Requested size: 202.01454pt x 151.51254pt.
-<Figures//xvel_xpos_EL.png, id=947, 462.528pt x 346.896pt>
+<Figures//xvel_xpos_EL.png, id=1115, 462.528pt x 346.896pt>
 File: Figures//xvel_xpos_EL.png Graphic file (type png)
 <use Figures//xvel_xpos_EL.png>
-Package pdftex.def Info: Figures//xvel_xpos_EL.png  used on input line 825.
+Package pdftex.def Info: Figures//xvel_xpos_EL.png  used on input line 926.
 (pdftex.def)             Requested size: 202.01454pt x 151.51254pt.
-<Figures//xvel_ypos_EL.png, id=948, 462.528pt x 346.896pt>
+<Figures//xvel_ypos_EL.png, id=1116, 462.528pt x 346.896pt>
 File: Figures//xvel_ypos_EL.png Graphic file (type png)
 <use Figures//xvel_ypos_EL.png>
-Package pdftex.def Info: Figures//xvel_ypos_EL.png  used on input line 829.
+Package pdftex.def Info: Figures//xvel_ypos_EL.png  used on input line 930.
 (pdftex.def)             Requested size: 202.01454pt x 151.51254pt.
-<Figures//yvel_xpos_EL.png, id=949, 462.528pt x 346.896pt>
+<Figures//yvel_xpos_EL.png, id=1117, 462.528pt x 346.896pt>
 File: Figures//yvel_xpos_EL.png Graphic file (type png)
 <use Figures//yvel_xpos_EL.png>
-Package pdftex.def Info: Figures//yvel_xpos_EL.png  used on input line 833.
+Package pdftex.def Info: Figures//yvel_xpos_EL.png  used on input line 934.
 (pdftex.def)             Requested size: 202.01454pt x 151.51254pt.
-<Figures//yvel_ypos_EL.png, id=950, 462.528pt x 346.896pt>
+<Figures//yvel_ypos_EL.png, id=1118, 462.528pt x 346.896pt>
 File: Figures//yvel_ypos_EL.png Graphic file (type png)
 <use Figures//yvel_ypos_EL.png>
-Package pdftex.def Info: Figures//yvel_ypos_EL.png  used on input line 837.
+Package pdftex.def Info: Figures//yvel_ypos_EL.png  used on input line 938.
 (pdftex.def)             Requested size: 202.01454pt x 151.51254pt.
 
-Overfull \hbox (2.28003pt too wide) in paragraph at lines 813--840
+Overfull \hbox (2.28003pt too wide) in paragraph at lines 914--941
 []$[]$  $[]$
  []
 
 
-Overfull \hbox (2.28003pt too wide) in paragraph at lines 813--840
+Overfull \hbox (2.28003pt too wide) in paragraph at lines 914--941
 []$ $[]$
  []
 
 
-Overfull \hbox (2.28003pt too wide) in paragraph at lines 813--840
+Overfull \hbox (2.28003pt too wide) in paragraph at lines 914--941
 []$ $[]$ 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[40]
+[44 <./Figures//T_1600s_EP_cavity.png> <./Figures//T_1600s_CNT_cavity.png> <./F
+igures//T_scale_EP_cavity.png> <./Figures//T_1700s_EP_cavity.png> <./Figures//T
+_1700s_CNT_cavity.png> <./Figures//T_1800s_EP_cavity.png> <./Figures//T_1800s_C
+NT_cavity.png>]
 
-LaTeX Warning: Command \textordmasculine invalid in math mode on input line 856
+LaTeX Warning: Text page 45 contains only floats.
+
+[45 <./Figures//U_1600s_EP_cavity.png> <./Figures//U_1600s_CNT_cavity.png> <./F
+igures//U_scale_1600s_cavity.png> <./Figures//U_1700s_EP_cavity.png> <./Figures
+//U_1700s_CNT_cavity.png> <./Figures//U_scale_1700s_cavity.png> <./Figures//U_1
+800s_EP_cavity.png> <./Figures//U_1800s_CNT_cavity.png> <./Figures//U_scale_180
+0s_cavity.png> <./Figures//temperature_time_center.png>] [46 <./Figures//alpha_
+1600s_EP_cavity.png> <./Figures//alpha_1600s_CNT_cavity.png> <./Figures//alpha_
+scale_cavity.png> <./Figures//alpha_1700s_EP_cavity.png> <./Figures//alpha_1700
+s_CNT_cavity.png> <./Figures//alpha_1800s_EP_cavity.png> <./Figures//alpha_1800
+s_CNT_cavity.png>] [47 <./Figures//T_100s_EP.png> <./Figures//T_100s_CNT.png> <
+./Figures//T_scale_100s_EP.png> <./Figures//T_300s_EP.png> <./Figures//T_300s_C
+NT.png> <./Figures//T_scale_300s_EP.png> <./Figures//U_100s_EP.png> <./Figures/
+/U_100s_CNT.png> <./Figures//U_scale_100s_EP.png> <./Figures//U_300s_EP.png> <.
+/Figures//U_300s_CNT.png> <./Figures//U_scale_300s_EP.png> <./Figures//alpha_10
+0s_EP.png> <./Figures//alpha_100s_CNT.png> <./Figures//alpha_300s_EP.png> <./Fi
+gures//alpha_300s_CNT.png>] [48 <./Figures//temperature_xpos_EL.png> <./Figures
+//temperature_ypos_EL.png> <./Figures//xvel_xpos_EL.png> <./Figures//xvel_ypos_
+EL.png> <./Figures//yvel_xpos_EL.png> <./Figures//yvel_ypos_EL.png>]
+
+LaTeX Warning: Command \textordmasculine invalid in math mode on input line 957
 .
 
 
-LaTeX Warning: Command \textordmasculine invalid in math mode on input line 856
+LaTeX Warning: Command \textordmasculine invalid in math mode on input line 957
 .
 
 Missing character: There is no º in font pplr7t!
-[41] [42] [43 <./Figures//temperature_xpos_EL.png> <./Figures//temperature_ypos
-_EL.png> <./Figures//xvel_xpos_EL.png> <./Figures//xvel_ypos_EL.png> <./Figures
-//yvel_xpos_EL.png> <./Figures//yvel_ypos_EL.png>]) [44]
+[49
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 986--989
+
+ []
+
+<Figures//Neumann_CNT_6s.png, id=1200, 462.528pt x 346.896pt>
+File: Figures//Neumann_CNT_6s.png Graphic file (type png)
+<use Figures//Neumann_CNT_6s.png>
+Package pdftex.def Info: Figures//Neumann_CNT_6s.png  used on input line 995.
+(pdftex.def)             Requested size: 202.01454pt x 151.51254pt.
+<Figures//relative_err_Neumann_CNT_6s.png, id=1201, 462.528pt x 346.896pt>
+File: Figures//relative_err_Neumann_CNT_6s.png Graphic file (type png)
+<use Figures//relative_err_Neumann_CNT_6s.png>
+Package pdftex.def Info: Figures//relative_err_Neumann_CNT_6s.png  used on inpu
+t line 1001.
+(pdftex.def)             Requested size: 202.01454pt x 151.51254pt.
+
+Overfull \hbox (2.28003pt too wide) in paragraph at lines 993--1004
+[]$[]$  $[]$ 
+ []
+
+<Figures//alpha_6s_EP.png, id=1203, 642.4pt x 642.4pt>
+File: Figures//alpha_6s_EP.png Graphic file (type png)
+<use Figures//alpha_6s_EP.png>
+Package pdftex.def Info: Figures//alpha_6s_EP.png  used on input line 1027.
+(pdftex.def)             Requested size: 202.01454pt x 202.01399pt.
+<Figures//alpha_scale_EP_6s.png, id=1204, 170.6375pt x 676.5275pt>
+File: Figures//alpha_scale_EP_6s.png Graphic file (type png)
+<use Figures//alpha_scale_EP_6s.png>
+Package pdftex.def Info: Figures//alpha_scale_EP_6s.png  used on input line 102
+7.
+(pdftex.def)             Requested size: 52.52574pt x 208.24516pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Figures//Interface_height_Neumann_CNT_6s.png, id=1205, 462.528pt x 346.896pt>
+File: Figures//Interface_height_Neumann_CNT_6s.png Graphic file (type png)
+<use Figures//Interface_height_Neumann_CNT_6s.png>
+Package pdftex.def Info: Figures//Interface_height_Neumann_CNT_6s.png  used on 
+input line 1035.
+(pdftex.def)             Requested size: 202.01454pt x 151.51254pt.
+<Figures//relative_err_interface_height_Neumann_CNT_6s.png, id=1206, 462.528pt 
+x 346.896pt>
+File: Figures//relative_err_interface_height_Neumann_CNT_6s.png Graphic file (t
+ype png)
+<use Figures//relative_err_interface_height_Neumann_CNT_6s.png>
+Package pdftex.def Info: Figures//relative_err_interface_height_Neumann_CNT_6s.
+png  used on input line 1039.
+(pdftex.def)             Requested size: 202.01454pt x 151.51254pt.
+
+Overfull \hbox (2.28003pt too wide) in paragraph at lines 1034--1042
+[]$[]$ $[]$ 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) [50 <./Figures//Neumann_CNT_6s.png> <./Figures//relative_err_Neumann_CNT_6s.p
+ng>] [51 <./Figures//alpha_6s_EP.png> <./Figures//alpha_scale_EP_6s.png> <./Fig
+ures//Interface_height_Neumann_CNT_6s.png> <./Figures//relative_err_interface_h
+eight_Neumann_CNT_6s.png>]
 \openout2 = `Chapters/Chapter4.aux'.
 
- (Chapters/Chapter4.tex
-Chapter 4.
-1: section
-[45
+ (Chapters/Chapter4.tex [52
 
 
 
 
 ]
-<Figures//CHT_flowchart.png, id=1001, 749.04843pt x 495.35063pt>
+Chapter 4.
+1: section
+[53]
+<Figures//mesh_CHT.png, id=1239, 642.4pt x 642.4pt>
+File: Figures//mesh_CHT.png Graphic file (type png)
+<use Figures//mesh_CHT.png>
+Package pdftex.def Info: Figures//mesh_CHT.png  used on input line 34.
+(pdftex.def)             Requested size: 242.4199pt x 242.41875pt.
+
+Overfull \hbox (19.65935pt too wide) in paragraph at lines 40--48
+[]\T1/ppl/b/n/12 Heat trans-fer: \T1/ppl/m/n/12 Con-duc-tive heat trans-fer is 
+trans-ferred through-out an isotropic
+ []
+
+
+Overfull \hbox (20.38057pt too wide) in paragraph at lines 40--48
+\T1/ppl/m/n/12 nar Prandtl num-ber cal-cu-la-tion are: $\OML/zplm/m/it/12  \OT
+1/zplm/m/n/12 = \OT1/ppl/m/n/12 0.001003\OML/zplm/m/it/12 Kg\OT1/ppl/m/n/12 .\O
+ML/zplm/m/it/12 m[]\OT1/ppl/m/n/12 .\OML/zplm/m/it/12 s[]$\T1/ppl/m/n/12 , $\OM
+L/zplm/m/it/12  \OT1/zplm/m/n/12 = \OT1/ppl/m/n/12 0.6\OML/zplm/m/it/12 W\OT1/
+ppl/m/n/12 .\OML/zplm/m/it/12 m[]\OT1/ppl/m/n/12 .\OML/zplm/m/it/12 K[]$
+ []
+
+[54 <./Figures//mesh_CHT.png>] [55]
+<Figures//CHT_flowchart.png, id=1256, 749.04843pt x 495.35063pt>
 File: Figures//CHT_flowchart.png Graphic file (type png)
 <use Figures//CHT_flowchart.png>
-Package pdftex.def Info: Figures//CHT_flowchart.png  used on input line 43.
+Package pdftex.def Info: Figures//CHT_flowchart.png  used on input line 78.
 (pdftex.def)             Requested size: 404.02908pt x 267.19058pt.
 
 
-LaTeX Warning: Citation 'sugimoto_kuramae_matsumoto_watanabe_2021' on page 46 u
-ndefined on input line 45.
+LaTeX Warning: Reference `label' on page 56 undefined on input line 87.
 
+<Figures//fluid_loop.png, id=1260, 284.56313pt x 619.56468pt>
+File: Figures//fluid_loop.png Graphic file (type png)
+<use Figures//fluid_loop.png>
+Package pdftex.def Info: Figures//fluid_loop.png  used on input line 90.
+(pdftex.def)             Requested size: 161.60916pt x 351.87927pt.
+[56
 
-LaTeX Warning: Citation 'sugimoto_kuramae_matsumoto_watanabe_2021' on page 46 u
-ndefined on input line 45.
+ <./Figures//CHT_flowchart.png (PNG copy)>] [57 <./Figures//fluid_loop.png (PNG
+ copy)>]
+<Figures//TEqn_CHT.png, id=1271, 524.71031pt x 566.86781pt>
+File: Figures//TEqn_CHT.png Graphic file (type png)
+<use Figures//TEqn_CHT.png>
+Package pdftex.def Info: Figures//TEqn_CHT.png  used on input line 115.
+(pdftex.def)             Requested size: 363.6237pt x 392.85185pt.
+ [58 <./Figures//TEqn_CHT.png (PNG copy)>] [59]
+<Figures//T_2100s_EP_CHT.png, id=1285, 342.27875pt x 676.5275pt>
+File: Figures//T_2100s_EP_CHT.png Graphic file (type png)
+<use Figures//T_2100s_EP_CHT.png>
+Package pdftex.def Info: Figures//T_2100s_EP_CHT.png  used on input line 211.
+(pdftex.def)             Requested size: 68.28642pt x 134.96243pt.
 
-
-Underfull \hbox (badness 5431) in paragraph at lines 45--45
- []\T1/ppl/m/sc/10.95 Figure 4.1: |\T1/ppl/m/n/10.95 Flowchart of the con-ju-ga
-te heat trans-fer 
+Overfull \hbox (11.38092pt too wide) in paragraph at lines 211--211
+[]|[]| 
  []
 
-[46 <./Figures//CHT_flowchart.png (PNG copy)>]) [47]
+<Figures//T_2100s_scale_EP_CHT.png, id=1286, 170.6375pt x 676.5275pt>
+File: Figures//T_2100s_scale_EP_CHT.png Graphic file (type png)
+<use Figures//T_2100s_scale_EP_CHT.png>
+Package pdftex.def Info: Figures//T_2100s_scale_EP_CHT.png  used on input line 
+212.
+(pdftex.def)             Requested size: 31.51544pt x 124.94916pt.
+<Figures//U_2100s_EP_CHT.png, id=1287, 342.27875pt x 676.5275pt>
+File: Figures//U_2100s_EP_CHT.png Graphic file (type png)
+<use Figures//U_2100s_EP_CHT.png>
+Package pdftex.def Info: Figures//U_2100s_EP_CHT.png  used on input line 213.
+(pdftex.def)             Requested size: 68.28642pt x 134.96243pt.
+
+Overfull \hbox (11.38092pt too wide) in paragraph at lines 213--213
+[]|[]| 
+ []
+
+<Figures//U_2100s_scale_EP_CHT.png, id=1288, 170.6375pt x 676.5275pt>
+File: Figures//U_2100s_scale_EP_CHT.png Graphic file (type png)
+<use Figures//U_2100s_scale_EP_CHT.png>
+Package pdftex.def Info: Figures//U_2100s_scale_EP_CHT.png  used on input line 
+215.
+(pdftex.def)             Requested size: 31.51544pt x 124.94916pt.
+<Figures//alpha_2100s_EP_CHT.png, id=1289, 342.27875pt x 676.5275pt>
+File: Figures//alpha_2100s_EP_CHT.png Graphic file (type png)
+<use Figures//alpha_2100s_EP_CHT.png>
+Package pdftex.def Info: Figures//alpha_2100s_EP_CHT.png  used on input line 21
+6.
+(pdftex.def)             Requested size: 68.28642pt x 134.96243pt.
+
+Overfull \hbox (11.38092pt too wide) in paragraph at lines 216--216
+[]|[]| 
+ []
+
+<Figures//alpha_2100s_scale_EP_CHT.png, id=1290, 170.6375pt x 676.5275pt>
+File: Figures//alpha_2100s_scale_EP_CHT.png Graphic file (type png)
+<use Figures//alpha_2100s_scale_EP_CHT.png>
+Package pdftex.def Info: Figures//alpha_2100s_scale_EP_CHT.png  used on input l
+ine 216.
+(pdftex.def)             Requested size: 31.51544pt x 124.94916pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) [60] [61 <./Figures//T_2100s_EP_CHT.png> <./Figures//T_2100s_scale_EP_CHT.png
+> <./Figures//U_2100s_EP_CHT.png> <./Figures//U_2100s_scale_EP_CHT.png> <./Figu
+res//alpha_2100s_EP_CHT.png> <./Figures//alpha_2100s_scale_EP_CHT.png>]
 \openout2 = `Chapters/Chapter5.aux'.
 
- (Chapters/Chapter5.tex
-[48
+
+(Chapters/Chapter5.tex [62
 
 
 
@@ -2428,10 +2904,10 @@ te heat trans-fer
 Chapter 5.
 )
 1: section
-[49]
+[63]
 \openout2 = `Chapters/Chapter6.aux'.
 
- (Chapters/Chapter6.tex [50
+ (Chapters/Chapter6.tex [64
 
 
 
@@ -2440,602 +2916,29 @@ Chapter 5.
 Chapter 6.
 )
 1: section
-[51]
-\openout2 = `Appendices/AppendixA.aux'.
-
- (Appendices/AppendixA.tex [52
+[65]
+\openout2 = `example.bib.aux'.
 
 
+No file example.bib.tex.
+[66
 
 
-]
-Appendix A.
-<mySolidificationMeltingSource_H.pdf, id=1037, 597.23125pt x 845.1575pt>
-File: mySolidificationMeltingSource_H.pdf Graphic file (type pdf)
-<use mySolidificationMeltingSource_H.pdf>
-Package pdftex.def Info: mySolidificationMeltingSource_H.pdf  used on input lin
-e 9.
-(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
-File: mySolidificationMeltingSource_H.pdf Graphic file (type pdf)
-<use mySolidificationMeltingSource_H.pdf>
-Package pdftex.def Info: mySolidificationMeltingSource_H.pdf  used on input lin
-e 9.
-(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
-<mySolidificationMeltingSource_H.pdf, id=1040, page=1, 597.23125pt x 845.1575pt
->
-File: mySolidificationMeltingSource_H.pdf Graphic file (type pdf)
-<use mySolidificationMeltingSource_H.pdf, page 1>
-Package pdftex.def Info: mySolidificationMeltingSource_H.pdf , page1 used on in
-put line 9.
-(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
-File: mySolidificationMeltingSource_H.pdf Graphic file (type pdf)
-<use mySolidificationMeltingSource_H.pdf, page 1>
-Package pdftex.def Info: mySolidificationMeltingSource_H.pdf , page1 used on in
-put line 9.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-1: section
-[53]
-File: mySolidificationMeltingSource_H.pdf Graphic file (type pdf)
-<use mySolidificationMeltingSource_H.pdf, page 1>
-Package pdftex.def Info: mySolidificationMeltingSource_H.pdf , page1 used on in
-put line 9.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: mySolidificationMeltingSource_H.pdf Graphic file (type pdf)
-<use mySolidificationMeltingSource_H.pdf, page 1>
-Package pdftex.def Info: mySolidificationMeltingSource_H.pdf , page1 used on in
-put line 9.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: mySolidificationMeltingSource_H.pdf Graphic file (type pdf)
-<use mySolidificationMeltingSource_H.pdf, page 1>
-Package pdftex.def Info: mySolidificationMeltingSource_H.pdf , page1 used on in
-put line 9.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
- [54 <./mySolidificationMeltingSource_H.pdf>]
-<mySolidificationMeltingSource_H.pdf, id=1058, page=2, 597.23125pt x 845.1575pt
->
-File: mySolidificationMeltingSource_H.pdf Graphic file (type pdf)
-<use mySolidificationMeltingSource_H.pdf, page 2>
-Package pdftex.def Info: mySolidificationMeltingSource_H.pdf , page2 used on in
-put line 9.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: mySolidificationMeltingSource_H.pdf Graphic file (type pdf)
-<use mySolidificationMeltingSource_H.pdf, page 2>
-Package pdftex.def Info: mySolidificationMeltingSource_H.pdf , page2 used on in
-put line 9.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: mySolidificationMeltingSource_H.pdf Graphic file (type pdf)
-<use mySolidificationMeltingSource_H.pdf, page 2>
-Package pdftex.def Info: mySolidificationMeltingSource_H.pdf , page2 used on in
-put line 9.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
- [55 <./mySolidificationMeltingSource_H.pdf>]
-<mySolidificationMeltingSource_H.pdf, id=1064, page=3, 597.23125pt x 845.1575pt
->
-File: mySolidificationMeltingSource_H.pdf Graphic file (type pdf)
-<use mySolidificationMeltingSource_H.pdf, page 3>
-Package pdftex.def Info: mySolidificationMeltingSource_H.pdf , page3 used on in
-put line 9.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: mySolidificationMeltingSource_H.pdf Graphic file (type pdf)
-<use mySolidificationMeltingSource_H.pdf, page 3>
-Package pdftex.def Info: mySolidificationMeltingSource_H.pdf , page3 used on in
-put line 9.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: mySolidificationMeltingSource_H.pdf Graphic file (type pdf)
-<use mySolidificationMeltingSource_H.pdf, page 3>
-Package pdftex.def Info: mySolidificationMeltingSource_H.pdf , page3 used on in
-put line 9.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
- [56 <./mySolidificationMeltingSource_H.pdf>]
-<mySolidificationMeltingSource_H.pdf, id=1069, page=4, 597.23125pt x 845.1575pt
->
-File: mySolidificationMeltingSource_H.pdf Graphic file (type pdf)
-<use mySolidificationMeltingSource_H.pdf, page 4>
-Package pdftex.def Info: mySolidificationMeltingSource_H.pdf , page4 used on in
-put line 9.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: mySolidificationMeltingSource_H.pdf Graphic file (type pdf)
-<use mySolidificationMeltingSource_H.pdf, page 4>
-Package pdftex.def Info: mySolidificationMeltingSource_H.pdf , page4 used on in
-put line 9.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: mySolidificationMeltingSource_H.pdf Graphic file (type pdf)
-<use mySolidificationMeltingSource_H.pdf, page 4>
-Package pdftex.def Info: mySolidificationMeltingSource_H.pdf , page4 used on in
-put line 9.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
- [57 <./mySolidificationMeltingSource_H.pdf>]
-<mySolidificationMeltingSource_H.pdf, id=1080, page=5, 597.23125pt x 845.1575pt
->
-File: mySolidificationMeltingSource_H.pdf Graphic file (type pdf)
-<use mySolidificationMeltingSource_H.pdf, page 5>
-Package pdftex.def Info: mySolidificationMeltingSource_H.pdf , page5 used on in
-put line 9.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: mySolidificationMeltingSource_H.pdf Graphic file (type pdf)
-<use mySolidificationMeltingSource_H.pdf, page 5>
-Package pdftex.def Info: mySolidificationMeltingSource_H.pdf , page5 used on in
-put line 9.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: mySolidificationMeltingSource_H.pdf Graphic file (type pdf)
-<use mySolidificationMeltingSource_H.pdf, page 5>
-Package pdftex.def Info: mySolidificationMeltingSource_H.pdf , page5 used on in
-put line 9.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
- [58 <./mySolidificationMeltingSource_H.pdf>]
-<mySolidificationMeltingSource_C.pdf, id=1085, 597.23125pt x 845.1575pt>
-File: mySolidificationMeltingSource_C.pdf Graphic file (type pdf)
-<use mySolidificationMeltingSource_C.pdf>
-Package pdftex.def Info: mySolidificationMeltingSource_C.pdf  used on input lin
-e 11.
-(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
-File: mySolidificationMeltingSource_C.pdf Graphic file (type pdf)
-<use mySolidificationMeltingSource_C.pdf>
-Package pdftex.def Info: mySolidificationMeltingSource_C.pdf  used on input lin
-e 11.
-(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
-<mySolidificationMeltingSource_C.pdf, id=1088, page=1, 597.23125pt x 845.1575pt
->
-File: mySolidificationMeltingSource_C.pdf Graphic file (type pdf)
-<use mySolidificationMeltingSource_C.pdf, page 1>
-Package pdftex.def Info: mySolidificationMeltingSource_C.pdf , page1 used on in
-put line 11.
-(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
-File: mySolidificationMeltingSource_C.pdf Graphic file (type pdf)
-<use mySolidificationMeltingSource_C.pdf, page 1>
-Package pdftex.def Info: mySolidificationMeltingSource_C.pdf , page1 used on in
-put line 11.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-
-[59]
-File: mySolidificationMeltingSource_C.pdf Graphic file (type pdf)
-<use mySolidificationMeltingSource_C.pdf, page 1>
-Package pdftex.def Info: mySolidificationMeltingSource_C.pdf , page1 used on in
-put line 11.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: mySolidificationMeltingSource_C.pdf Graphic file (type pdf)
-<use mySolidificationMeltingSource_C.pdf, page 1>
-Package pdftex.def Info: mySolidificationMeltingSource_C.pdf , page1 used on in
-put line 11.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: mySolidificationMeltingSource_C.pdf Graphic file (type pdf)
-<use mySolidificationMeltingSource_C.pdf, page 1>
-Package pdftex.def Info: mySolidificationMeltingSource_C.pdf , page1 used on in
-put line 11.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
- [60 <./mySolidificationMeltingSource_C.pdf>]
-<mySolidificationMeltingSource_C.pdf, id=1112, page=2, 597.23125pt x 845.1575pt
->
-File: mySolidificationMeltingSource_C.pdf Graphic file (type pdf)
-<use mySolidificationMeltingSource_C.pdf, page 2>
-Package pdftex.def Info: mySolidificationMeltingSource_C.pdf , page2 used on in
-put line 11.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: mySolidificationMeltingSource_C.pdf Graphic file (type pdf)
-<use mySolidificationMeltingSource_C.pdf, page 2>
-Package pdftex.def Info: mySolidificationMeltingSource_C.pdf , page2 used on in
-put line 11.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: mySolidificationMeltingSource_C.pdf Graphic file (type pdf)
-<use mySolidificationMeltingSource_C.pdf, page 2>
-Package pdftex.def Info: mySolidificationMeltingSource_C.pdf , page2 used on in
-put line 11.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
- [61 <./mySolidificationMeltingSource_C.pdf>]
-<mySolidificationMeltingSource_C.pdf, id=1118, page=3, 597.23125pt x 845.1575pt
->
-File: mySolidificationMeltingSource_C.pdf Graphic file (type pdf)
-<use mySolidificationMeltingSource_C.pdf, page 3>
-Package pdftex.def Info: mySolidificationMeltingSource_C.pdf , page3 used on in
-put line 11.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: mySolidificationMeltingSource_C.pdf Graphic file (type pdf)
-<use mySolidificationMeltingSource_C.pdf, page 3>
-Package pdftex.def Info: mySolidificationMeltingSource_C.pdf , page3 used on in
-put line 11.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: mySolidificationMeltingSource_C.pdf Graphic file (type pdf)
-<use mySolidificationMeltingSource_C.pdf, page 3>
-Package pdftex.def Info: mySolidificationMeltingSource_C.pdf , page3 used on in
-put line 11.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
- [62 <./mySolidificationMeltingSource_C.pdf>]
-<mySolidificationMeltingSource_C.pdf, id=1123, page=4, 597.23125pt x 845.1575pt
->
-File: mySolidificationMeltingSource_C.pdf Graphic file (type pdf)
-<use mySolidificationMeltingSource_C.pdf, page 4>
-Package pdftex.def Info: mySolidificationMeltingSource_C.pdf , page4 used on in
-put line 11.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: mySolidificationMeltingSource_C.pdf Graphic file (type pdf)
-<use mySolidificationMeltingSource_C.pdf, page 4>
-Package pdftex.def Info: mySolidificationMeltingSource_C.pdf , page4 used on in
-put line 11.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: mySolidificationMeltingSource_C.pdf Graphic file (type pdf)
-<use mySolidificationMeltingSource_C.pdf, page 4>
-Package pdftex.def Info: mySolidificationMeltingSource_C.pdf , page4 used on in
-put line 11.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
- [63 <./mySolidificationMeltingSource_C.pdf>]
-<mySolidificationMeltingSourceTemplates.pdf, id=1128, 597.23125pt x 845.1575pt>
-
-File: mySolidificationMeltingSourceTemplates.pdf Graphic file (type pdf)
-<use mySolidificationMeltingSourceTemplates.pdf>
-Package pdftex.def Info: mySolidificationMeltingSourceTemplates.pdf  used on in
-put line 13.
-(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
-File: mySolidificationMeltingSourceTemplates.pdf Graphic file (type pdf)
-<use mySolidificationMeltingSourceTemplates.pdf>
-Package pdftex.def Info: mySolidificationMeltingSourceTemplates.pdf  used on in
-put line 13.
-(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
-<mySolidificationMeltingSourceTemplates.pdf, id=1131, page=1, 597.23125pt x 845
-.1575pt>
-File: mySolidificationMeltingSourceTemplates.pdf Graphic file (type pdf)
-<use mySolidificationMeltingSourceTemplates.pdf, page 1>
-Package pdftex.def Info: mySolidificationMeltingSourceTemplates.pdf , page1 use
-d on input line 13.
-(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
-File: mySolidificationMeltingSourceTemplates.pdf Graphic file (type pdf)
-<use mySolidificationMeltingSourceTemplates.pdf, page 1>
-Package pdftex.def Info: mySolidificationMeltingSourceTemplates.pdf , page1 use
-d on input line 13.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
- [64]
-File: mySolidificationMeltingSourceTemplates.pdf Graphic file (type pdf)
-<use mySolidificationMeltingSourceTemplates.pdf, page 1>
-Package pdftex.def Info: mySolidificationMeltingSourceTemplates.pdf , page1 use
-d on input line 13.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: mySolidificationMeltingSourceTemplates.pdf Graphic file (type pdf)
-<use mySolidificationMeltingSourceTemplates.pdf, page 1>
-Package pdftex.def Info: mySolidificationMeltingSourceTemplates.pdf , page1 use
-d on input line 13.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: mySolidificationMeltingSourceTemplates.pdf Graphic file (type pdf)
-<use mySolidificationMeltingSourceTemplates.pdf, page 1>
-Package pdftex.def Info: mySolidificationMeltingSourceTemplates.pdf , page1 use
-d on input line 13.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
- [65 <./mySolidificationMeltingSourceTemplates.pdf>]
-<mySolidificationMeltingSourceTemplates.pdf, id=1155, page=2, 597.23125pt x 845
-.1575pt>
-File: mySolidificationMeltingSourceTemplates.pdf Graphic file (type pdf)
-<use mySolidificationMeltingSourceTemplates.pdf, page 2>
-Package pdftex.def Info: mySolidificationMeltingSourceTemplates.pdf , page2 use
-d on input line 13.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: mySolidificationMeltingSourceTemplates.pdf Graphic file (type pdf)
-<use mySolidificationMeltingSourceTemplates.pdf, page 2>
-Package pdftex.def Info: mySolidificationMeltingSourceTemplates.pdf , page2 use
-d on input line 13.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: mySolidificationMeltingSourceTemplates.pdf Graphic file (type pdf)
-<use mySolidificationMeltingSourceTemplates.pdf, page 2>
-Package pdftex.def Info: mySolidificationMeltingSourceTemplates.pdf , page2 use
-d on input line 13.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
- [66 <./mySolidificationMeltingSourceTemplates.pdf>]
-<LeeCNT_H.pdf, id=1160, 597.23125pt x 845.1575pt>
-File: LeeCNT_H.pdf Graphic file (type pdf)
-<use LeeCNT_H.pdf>
-Package pdftex.def Info: LeeCNT_H.pdf  used on input line 16.
-(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
-File: LeeCNT_H.pdf Graphic file (type pdf)
-<use LeeCNT_H.pdf>
-Package pdftex.def Info: LeeCNT_H.pdf  used on input line 16.
-(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
-<LeeCNT_H.pdf, id=1163, page=1, 597.23125pt x 845.1575pt>
-File: LeeCNT_H.pdf Graphic file (type pdf)
-<use LeeCNT_H.pdf, page 1>
-Package pdftex.def Info: LeeCNT_H.pdf , page1 used on input line 16.
-(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
-File: LeeCNT_H.pdf Graphic file (type pdf)
-<use LeeCNT_H.pdf, page 1>
-Package pdftex.def Info: LeeCNT_H.pdf , page1 used on input line 16.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
- [67]
-File: LeeCNT_H.pdf Graphic file (type pdf)
-<use LeeCNT_H.pdf, page 1>
-Package pdftex.def Info: LeeCNT_H.pdf , page1 used on input line 16.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: LeeCNT_H.pdf Graphic file (type pdf)
-<use LeeCNT_H.pdf, page 1>
-Package pdftex.def Info: LeeCNT_H.pdf , page1 used on input line 16.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: LeeCNT_H.pdf Graphic file (type pdf)
-<use LeeCNT_H.pdf, page 1>
-Package pdftex.def Info: LeeCNT_H.pdf , page1 used on input line 16.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
- [68 <./LeeCNT_H.pdf>]
-<LeeCNT_H.pdf, id=1182, page=2, 597.23125pt x 845.1575pt>
-File: LeeCNT_H.pdf Graphic file (type pdf)
-<use LeeCNT_H.pdf, page 2>
-Package pdftex.def Info: LeeCNT_H.pdf , page2 used on input line 16.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: LeeCNT_H.pdf Graphic file (type pdf)
-<use LeeCNT_H.pdf, page 2>
-Package pdftex.def Info: LeeCNT_H.pdf , page2 used on input line 16.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: LeeCNT_H.pdf Graphic file (type pdf)
-<use LeeCNT_H.pdf, page 2>
-Package pdftex.def Info: LeeCNT_H.pdf , page2 used on input line 16.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
- [69 <./LeeCNT_H.pdf>]
-<LeeCNT_H.pdf, id=1187, page=3, 597.23125pt x 845.1575pt>
-File: LeeCNT_H.pdf Graphic file (type pdf)
-<use LeeCNT_H.pdf, page 3>
-Package pdftex.def Info: LeeCNT_H.pdf , page3 used on input line 16.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: LeeCNT_H.pdf Graphic file (type pdf)
-<use LeeCNT_H.pdf, page 3>
-Package pdftex.def Info: LeeCNT_H.pdf , page3 used on input line 16.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: LeeCNT_H.pdf Graphic file (type pdf)
-<use LeeCNT_H.pdf, page 3>
-Package pdftex.def Info: LeeCNT_H.pdf , page3 used on input line 16.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
- [70 <./LeeCNT_H.pdf>]
-<LeeCNT_H.pdf, id=1198, page=4, 597.23125pt x 845.1575pt>
-File: LeeCNT_H.pdf Graphic file (type pdf)
-<use LeeCNT_H.pdf, page 4>
-Package pdftex.def Info: LeeCNT_H.pdf , page4 used on input line 16.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: LeeCNT_H.pdf Graphic file (type pdf)
-<use LeeCNT_H.pdf, page 4>
-Package pdftex.def Info: LeeCNT_H.pdf , page4 used on input line 16.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: LeeCNT_H.pdf Graphic file (type pdf)
-<use LeeCNT_H.pdf, page 4>
-Package pdftex.def Info: LeeCNT_H.pdf , page4 used on input line 16.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
- [71 <./LeeCNT_H.pdf>]
-<LeeCNT_H.pdf, id=1203, page=5, 597.23125pt x 845.1575pt>
-File: LeeCNT_H.pdf Graphic file (type pdf)
-<use LeeCNT_H.pdf, page 5>
-Package pdftex.def Info: LeeCNT_H.pdf , page5 used on input line 16.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: LeeCNT_H.pdf Graphic file (type pdf)
-<use LeeCNT_H.pdf, page 5>
-Package pdftex.def Info: LeeCNT_H.pdf , page5 used on input line 16.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: LeeCNT_H.pdf Graphic file (type pdf)
-<use LeeCNT_H.pdf, page 5>
-Package pdftex.def Info: LeeCNT_H.pdf , page5 used on input line 16.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
- [72 <./LeeCNT_H.pdf>]
-<LeeCNT_C.pdf, id=1208, 597.23125pt x 845.1575pt>
-File: LeeCNT_C.pdf Graphic file (type pdf)
-<use LeeCNT_C.pdf>
-Package pdftex.def Info: LeeCNT_C.pdf  used on input line 18.
-(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
-File: LeeCNT_C.pdf Graphic file (type pdf)
-<use LeeCNT_C.pdf>
-Package pdftex.def Info: LeeCNT_C.pdf  used on input line 18.
-(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
-<LeeCNT_C.pdf, id=1211, page=1, 597.23125pt x 845.1575pt>
-File: LeeCNT_C.pdf Graphic file (type pdf)
-<use LeeCNT_C.pdf, page 1>
-Package pdftex.def Info: LeeCNT_C.pdf , page1 used on input line 18.
-(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
-File: LeeCNT_C.pdf Graphic file (type pdf)
-<use LeeCNT_C.pdf, page 1>
-Package pdftex.def Info: LeeCNT_C.pdf , page1 used on input line 18.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
- [73]
-File: LeeCNT_C.pdf Graphic file (type pdf)
-<use LeeCNT_C.pdf, page 1>
-Package pdftex.def Info: LeeCNT_C.pdf , page1 used on input line 18.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: LeeCNT_C.pdf Graphic file (type pdf)
-<use LeeCNT_C.pdf, page 1>
-Package pdftex.def Info: LeeCNT_C.pdf , page1 used on input line 18.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: LeeCNT_C.pdf Graphic file (type pdf)
-<use LeeCNT_C.pdf, page 1>
-Package pdftex.def Info: LeeCNT_C.pdf , page1 used on input line 18.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
- [74 <./LeeCNT_C.pdf>]
-<LeeCNT_C.pdf, id=1236, page=2, 597.23125pt x 845.1575pt>
-File: LeeCNT_C.pdf Graphic file (type pdf)
-<use LeeCNT_C.pdf, page 2>
-Package pdftex.def Info: LeeCNT_C.pdf , page2 used on input line 18.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: LeeCNT_C.pdf Graphic file (type pdf)
-<use LeeCNT_C.pdf, page 2>
-Package pdftex.def Info: LeeCNT_C.pdf , page2 used on input line 18.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: LeeCNT_C.pdf Graphic file (type pdf)
-<use LeeCNT_C.pdf, page 2>
-Package pdftex.def Info: LeeCNT_C.pdf , page2 used on input line 18.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
- [75 <./LeeCNT_C.pdf>]
-<LeeCNT_C.pdf, id=1241, page=3, 597.23125pt x 845.1575pt>
-File: LeeCNT_C.pdf Graphic file (type pdf)
-<use LeeCNT_C.pdf, page 3>
-Package pdftex.def Info: LeeCNT_C.pdf , page3 used on input line 18.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: LeeCNT_C.pdf Graphic file (type pdf)
-<use LeeCNT_C.pdf, page 3>
-Package pdftex.def Info: LeeCNT_C.pdf , page3 used on input line 18.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: LeeCNT_C.pdf Graphic file (type pdf)
-<use LeeCNT_C.pdf, page 3>
-Package pdftex.def Info: LeeCNT_C.pdf , page3 used on input line 18.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
- [76 <./LeeCNT_C.pdf>]
-<LeeCNT_C.pdf, id=1246, page=4, 597.23125pt x 845.1575pt>
-File: LeeCNT_C.pdf Graphic file (type pdf)
-<use LeeCNT_C.pdf, page 4>
-Package pdftex.def Info: LeeCNT_C.pdf , page4 used on input line 18.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: LeeCNT_C.pdf Graphic file (type pdf)
-<use LeeCNT_C.pdf, page 4>
-Package pdftex.def Info: LeeCNT_C.pdf , page4 used on input line 18.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: LeeCNT_C.pdf Graphic file (type pdf)
-<use LeeCNT_C.pdf, page 4>
-Package pdftex.def Info: LeeCNT_C.pdf , page4 used on input line 18.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
- [77 <./LeeCNT_C.pdf>]
-<LeeCNT_C.pdf, id=1251, page=5, 597.23125pt x 845.1575pt>
-File: LeeCNT_C.pdf Graphic file (type pdf)
-<use LeeCNT_C.pdf, page 5>
-Package pdftex.def Info: LeeCNT_C.pdf , page5 used on input line 18.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: LeeCNT_C.pdf Graphic file (type pdf)
-<use LeeCNT_C.pdf, page 5>
-Package pdftex.def Info: LeeCNT_C.pdf , page5 used on input line 18.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: LeeCNT_C.pdf Graphic file (type pdf)
-<use LeeCNT_C.pdf, page 5>
-Package pdftex.def Info: LeeCNT_C.pdf , page5 used on input line 18.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
- [78 <./LeeCNT_C.pdf>]
-<LeeCNT_C.pdf, id=1256, page=6, 597.23125pt x 845.1575pt>
-File: LeeCNT_C.pdf Graphic file (type pdf)
-<use LeeCNT_C.pdf, page 6>
-Package pdftex.def Info: LeeCNT_C.pdf , page6 used on input line 18.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: LeeCNT_C.pdf Graphic file (type pdf)
-<use LeeCNT_C.pdf, page 6>
-Package pdftex.def Info: LeeCNT_C.pdf , page6 used on input line 18.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: LeeCNT_C.pdf Graphic file (type pdf)
-<use LeeCNT_C.pdf, page 6>
-Package pdftex.def Info: LeeCNT_C.pdf , page6 used on input line 18.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
- [79 <./LeeCNT_C.pdf>]
-<LeeCNT_C.pdf, id=1262, page=7, 597.23125pt x 845.1575pt>
-File: LeeCNT_C.pdf Graphic file (type pdf)
-<use LeeCNT_C.pdf, page 7>
-Package pdftex.def Info: LeeCNT_C.pdf , page7 used on input line 18.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: LeeCNT_C.pdf Graphic file (type pdf)
-<use LeeCNT_C.pdf, page 7>
-Package pdftex.def Info: LeeCNT_C.pdf , page7 used on input line 18.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: LeeCNT_C.pdf Graphic file (type pdf)
-<use LeeCNT_C.pdf, page 7>
-Package pdftex.def Info: LeeCNT_C.pdf , page7 used on input line 18.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-
-[80 <./LeeCNT_C.pdf>]
-<data_plotter_stefan.pdf, id=1267, 597.23125pt x 845.1575pt>
-File: data_plotter_stefan.pdf Graphic file (type pdf)
-<use data_plotter_stefan.pdf>
-Package pdftex.def Info: data_plotter_stefan.pdf  used on input line 20.
-(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
-File: data_plotter_stefan.pdf Graphic file (type pdf)
-<use data_plotter_stefan.pdf>
-Package pdftex.def Info: data_plotter_stefan.pdf  used on input line 20.
-(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
-<data_plotter_stefan.pdf, id=1270, page=1, 597.23125pt x 845.1575pt>
-File: data_plotter_stefan.pdf Graphic file (type pdf)
-<use data_plotter_stefan.pdf, page 1>
-Package pdftex.def Info: data_plotter_stefan.pdf , page1 used on input line 20.
-
-(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
-File: data_plotter_stefan.pdf Graphic file (type pdf)
-<use data_plotter_stefan.pdf, page 1>
-Package pdftex.def Info: data_plotter_stefan.pdf , page1 used on input line 20.
-
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
- [81]
-File: data_plotter_stefan.pdf Graphic file (type pdf)
-<use data_plotter_stefan.pdf, page 1>
-Package pdftex.def Info: data_plotter_stefan.pdf , page1 used on input line 20.
-
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: data_plotter_stefan.pdf Graphic file (type pdf)
-<use data_plotter_stefan.pdf, page 1>
-Package pdftex.def Info: data_plotter_stefan.pdf , page1 used on input line 20.
-
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: data_plotter_stefan.pdf Graphic file (type pdf)
-<use data_plotter_stefan.pdf, page 1>
-Package pdftex.def Info: data_plotter_stefan.pdf , page1 used on input line 20.
-
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
- [82 <./data_plotter_stefan.pdf>]
-<data_plotter_stefan.pdf, id=1294, page=2, 597.23125pt x 845.1575pt>
-File: data_plotter_stefan.pdf Graphic file (type pdf)
-<use data_plotter_stefan.pdf, page 2>
-Package pdftex.def Info: data_plotter_stefan.pdf , page2 used on input line 20.
-
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: data_plotter_stefan.pdf Graphic file (type pdf)
-<use data_plotter_stefan.pdf, page 2>
-Package pdftex.def Info: data_plotter_stefan.pdf , page2 used on input line 20.
-
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: data_plotter_stefan.pdf Graphic file (type pdf)
-<use data_plotter_stefan.pdf, page 2>
-Package pdftex.def Info: data_plotter_stefan.pdf , page2 used on input line 20.
-
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
- [83 <./data_plotter_stefan.pdf>]
-<data_plotter_stefan.pdf, id=1299, page=3, 597.23125pt x 845.1575pt>
-File: data_plotter_stefan.pdf Graphic file (type pdf)
-<use data_plotter_stefan.pdf, page 3>
-Package pdftex.def Info: data_plotter_stefan.pdf , page3 used on input line 20.
-
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: data_plotter_stefan.pdf Graphic file (type pdf)
-<use data_plotter_stefan.pdf, page 3>
-Package pdftex.def Info: data_plotter_stefan.pdf , page3 used on input line 20.
-
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: data_plotter_stefan.pdf Graphic file (type pdf)
-<use data_plotter_stefan.pdf, page 3>
-Package pdftex.def Info: data_plotter_stefan.pdf , page3 used on input line 20.
-
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
- [84 <./data_plotter_stefan.pdf>]
-<data_plotter_stefan.pdf, id=1304, page=4, 597.23125pt x 845.1575pt>
-File: data_plotter_stefan.pdf Graphic file (type pdf)
-<use data_plotter_stefan.pdf, page 4>
-Package pdftex.def Info: data_plotter_stefan.pdf , page4 used on input line 20.
-
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: data_plotter_stefan.pdf Graphic file (type pdf)
-<use data_plotter_stefan.pdf, page 4>
-Package pdftex.def Info: data_plotter_stefan.pdf , page4 used on input line 20.
-
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: data_plotter_stefan.pdf Graphic file (type pdf)
-<use data_plotter_stefan.pdf, page 4>
-Package pdftex.def Info: data_plotter_stefan.pdf , page4 used on input line 20.
-
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
- [85 <./data_plotter_stefan.pdf>])
-\openout2 = `Appendices/AppendixB.aux'.
-
- (Appendices/AppendixB.tex [86
 
 
 
 
 ]
-Appendix B.
-)
-1: section
-[87] [88
-
-
-
-]
-Overfull \hbox (16.63516pt too wide) in paragraph at lines 248--248
-\T1/ppl/m/n/12 ing Con-sid-er-ing Nu-cle-ation Char-ac-ter-is-tics. In: \T1/pp
-l/m/it/12 Ap-plied Sci-ences \T1/ppl/m/n/12 10.9, p. 3308.
+Overfull \hbox (4.85684pt too wide) in paragraph at lines 242--242
+\T1/ppl/m/n/12 ness: Dy-nam-ics of the cav-ity evo-lu-tion. In: \T1/ppl/m/it/1
+2 Phys-i-cal Re-view E \T1/ppl/m/n/12 79.3 (2009).
  []
 
 ! Misplaced alignment tab character &.
 <argument> Computers &
                        Fluids
-l.248 \include
-              {example.bib}
+l.242 \appendix
+                % Cue to tell LaTeX that the following "chapters" are Append...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -3043,16 +2946,1253 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
+
+Overfull \hbox (19.76479pt too wide) in paragraph at lines 242--242
+[]\T1/ppl/m/n/12 M El Ganaoui et al.   Com-pu-ta-tional so-lu-tion for fluid f
+low un-der solid/liq-
+ []
+
+
+Overfull \hbox (9.78908pt too wide) in paragraph at lines 242--242
+\T1/ppl/m/n/12 uid phase change con-di-tions. In: \T1/ppl/m/it/12 Com-put-ers 
+ Flu-ids \T1/ppl/m/n/12 31.4-7 (2002), pp. 539
+ []
+
+
+Overfull \hbox (1.71085pt too wide) in paragraph at lines 242--242
+[]\T1/ppl/m/n/12 Chengyu Huang, Wen-hua Wang, and Weizhong Li.   A Novel 2D Mo
+del
+ []
+
+
+Overfull \hbox (3.82077pt too wide) in paragraph at lines 242--242
+\T1/ppl/m/n/12 Con-sid-er-ing Nu-cle-ation Char-ac-ter-is-tics. In: \T1/ppl/m/
+it/12 Ap-plied Sci-ences \T1/ppl/m/n/12 10.9 (2020),
+ []
+
+
+Overfull \hbox (17.94109pt too wide) in paragraph at lines 242--242
+\T1/ppl/m/it/12 istry Chem-i-cal Physics \T1/ppl/m/n/12 17.8 (2015), pp. 55145
+537. \T1/ppl/m/sc/12 doi\T1/ppl/m/n/12 : [][]$\T1/cmtt/m/n/12 10 . 1039 / c4cp0
+4184d$[][]\T1/ppl/m/n/12 . 
+ []
+
+
+Overfull \hbox (4.2976pt too wide) in paragraph at lines 242--242
+[]\T1/ppl/m/n/12 Damir Ju-ric and Gre-tar Tryg-gva-son.   A Front-Tracking Met
+hod for Den-
+ []
+
+
+Overfull \hbox (27.99994pt too wide) in paragraph at lines 242--242
+\T1/ppl/m/it/12 Fluid Dy-nam-ics \T1/ppl/m/n/12 11.3-4 (1999), pp. 193210. \T1
+/ppl/m/sc/12 doi\T1/ppl/m/n/12 : [][]$\T1/cmtt/m/n/12 10 . 1080 / 1061856990894
+0874$[][]\T1/ppl/m/n/12 . 
+ []
+
 1: section
-[89]
-\openout2 = `example.bib.aux'.
+[67]
+Overfull \hbox (21.76591pt too wide) in paragraph at lines 242--242
+[]\T1/ppl/m/n/12 K. Krabben-hoft, L. Damk-ilde, and M. Nazem.   An im-plicit m
+ixed enthalpy-
+ []
 
 
-No file example.bib.tex.
-(main.aux (Chapters/Chapter1.aux) (Chapters/Chapter2.aux)
-(Chapters/Chapter3.aux) (Chapters/Chapter4.aux) (Chapters/Chapter5.aux)
-(Chapters/Chapter6.aux) (Appendices/AppendixA.aux) (Appendices/AppendixB.aux)
-(example.bib.aux))
+Overfull \hbox (13.74567pt too wide) in paragraph at lines 242--242
+[]\T1/ppl/m/n/12 Chin Li, Suresh Garimella, and James Simp-son.   Fixed-grid f
+ront-tracking
+ []
+
+! Misplaced alignment tab character &.
+<argument> Computers &
+                       Fluids
+l.242 \appendix
+                % Cue to tell LaTeX that the following "chapters" are Append...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+Overfull \hbox (4.5239pt too wide) in paragraph at lines 242--242
+\T1/ppl/m/n/12 Den-dritic So-lid-i-fi-ca-tion with Con-vec-tion: Two-Dimensiona
+l Ge-om-e-try.
+ []
+
+
+Overfull \hbox (0.67282pt too wide) in paragraph at lines 242--242
+[]\T1/ppl/m/n/12 Fabian Rösler and Di-eter Brügge-mann.   Shell-and-tube type 
+la-tent heat
+ []
+
+
+Overfull \hbox (1.66281pt too wide) in paragraph at lines 242--242
+[]\T1/ppl/m/n/12 Daoyong Wu, Yuan-ming Lai, and Mingyi Zhang.   Heat and mass 
+trans-
+ []
+
+[68]
+! Misplaced alignment tab character &.
+<argument> Computers &
+                       Fluids
+l.242 \appendix
+                % Cue to tell LaTeX that the following "chapters" are Append...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+Overfull \hbox (2.59038pt too wide) in paragraph at lines 242--242
+[]\T1/ppl/m/n/12 Y. Zhao, C.Y. Zhao, and Z.G. Xu.   Nu-mer-i-cal study of soli
+d-liquid phase
+ []
+
+[69]
+\openout2 = `Appendices/AppendixA.aux'.
+
+ (Appendices/AppendixA.tex [70
+
+
+]
+Appendix A.
+<mySolidificationMeltingSource_H.pdf, id=1373, 597.23125pt x 845.1575pt>
+File: mySolidificationMeltingSource_H.pdf Graphic file (type pdf)
+<use mySolidificationMeltingSource_H.pdf>
+Package pdftex.def Info: mySolidificationMeltingSource_H.pdf  used on input lin
+e 9.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: mySolidificationMeltingSource_H.pdf Graphic file (type pdf)
+<use mySolidificationMeltingSource_H.pdf>
+Package pdftex.def Info: mySolidificationMeltingSource_H.pdf  used on input lin
+e 9.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+<mySolidificationMeltingSource_H.pdf, id=1376, page=1, 597.23125pt x 845.1575pt
+>
+File: mySolidificationMeltingSource_H.pdf Graphic file (type pdf)
+<use mySolidificationMeltingSource_H.pdf, page 1>
+Package pdftex.def Info: mySolidificationMeltingSource_H.pdf , page1 used on in
+put line 9.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: mySolidificationMeltingSource_H.pdf Graphic file (type pdf)
+<use mySolidificationMeltingSource_H.pdf, page 1>
+Package pdftex.def Info: mySolidificationMeltingSource_H.pdf , page1 used on in
+put line 9.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+1: section
+[71]
+File: mySolidificationMeltingSource_H.pdf Graphic file (type pdf)
+<use mySolidificationMeltingSource_H.pdf, page 1>
+Package pdftex.def Info: mySolidificationMeltingSource_H.pdf , page1 used on in
+put line 9.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: mySolidificationMeltingSource_H.pdf Graphic file (type pdf)
+<use mySolidificationMeltingSource_H.pdf, page 1>
+Package pdftex.def Info: mySolidificationMeltingSource_H.pdf , page1 used on in
+put line 9.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: mySolidificationMeltingSource_H.pdf Graphic file (type pdf)
+<use mySolidificationMeltingSource_H.pdf, page 1>
+Package pdftex.def Info: mySolidificationMeltingSource_H.pdf , page1 used on in
+put line 9.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [72 <./mySolidificationMeltingSource_H.pdf>]
+<mySolidificationMeltingSource_H.pdf, id=1394, page=2, 597.23125pt x 845.1575pt
+>
+File: mySolidificationMeltingSource_H.pdf Graphic file (type pdf)
+<use mySolidificationMeltingSource_H.pdf, page 2>
+Package pdftex.def Info: mySolidificationMeltingSource_H.pdf , page2 used on in
+put line 9.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: mySolidificationMeltingSource_H.pdf Graphic file (type pdf)
+<use mySolidificationMeltingSource_H.pdf, page 2>
+Package pdftex.def Info: mySolidificationMeltingSource_H.pdf , page2 used on in
+put line 9.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: mySolidificationMeltingSource_H.pdf Graphic file (type pdf)
+<use mySolidificationMeltingSource_H.pdf, page 2>
+Package pdftex.def Info: mySolidificationMeltingSource_H.pdf , page2 used on in
+put line 9.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [73 <./mySolidificationMeltingSource_H.pdf>]
+<mySolidificationMeltingSource_H.pdf, id=1400, page=3, 597.23125pt x 845.1575pt
+>
+File: mySolidificationMeltingSource_H.pdf Graphic file (type pdf)
+<use mySolidificationMeltingSource_H.pdf, page 3>
+Package pdftex.def Info: mySolidificationMeltingSource_H.pdf , page3 used on in
+put line 9.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: mySolidificationMeltingSource_H.pdf Graphic file (type pdf)
+<use mySolidificationMeltingSource_H.pdf, page 3>
+Package pdftex.def Info: mySolidificationMeltingSource_H.pdf , page3 used on in
+put line 9.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: mySolidificationMeltingSource_H.pdf Graphic file (type pdf)
+<use mySolidificationMeltingSource_H.pdf, page 3>
+Package pdftex.def Info: mySolidificationMeltingSource_H.pdf , page3 used on in
+put line 9.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [74 <./mySolidificationMeltingSource_H.pdf>]
+<mySolidificationMeltingSource_H.pdf, id=1405, page=4, 597.23125pt x 845.1575pt
+>
+File: mySolidificationMeltingSource_H.pdf Graphic file (type pdf)
+<use mySolidificationMeltingSource_H.pdf, page 4>
+Package pdftex.def Info: mySolidificationMeltingSource_H.pdf , page4 used on in
+put line 9.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: mySolidificationMeltingSource_H.pdf Graphic file (type pdf)
+<use mySolidificationMeltingSource_H.pdf, page 4>
+Package pdftex.def Info: mySolidificationMeltingSource_H.pdf , page4 used on in
+put line 9.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: mySolidificationMeltingSource_H.pdf Graphic file (type pdf)
+<use mySolidificationMeltingSource_H.pdf, page 4>
+Package pdftex.def Info: mySolidificationMeltingSource_H.pdf , page4 used on in
+put line 9.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [75 <./mySolidificationMeltingSource_H.pdf>]
+<mySolidificationMeltingSource_H.pdf, id=1416, page=5, 597.23125pt x 845.1575pt
+>
+File: mySolidificationMeltingSource_H.pdf Graphic file (type pdf)
+<use mySolidificationMeltingSource_H.pdf, page 5>
+Package pdftex.def Info: mySolidificationMeltingSource_H.pdf , page5 used on in
+put line 9.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: mySolidificationMeltingSource_H.pdf Graphic file (type pdf)
+<use mySolidificationMeltingSource_H.pdf, page 5>
+Package pdftex.def Info: mySolidificationMeltingSource_H.pdf , page5 used on in
+put line 9.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: mySolidificationMeltingSource_H.pdf Graphic file (type pdf)
+<use mySolidificationMeltingSource_H.pdf, page 5>
+Package pdftex.def Info: mySolidificationMeltingSource_H.pdf , page5 used on in
+put line 9.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [76 <./mySolidificationMeltingSource_H.pdf>]
+<mySolidificationMeltingSource_C.pdf, id=1421, 597.23125pt x 845.1575pt>
+File: mySolidificationMeltingSource_C.pdf Graphic file (type pdf)
+<use mySolidificationMeltingSource_C.pdf>
+Package pdftex.def Info: mySolidificationMeltingSource_C.pdf  used on input lin
+e 11.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: mySolidificationMeltingSource_C.pdf Graphic file (type pdf)
+<use mySolidificationMeltingSource_C.pdf>
+Package pdftex.def Info: mySolidificationMeltingSource_C.pdf  used on input lin
+e 11.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+<mySolidificationMeltingSource_C.pdf, id=1424, page=1, 597.23125pt x 845.1575pt
+>
+File: mySolidificationMeltingSource_C.pdf Graphic file (type pdf)
+<use mySolidificationMeltingSource_C.pdf, page 1>
+Package pdftex.def Info: mySolidificationMeltingSource_C.pdf , page1 used on in
+put line 11.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: mySolidificationMeltingSource_C.pdf Graphic file (type pdf)
+<use mySolidificationMeltingSource_C.pdf, page 1>
+Package pdftex.def Info: mySolidificationMeltingSource_C.pdf , page1 used on in
+put line 11.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+
+[77]
+File: mySolidificationMeltingSource_C.pdf Graphic file (type pdf)
+<use mySolidificationMeltingSource_C.pdf, page 1>
+Package pdftex.def Info: mySolidificationMeltingSource_C.pdf , page1 used on in
+put line 11.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: mySolidificationMeltingSource_C.pdf Graphic file (type pdf)
+<use mySolidificationMeltingSource_C.pdf, page 1>
+Package pdftex.def Info: mySolidificationMeltingSource_C.pdf , page1 used on in
+put line 11.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: mySolidificationMeltingSource_C.pdf Graphic file (type pdf)
+<use mySolidificationMeltingSource_C.pdf, page 1>
+Package pdftex.def Info: mySolidificationMeltingSource_C.pdf , page1 used on in
+put line 11.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [78 <./mySolidificationMeltingSource_C.pdf>]
+<mySolidificationMeltingSource_C.pdf, id=1448, page=2, 597.23125pt x 845.1575pt
+>
+File: mySolidificationMeltingSource_C.pdf Graphic file (type pdf)
+<use mySolidificationMeltingSource_C.pdf, page 2>
+Package pdftex.def Info: mySolidificationMeltingSource_C.pdf , page2 used on in
+put line 11.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: mySolidificationMeltingSource_C.pdf Graphic file (type pdf)
+<use mySolidificationMeltingSource_C.pdf, page 2>
+Package pdftex.def Info: mySolidificationMeltingSource_C.pdf , page2 used on in
+put line 11.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: mySolidificationMeltingSource_C.pdf Graphic file (type pdf)
+<use mySolidificationMeltingSource_C.pdf, page 2>
+Package pdftex.def Info: mySolidificationMeltingSource_C.pdf , page2 used on in
+put line 11.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [79 <./mySolidificationMeltingSource_C.pdf>]
+<mySolidificationMeltingSource_C.pdf, id=1454, page=3, 597.23125pt x 845.1575pt
+>
+File: mySolidificationMeltingSource_C.pdf Graphic file (type pdf)
+<use mySolidificationMeltingSource_C.pdf, page 3>
+Package pdftex.def Info: mySolidificationMeltingSource_C.pdf , page3 used on in
+put line 11.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: mySolidificationMeltingSource_C.pdf Graphic file (type pdf)
+<use mySolidificationMeltingSource_C.pdf, page 3>
+Package pdftex.def Info: mySolidificationMeltingSource_C.pdf , page3 used on in
+put line 11.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: mySolidificationMeltingSource_C.pdf Graphic file (type pdf)
+<use mySolidificationMeltingSource_C.pdf, page 3>
+Package pdftex.def Info: mySolidificationMeltingSource_C.pdf , page3 used on in
+put line 11.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [80 <./mySolidificationMeltingSource_C.pdf>]
+<mySolidificationMeltingSource_C.pdf, id=1459, page=4, 597.23125pt x 845.1575pt
+>
+File: mySolidificationMeltingSource_C.pdf Graphic file (type pdf)
+<use mySolidificationMeltingSource_C.pdf, page 4>
+Package pdftex.def Info: mySolidificationMeltingSource_C.pdf , page4 used on in
+put line 11.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: mySolidificationMeltingSource_C.pdf Graphic file (type pdf)
+<use mySolidificationMeltingSource_C.pdf, page 4>
+Package pdftex.def Info: mySolidificationMeltingSource_C.pdf , page4 used on in
+put line 11.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: mySolidificationMeltingSource_C.pdf Graphic file (type pdf)
+<use mySolidificationMeltingSource_C.pdf, page 4>
+Package pdftex.def Info: mySolidificationMeltingSource_C.pdf , page4 used on in
+put line 11.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [81 <./mySolidificationMeltingSource_C.pdf>]
+<mySolidificationMeltingSourceTemplates.pdf, id=1464, 597.23125pt x 845.1575pt>
+
+File: mySolidificationMeltingSourceTemplates.pdf Graphic file (type pdf)
+<use mySolidificationMeltingSourceTemplates.pdf>
+Package pdftex.def Info: mySolidificationMeltingSourceTemplates.pdf  used on in
+put line 13.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: mySolidificationMeltingSourceTemplates.pdf Graphic file (type pdf)
+<use mySolidificationMeltingSourceTemplates.pdf>
+Package pdftex.def Info: mySolidificationMeltingSourceTemplates.pdf  used on in
+put line 13.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+<mySolidificationMeltingSourceTemplates.pdf, id=1467, page=1, 597.23125pt x 845
+.1575pt>
+File: mySolidificationMeltingSourceTemplates.pdf Graphic file (type pdf)
+<use mySolidificationMeltingSourceTemplates.pdf, page 1>
+Package pdftex.def Info: mySolidificationMeltingSourceTemplates.pdf , page1 use
+d on input line 13.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: mySolidificationMeltingSourceTemplates.pdf Graphic file (type pdf)
+<use mySolidificationMeltingSourceTemplates.pdf, page 1>
+Package pdftex.def Info: mySolidificationMeltingSourceTemplates.pdf , page1 use
+d on input line 13.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [82]
+File: mySolidificationMeltingSourceTemplates.pdf Graphic file (type pdf)
+<use mySolidificationMeltingSourceTemplates.pdf, page 1>
+Package pdftex.def Info: mySolidificationMeltingSourceTemplates.pdf , page1 use
+d on input line 13.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: mySolidificationMeltingSourceTemplates.pdf Graphic file (type pdf)
+<use mySolidificationMeltingSourceTemplates.pdf, page 1>
+Package pdftex.def Info: mySolidificationMeltingSourceTemplates.pdf , page1 use
+d on input line 13.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: mySolidificationMeltingSourceTemplates.pdf Graphic file (type pdf)
+<use mySolidificationMeltingSourceTemplates.pdf, page 1>
+Package pdftex.def Info: mySolidificationMeltingSourceTemplates.pdf , page1 use
+d on input line 13.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [83 <./mySolidificationMeltingSourceTemplates.pdf>]
+<mySolidificationMeltingSourceTemplates.pdf, id=1491, page=2, 597.23125pt x 845
+.1575pt>
+File: mySolidificationMeltingSourceTemplates.pdf Graphic file (type pdf)
+<use mySolidificationMeltingSourceTemplates.pdf, page 2>
+Package pdftex.def Info: mySolidificationMeltingSourceTemplates.pdf , page2 use
+d on input line 13.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: mySolidificationMeltingSourceTemplates.pdf Graphic file (type pdf)
+<use mySolidificationMeltingSourceTemplates.pdf, page 2>
+Package pdftex.def Info: mySolidificationMeltingSourceTemplates.pdf , page2 use
+d on input line 13.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: mySolidificationMeltingSourceTemplates.pdf Graphic file (type pdf)
+<use mySolidificationMeltingSourceTemplates.pdf, page 2>
+Package pdftex.def Info: mySolidificationMeltingSourceTemplates.pdf , page2 use
+d on input line 13.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [84 <./mySolidificationMeltingSourceTemplates.pdf>]
+<LeeCNT_H.pdf, id=1496, 597.23125pt x 845.1575pt>
+File: LeeCNT_H.pdf Graphic file (type pdf)
+<use LeeCNT_H.pdf>
+Package pdftex.def Info: LeeCNT_H.pdf  used on input line 16.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: LeeCNT_H.pdf Graphic file (type pdf)
+<use LeeCNT_H.pdf>
+Package pdftex.def Info: LeeCNT_H.pdf  used on input line 16.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+<LeeCNT_H.pdf, id=1499, page=1, 597.23125pt x 845.1575pt>
+File: LeeCNT_H.pdf Graphic file (type pdf)
+<use LeeCNT_H.pdf, page 1>
+Package pdftex.def Info: LeeCNT_H.pdf , page1 used on input line 16.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: LeeCNT_H.pdf Graphic file (type pdf)
+<use LeeCNT_H.pdf, page 1>
+Package pdftex.def Info: LeeCNT_H.pdf , page1 used on input line 16.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [85]
+File: LeeCNT_H.pdf Graphic file (type pdf)
+<use LeeCNT_H.pdf, page 1>
+Package pdftex.def Info: LeeCNT_H.pdf , page1 used on input line 16.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: LeeCNT_H.pdf Graphic file (type pdf)
+<use LeeCNT_H.pdf, page 1>
+Package pdftex.def Info: LeeCNT_H.pdf , page1 used on input line 16.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: LeeCNT_H.pdf Graphic file (type pdf)
+<use LeeCNT_H.pdf, page 1>
+Package pdftex.def Info: LeeCNT_H.pdf , page1 used on input line 16.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [86 <./LeeCNT_H.pdf>]
+<LeeCNT_H.pdf, id=1518, page=2, 597.23125pt x 845.1575pt>
+File: LeeCNT_H.pdf Graphic file (type pdf)
+<use LeeCNT_H.pdf, page 2>
+Package pdftex.def Info: LeeCNT_H.pdf , page2 used on input line 16.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: LeeCNT_H.pdf Graphic file (type pdf)
+<use LeeCNT_H.pdf, page 2>
+Package pdftex.def Info: LeeCNT_H.pdf , page2 used on input line 16.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: LeeCNT_H.pdf Graphic file (type pdf)
+<use LeeCNT_H.pdf, page 2>
+Package pdftex.def Info: LeeCNT_H.pdf , page2 used on input line 16.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [87 <./LeeCNT_H.pdf>]
+<LeeCNT_H.pdf, id=1523, page=3, 597.23125pt x 845.1575pt>
+File: LeeCNT_H.pdf Graphic file (type pdf)
+<use LeeCNT_H.pdf, page 3>
+Package pdftex.def Info: LeeCNT_H.pdf , page3 used on input line 16.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: LeeCNT_H.pdf Graphic file (type pdf)
+<use LeeCNT_H.pdf, page 3>
+Package pdftex.def Info: LeeCNT_H.pdf , page3 used on input line 16.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: LeeCNT_H.pdf Graphic file (type pdf)
+<use LeeCNT_H.pdf, page 3>
+Package pdftex.def Info: LeeCNT_H.pdf , page3 used on input line 16.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [88 <./LeeCNT_H.pdf>]
+<LeeCNT_H.pdf, id=1534, page=4, 597.23125pt x 845.1575pt>
+File: LeeCNT_H.pdf Graphic file (type pdf)
+<use LeeCNT_H.pdf, page 4>
+Package pdftex.def Info: LeeCNT_H.pdf , page4 used on input line 16.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: LeeCNT_H.pdf Graphic file (type pdf)
+<use LeeCNT_H.pdf, page 4>
+Package pdftex.def Info: LeeCNT_H.pdf , page4 used on input line 16.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: LeeCNT_H.pdf Graphic file (type pdf)
+<use LeeCNT_H.pdf, page 4>
+Package pdftex.def Info: LeeCNT_H.pdf , page4 used on input line 16.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [89 <./LeeCNT_H.pdf>]
+<LeeCNT_H.pdf, id=1539, page=5, 597.23125pt x 845.1575pt>
+File: LeeCNT_H.pdf Graphic file (type pdf)
+<use LeeCNT_H.pdf, page 5>
+Package pdftex.def Info: LeeCNT_H.pdf , page5 used on input line 16.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: LeeCNT_H.pdf Graphic file (type pdf)
+<use LeeCNT_H.pdf, page 5>
+Package pdftex.def Info: LeeCNT_H.pdf , page5 used on input line 16.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: LeeCNT_H.pdf Graphic file (type pdf)
+<use LeeCNT_H.pdf, page 5>
+Package pdftex.def Info: LeeCNT_H.pdf , page5 used on input line 16.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [90 <./LeeCNT_H.pdf>]
+<LeeCNT_C.pdf, id=1544, 597.23125pt x 845.1575pt>
+File: LeeCNT_C.pdf Graphic file (type pdf)
+<use LeeCNT_C.pdf>
+Package pdftex.def Info: LeeCNT_C.pdf  used on input line 18.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: LeeCNT_C.pdf Graphic file (type pdf)
+<use LeeCNT_C.pdf>
+Package pdftex.def Info: LeeCNT_C.pdf  used on input line 18.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+<LeeCNT_C.pdf, id=1547, page=1, 597.23125pt x 845.1575pt>
+File: LeeCNT_C.pdf Graphic file (type pdf)
+<use LeeCNT_C.pdf, page 1>
+Package pdftex.def Info: LeeCNT_C.pdf , page1 used on input line 18.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: LeeCNT_C.pdf Graphic file (type pdf)
+<use LeeCNT_C.pdf, page 1>
+Package pdftex.def Info: LeeCNT_C.pdf , page1 used on input line 18.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [91]
+File: LeeCNT_C.pdf Graphic file (type pdf)
+<use LeeCNT_C.pdf, page 1>
+Package pdftex.def Info: LeeCNT_C.pdf , page1 used on input line 18.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: LeeCNT_C.pdf Graphic file (type pdf)
+<use LeeCNT_C.pdf, page 1>
+Package pdftex.def Info: LeeCNT_C.pdf , page1 used on input line 18.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: LeeCNT_C.pdf Graphic file (type pdf)
+<use LeeCNT_C.pdf, page 1>
+Package pdftex.def Info: LeeCNT_C.pdf , page1 used on input line 18.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [92 <./LeeCNT_C.pdf>]
+<LeeCNT_C.pdf, id=1572, page=2, 597.23125pt x 845.1575pt>
+File: LeeCNT_C.pdf Graphic file (type pdf)
+<use LeeCNT_C.pdf, page 2>
+Package pdftex.def Info: LeeCNT_C.pdf , page2 used on input line 18.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: LeeCNT_C.pdf Graphic file (type pdf)
+<use LeeCNT_C.pdf, page 2>
+Package pdftex.def Info: LeeCNT_C.pdf , page2 used on input line 18.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: LeeCNT_C.pdf Graphic file (type pdf)
+<use LeeCNT_C.pdf, page 2>
+Package pdftex.def Info: LeeCNT_C.pdf , page2 used on input line 18.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [93 <./LeeCNT_C.pdf>]
+<LeeCNT_C.pdf, id=1577, page=3, 597.23125pt x 845.1575pt>
+File: LeeCNT_C.pdf Graphic file (type pdf)
+<use LeeCNT_C.pdf, page 3>
+Package pdftex.def Info: LeeCNT_C.pdf , page3 used on input line 18.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: LeeCNT_C.pdf Graphic file (type pdf)
+<use LeeCNT_C.pdf, page 3>
+Package pdftex.def Info: LeeCNT_C.pdf , page3 used on input line 18.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: LeeCNT_C.pdf Graphic file (type pdf)
+<use LeeCNT_C.pdf, page 3>
+Package pdftex.def Info: LeeCNT_C.pdf , page3 used on input line 18.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [94 <./LeeCNT_C.pdf>]
+<LeeCNT_C.pdf, id=1582, page=4, 597.23125pt x 845.1575pt>
+File: LeeCNT_C.pdf Graphic file (type pdf)
+<use LeeCNT_C.pdf, page 4>
+Package pdftex.def Info: LeeCNT_C.pdf , page4 used on input line 18.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: LeeCNT_C.pdf Graphic file (type pdf)
+<use LeeCNT_C.pdf, page 4>
+Package pdftex.def Info: LeeCNT_C.pdf , page4 used on input line 18.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: LeeCNT_C.pdf Graphic file (type pdf)
+<use LeeCNT_C.pdf, page 4>
+Package pdftex.def Info: LeeCNT_C.pdf , page4 used on input line 18.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [95 <./LeeCNT_C.pdf>]
+<LeeCNT_C.pdf, id=1587, page=5, 597.23125pt x 845.1575pt>
+File: LeeCNT_C.pdf Graphic file (type pdf)
+<use LeeCNT_C.pdf, page 5>
+Package pdftex.def Info: LeeCNT_C.pdf , page5 used on input line 18.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: LeeCNT_C.pdf Graphic file (type pdf)
+<use LeeCNT_C.pdf, page 5>
+Package pdftex.def Info: LeeCNT_C.pdf , page5 used on input line 18.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: LeeCNT_C.pdf Graphic file (type pdf)
+<use LeeCNT_C.pdf, page 5>
+Package pdftex.def Info: LeeCNT_C.pdf , page5 used on input line 18.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [96 <./LeeCNT_C.pdf>]
+<LeeCNT_C.pdf, id=1592, page=6, 597.23125pt x 845.1575pt>
+File: LeeCNT_C.pdf Graphic file (type pdf)
+<use LeeCNT_C.pdf, page 6>
+Package pdftex.def Info: LeeCNT_C.pdf , page6 used on input line 18.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: LeeCNT_C.pdf Graphic file (type pdf)
+<use LeeCNT_C.pdf, page 6>
+Package pdftex.def Info: LeeCNT_C.pdf , page6 used on input line 18.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: LeeCNT_C.pdf Graphic file (type pdf)
+<use LeeCNT_C.pdf, page 6>
+Package pdftex.def Info: LeeCNT_C.pdf , page6 used on input line 18.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [97 <./LeeCNT_C.pdf>]
+<LeeCNT_C.pdf, id=1598, page=7, 597.23125pt x 845.1575pt>
+File: LeeCNT_C.pdf Graphic file (type pdf)
+<use LeeCNT_C.pdf, page 7>
+Package pdftex.def Info: LeeCNT_C.pdf , page7 used on input line 18.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: LeeCNT_C.pdf Graphic file (type pdf)
+<use LeeCNT_C.pdf, page 7>
+Package pdftex.def Info: LeeCNT_C.pdf , page7 used on input line 18.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: LeeCNT_C.pdf Graphic file (type pdf)
+<use LeeCNT_C.pdf, page 7>
+Package pdftex.def Info: LeeCNT_C.pdf , page7 used on input line 18.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+
+[98 <./LeeCNT_C.pdf>]
+<data_plotter_stefan.pdf, id=1603, 597.23125pt x 845.1575pt>
+File: data_plotter_stefan.pdf Graphic file (type pdf)
+<use data_plotter_stefan.pdf>
+Package pdftex.def Info: data_plotter_stefan.pdf  used on input line 20.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: data_plotter_stefan.pdf Graphic file (type pdf)
+<use data_plotter_stefan.pdf>
+Package pdftex.def Info: data_plotter_stefan.pdf  used on input line 20.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+<data_plotter_stefan.pdf, id=1606, page=1, 597.23125pt x 845.1575pt>
+File: data_plotter_stefan.pdf Graphic file (type pdf)
+<use data_plotter_stefan.pdf, page 1>
+Package pdftex.def Info: data_plotter_stefan.pdf , page1 used on input line 20.
+
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: data_plotter_stefan.pdf Graphic file (type pdf)
+<use data_plotter_stefan.pdf, page 1>
+Package pdftex.def Info: data_plotter_stefan.pdf , page1 used on input line 20.
+
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [99]
+File: data_plotter_stefan.pdf Graphic file (type pdf)
+<use data_plotter_stefan.pdf, page 1>
+Package pdftex.def Info: data_plotter_stefan.pdf , page1 used on input line 20.
+
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: data_plotter_stefan.pdf Graphic file (type pdf)
+<use data_plotter_stefan.pdf, page 1>
+Package pdftex.def Info: data_plotter_stefan.pdf , page1 used on input line 20.
+
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: data_plotter_stefan.pdf Graphic file (type pdf)
+<use data_plotter_stefan.pdf, page 1>
+Package pdftex.def Info: data_plotter_stefan.pdf , page1 used on input line 20.
+
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [100 <./data_plotter_stefan.pdf>]
+<data_plotter_stefan.pdf, id=1630, page=2, 597.23125pt x 845.1575pt>
+File: data_plotter_stefan.pdf Graphic file (type pdf)
+<use data_plotter_stefan.pdf, page 2>
+Package pdftex.def Info: data_plotter_stefan.pdf , page2 used on input line 20.
+
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: data_plotter_stefan.pdf Graphic file (type pdf)
+<use data_plotter_stefan.pdf, page 2>
+Package pdftex.def Info: data_plotter_stefan.pdf , page2 used on input line 20.
+
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: data_plotter_stefan.pdf Graphic file (type pdf)
+<use data_plotter_stefan.pdf, page 2>
+Package pdftex.def Info: data_plotter_stefan.pdf , page2 used on input line 20.
+
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [101 <./data_plotter_stefan.pdf>]
+<data_plotter_stefan.pdf, id=1635, page=3, 597.23125pt x 845.1575pt>
+File: data_plotter_stefan.pdf Graphic file (type pdf)
+<use data_plotter_stefan.pdf, page 3>
+Package pdftex.def Info: data_plotter_stefan.pdf , page3 used on input line 20.
+
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: data_plotter_stefan.pdf Graphic file (type pdf)
+<use data_plotter_stefan.pdf, page 3>
+Package pdftex.def Info: data_plotter_stefan.pdf , page3 used on input line 20.
+
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: data_plotter_stefan.pdf Graphic file (type pdf)
+<use data_plotter_stefan.pdf, page 3>
+Package pdftex.def Info: data_plotter_stefan.pdf , page3 used on input line 20.
+
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [102 <./data_plotter_stefan.pdf>]
+<data_plotter_stefan.pdf, id=1640, page=4, 597.23125pt x 845.1575pt>
+File: data_plotter_stefan.pdf Graphic file (type pdf)
+<use data_plotter_stefan.pdf, page 4>
+Package pdftex.def Info: data_plotter_stefan.pdf , page4 used on input line 20.
+
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: data_plotter_stefan.pdf Graphic file (type pdf)
+<use data_plotter_stefan.pdf, page 4>
+Package pdftex.def Info: data_plotter_stefan.pdf , page4 used on input line 20.
+
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: data_plotter_stefan.pdf Graphic file (type pdf)
+<use data_plotter_stefan.pdf, page 4>
+Package pdftex.def Info: data_plotter_stefan.pdf , page4 used on input line 20.
+
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [103 <./data_plotter_stefan.pdf>])
+\openout2 = `Appendices/AppendixB.aux'.
+
+ (Appendices/AppendixB.tex [104
+
+
+
+
+]
+Appendix B.
+<cht_geom.pdf, id=1650, 597.23125pt x 845.1575pt>
+File: cht_geom.pdf Graphic file (type pdf)
+<use cht_geom.pdf>
+Package pdftex.def Info: cht_geom.pdf  used on input line 6.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: cht_geom.pdf Graphic file (type pdf)
+<use cht_geom.pdf>
+Package pdftex.def Info: cht_geom.pdf  used on input line 6.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+<cht_geom.pdf, id=1653, page=1, 597.23125pt x 845.1575pt>
+File: cht_geom.pdf Graphic file (type pdf)
+<use cht_geom.pdf, page 1>
+Package pdftex.def Info: cht_geom.pdf , page1 used on input line 6.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: cht_geom.pdf Graphic file (type pdf)
+<use cht_geom.pdf, page 1>
+Package pdftex.def Info: cht_geom.pdf , page1 used on input line 6.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+1: section
+[105]
+File: cht_geom.pdf Graphic file (type pdf)
+<use cht_geom.pdf, page 1>
+Package pdftex.def Info: cht_geom.pdf , page1 used on input line 6.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: cht_geom.pdf Graphic file (type pdf)
+<use cht_geom.pdf, page 1>
+Package pdftex.def Info: cht_geom.pdf , page1 used on input line 6.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: cht_geom.pdf Graphic file (type pdf)
+<use cht_geom.pdf, page 1>
+Package pdftex.def Info: cht_geom.pdf , page1 used on input line 6.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [106 <./cht_geom.pdf>]
+<cht_geom.pdf, id=1677, page=2, 597.23125pt x 845.1575pt>
+File: cht_geom.pdf Graphic file (type pdf)
+<use cht_geom.pdf, page 2>
+Package pdftex.def Info: cht_geom.pdf , page2 used on input line 6.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: cht_geom.pdf Graphic file (type pdf)
+<use cht_geom.pdf, page 2>
+Package pdftex.def Info: cht_geom.pdf , page2 used on input line 6.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: cht_geom.pdf Graphic file (type pdf)
+<use cht_geom.pdf, page 2>
+Package pdftex.def Info: cht_geom.pdf , page2 used on input line 6.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [107 <./cht_geom.pdf>]
+<chtMultiPhaseInterFoam.pdf, id=1682, 597.23125pt x 845.1575pt>
+File: chtMultiPhaseInterFoam.pdf Graphic file (type pdf)
+<use chtMultiPhaseInterFoam.pdf>
+Package pdftex.def Info: chtMultiPhaseInterFoam.pdf  used on input line 8.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: chtMultiPhaseInterFoam.pdf Graphic file (type pdf)
+<use chtMultiPhaseInterFoam.pdf>
+Package pdftex.def Info: chtMultiPhaseInterFoam.pdf  used on input line 8.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+<chtMultiPhaseInterFoam.pdf, id=1685, page=1, 597.23125pt x 845.1575pt>
+File: chtMultiPhaseInterFoam.pdf Graphic file (type pdf)
+<use chtMultiPhaseInterFoam.pdf, page 1>
+Package pdftex.def Info: chtMultiPhaseInterFoam.pdf , page1 used on input line 
+8.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: chtMultiPhaseInterFoam.pdf Graphic file (type pdf)
+<use chtMultiPhaseInterFoam.pdf, page 1>
+Package pdftex.def Info: chtMultiPhaseInterFoam.pdf , page1 used on input line 
+8.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [108]
+File: chtMultiPhaseInterFoam.pdf Graphic file (type pdf)
+<use chtMultiPhaseInterFoam.pdf, page 1>
+Package pdftex.def Info: chtMultiPhaseInterFoam.pdf , page1 used on input line 
+8.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: chtMultiPhaseInterFoam.pdf Graphic file (type pdf)
+<use chtMultiPhaseInterFoam.pdf, page 1>
+Package pdftex.def Info: chtMultiPhaseInterFoam.pdf , page1 used on input line 
+8.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: chtMultiPhaseInterFoam.pdf Graphic file (type pdf)
+<use chtMultiPhaseInterFoam.pdf, page 1>
+Package pdftex.def Info: chtMultiPhaseInterFoam.pdf , page1 used on input line 
+8.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [109 <./chtMultiPhaseInterFoam.pdf>]
+<chtMultiPhaseInterFoam.pdf, id=1704, page=2, 597.23125pt x 845.1575pt>
+File: chtMultiPhaseInterFoam.pdf Graphic file (type pdf)
+<use chtMultiPhaseInterFoam.pdf, page 2>
+Package pdftex.def Info: chtMultiPhaseInterFoam.pdf , page2 used on input line 
+8.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: chtMultiPhaseInterFoam.pdf Graphic file (type pdf)
+<use chtMultiPhaseInterFoam.pdf, page 2>
+Package pdftex.def Info: chtMultiPhaseInterFoam.pdf , page2 used on input line 
+8.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: chtMultiPhaseInterFoam.pdf Graphic file (type pdf)
+<use chtMultiPhaseInterFoam.pdf, page 2>
+Package pdftex.def Info: chtMultiPhaseInterFoam.pdf , page2 used on input line 
+8.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [110 <./chtMultiPhaseInterFoam.pdf>]
+<chtMultiPhaseInterFoam.pdf, id=1715, page=3, 597.23125pt x 845.1575pt>
+File: chtMultiPhaseInterFoam.pdf Graphic file (type pdf)
+<use chtMultiPhaseInterFoam.pdf, page 3>
+Package pdftex.def Info: chtMultiPhaseInterFoam.pdf , page3 used on input line 
+8.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: chtMultiPhaseInterFoam.pdf Graphic file (type pdf)
+<use chtMultiPhaseInterFoam.pdf, page 3>
+Package pdftex.def Info: chtMultiPhaseInterFoam.pdf , page3 used on input line 
+8.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: chtMultiPhaseInterFoam.pdf Graphic file (type pdf)
+<use chtMultiPhaseInterFoam.pdf, page 3>
+Package pdftex.def Info: chtMultiPhaseInterFoam.pdf , page3 used on input line 
+8.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [111 <./chtMultiPhaseInterFoam.pdf>]
+<chtMultiPhaseInterFoam.pdf, id=1720, page=4, 597.23125pt x 845.1575pt>
+File: chtMultiPhaseInterFoam.pdf Graphic file (type pdf)
+<use chtMultiPhaseInterFoam.pdf, page 4>
+Package pdftex.def Info: chtMultiPhaseInterFoam.pdf , page4 used on input line 
+8.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: chtMultiPhaseInterFoam.pdf Graphic file (type pdf)
+<use chtMultiPhaseInterFoam.pdf, page 4>
+Package pdftex.def Info: chtMultiPhaseInterFoam.pdf , page4 used on input line 
+8.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: chtMultiPhaseInterFoam.pdf Graphic file (type pdf)
+<use chtMultiPhaseInterFoam.pdf, page 4>
+Package pdftex.def Info: chtMultiPhaseInterFoam.pdf , page4 used on input line 
+8.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [112 <./chtMultiPhaseInterFoam.pdf>]
+<createFields.pdf, id=1725, 597.23125pt x 845.1575pt>
+File: createFields.pdf Graphic file (type pdf)
+<use createFields.pdf>
+Package pdftex.def Info: createFields.pdf  used on input line 9.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: createFields.pdf Graphic file (type pdf)
+<use createFields.pdf>
+Package pdftex.def Info: createFields.pdf  used on input line 9.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+<createFields.pdf, id=1728, page=1, 597.23125pt x 845.1575pt>
+File: createFields.pdf Graphic file (type pdf)
+<use createFields.pdf, page 1>
+Package pdftex.def Info: createFields.pdf , page1 used on input line 9.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: createFields.pdf Graphic file (type pdf)
+<use createFields.pdf, page 1>
+Package pdftex.def Info: createFields.pdf , page1 used on input line 9.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: createFields.pdf Graphic file (type pdf)
+<use createFields.pdf, page 1>
+Package pdftex.def Info: createFields.pdf , page1 used on input line 9.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: createFields.pdf Graphic file (type pdf)
+<use createFields.pdf, page 1>
+Package pdftex.def Info: createFields.pdf , page1 used on input line 9.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: createFields.pdf Graphic file (type pdf)
+<use createFields.pdf, page 1>
+Package pdftex.def Info: createFields.pdf , page1 used on input line 9.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [113 <./createFields.pdf>]
+<createMeshes.pdf, id=1742, 597.23125pt x 845.1575pt>
+File: createMeshes.pdf Graphic file (type pdf)
+<use createMeshes.pdf>
+Package pdftex.def Info: createMeshes.pdf  used on input line 10.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: createMeshes.pdf Graphic file (type pdf)
+<use createMeshes.pdf>
+Package pdftex.def Info: createMeshes.pdf  used on input line 10.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+<createMeshes.pdf, id=1745, page=1, 597.23125pt x 845.1575pt>
+File: createMeshes.pdf Graphic file (type pdf)
+<use createMeshes.pdf, page 1>
+Package pdftex.def Info: createMeshes.pdf , page1 used on input line 10.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: createMeshes.pdf Graphic file (type pdf)
+<use createMeshes.pdf, page 1>
+Package pdftex.def Info: createMeshes.pdf , page1 used on input line 10.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: createMeshes.pdf Graphic file (type pdf)
+<use createMeshes.pdf, page 1>
+Package pdftex.def Info: createMeshes.pdf , page1 used on input line 10.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: createMeshes.pdf Graphic file (type pdf)
+<use createMeshes.pdf, page 1>
+Package pdftex.def Info: createMeshes.pdf , page1 used on input line 10.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: createMeshes.pdf Graphic file (type pdf)
+<use createMeshes.pdf, page 1>
+Package pdftex.def Info: createMeshes.pdf , page1 used on input line 10.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+
+[114 <./createMeshes.pdf>]
+<readPIMPLEControls.pdf, id=1759, 597.23125pt x 845.1575pt>
+File: readPIMPLEControls.pdf Graphic file (type pdf)
+<use readPIMPLEControls.pdf>
+Package pdftex.def Info: readPIMPLEControls.pdf  used on input line 11.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: readPIMPLEControls.pdf Graphic file (type pdf)
+<use readPIMPLEControls.pdf>
+Package pdftex.def Info: readPIMPLEControls.pdf  used on input line 11.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+<readPIMPLEControls.pdf, id=1762, page=1, 597.23125pt x 845.1575pt>
+File: readPIMPLEControls.pdf Graphic file (type pdf)
+<use readPIMPLEControls.pdf, page 1>
+Package pdftex.def Info: readPIMPLEControls.pdf , page1 used on input line 11.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: readPIMPLEControls.pdf Graphic file (type pdf)
+<use readPIMPLEControls.pdf, page 1>
+Package pdftex.def Info: readPIMPLEControls.pdf , page1 used on input line 11.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: readPIMPLEControls.pdf Graphic file (type pdf)
+<use readPIMPLEControls.pdf, page 1>
+Package pdftex.def Info: readPIMPLEControls.pdf , page1 used on input line 11.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: readPIMPLEControls.pdf Graphic file (type pdf)
+<use readPIMPLEControls.pdf, page 1>
+Package pdftex.def Info: readPIMPLEControls.pdf , page1 used on input line 11.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: readPIMPLEControls.pdf Graphic file (type pdf)
+<use readPIMPLEControls.pdf, page 1>
+Package pdftex.def Info: readPIMPLEControls.pdf , page1 used on input line 11.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [115 <./readPIMPLEControls.pdf>]
+<createMeshesPostProcess.pdf, id=1783, 597.23125pt x 845.1575pt>
+File: createMeshesPostProcess.pdf Graphic file (type pdf)
+<use createMeshesPostProcess.pdf>
+Package pdftex.def Info: createMeshesPostProcess.pdf  used on input line 12.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: createMeshesPostProcess.pdf Graphic file (type pdf)
+<use createMeshesPostProcess.pdf>
+Package pdftex.def Info: createMeshesPostProcess.pdf  used on input line 12.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+<createMeshesPostProcess.pdf, id=1786, page=1, 597.23125pt x 845.1575pt>
+File: createMeshesPostProcess.pdf Graphic file (type pdf)
+<use createMeshesPostProcess.pdf, page 1>
+Package pdftex.def Info: createMeshesPostProcess.pdf , page1 used on input line
+ 12.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: createMeshesPostProcess.pdf Graphic file (type pdf)
+<use createMeshesPostProcess.pdf, page 1>
+Package pdftex.def Info: createMeshesPostProcess.pdf , page1 used on input line
+ 12.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: createMeshesPostProcess.pdf Graphic file (type pdf)
+<use createMeshesPostProcess.pdf, page 1>
+Package pdftex.def Info: createMeshesPostProcess.pdf , page1 used on input line
+ 12.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: createMeshesPostProcess.pdf Graphic file (type pdf)
+<use createMeshesPostProcess.pdf, page 1>
+Package pdftex.def Info: createMeshesPostProcess.pdf , page1 used on input line
+ 12.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: createMeshesPostProcess.pdf Graphic file (type pdf)
+<use createMeshesPostProcess.pdf, page 1>
+Package pdftex.def Info: createMeshesPostProcess.pdf , page1 used on input line
+ 12.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [116 <./createMeshesPostProcess.pdf>]
+<createFieldRefs.pdf, id=1806, 597.23125pt x 845.1575pt>
+File: createFieldRefs.pdf Graphic file (type pdf)
+<use createFieldRefs.pdf>
+Package pdftex.def Info: createFieldRefs.pdf  used on input line 13.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: createFieldRefs.pdf Graphic file (type pdf)
+<use createFieldRefs.pdf>
+Package pdftex.def Info: createFieldRefs.pdf  used on input line 13.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+<createFieldRefs.pdf, id=1809, page=1, 597.23125pt x 845.1575pt>
+File: createFieldRefs.pdf Graphic file (type pdf)
+<use createFieldRefs.pdf, page 1>
+Package pdftex.def Info: createFieldRefs.pdf , page1 used on input line 13.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: createFieldRefs.pdf Graphic file (type pdf)
+<use createFieldRefs.pdf, page 1>
+Package pdftex.def Info: createFieldRefs.pdf , page1 used on input line 13.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: createFieldRefs.pdf Graphic file (type pdf)
+<use createFieldRefs.pdf, page 1>
+Package pdftex.def Info: createFieldRefs.pdf , page1 used on input line 13.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: createFieldRefs.pdf Graphic file (type pdf)
+<use createFieldRefs.pdf, page 1>
+Package pdftex.def Info: createFieldRefs.pdf , page1 used on input line 13.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: createFieldRefs.pdf Graphic file (type pdf)
+<use createFieldRefs.pdf, page 1>
+Package pdftex.def Info: createFieldRefs.pdf , page1 used on input line 13.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [117 <./createFieldRefs.pdf>]
+<setRegionFluidFields.pdf, id=1829, 597.23125pt x 845.1575pt>
+File: setRegionFluidFields.pdf Graphic file (type pdf)
+<use setRegionFluidFields.pdf>
+Package pdftex.def Info: setRegionFluidFields.pdf  used on input line 14.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: setRegionFluidFields.pdf Graphic file (type pdf)
+<use setRegionFluidFields.pdf>
+Package pdftex.def Info: setRegionFluidFields.pdf  used on input line 14.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+<setRegionFluidFields.pdf, id=1832, page=1, 597.23125pt x 845.1575pt>
+File: setRegionFluidFields.pdf Graphic file (type pdf)
+<use setRegionFluidFields.pdf, page 1>
+Package pdftex.def Info: setRegionFluidFields.pdf , page1 used on input line 14
+.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: setRegionFluidFields.pdf Graphic file (type pdf)
+<use setRegionFluidFields.pdf, page 1>
+Package pdftex.def Info: setRegionFluidFields.pdf , page1 used on input line 14
+.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: setRegionFluidFields.pdf Graphic file (type pdf)
+<use setRegionFluidFields.pdf, page 1>
+Package pdftex.def Info: setRegionFluidFields.pdf , page1 used on input line 14
+.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: setRegionFluidFields.pdf Graphic file (type pdf)
+<use setRegionFluidFields.pdf, page 1>
+Package pdftex.def Info: setRegionFluidFields.pdf , page1 used on input line 14
+.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: setRegionFluidFields.pdf Graphic file (type pdf)
+<use setRegionFluidFields.pdf, page 1>
+Package pdftex.def Info: setRegionFluidFields.pdf , page1 used on input line 14
+.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [118 <./setRegionFluidFields.pdf>]
+<createFluidMeshes.pdf, id=1852, 597.23125pt x 845.1575pt>
+File: createFluidMeshes.pdf Graphic file (type pdf)
+<use createFluidMeshes.pdf>
+Package pdftex.def Info: createFluidMeshes.pdf  used on input line 15.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: createFluidMeshes.pdf Graphic file (type pdf)
+<use createFluidMeshes.pdf>
+Package pdftex.def Info: createFluidMeshes.pdf  used on input line 15.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+<createFluidMeshes.pdf, id=1855, page=1, 597.23125pt x 845.1575pt>
+File: createFluidMeshes.pdf Graphic file (type pdf)
+<use createFluidMeshes.pdf, page 1>
+Package pdftex.def Info: createFluidMeshes.pdf , page1 used on input line 15.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: createFluidMeshes.pdf Graphic file (type pdf)
+<use createFluidMeshes.pdf, page 1>
+Package pdftex.def Info: createFluidMeshes.pdf , page1 used on input line 15.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: createFluidMeshes.pdf Graphic file (type pdf)
+<use createFluidMeshes.pdf, page 1>
+Package pdftex.def Info: createFluidMeshes.pdf , page1 used on input line 15.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: createFluidMeshes.pdf Graphic file (type pdf)
+<use createFluidMeshes.pdf, page 1>
+Package pdftex.def Info: createFluidMeshes.pdf , page1 used on input line 15.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: createFluidMeshes.pdf Graphic file (type pdf)
+<use createFluidMeshes.pdf, page 1>
+Package pdftex.def Info: createFluidMeshes.pdf , page1 used on input line 15.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [119 <./createFluidMeshes.pdf>]
+<readFluidMultiRegionPIMPLEControls.pdf, id=1875, 597.23125pt x 845.1575pt>
+File: readFluidMultiRegionPIMPLEControls.pdf Graphic file (type pdf)
+<use readFluidMultiRegionPIMPLEControls.pdf>
+Package pdftex.def Info: readFluidMultiRegionPIMPLEControls.pdf  used on input 
+line 16.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: readFluidMultiRegionPIMPLEControls.pdf Graphic file (type pdf)
+<use readFluidMultiRegionPIMPLEControls.pdf>
+Package pdftex.def Info: readFluidMultiRegionPIMPLEControls.pdf  used on input 
+line 16.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+<readFluidMultiRegionPIMPLEControls.pdf, id=1878, page=1, 597.23125pt x 845.157
+5pt>
+File: readFluidMultiRegionPIMPLEControls.pdf Graphic file (type pdf)
+<use readFluidMultiRegionPIMPLEControls.pdf, page 1>
+Package pdftex.def Info: readFluidMultiRegionPIMPLEControls.pdf , page1 used on
+ input line 16.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: readFluidMultiRegionPIMPLEControls.pdf Graphic file (type pdf)
+<use readFluidMultiRegionPIMPLEControls.pdf, page 1>
+Package pdftex.def Info: readFluidMultiRegionPIMPLEControls.pdf , page1 used on
+ input line 16.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: readFluidMultiRegionPIMPLEControls.pdf Graphic file (type pdf)
+<use readFluidMultiRegionPIMPLEControls.pdf, page 1>
+Package pdftex.def Info: readFluidMultiRegionPIMPLEControls.pdf , page1 used on
+ input line 16.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: readFluidMultiRegionPIMPLEControls.pdf Graphic file (type pdf)
+<use readFluidMultiRegionPIMPLEControls.pdf, page 1>
+Package pdftex.def Info: readFluidMultiRegionPIMPLEControls.pdf , page1 used on
+ input line 16.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: readFluidMultiRegionPIMPLEControls.pdf Graphic file (type pdf)
+<use readFluidMultiRegionPIMPLEControls.pdf, page 1>
+Package pdftex.def Info: readFluidMultiRegionPIMPLEControls.pdf , page1 used on
+ input line 16.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [120 <./readFluidMultiRegionPIMPLEControls.pdf>]
+<compressibleCourantNo_C.pdf, id=1898, 597.23125pt x 845.1575pt>
+File: compressibleCourantNo_C.pdf Graphic file (type pdf)
+<use compressibleCourantNo_C.pdf>
+Package pdftex.def Info: compressibleCourantNo_C.pdf  used on input line 17.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: compressibleCourantNo_C.pdf Graphic file (type pdf)
+<use compressibleCourantNo_C.pdf>
+Package pdftex.def Info: compressibleCourantNo_C.pdf  used on input line 17.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+<compressibleCourantNo_C.pdf, id=1901, page=1, 597.23125pt x 845.1575pt>
+File: compressibleCourantNo_C.pdf Graphic file (type pdf)
+<use compressibleCourantNo_C.pdf, page 1>
+Package pdftex.def Info: compressibleCourantNo_C.pdf , page1 used on input line
+ 17.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: compressibleCourantNo_C.pdf Graphic file (type pdf)
+<use compressibleCourantNo_C.pdf, page 1>
+Package pdftex.def Info: compressibleCourantNo_C.pdf , page1 used on input line
+ 17.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: compressibleCourantNo_C.pdf Graphic file (type pdf)
+<use compressibleCourantNo_C.pdf, page 1>
+Package pdftex.def Info: compressibleCourantNo_C.pdf , page1 used on input line
+ 17.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: compressibleCourantNo_C.pdf Graphic file (type pdf)
+<use compressibleCourantNo_C.pdf, page 1>
+Package pdftex.def Info: compressibleCourantNo_C.pdf , page1 used on input line
+ 17.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: compressibleCourantNo_C.pdf Graphic file (type pdf)
+<use compressibleCourantNo_C.pdf, page 1>
+Package pdftex.def Info: compressibleCourantNo_C.pdf , page1 used on input line
+ 17.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [121 <./compressibleCourantNo_C.pdf>]
+<compressibleCourantNo_C.pdf, id=1922, page=2, 597.23125pt x 845.1575pt>
+File: compressibleCourantNo_C.pdf Graphic file (type pdf)
+<use compressibleCourantNo_C.pdf, page 2>
+Package pdftex.def Info: compressibleCourantNo_C.pdf , page2 used on input line
+ 17.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: compressibleCourantNo_C.pdf Graphic file (type pdf)
+<use compressibleCourantNo_C.pdf, page 2>
+Package pdftex.def Info: compressibleCourantNo_C.pdf , page2 used on input line
+ 17.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: compressibleCourantNo_C.pdf Graphic file (type pdf)
+<use compressibleCourantNo_C.pdf, page 2>
+Package pdftex.def Info: compressibleCourantNo_C.pdf , page2 used on input line
+ 17.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [122 <./compressibleCourantNo_C.pdf>]
+<compressibleCourantNo_H.pdf, id=1927, 597.23125pt x 845.1575pt>
+File: compressibleCourantNo_H.pdf Graphic file (type pdf)
+<use compressibleCourantNo_H.pdf>
+Package pdftex.def Info: compressibleCourantNo_H.pdf  used on input line 18.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: compressibleCourantNo_H.pdf Graphic file (type pdf)
+<use compressibleCourantNo_H.pdf>
+Package pdftex.def Info: compressibleCourantNo_H.pdf  used on input line 18.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+<compressibleCourantNo_H.pdf, id=1930, page=1, 597.23125pt x 845.1575pt>
+File: compressibleCourantNo_H.pdf Graphic file (type pdf)
+<use compressibleCourantNo_H.pdf, page 1>
+Package pdftex.def Info: compressibleCourantNo_H.pdf , page1 used on input line
+ 18.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: compressibleCourantNo_H.pdf Graphic file (type pdf)
+<use compressibleCourantNo_H.pdf, page 1>
+Package pdftex.def Info: compressibleCourantNo_H.pdf , page1 used on input line
+ 18.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: compressibleCourantNo_H.pdf Graphic file (type pdf)
+<use compressibleCourantNo_H.pdf, page 1>
+Package pdftex.def Info: compressibleCourantNo_H.pdf , page1 used on input line
+ 18.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: compressibleCourantNo_H.pdf Graphic file (type pdf)
+<use compressibleCourantNo_H.pdf, page 1>
+Package pdftex.def Info: compressibleCourantNo_H.pdf , page1 used on input line
+ 18.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: compressibleCourantNo_H.pdf Graphic file (type pdf)
+<use compressibleCourantNo_H.pdf, page 1>
+Package pdftex.def Info: compressibleCourantNo_H.pdf , page1 used on input line
+ 18.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [123 <./compressibleCourantNo_H.pdf>]
+<compressibleMultiRegionCourantNo.pdf, id=1950, 597.23125pt x 845.1575pt>
+File: compressibleMultiRegionCourantNo.pdf Graphic file (type pdf)
+<use compressibleMultiRegionCourantNo.pdf>
+Package pdftex.def Info: compressibleMultiRegionCourantNo.pdf  used on input li
+ne 19.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: compressibleMultiRegionCourantNo.pdf Graphic file (type pdf)
+<use compressibleMultiRegionCourantNo.pdf>
+Package pdftex.def Info: compressibleMultiRegionCourantNo.pdf  used on input li
+ne 19.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+<compressibleMultiRegionCourantNo.pdf, id=1953, page=1, 597.23125pt x 845.1575p
+t>
+File: compressibleMultiRegionCourantNo.pdf Graphic file (type pdf)
+<use compressibleMultiRegionCourantNo.pdf, page 1>
+Package pdftex.def Info: compressibleMultiRegionCourantNo.pdf , page1 used on i
+nput line 19.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: compressibleMultiRegionCourantNo.pdf Graphic file (type pdf)
+<use compressibleMultiRegionCourantNo.pdf, page 1>
+Package pdftex.def Info: compressibleMultiRegionCourantNo.pdf , page1 used on i
+nput line 19.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: compressibleMultiRegionCourantNo.pdf Graphic file (type pdf)
+<use compressibleMultiRegionCourantNo.pdf, page 1>
+Package pdftex.def Info: compressibleMultiRegionCourantNo.pdf , page1 used on i
+nput line 19.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: compressibleMultiRegionCourantNo.pdf Graphic file (type pdf)
+<use compressibleMultiRegionCourantNo.pdf, page 1>
+Package pdftex.def Info: compressibleMultiRegionCourantNo.pdf , page1 used on i
+nput line 19.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: compressibleMultiRegionCourantNo.pdf Graphic file (type pdf)
+<use compressibleMultiRegionCourantNo.pdf, page 1>
+Package pdftex.def Info: compressibleMultiRegionCourantNo.pdf , page1 used on i
+nput line 19.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [124 <./compressibleMultiRegionCourantNo.pdf>]
+<ddtAlphaNo.pdf, id=1967, 597.23125pt x 845.1575pt>
+File: ddtAlphaNo.pdf Graphic file (type pdf)
+<use ddtAlphaNo.pdf>
+Package pdftex.def Info: ddtAlphaNo.pdf  used on input line 20.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: ddtAlphaNo.pdf Graphic file (type pdf)
+<use ddtAlphaNo.pdf>
+Package pdftex.def Info: ddtAlphaNo.pdf  used on input line 20.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+<ddtAlphaNo.pdf, id=1970, page=1, 597.23125pt x 845.1575pt>
+File: ddtAlphaNo.pdf Graphic file (type pdf)
+<use ddtAlphaNo.pdf, page 1>
+Package pdftex.def Info: ddtAlphaNo.pdf , page1 used on input line 20.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: ddtAlphaNo.pdf Graphic file (type pdf)
+<use ddtAlphaNo.pdf, page 1>
+Package pdftex.def Info: ddtAlphaNo.pdf , page1 used on input line 20.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: ddtAlphaNo.pdf Graphic file (type pdf)
+<use ddtAlphaNo.pdf, page 1>
+Package pdftex.def Info: ddtAlphaNo.pdf , page1 used on input line 20.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: ddtAlphaNo.pdf Graphic file (type pdf)
+<use ddtAlphaNo.pdf, page 1>
+Package pdftex.def Info: ddtAlphaNo.pdf , page1 used on input line 20.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: ddtAlphaNo.pdf Graphic file (type pdf)
+<use ddtAlphaNo.pdf, page 1>
+Package pdftex.def Info: ddtAlphaNo.pdf , page1 used on input line 20.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [125 <./ddtAlphaNo.pdf>]) (main.aux (Chapters/Chapter1.aux)
+(Chapters/Chapter2.aux) (Chapters/Chapter3.aux) (Chapters/Chapter4.aux)
+(Chapters/Chapter5.aux) (Chapters/Chapter6.aux) (example.bib.aux)
+(Appendices/AppendixA.aux) (Appendices/AppendixB.aux))
 
 LaTeX Warning: There were undefined references.
 
@@ -3060,9 +4200,9 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: F0D121301BC28C3AF824FE05923216BB;15820.
+(rerunfilecheck)             Checksum: A595305487EBBB5056ECFE05F7C6AAB3;16212.
 
-Package biblatex Warning: Please (re)run BibTeX on the file(s):
+Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                main
 (biblatex)                and rerun LaTeX afterwards.
 
@@ -3071,30 +4211,31 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 55201 strings out of 478696
- 1264083 string characters out of 2850191
- 1720364 words of memory out of 3000000
- 72079 multiletter control sequences out of 15000+600000
- 477059 words of font info for 151 fonts, out of 8000000 for 9000
+ 58915 strings out of 478696
+ 1356008 string characters out of 2850191
+ 1982366 words of memory out of 3000000
+ 75579 multiletter control sequences out of 15000+600000
+ 483887 words of font info for 169 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 133i,20n,133p,1841b,2876s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 133i,20n,133p,1606b,2893s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/home/aitor/.miktex/texmfs/install/fonts/enc/dvips/base/8r.enc}{/home/aitor/
 .miktex/texmfs/install/fonts/enc/dvips/cm-super/cm-super-t1.enc}</home/aitor/.m
 iktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></home/aitor/.mi
 ktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/aitor/.mik
 tex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/aitor/.mikte
 x/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/aitor/.miktex
-/texmfs/install/fonts/type1/public/mathpazo/fplmr.pfb></home/aitor/.miktex/texm
-fs/install/fonts/type1/public/mathpazo/fplmri.pfb></home/aitor/.miktex/texmfs/i
-nstall/fonts/type1/public/cm-super/sftt1200.pfb></home/aitor/.miktex/texmfs/ins
-tall/fonts/type1/urw/palatino/uplb8a.pfb></home/aitor/.miktex/texmfs/install/fo
-nts/type1/urw/palatino/uplbi8a.pfb></home/aitor/.miktex/texmfs/install/fonts/ty
-pe1/urw/palatino/uplr8a.pfb></home/aitor/.miktex/texmfs/install/fonts/type1/urw
-/palatino/uplr8a.pfb></home/aitor/.miktex/texmfs/install/fonts/type1/urw/palati
-no/uplri8a.pfb>
-Output written on main.pdf (107 pages, 4147553 bytes).
+/texmfs/install/fonts/type1/public/mathpazo/fplmbi.pfb></home/aitor/.miktex/tex
+mfs/install/fonts/type1/public/mathpazo/fplmr.pfb></home/aitor/.miktex/texmfs/i
+nstall/fonts/type1/public/mathpazo/fplmri.pfb></home/aitor/.miktex/texmfs/insta
+ll/fonts/type1/public/cm-super/sftt1200.pfb></home/aitor/.miktex/texmfs/install
+/fonts/type1/urw/palatino/uplb8a.pfb></home/aitor/.miktex/texmfs/install/fonts/
+type1/urw/palatino/uplbi8a.pfb></home/aitor/.miktex/texmfs/install/fonts/type1/
+urw/palatino/uplr8a.pfb></home/aitor/.miktex/texmfs/install/fonts/type1/urw/pal
+atino/uplr8a.pfb></home/aitor/.miktex/texmfs/install/fonts/type1/urw/palatino/u
+plri8a.pfb>
+Output written on main.pdf (143 pages, 7181339 bytes).
 PDF statistics:
- 1461 PDF objects out of 1728 (max. 8388607)
- 337 named destinations out of 1000 (max. 500000)
- 1122 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2138 PDF objects out of 2487 (max. 8388607)
+ 426 named destinations out of 1000 (max. 500000)
+ 1753 words of extra memory for PDF output out of 10000 (max. 10000000)
 

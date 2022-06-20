@@ -1,84 +1,18 @@
-This is BibTeX, Version 0.99d
-Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
-The top-level auxiliary file: main.aux
-Reallocating 'name_of_file' (item size: 1) to 9 items.
-The style file: biblatex.bst
-Reallocating 'name_of_file' (item size: 1) to 9 items.
-Reallocating 'name_of_file' (item size: 1) to 8 items.
-Reallocating 'name_of_file' (item size: 1) to 22 items.
-A level-1 auxiliary file: Chapters/Chapter1.aux
-Reallocating 'name_of_file' (item size: 1) to 22 items.
-A level-1 auxiliary file: Chapters/Chapter2.aux
-Reallocating 'name_of_file' (item size: 1) to 22 items.
-A level-1 auxiliary file: Chapters/Chapter3.aux
-Reallocating 'name_of_file' (item size: 1) to 22 items.
-A level-1 auxiliary file: Chapters/Chapter4.aux
-Reallocating 'name_of_file' (item size: 1) to 22 items.
-A level-1 auxiliary file: Chapters/Chapter5.aux
-Reallocating 'name_of_file' (item size: 1) to 22 items.
-A level-1 auxiliary file: Chapters/Chapter6.aux
-Reallocating 'name_of_file' (item size: 1) to 25 items.
-A level-1 auxiliary file: Appendices/AppendixA.aux
-Reallocating 'name_of_file' (item size: 1) to 16 items.
-A level-1 auxiliary file: example.bib.aux
-Reallocating 'glb_str_end' (item size: 4) to 20 items.
-Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
-Reallocating 'global_strs' (item size: 1) to 4000000 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'wiz_functions' (item size: 4) to 6000 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Database file #1: main-blx.bib
-Database file #2: example.bib
-Biblatex version: 3.16
-Reallocating 'wiz_functions' (item size: 4) to 9000 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 8 entries,
-            6393 wiz_defined-function locations,
-            1259 strings with 10549 characters,
-and the built_in function-call counts, 43030 in all, are:
-= -- 2742
-> -- 909
-< -- 224
-+ -- 1095
-- -- 375
-* -- 3256
-:= -- 4708
-add.period$ -- 0
-call.type$ -- 8
-change.case$ -- 97
-chr.to.int$ -- 42
-cite$ -- 14
-duplicate$ -- 4723
-empty$ -- 3862
-format.name$ -- 523
-if$ -- 8809
-int.to.chr$ -- 0
-int.to.str$ -- 15
-missing$ -- 0
-newline$ -- 277
-num.names$ -- 310
-pop$ -- 2525
-preamble$ -- 1
-purify$ -- 141
-quote$ -- 0
-skip$ -- 1393
-stack$ -- 0
-substring$ -- 4310
-swap$ -- 1203
-text.length$ -- 234
-text.prefix$ -- 7
-top$ -- 1
-type$ -- 259
-warning$ -- 0
-while$ -- 697
-width$ -- 0
-write$ -- 270
+[0] Config.pm:311> INFO - This is Biber 2.16
+[0] Config.pm:314> INFO - Logfile is 'main.blg'
+[74] biber:340> INFO - === dom jun 19, 2022, 01:31:34
+[102] Biber.pm:415> INFO - Reading 'main.bcf'
+[170] Biber.pm:952> INFO - Found 26 citekeys in bib section 0
+[182] Biber.pm:4340> INFO - Processing section 0
+[195] Biber.pm:4531> INFO - Looking for bibtex format file 'example.bib' for section 0
+[199] bibtex.pm:1689> INFO - LaTeX decoding ...
+[232] bibtex.pm:1494> INFO - Found BibTeX data source 'example.bib'
+[382] Utils.pm:395> WARN - BibTeX subsystem: /tmp/biber_tmp_ZB8V/0a7c5e67b4d952eac587450a692dc29d_196504.utf8, line 176, warning: 1 characters of junk seen at toplevel
+[382] Utils.pm:395> WARN - BibTeX subsystem: /tmp/biber_tmp_ZB8V/0a7c5e67b4d952eac587450a692dc29d_196504.utf8, line 259, warning: 1 characters of junk seen at toplevel
+[413] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[413] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[414] Biber.pm:4168> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[414] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
+[436] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[448] bbl.pm:757> INFO - Output to main.bbl
+[449] Biber.pm:128> INFO - WARNINGS: 2

@@ -20,8 +20,8 @@ Moreover, the control volume is defined by the neighbours. This is, in the case 
 \subsubsection*{Fluid dynamic equations discretization}
 The continuity equation, the Navier-Stokes equations and, the heat equation stated in section 2 can be stated in a more general form under the formulation of the Reynolds transport theorem:
 \begin{equation}
-\underbrace{\int_{V_{P}} \frac{\partial \rho \phi}{\partial t} d V}_{\text {Temporal term }}+\underbrace{\int_{V_{P}} \nabla \cdot(\rho \vec{u} \phi) d V}_{\text {Convective term }}=\underbrace{\int_{V_{P}} \nabla \cdot\left(\rho \Gamma_{\phi} \nabla \phi\right) d V}_{\text {Diffusive term }}+\underbrace{\int_{V_{P}} S_{\phi} d V}_{\text {Source term }}
-\label{3.1}
+	\underbrace{\int_{V_{P}} \frac{\partial \rho \phi}{\partial t} d V}_{\text {Temporal term }}+\underbrace{\int_{V_{P}} \nabla \cdot(\rho \vec{u} \phi) d V}_{\text {Convective term }}=\underbrace{\int_{V_{P}} \nabla \cdot\left(\rho \Gamma_{\phi} \nabla \phi\right) d V}_{\text {Diffusive term }}+\underbrace{\int_{V_{P}} S_{\phi} d V}_{\text {Source term }}
+	\label{3.1}
 \end{equation}
 where $V_{P}$ is the control volume cell, $\phi$ may be any scalar or vectorial variable of the continuum, $\Gamma_{\phi}$ is the diffusivity of the variable and $S_{\phi}$ is a source term. 
 \newline
@@ -36,13 +36,13 @@ In order to recover the continuity, momentum and energy equations, the parameter
 	\end{tabular}
 	\centering
 	\caption{Parameters to recover continuity, momentum and energy equations.}	
-	\label{fig:transportEq.}
+	\label{3.1tab}
 \end{table}
 
 The fluid variable is defined as a ratio of itself integrated along the volume cell. Thus, it yelds the following form,
 \begin{equation}
-\phi=\phi_{P}=\frac{1}{V_{p}} \int_{V_{P}} \phi(x) d V
-\label{3.2}
+	\phi=\phi_{P}=\frac{1}{V_{p}} \int_{V_{P}} \phi(x) d V
+	\label{3.2}
 \end{equation}
 Therefore, a complete discretization of the previous terms is needed to solve the physics regarding a general fluid dynamics problem.
 \subsection{OpenFOAM functioning}
@@ -130,13 +130,17 @@ Within the context of natural convection, the current case aims to develop a com
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=.55\linewidth]{CF_GEOM.png}	
+	\begin{subfigure}{\linewidth}
+		\includegraphics[width=.55\linewidth]{CF_GEOM.png}\hfill
+		\includegraphics[width=.35\linewidth]{mesh_cavity.png}	
+		\label{BBPF_NCMF}
+	\end{subfigure}
 	\label{3.2fig}
-	\caption{Geometry of the case.}
+	\caption{Geometric characteristics.}
 \end{figure} 
-
+The mesh is structured and consists of 1971212 nodes.
 \subsection{Hypotheses And Assumptions}
-To carry out the problem-being, a series of assumptions are taken into account in order to simplify the solving of the fluid equations involved.
+To carry out the current problem, a series of assumptions are taken into account in order to simplify the solving of the fluid equations involved.
 \newline
 \textbf{Laminar regime:} The Reynolds number, computed from the maximum velocity is not high enough to consider turbulent effects. 
 \newline
@@ -144,16 +148,16 @@ To carry out the problem-being, a series of assumptions are taken into account i
 \newline
 The Prandtl number, as the relation between the viscosity and the thermal conductivity of a fluid or, in other words, the correlation between momentum transport and thermal transport capacity is calculated as:
 \begin{equation}
-\operatorname{Pr}=\frac{v}{\alpha}=\frac{\eta}{\rho \alpha}=\frac{\eta c_{p}}{\lambda}=\frac{\text { momentum transport }}{\text { heat transport }}
-\label{3.3}
+	\operatorname{Pr}=\frac{v}{\alpha}=\frac{\eta}{\rho \alpha}=\frac{\eta c_{p}}{\lambda}=\frac{\text { momentum transport }}{\text { heat transport }}
+	\label{3.3}
 \end{equation}
 where
 Thus, a small Prandtl number are owned by free-flowing flows with high thermal conductivitiy.
 \newline
 On the other hand, the Rayleigh number is referred to the time scale relation between the diffusive and the convective thermal transports. It is thus used to determine wheter the buoyancy-driven natural convection plays an important role in the heat transfer. The dimensionless number is assessed in this context by this form:
 \begin{equation}
-\mathrm{Ra}_{x}=\frac{g \cdot \beta}{\nu \cdot \alpha} \cdot\left(T_{s}-T_{\mathrm{inf}}\right) \cdot x^{3}
-\label{3.4}
+	\mathrm{Ra}_{x}=\frac{g \cdot \beta}{\nu \cdot \alpha} \cdot\left(T_{s}-T_{\mathrm{inf}}\right) \cdot x^{3}
+	\label{3.4}
 \end{equation}
 Being \textit{g}, the gravity, \textit{$\beta$}, the coefficient of thermal expansion, \textit{$\nu$}, the kinematic viscosity, \textit{$\alpha$}, the thermal diffusivity, and \textit{$T_{s}$} and \textit{$T_{\mathrm{inf}}$}, the temperature on the wall surface and the temperature of the fluid far from the wall accordingly.
 \newline
@@ -169,8 +173,8 @@ In this section, the governing equations for the used solver are described first
 \newline
 The conservation of mass states that the mass flowing into the volume of control (CV) must be equal to the mass flowing out of such volume. 
 \begin{equation}
-\frac{\partial v}{\partial y}+\frac{\partial w}{\partial z}=0
-\label{3.5}
+	\frac{\partial v}{\partial y}+\frac{\partial w}{\partial z}=0
+	\label{3.5}
 \end{equation}
 
 \subsubsection{Momentum Equation}
@@ -194,8 +198,8 @@ where in the case of the \textit{Boussinesq approximation} where the density var
 \end{equation}
 in the case of the implemented polynomial density which accounts for the inversion point as in \cite{bourdillon_2016}:
 \begin{equation}
-S_{b} = g\cdot[\rho_{r}-\rho(T)]
-\label{3.9}
+	S_{b} = g\cdot[\rho_{r}-\rho(T)]
+	\label{3.9}
 \end{equation}
 where the polynomial expression from $\rho$ is:
 \begin{equation}
@@ -205,12 +209,12 @@ where the polynomial expression from $\rho$ is:
 		&+8.78462866500416 .10^{-5} \times T^{3} 
 		-6.62139792627547 .10^{-7} \times T^{4}
 	\end{aligned}
-	\label{3.9a}
+	\label{3.10}
 \end{equation}
 As it will be pointed out later, the native solver uses the Boussinesq approximation to account for the buoyancy effects. However, this linear assumption is only valid as the density variations meet:
 \begin{equation}
-\frac{\Delta \rho}{\rho_{r}}<<1
-\label{3.10}
+	\frac{\Delta \rho}{\rho_{r}}<<1
+	\label{3.11}
 \end{equation}
 Therefore, to account for the inversion points present during the freezing process, a density variation like the described in \ref{3.9a} is implemented in the solver.
 
@@ -220,13 +224,13 @@ The temperature equation representing the convection phenomena yields as:
 	\begin{aligned}
 	\frac{\partial T}{\partial t}+ \frac{\partial (u_{j} T)}{\partial x_{j}}=\frac{\partial}{\partial x_{j}}\left(\gamma \frac{\partial T}{\partial x_{j}}\right)
 	\end{aligned}
-	\label{3.11}
+	\label{3.12}
 \end{equation}
 
 where the thermal diffusivity, $\gamma$, is defined as:
 \begin{equation}
 	\gamma=\frac{\lambda}{\rho_{r} c_{p}}
-	\label{3.12}
+	\label{3.13}
 \end{equation}
 
 All these equations are regarded by the solver \textit{buoyantBoussinesqPimpleFoam}.
@@ -240,10 +244,10 @@ text width=5em, text centered, rounded corners, minimum height=4em]
 \tikzstyle{line} = [draw, very thick, color=black!50, -latex']
 \tikzstyle{cloud} = [draw, ellipse,fill=red!20, node distance=2.5cm,
 minimum height=2em]
-\clearpage
+
 \begin{figure}[h!]
 	\centering
-	\begin{tikzpicture}[scale=1, node distance = 2cm, auto]
+	\begin{tikzpicture}[scale=1.5, node distance = 2cm, auto]
 	% Place nodes
 	\node [block] (init) {Velocity predictor};
 	\node [block, below of=init] (identify) {Temperature Equation};
@@ -276,94 +280,94 @@ To do so, a new equation of state is implemented within the OpenFoam framework. 
 \newline
 Here, it is presented a general form of a momentum equation with the continuity equation corresponding to a incompressible flow.  
 \begin{equation}
-\left\{\begin{array}{l}
-\frac{\partial (\rho \textbf{v})}{\partial t}+\nabla \cdot(\rho \textbf{v} \otimes \textbf{v})=-\nabla p+ \nabla \cdot(\mu (\nabla \textbf{v}+\nabla \textbf{v}^{T})) \\
-\nabla \cdot \textbf{v}=0
-\end{array}\right.
-	\label{3.13}
+	\left\{\begin{array}{l}
+	\frac{\partial (\rho \textbf{v})}{\partial t}+\nabla \cdot(\rho \textbf{v} \otimes \textbf{v})=-\nabla p+ \nabla \cdot(\mu (\nabla \textbf{v}+\nabla \textbf{v}^{T})) \\
+	\nabla \cdot \textbf{v}=0
+	\end{array}\right.
+	\label{3.14}
 \end{equation}
 From this general equation, it will be given the term $H(\textbf{u})$, as later on will be needed for the pressure equation calculation.
 \newline
 Therefore, this term comes from considering the linearization of the advective term under the assumption of small Courant numbers (Co < 1). Leading the term $\textbf{v}^{0}\cong\textbf{v}$. 
 \begin{equation}
-\begin{aligned}
-\int_{\Omega} \nabla \cdot\left(\textbf{v} \otimes \textbf{v}^{0}\right) d \Omega & \cong \sum_{f} \textbf{v}_{f} \textbf{v}_{f}^{0} \cdot \textbf{S}_{f} \\
-&=\sum_{f} F^{0} \textbf{v}_{f} \\
-&=a_{P} \textbf{v}+\sum_{f} a_{N} \textbf{v}_{N}
-\end{aligned}
-\label{3.14}
+	\begin{aligned}
+	\int_{\Omega} \nabla \cdot\left(\textbf{v} \otimes \textbf{v}^{0}\right) d \Omega & \cong \sum_{f} \textbf{v}_{f} \textbf{v}_{f}^{0} \cdot \textbf{S}_{f} \\
+	&=\sum_{f} F^{0} \textbf{v}_{f} \\
+	&=a_{P} \textbf{v}+\sum_{f} a_{N} \textbf{v}_{N}
+	\end{aligned}
+	\label{3.15}
 \end{equation}
 
 \begin{equation}
-a_{P} \textbf{v}_{P}=\textbf{H}(\textbf{v})-\nabla p
-\label{3.15}
+	a_{P} \textbf{v}_{P}=\textbf{H}(\textbf{v})-\nabla p
+	\label{3.16}
 \end{equation}
 \begin{equation}
-\textbf{H}(\textbf{v})=\underbrace{-\sum_{f} a_{N} \textbf{v}_{N}}_{\text {Diagonal term }}+\underbrace{\frac{\textbf{v}^{0}}{\Delta t}}_{\text {Off-diagonal term }}
-\label{3.16}
+	\textbf{H}(\textbf{v})=\underbrace{-\sum_{f} a_{N} \textbf{v}_{N}}_{\text {Diagonal term }}+\underbrace{\frac{\textbf{v}^{0}}{\Delta t}}_{\text {Off-diagonal term }}
+	\label{3.17}
 \end{equation}
 where $\textbf{v}^{0}$ is the velocity at previous time-step and $F^{0}$ is the face flux at the previous time-step.
 \newline
 In addition, by discretizing the continuity equation, it is possible to get the final form of the pressure equation.
 \newline
-So as to give stability to the solution and to simplify the boundary conditions definition \cite{berberovic_van hinsberg_jakirlic_roisman_tropea_2009}, a modified pressure is defined as,
+So as to give stability to the solution and to simplify the boundary conditions definition \cite{berberovic_van_hinsberg_jakirlic_roisman_tropea_2009}, a modified pressure is defined as,
 \begin{equation}
-p_{r g h}=p-\rho_{r} \textbf{g} \cdot \textbf{x} + \rho(T) \textbf{g} \cdot \textbf{x}
-\label{3.17}
+	p_{r g h}=p-\rho_{r} \textbf{g} \cdot \textbf{x} + \rho(T) \textbf{g} \cdot \textbf{x}
+	\label{3.18}
 \end{equation}
 being, the pressure gradient the next expression,
 \begin{equation}
--\nabla p+\rho_{r} \textbf{g}=-\nabla p_{r g h}-\textbf{g} \cdot \textbf{x} \nabla \rho_{r} + \textbf{g} \cdot \textbf{x} \nabla \rho(T) + \rho(T) \textbf{g}
-\label{3.18}
+	-\nabla p+\rho_{r} \textbf{g}=-\nabla p_{r g h}-\textbf{g} \cdot \textbf{x} \nabla \rho_{r} + \textbf{g} \cdot \textbf{x} \nabla \rho(T) + \rho(T) \textbf{g}
+	\label{3.19}
 \end{equation}
 and rearranging terms, 
 \begin{equation}
 	-\nabla p+\rho_{r} \textbf{g} + \textbf{g} \cdot \textbf{x} \nabla \rho_{r} - \textbf{g} \cdot \textbf{x} \nabla \rho(T) - \rho(T) \textbf{g}=-\nabla p_{r g h}
-	\label{3.19}
+	\label{3.20}
 \end{equation}
 If one tries to describe the discretized pressure equation in \textit{buoyantBoussinesqPimpleFoam}, there is a first term called \textbf{phig}, which is,
 \begin{equation}
 	\Phi_{f}^{\nu+1}=\Phi_{u}^{\nu+1} - \left[(\textbf{g} \cdot \textbf{x})_{f}\left(\nabla \rho_{r}{ }^{n+1}\right)_{f}+(\textbf{g} \cdot \textbf{x})_{f}\left(\nabla \rho(T){ }^{n+1}\right)_{f}\right]\frac{\left|\textbf{S}_{f}\right|}{\left(a_{P}\right)_{f}}
-	\label{3.20}
+	\label{3.21}
 \end{equation}
 A face flux calculated by the term \textbf{H}(\textbf{v}), appearing in equation \ref{3.16}
 \begin{equation}
-\Phi_{u}^{\nu+1}=\Phi_{f}^{\nu+1} + \left(\frac{H\left(\textbf{v}^{\nu}\right)}{a_{P}}\right)_{f} \cdot \textbf{S}_{f}+\left(\frac{1}{a_{P}}\right)_{f}\operatorname{ddt} \operatorname{PhiCorr}\left(\textbf{v}^{\nu}, \Phi^{\nu}\right)
-\label{3.21}
+	\Phi_{u}^{\nu+1}=\Phi_{f}^{\nu+1} + \left(\frac{H\left(\textbf{v}^{\nu}\right)}{a_{P}}\right)_{f} \cdot \textbf{S}_{f}+\left(\frac{1}{a_{P}}\right)_{f}\operatorname{ddt} \operatorname{PhiCorr}\left(\textbf{v}^{\nu}, \Phi^{\nu}\right)
+	\label{3.22}
 \end{equation}
 where $\operatorname{ddt} \operatorname{PhiCorr}$ is a flux adjustment due to the time-step. This is resolved by applying a \textit{Rhie-Chow interpolation}, \cite{rhie_chow_1983}, the next term in the pressure equation, \textbf{phiHbyA}, reads as,
 \begin{equation}
-\Phi_{f}^{\nu+1}=\Phi_{f}^{\nu+1}-\left[\left(\frac{1}{a_{P}}\right)_{f}\left(\vec{\nabla} p_{r g h}\right)_{f}\right] \cdot \textbf{S}_{f}
-\label{3.22}
+	\Phi_{f}^{\nu+1}=\Phi_{f}^{\nu+1}-\left[\left(\frac{1}{a_{P}}\right)_{f}\left(\nabla p_{r g h}\right)_{f}\right] \cdot \textbf{S}_{f}
+	\label{3.23}
 \end{equation}
 The \textbf{$p_{rgh}$} term is thus assembled as,
 \begin{equation}
-\sum_{f}\left[\left(\frac{1}{a_{P}}\right)_{f}\left(\vec{\nabla} p_{r g h}^{\nu+1}\right)_{f}\right] \cdot \vec{S}_{f}=\sum_{f} \Phi^{\nu+1}
-\label{3.23}
+	\sum_{f}\left[\left(\frac{1}{a_{P}}\right)_{f}\left(\nabla p_{r g h}^{\nu+1}\right)_{f}\right] \cdot \textbf{S}_{f}=\sum_{f} \Phi^{\nu+1}
+	\label{3.24}
 \end{equation}
 The flux, \textit{$\phi$}, is adjusted by the \textbf{$p_{rgh}$} term yielding the following expression,
 \begin{equation}
-\Phi_{f}^{\nu+1}=\Phi_{f}^{\nu+1}-\left[\left(\frac{1}{a_{P}}\right)_{f}\left(\vec{\nabla} p_{r g h}\right)_{f}\right] \cdot \textbf{S}_{f}
-\label{3.24}
+	\Phi_{f}^{\nu+1}=\Phi_{f}^{\nu+1}-\left[\left(\frac{1}{a_{P}}\right)_{f}\left(\nabla p_{r g h}\right)_{f}\right] \cdot \textbf{S}_{f}
+	\label{3.25}
 \end{equation}
 \begin{equation}
-\begin{aligned}
-	\Phi_{f}^{\nu+1}=&\Phi_{f}^{\nu+1}+\biggl[\left(\frac{1}{a_{P}}\right)_{f}\biggl[(-\nabla p)_{f}+ (\textbf{g} \cdot \textbf{x})_{f}\left(\nabla \rho_{r}{ }^{n+1}\right)_{f}-(\textbf{g} \cdot \textbf{x})_{f}\left(\nabla \rho(T){ }^{n+1}\right)_{f}\\
-	&+ (\rho_{r}{ }^{n+1} \textbf{g})_{f}-(\rho(T){ }^{n+1} \textbf{g})_{f} \biggr]\biggr] \cdot \textbf{S}_{f}
-\end{aligned}
-\label{3.25}
+	\begin{aligned}
+		\Phi_{f}^{\nu+1}=&\Phi_{f}^{\nu+1}+\biggl[\left(\frac{1}{a_{P}}\right)_{f}\biggl[(-\nabla p)_{f}+ (\textbf{g} \cdot \textbf{x})_{f}\left(\nabla \rho_{r}{ }^{n+1}\right)_{f}-(\textbf{g} \cdot \textbf{x})_{f}\left(\nabla \rho(T){ }^{n+1}\right)_{f}\\
+		&+ (\rho_{r}{ }^{n+1} \textbf{g})_{f}-(\rho(T){ }^{n+1} \textbf{g})_{f} \biggr]\biggr] \cdot \textbf{S}_{f}
+	\end{aligned}
+	\label{3.26}
 \end{equation}
 Finally, the velocity calculated at the center of the volume reads as,
 \begin{equation}
-\textbf{v}^{\nu+1}=\textbf{v}^{\nu+1} +\frac{1}{a_{P}}\mathcal{R}\left[\left(\Phi^{\nu+1} f-\Phi_{u}^{\nu+1} f\right)\left(a_{P}\right)_{f}\right]
-\label{3.26}
+	\textbf{v}^{\nu+1}=\textbf{v}^{\nu+1} +\frac{1}{a_{P}}\mathcal{R}\left[\left(\Phi^{\nu+1} f-\Phi_{u}^{\nu+1} f\right)\left(a_{P}\right)_{f}\right]
+	\label{3.27}
 \end{equation}
 where $\mathcal{R}$ is an operator used to recover cell-centered fields from fields given as fluxes at faces.
 Then, the static pressure, \textit{p}, is reconstructed from \textit{$p_{rgh}$}, leading the expression,
 
 \begin{equation}
-p = p_{r g h} + (\rho_{r}-\rho(T))\textbf{g}\cdot \textbf{x}
-\label{3.27}
+	p = p_{r g h} + (\rho_{r}-\rho(T))\textbf{g}\cdot \textbf{x}
+	\label{3.28}
 \end{equation}
  
 \subsection{Case Setup}
@@ -372,7 +376,7 @@ The boundary conditions, thermophysical properties and some other solver paramet
 \newline
 As commented before, all studies are calculated on a computational domain of \textit{38mm x 38mm}. 
 \begin{figure}[h]
-	\label{3.43}	\centering	
+	\label{3.4fig}	\centering	
 	\includegraphics[width=0.6\textwidth]{domain.png}
 	\caption{Setting of computational domain.}
 \end{figure} 
@@ -400,7 +404,7 @@ Five boundaries are defined in the current case:
 	\end{tabular}
 	\centering
 	\caption{Boundary conditions for natural convection case.}	
-	\label{fig:boundaryCdsNaturalConvection}
+	\label{3.2tab}
 \end{table}
 
 
@@ -421,24 +425,26 @@ Five boundaries are defined in the current case:
 	\end{tabular}
 	\centering
 	\caption{Water properties for natural convection.}	
-	\label{fig:waterProperties}
+	\label{3.3tab}
 \end{table}
 
-\subsubsection*{Solver parameters}
 \begin{table}[h!]
-	\begin{tabular}{@{}lllll@{}}
-		\toprule[1pt]
-		\textbf{Modeling Term} & \textbf{Keyword} & \textbf{Scheme} & \textbf{Remarks} &  \\ \midrule[2pt]
-		Time derivatives & ddtSchemes    & Euler   &  \\
-		Divergence term   &    &    &  \\
-		Gradient term    & gradSchemes    &  Gauss linear  &  \\
-		Laplacian term   &  laplacianSchemes    &  Gauss linear uncorrected   &  \\		 
-		Others   		 & snGradSchemes    & uncorrected  &  \\ 
-		&    			   interpolationSchemes    & linear  &  \\ \bottomrule[1pt]		
-	\end{tabular}
-		\centering
-		\caption{Discretization schemes.}	
-		\label{fig:boat3}
+	\begin{adjustbox}{width=1\textwidth}
+		\small	
+		\begin{tabular}{@{}lllll@{}}
+			\toprule[1pt]
+			\textbf{Modeling Term} & \textbf{Keyword} & \textbf{Scheme} & \textbf{Remarks} &  \\ \midrule[2pt]
+			Time derivatives & ddtSchemes    &  Euler  & First order, bounded, implicit \\
+			Divergence term    & divSchemes   &    & Second order, unbounded \\
+			Gradient term    & gradSchemes    &  Gauss linear  & Second order, unbounded \\
+			Laplacian term   &  laplacianSchemes    &  Gauss linear orthogonal  &  \\		 
+			Grad. normal to cell face & snGradSchemes    &  orthogonal  &  \\ 
+			Point to point interpolation&    			   interpolationSchemes    & linear   & Central differencing \\ \bottomrule[1pt]		
+		\end{tabular}
+	\end{adjustbox}
+	\centering
+	\caption{Discretization schemes.}	
+	\label{3.4tab}
 \end{table}
 \clearpage
 \begin{table}[h!]
@@ -451,12 +457,12 @@ Five boundaries are defined in the current case:
 	\end{tabular}
 	\centering
 	\caption{Solvers for the discretised equations.}	
-	\label{fig:boat4}
+	\label{3.5tab}
 \end{table}
 \begin{table}[h!]
 	\begin{tabular}{@{}lllll@{}}
 		\toprule[1pt]
-		\textbf{Parameter} & \textbf{Value} & \textbf{Remarks} & \\ \midrule[2pt]
+		\textbf{Parameter} & \textbf{Value} \\ \midrule[2pt]
 %		nAlphaCorr & PCG & DIC &  \\
 %		nAlphaSubCycles & smoothSolver & symGaussSeidel  &  \\
 %		cAlpha & smoothSolver & symGaussSeidel  &  \\
@@ -467,7 +473,7 @@ Five boundaries are defined in the current case:
 	\end{tabular}
 	\centering
 	\caption{Parameters for the discretised equations.}	
-	\label{fig:boat5}
+	\label{3.6tab}
 \end{table}
 
 \subsection{Validation of Results and Conclusions}
@@ -484,66 +490,67 @@ Five boundaries are defined in the current case:
 	\includegraphics[width=.55\linewidth]{CF_U_1500s_comp.png}	
 	\caption{Velocity magnitude comparison at t = 1500s. Left: BuoyantBoussinesqPimpleFoam. Right: NCMF}
 	\end{subfigure}\par\medskip
+	\label{3.5fig}
 	\caption{Comparison between BuoyantBoussinesqPimpleFoam and NCMF*}
 \end{figure} 
 NCMF*: Natural convection modified solver.
 \newline
 In order to compare consistently the obtained results with those of the literature, the following dimensionless values are pointed out:
 \begin{equation}
-\tilde{T}=\frac{T-T_{\text {cold }}}{T_{\text {hot }}-T_{\text {cold }}}=\frac{T-273}{10}
-\label{3.28}
+	\tilde{T}=\frac{T-T_{\text {cold }}}{T_{\text {hot }}-T_{\text {cold }}}=\frac{T-273}{10}
+	\label{3.29}
 \end{equation}
 \begin{equation}
-\tilde{x}=\frac{x}{\ell}=\frac{x}{38 \times 10^{-3}}
-\label{3.29}
+	\tilde{x}=\frac{x}{\ell}=\frac{x}{38 \times 10^{-3}}
+	\label{3.30}
 \end{equation}
 \begin{equation}
-\tilde{v}=\frac{v \ell}{\gamma}=\frac{v 38 \times 10^{-3}}{1.435 \times 10^{-7}}
-\label{3.30}
+	\tilde{v}=\frac{v \ell}{\gamma}=\frac{v 38 \times 10^{-3}}{1.435 \times 10^{-7}}
+	\label{3.31}
 \end{equation}
 \begin{equation}
-\tilde{u}=\frac{u \ell}{\gamma}=\frac{u 38 \times 10^{-3}}{1.435 \times 10^{-7}}
-\label{3.31}
+	\tilde{u}=\frac{u \ell}{\gamma}=\frac{u 38 \times 10^{-3}}{1.435 \times 10^{-7}}
+	\label{3.32}
 \end{equation}
 \begin{equation}
-\tilde{t}=\frac{t \gamma}{\ell^{2}}=\frac{t \times 1.435 \times 10^{-7}}{1.444 \times 10^{-6}}
-\label{3.32}
+	\tilde{t}=\frac{t \gamma}{\ell^{2}}=\frac{t \times 1.435 \times 10^{-7}}{1.444 \times 10^{-6}}
+	\label{3.33}
 \end{equation}
 \begin{equation}
-\tilde{y}=\frac{y}{\ell}=\frac{y}{38 \times 10^{-3}}
-\label{3.33}
+	\tilde{y}=\frac{y}{\ell}=\frac{y}{38 \times 10^{-3}}
+	\label{3.34}
 \end{equation}
 \clearpage
 \begin{figure}[h!]
 	\begin{subfigure}{0.50\textwidth}
 		\centering
 		\includegraphics[width=\linewidth]{temperature_xpos_conv.png}\hfill
-		\caption{Temperature along horizontal line.} \label{3.4afig}
+		\caption{Temperature along horizontal line.} \label{3.6afig}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}{0.50\textwidth}
 		\centering
 		\includegraphics[width=\linewidth]{temperature_ypos_conv.png}	
-		\caption{Temperature along vertical line.}\label{3.4bfig}
+		\caption{Temperature along vertical line.}\label{3.6bfig}
 	\end{subfigure}
 	\begin{subfigure}{0.50\textwidth}
 		\includegraphics[width=\linewidth]{xvel_xpos_conv.png}\hfill
-		\caption{U-velocity along horizontal line.}\label{3.4cfig}
+		\caption{U-velocity along horizontal line.}\label{3.6cfig}
 	\end{subfigure}
 	\begin{subfigure}{0.50\textwidth}
 	\includegraphics[width=\linewidth]{xvel_ypos_conv.png}	
-	\caption{U-velocity along vertical line.}\label{3.4dfig}
+	\caption{U-velocity along vertical line.}\label{3.6dfig}
 	\end{subfigure}
 	\begin{subfigure}{0.50\textwidth}
 	\includegraphics[width=\linewidth]{yvel_xpos_conv.png}\hfill	
-	\caption{V-velocity along horizontal line.}\label{3.4efig}
+	\caption{V-velocity along horizontal line.}\label{3.6efig}
 	\end{subfigure}
 	\begin{subfigure}{0.50\textwidth}
 	\includegraphics[width=\linewidth]{yvel_ypos_conv.png}	
-	\caption{V-velocity along vertical line.}\label{3.4ffig}
+	\caption{V-velocity along vertical line.}\label{3.6ffig}
 	\end{subfigure}
 	\caption{Adimensional magnitudes comparison.}
-	\label{3.4fig}
+	\label{3.6fig}
 \end{figure} 
 \begin{table}[h!]
 	\begin{tabular}{@{}lllll@{}}
@@ -555,7 +562,7 @@ In order to compare consistently the obtained results with those of the literatu
 	\end{tabular}
 	\centering
 	\caption{Numerical results of Natural convection modified solver between \textit{t = 100s} and \textit{1500s}.}	
-	\label{fig:resultsNCMF}
+	\label{3.7tab}
 \end{table}
 
 \clearpage
@@ -564,31 +571,40 @@ The solidification process is assessed in this section with two elaborated model
 \section{Case Description.}
 Two regular geomtries are created: a squared cavity, used in the pure convection case and cylindrical plane geometry. Both geometries test both solidification models.
 \begin{figure}[h!]
+	\centering
 	\includegraphics[width=0.6\linewidth]{cylinder_geom.png}\hfill	
-	\caption{Cylinder.}\label{3.4efig}
+	\caption{Cylinder.}\label{3.7fig}
 \end{figure}
 
 \subsection{Hypotheses And Assumptions}
 To carry out the phase-transition process, some assumptions are taken into account so as to simplify the multiphysics ocurring during such arising phenomena. 
+\newline
+\textbf{Laminar regime:} The Reynolds number, computed from the maximum velocity is not high enough to consider turbulent effects. 
+\newline
+In the current case-scenario, a Prandtl close to 7. The values used for the laminar Prandtl number calculation are: $\mu = 0.001003 Kg.m^{-1}.s^{-1}$, $\lambda = 0.6 W.m^{-1}.K^{-1}$ and $C_{p}=4182 J.Kg.K^{-1}$.
+\newline
+\textbf{Newtonian fluid:} The viscosity of the fluid is assumed to be constant.
+The thermophysical properties treatment is described below.
 \subsubsection*{Two phase properties}
 Within a multiphase framework, a model reflects a jump in properties through the interphase. Thus, a smooth transition between phase properties must be achieved.
 \begin{equation}
-\lambda=\lambda_{\ell} \alpha_{\ell}+\lambda_{s} f_{s}
-\label{3.34}
+	\lambda=\lambda_{\ell} \alpha_{\ell}+\lambda_{s} f_{s}
+	\label{3.35}
 \end{equation}
 \begin{equation}
-C_{p}=C_{p_{\ell}} \alpha_{\ell}+C_{p_{s}} f_{s}
-\label{3.35}
+	C_{p}=C_{p_{\ell}} \alpha_{\ell}+C_{p_{s}} f_{s}
+	\label{3.36}
 \end{equation}
 \begin{equation}
-\mu=\mu_{\ell} \alpha_{\ell}+\mu_{s} f_{s}
-\label{3.36}
+	\mu=\mu_{\ell} \alpha_{\ell}+\mu_{s} f_{s}
+	\label{3.37}
 \end{equation}
-
+In the current case-scenario, $C_{p_{s}}=C_{p_{l}}$.
+\newline
 In the case of polynomial density variation it is settled in a similar manner. The polynomial is not thought to suit negative temperatures, and when the problem is within this range, the density should take ice's density.
 \begin{equation}
-\rho(T)^{\prime}=\rho(T) \alpha_{\ell}+\rho_{s} f_{s}
-\label{3.37}
+	\rho(T)^{\prime}=\rho(T) \alpha_{\ell}+\rho_{s} f_{s}
+	\label{3.38}
 \end{equation}
 
 \subsection{Governing Equations}
@@ -597,12 +613,32 @@ The solution of the system of equations given by the multiphase solver relies on
 Therefore, due to the commented before, the buoyancy terms appearing on the RHS of the momentum equation, are implemented on the pressure equation.
 
 \subsubsection{Momentum Equation}
-The momentum equation has the same terms as per each one of the models.
+The momentum equation has the same terms as per each one of the models. Here it is the equation recalled from previous section:
+\begin{equation}
+	\label{3.39}
+	\begin{aligned}
+	&\frac{\partial\left(\rho {u}_{i}\right)}{\partial t}+\frac{\partial\left(\rho {u}_{i} {u}_{j}\right)}{\partial x_{j}} \\
+	&\quad=-\alpha_{i} \nabla p+\frac{\partial}{\partial x_{j}}\left(\mu \frac{\partial {u}_{i}}{\partial x_{j}}\right)+F_{\sigma i}+S_{u_{i}}
+	\end{aligned}
+\end{equation}
 \subsubsection{Energy Equation}
 On the other side, the energy equation slightly differs from one model to the other. As pointed out before, here there are recalled both energy equations.
 
 \subsection{Solver description. Control Loop}
 IcoReactingMultiphaseInterFoam solver is a multiphase, multicomponent incompressible solver based on volume of fluid method. The solver captures the interfaces and includes contact angle and surface tension effects for each phase. Moreover, this solver supports mass and heat transfer across phases.
+The energy equation for the Enthalpy-porosity model:
+\begin{equation}
+	\begin{aligned}
+	\frac{\partial (\rho C_{p} T)}{\partial t}+ \nabla \cdot\left(u_{j}\rho C_{p} T\right)+L\left[\frac{\partial (\rho \alpha_{l}\gamma_{l})}{\partial t}+ \frac{\partial (u_{j}\rho \alpha_{l}\gamma_{l})}{\partial x_{j}}\right]=\nabla \cdot\left(k_{i} \nabla T_{i}\right)
+	\end{aligned}
+	\label{3.40}
+\end{equation}
+The energy equation for the Lee model in conjunction with the nucleation theory:
+\begin{equation}
+	\label{3.41}
+	\frac{\partial (\rho C_{p} T)}{\partial t}+\nabla \cdot\left(u_{j}\rho C_{p} T\right)=\nabla \cdot\left(k_{i} \nabla T_{i}\right)+S_{H_{i}}
+\end{equation}
+
 \subsection{Phase models}
 The solver allows for the use of three phase model types:
 \begin{itemize}
@@ -629,23 +665,42 @@ In this thesis, only the Lee model will be considered for further explanation.
 \subsection{Code implementations}
 Within the entrophy-porosity model, the source term belonging to the calculation of the latent heat is added within the OpenFOAM framework. The energy equation of the solver shown in [ref].
 \begin{figure}[h!]
+	\centering
 	\includegraphics[width=0.6\linewidth]{TEqn.png}\hfill	
-	\caption{Energy equation of IcoReactingMultiphaseInterFoam.}\label{}
+	\caption{Energy equation of IcoReactingMultiphaseInterFoam.}
+	\label{3.8fig}
 \end{figure}
 In the RHS of the equation, the solver calls the library \textit{mySolidificationMeltingSource} that calculates the latent heat source term as it appears in the Energy equation shown below.
 \begin{figure}[h!]
-	\includegraphics[width=0.6\linewidth]{solidificationMeltingSource.png}\hfill	
-	\caption{Latent heat source term present in mySolidificationMeltingSource library.}\label{}
+	\centering
+	\includegraphics[width=0.8\linewidth]{solidificationMeltingSource.png}\hfill	
+	\caption{Latent heat source term present in mySolidificationMeltingSource library.}
+	\label{3.9fig}
 \end{figure}
 This library is adapted to be used in this solver. It exists in the context of being used for other solvers. Here, the alpha variable showing up in the calculation is obtained through a linear expression that gives the amount of energy contained in the fluid cell above the melting point. This is divided by the latent heat to obtain the liquid fraction. Then, this fraction is constained between 0 and 1. 
 \newline
-The latent heat source term is afterwards weighted by the volume fraction calculated by means of the transport equation in the context of the volume of fluid method as it appears in Richter et al. 
+The latent heat source term is afterwards weighted by the volume fraction calculated by means of the transport equation in the context of the volume of fluid method as it appears in Richter et al. \cite{richter_turnow_kornev_hassel_2016}.
 \newline
 
 The \textbf{rhoCpPhi} term, which is called in this library, is created in \textit{createFields.H} as a variable field so that it can be called from everywhere within the code.
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.6\linewidth]{rhocpphicreate.png}\hfill	
+	\caption{\textbf{rhoCpPhi} field in \textit{createFields.H}}
+	\label{3.10fig}
+\end{figure}
  
 The implemented library can be found in the Appendix \ref{AppendixA}. 
 
+The Lee model is already implemented in OpenFOAM. However, there is a parameter, \textit{C}, devoted to act as a condensation rate. This is referred as an empirical coefficient used to speed-up or slow down the mass and heat transfer. Therefore, in favor of tunning this parameter in accordance with the characteristic behavior of the water when it freezes, the \textit{Classical Nucleation theory} is followed.
+\newline
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.6\linewidth]{LeeCNT.png}\hfill	
+	\caption{Function used to ask for the required user inputs.}
+	\label{3.11fig}
+\end{figure}
+In the function shown above, all of the parameters concerning the formulas required to calculate the nucleation rate of the water are user-defined parameters. In the Appendix \ref{AppendixA}, the code related with the Lee model using this theory can be found.
 \subsection{Case Setup}
 \subsubsection*{Boundary conditions}
 
@@ -656,29 +711,31 @@ The initial conditions for the velocity and temperature fields are inherited fro
 		\toprule[1pt]
 		\textbf{Boundary} & \textbf{Conditions}  \\ \midrule[2pt]
 		Left & $\frac{\partial \alpha_{l}}{\partial n} = 0, \frac{\partial \alpha_{s}}{\partial n} = 0    $  \\
-		Right & $\alpha_{l} = 1, \alpha_{l} = 0 $ \\
+		Right & $\alpha_{l} = 1, \alpha_{s} = 0 $ \\
 		Upper & $\frac{\partial \alpha_{l}}{\partial n} = 0, \frac{\partial \alpha_{s}}{\partial n} = 0$  \\
 		Bottom & $\frac{\partial \alpha_{l}}{\partial n} = 0, \frac{\partial \alpha_{s}}{\partial n} = 0 $  \\ \bottomrule[1pt]		
 	\end{tabular}
 	\centering
 	\caption{Boundary conditions for natural convection case.}	
-	\label{fig:boundaryCdsCavity}
+	\label{3.8tab}
 \end{table}
-
+frontAndBack boundary is set to \textit{empty} to define a 2-dimensional case-scenario. 
 For the cylinder:
 \begin{table}[h!]
 	\begin{tabular}{@{}lllll@{}}
 		\toprule[1pt]
 		\textbf{Boundary} & \textbf{Conditions}  \\ \midrule[2pt]
-		Left & $T_{l}=283, v_{l} = 0   $  \\
-		Right & $T_{r}=273, v_{r} = 0 $ \\
-		Upper & $\frac{\partial T_{u}}{\partial n} = 0, v_{u} = 0$  \\
-		Bottom & $\frac{\partial T_{b}}{\partial n} = 0, v_{b} = 0$  \\ \bottomrule[1pt]		
+		Walls & $T=255, v = 0,\frac{\partial \alpha_{l}}{\partial n} = 0, \frac{\partial \alpha_{s}}{\partial n} = 0    $  \\
+		Internal field & $T=294, v = 0, \alpha_{l} = 1, \alpha_{s} = 0 $ \\
+		\bottomrule[1pt]		
 	\end{tabular}
 	\centering
 	\caption{Boundary conditions for natural convection case.}	
-	\label{fig:boundaryCdsCylinder}
+	\label{3.9tab}
 \end{table}
+As in the previous geometry, there is an empty boundary called frontAndBack to define a planar case.
+\newline
+The thermophysical properties and solver parameters defined below are setted up for both geometries.
 \subsubsection*{Thermophysical properties}
 \begin{table}[h!]
 	\begin{tabular}{@{}lllll@{}}
@@ -701,7 +758,7 @@ For the cylinder:
 	\end{tabular}
 	\centering
 	\caption{Water properties for natural convection.}	
-	\label{fig:waterProperties}
+	\label{3.10tab}
 \end{table}
 
 \begin{table}[h!]
@@ -718,94 +775,138 @@ For the cylinder:
 	\end{tabular}
 	\centering
 	\caption{Water properties for solidification.}	
-	\label{fig:waterProperties}
+	\label{3.11tab}
 \end{table}
-
+The solver parameters used for the discretization of the different terms in the equations are pointed out next. 
 
 \subsubsection*{Solver parameters}
 \begin{table}[h!]
+\begin{adjustbox}{width=1\textwidth}
+	\small	
 	\begin{tabular}{@{}lllll@{}}
 		\toprule[1pt]
 		\textbf{Modeling Term} & \textbf{Keyword} & \textbf{Scheme} & \textbf{Remarks} &  \\ \midrule[2pt]
-		Time derivatives & ddtSchemes    &    &  \\
-		Divergence term    &    &    &  \\
-		Gradient term    & gradSchemes    &    &  \\
-		Laplacian term   &  laplacianSchemes    &    &  \\		 
-		Others   		 & snGradSchemes    &    &  \\ 
-		&    			   interpolationSchemes    &    &  \\ \bottomrule[1pt]		
+		Time derivatives & ddtSchemes    &  Euler  & First order, bounded, implicit \\
+		Divergence term    & divSchemes   &    & Second order, unbounded \\
+		Gradient term    & gradSchemes    &  Gauss linear  & Second order, unbounded \\
+		Laplacian term   &  laplacianSchemes    &  Gauss linear orthogonal  &  \\		 
+		Grad. normal to cell face & snGradSchemes    &  orthogonal  &  \\ 
+		Point to point interpolation&    			   interpolationSchemes    & linear   & Central differencing \\ \bottomrule[1pt]		
 	\end{tabular}
+\end{adjustbox}
 	\centering
 	\caption{Discretization schemes.}	
-	\label{fig:boat3}
+	\label{3.12tab}
 \end{table}
 \begin{table}[h!]
+\begin{adjustbox}{width=1\textwidth}
+	\small		
 	\begin{tabular}{@{}lllll@{}}
 		\toprule[1pt]
 		\textbf{Equation} & \textbf{Linear Solver} & \textbf{Smoother/Preconditioner} & \textbf{Tolerance} &  \\ \midrule[2pt]
-		Pressure correction equation & PCG & DIC &  \\
-		Momentum equation & smoothSolver & symGaussSeidel  &  \\
-		Volume fraction equation & smoothSolver & symGaussSeidel  &  \\
-		&      &    &  \\		 
-		&     &    &  \\ 
-		&    			       &    &  \\ \bottomrule[1pt]		
+		Pressure correction equation (P) & PCG & DIC & 1e-5 \\
+		Momentum equation (U)& smoothSolver & symGaussSeidel  & 1e-06 \\
+		Volume fraction equation (alpha) & smoothSolver & symGaussSeidel  & 1e-8 \\
+		Species equation  (Y)   & smoothSolver   & symGaussSeidel &1e-09 \\		 
+		Energy equation (T)    &  PBiCG  &  DILU\\ 
+		&  1e-08  \\ \bottomrule[1pt]		
 	\end{tabular}
+\end{adjustbox}
 	\centering
 	\caption{Solvers for the discretised equations.}	
-	\label{fig:boat4}
+	\label{3.13tab}
 \end{table}
 \begin{table}[h!]
 	\begin{tabular}{@{}lllll@{}}
 		\toprule[1pt]
-		\textbf{Parameter} & \textbf{Value} & \textbf{Remarks} & \\ \midrule[2pt]
-		nAlphaCorr & PCG & DIC &  \\
-		nAlphaSubCycles & smoothSolver & symGaussSeidel  &  \\
-		cAlpha & smoothSolver & symGaussSeidel  &  \\
-		momentumPredictor &      &    &  \\		 
-		nOuterCorrectors &     &    &  \\ 
-		nNonOrthogonalCorrectors &     &    &  \\ 		
-		nCorrectors &    			       &    &  \\ \bottomrule[1pt]		
+		\textbf{Parameter} & \textbf{Value} \\ \midrule[2pt]
+		nAlphaCorr & 1 &   \\
+		nAlphaSubCycles & 2 &   \\
+		cAlpha & 0 &   \\
+		momentumPredictor &  no     \\		 
+		nOuterCorrectors &  1    \\ 
+		nNonOrthogonalCorrectors & 0     \\ 		
+		nCorrectors &  	3  \\ \bottomrule[1pt]		
 	\end{tabular}
 	\centering
 	\caption{Parameters for the discretised equations.}	
-	\label{fig:boat5}
+	\label{3.14tab}
 \end{table}
 
 \subsection{Validation of Results and Conclusions}
 The validation of the phase change problem is achieved by different methodologies. First, the enthalpy-porosity method is compared with available data found in the thesis of \cite{bourdillon_2016} and \cite{kowalewski_rebow_1999}. 
+\begin{table}[h!]
+	\begin{tabular}{@{}b{2cm}ccc@{}}
+		\toprule[1pt]
+		 & 
+		\multicolumn{1}{c}{\textbf{Enthalpy-porosity}} & \multicolumn{1}{c}{\textbf{Lee model-CNT}} \\ \midrule[2pt]
+		\vbox to 3\baselineskip{\textbf{T=100s}}& \includegraphics[width=.25\linewidth]{T_1600s_EP_cavity.png} & \includegraphics[width=.25\linewidth]{T_1600s_CNT_cavity.png} &
+		\includegraphics[width=.0658\linewidth]{T_scale_EP_cavity.png} \\		
+		\vbox to 3\baselineskip{\textbf{T=200s}}&\includegraphics[width=.25\linewidth]{T_1700s_EP_cavity.png} & \includegraphics[width=.25\linewidth]{T_1700s_CNT_cavity.png} &  \includegraphics[width=.0658\linewidth]{T_scale_EP_cavity.png} \\
+		\vbox to 3\baselineskip{\textbf{T=300s}}& \includegraphics[width=.25\linewidth]{T_1800s_EP_cavity.png} & \includegraphics[width=.25\linewidth]{T_1800s_CNT_cavity.png} &
+		\includegraphics[width=.0658\linewidth]{T_scale_EP_cavity.png} \\	 \bottomrule[1pt]		
+	\end{tabular}
+	\centering
+	\caption{Numerical results of temperature distributions for Enthalpy-porosity and Lee-CNT models at \textit{t = 100, 200, 300s}.}	
+	\label{3.15tab}
+\end{table}
 
+\begin{table}[h!]
+	\begin{tabular}{@{}b{2cm}ccc@{}}
+		\toprule[1pt]
+		& 
+		\multicolumn{1}{c}{\textbf{Enthalpy-porosity}} & \multicolumn{1}{c}{\textbf{Lee model-CNT}} \\ \midrule[2pt]
+		\vbox to 3\baselineskip{\textbf{T=100s}}& \includegraphics[width=.25\linewidth]{U_1600s_EP_cavity.png} & \includegraphics[width=.25\linewidth]{U_1600s_CNT_cavity.png} &
+		\includegraphics[width=.0658\linewidth]{U_scale_1600s_cavity.png} \\		
+		\vbox to 3\baselineskip{\textbf{T=200s}}&\includegraphics[width=.25\linewidth]{U_1700s_EP_cavity.png} & \includegraphics[width=.25\linewidth]{U_1700s_CNT_cavity.png} &  \includegraphics[width=.0658\linewidth]{U_scale_1700s_cavity.png} \\
+		\vbox to 3\baselineskip{\textbf{T=300s}}& \includegraphics[width=.25\linewidth]{U_1800s_EP_cavity.png} & \includegraphics[width=.25\linewidth]{U_1800s_CNT_cavity.png} &
+		\includegraphics[width=.0658\linewidth]{U_scale_1800s_cavity.png} \\	 \bottomrule[1pt]		
+	\end{tabular}
+	\centering
+	\caption{Numerical results of velocity distributions for Enthalpy-porosity and Lee-CNT models at \textit{t = 100, 200, 300s}.}	
+	\label{3.16tab}
+\end{table}
+
+\begin{table}[h!]
+	\begin{tabular}{@{}b{2cm}ccc@{}}
+		\toprule[1pt]
+		& 
+		\multicolumn{1}{c}{\textbf{Enthalpy-porosity}} & \multicolumn{1}{c}{\textbf{Lee model-CNT}} \\ \midrule[2pt]
+		\vbox to 3\baselineskip{\textbf{T=100s}}& \includegraphics[width=.25\linewidth]{alpha_1600s_EP_cavity.png} & \includegraphics[width=.25\linewidth]{alpha_1600s_CNT_cavity.png} &
+		\includegraphics[width=.0658\linewidth]{alpha_scale_cavity.png} \\		
+		\vbox to 3\baselineskip{\textbf{T=200s}}&\includegraphics[width=.25\linewidth]{alpha_1700s_EP_cavity.png} & \includegraphics[width=.25\linewidth]{alpha_1700s_CNT_cavity.png} &  \includegraphics[width=.0658\linewidth]{alpha_scale_cavity.png} \\
+		\vbox to 3\baselineskip{\textbf{T=300s}}& \includegraphics[width=.25\linewidth]{alpha_1800s_EP_cavity.png} & \includegraphics[width=.25\linewidth]{alpha_1800s_CNT_cavity.png} &
+		\includegraphics[width=.0658\linewidth]{alpha_scale_cavity.png} \\	 \bottomrule[1pt]		
+	\end{tabular}
+	\centering
+	\caption{Numerical results of fluid fraction distributions for Enthalpy-porosity and Lee-CNT models at \textit{t = 100, 200, 300s}.}	
+	\label{3.17tab}
+\end{table}
 \begin{figure}[h!]
-	\begin{subfigure}{0.50\textwidth}
-		\centering
-		\includegraphics[width=\linewidth]{temperature_xpos_conv.png}\hfill
-		\caption{Temperature along horizontal line.} \label{3.4afig}
-	\end{subfigure}
-	\hfill
-	\begin{subfigure}{0.50\textwidth}
-		\centering
-		\includegraphics[width=\linewidth]{temperature_ypos_conv.png}	
-		\caption{Temperature along vertical line.}\label{3.4bfig}
-	\end{subfigure}
-	\begin{subfigure}{0.50\textwidth}
-		\includegraphics[width=\linewidth]{xvel_xpos_conv.png}\hfill
-		\caption{U-velocity along horizontal line.}\label{3.4cfig}
-	\end{subfigure}
-	\begin{subfigure}{0.50\textwidth}
-		\includegraphics[width=\linewidth]{xvel_ypos_conv.png}	
-		\caption{U-velocity along vertical line.}\label{3.4dfig}
-	\end{subfigure}
-	\begin{subfigure}{0.50\textwidth}
-		\includegraphics[width=\linewidth]{yvel_xpos_conv.png}\hfill	
-		\caption{V-velocity along horizontal line.}\label{3.4efig}
-	\end{subfigure}
-	\begin{subfigure}{0.50\textwidth}
-		\includegraphics[width=\linewidth]{yvel_ypos_conv.png}	
-		\caption{V-velocity along vertical line.}\label{3.4ffig}
-	\end{subfigure}
-	\caption{Adimensional magnitudes comparison.}
-	\label{3.4fig}
+	\centering
+	\includegraphics[width=.7\linewidth]{temperature_time_center.png}	
+	\label{3.12fig}
+	\caption{Numerical results of temperature profiles in center position of cylindrical geometry.}
 \end{figure} 
-
-
+\begin{table}[h!]
+	\begin{tabular}{@{}b{2cm}lll@{}}
+		\toprule[1pt]
+		&\multicolumn{1}{c}{\textbf{Enthalpy-porosity}} & 
+ 		\multicolumn{1}{c}{\textbf{Lee model-CNT}} \\ \midrule[2pt]
+		\vbox to 3\baselineskip{\textbf{T=100s}}&\includegraphics[width=.25\linewidth]{T_100s_EP.png} & \includegraphics[width=.25\linewidth]{T_100s_CNT.png} &
+		\includegraphics[width=.0658\linewidth]{T_scale_100s_EP.png} \\
+		\vbox to 3\baselineskip{\textbf{T=300s}}&\includegraphics[width=.25\linewidth]{T_300s_EP.png} &
+		\includegraphics[width=.25\linewidth]{T_300s_CNT.png} & 
+		\includegraphics[width=.0658\linewidth]{T_scale_300s_EP.png} \\
+		\vbox to 3\baselineskip{\textbf{T=100s}}& \includegraphics[width=.25\linewidth]{U_100s_EP.png} & \includegraphics[width=.25\linewidth]{U_100s_CNT.png} &  \includegraphics[width=.0558\linewidth]{U_scale_100s_EP.png} \\
+		\vbox to 3\baselineskip{\textbf{T=300s}}& \includegraphics[width=.25\linewidth]{U_300s_EP.png} & \includegraphics[width=.25\linewidth]{U_300s_CNT.png} &  \includegraphics[width=.0558\linewidth]{U_scale_300s_EP.png} \\
+		\vbox to 3\baselineskip{\textbf{T=100s}}&\includegraphics[width=.25\linewidth]{alpha_100s_EP.png} & \includegraphics[width=.25\linewidth]{alpha_100s_CNT.png} &  \includegraphics[width=.0558\linewidth]{alpha_scale_cavity.png} \\
+		\vbox to 3\baselineskip{\textbf{T=300s}}&\includegraphics[width=.25\linewidth]{alpha_300s_EP.png} & \includegraphics[width=.25\linewidth]{alpha_300s_CNT.png} &  \includegraphics[width=.0558\linewidth]{alpha_scale_cavity.png} \\ \bottomrule[1pt]		
+	\end{tabular}
+	\centering
+	\caption{Numerical results of Enthalpy-porosity and Lee-CNT models at \textit{t = 100s} and \textit{300s} in a cylinder.}	
+	\label{3.18tab}
+\end{table}
 
 
 For the Lee model based on the \textit{Classical Nucleation Theory}, the results are validated against the analytical solution given by the Neumann solutions of the Stefan problem.
@@ -813,80 +914,131 @@ For the Lee model based on the \textit{Classical Nucleation Theory}, the results
 	\begin{subfigure}{0.50\textwidth}
 		\centering
 		\includegraphics[width=\linewidth]{temperature_xpos_EL.png}\hfill
-		\caption{Temperature along horizontal line.} \label{3.5a}
+		\caption{Temperature along horizontal line.} \label{3.13figa}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}{0.50\textwidth}
 		\centering
 		\includegraphics[width=\linewidth]{temperature_ypos_EL.png}	
-		\caption{Temperature along vertical line.}\label{3.5b}
+		\caption{Temperature along vertical line.}\label{3.13figb}
 	\end{subfigure}
 	\begin{subfigure}{0.50\textwidth}
 		\includegraphics[width=\linewidth]{xvel_xpos_EL.png}\hfill
-		\caption{U-velocity along horizontal line.}\label{3.5c}
+		\caption{U-velocity along horizontal line.}\label{3.13figc}
 	\end{subfigure}
 	\begin{subfigure}{0.50\textwidth}
 		\includegraphics[width=\linewidth]{xvel_ypos_EL.png}	
-		\caption{U-velocity along vertical line.}\label{3.5d}
+		\caption{U-velocity along vertical line.}\label{3.13figd}
 	\end{subfigure}
 	\begin{subfigure}{0.50\textwidth}
 		\includegraphics[width=\linewidth]{yvel_xpos_EL.png}\hfill	
-		\caption{V-velocity along horizontal line.}\label{3.5e}
+		\caption{V-velocity along horizontal line.}\label{3.13fige}
 	\end{subfigure}
 	\begin{subfigure}{0.50\textwidth}
 		\includegraphics[width=\linewidth]{yvel_ypos_EL.png}	
-		\caption{V-velocity along vertical line.}\label{3.5f}
+		\caption{V-velocity along vertical line.}\label{3.13figf}
 	\end{subfigure}
 	\caption{Adimensional magnitudes comparison.}
-	\label{3.5}
+	\label{3.13fig}
 \end{figure}
-
+\clearpage
 \subsubsection{Stefan Problem}
-The Stefan problem, is an initial boundary value problem of a parabolic differential equation with discontinuous coefficients on the phase transitions interfaces [\cite{vasilyev_vasilyeva_2020}]. The analytical solution to the classical Stefan problem exists in a limited range of idealized situations. Some of them involve semi-infinite or infinite regions with simple and boundary conditions. Based on the work of \cite{vasilyev_vasilyeva_2020} and \cite{zhao_zhao_xu_2018}, a two-region solidification process in a semi-infinite region is used to study the feasibility of the VOF-Lee model based on the Nucleation Theory.
+The Stefan problem, is an initial boundary value problem of a parabolic differential equation with discontinuous coefficients on the phase transitions interfaces [\cite{vasilyev_vasilyeva_2020}]. The analytical solution to the classical Stefan problem exists in a limited range of idealized situations. Some of them involve semi-infinite or infinite regions with simple and boundary conditions. Based on the work of \cite{vasilyev_vasilyeva_2020} and \cite{zhao_zhao_xu_2018}, a two-region solidification process in a semi-infinite region is used to study the characteristics of the VOF-Lee model based on the Nucleation Theory.
 \subsubsection*{One-dimensional problem}
 In seek of simplification, and recalling the 1D problem as shown in the figure:
 
 the initial conditions are expressed as:
 \begin{equation}
 	u_{0}(x)=u_{0}, \quad t=0, \quad x \in[0, L],
-	\label{3.38}
+	\label{3.42}
 \end{equation}
 while the boundary conditions are the shown below:
 \begin{equation}
-u(0, t)=-15ºC, \quad \frac{\partial u}{\partial x}(L, t)=0, \quad t>0
-\label{3.39}
+	u(0, t)=-20ºC, \quad \frac{\partial u}{\partial x}(L, t)=0, \quad t>0
+	\label{3.43}
 \end{equation}
-The discontinuous exact solutions are:
+
+\begin{table}[h!]
+	\begin{tabular}{@{}lllll@{}}
+		\toprule[1pt]
+		\textbf{Boundary} & \textbf{Conditions}  \\ \midrule[2pt]
+		Left & $ T_{l} = 253.15, \alpha_{l} = 1, \alpha_{s} = 0    $  \\
+		Right & $\frac{\partial T_{r}}{\partial n} = 0,  \frac{\partial \alpha_{l}}{\partial n} = 0, \frac{\partial \alpha_{s}}{\partial n} = 0  $ \\
+		Upper & $\frac{\partial T_{t}}{\partial n} = 0, \frac{\partial \alpha_{l}}{\partial n} = 0, \frac{\partial \alpha_{s}}{\partial n} = 0$  \\
+		Bottom & $\frac{\partial T_{b}}{\partial n} = 0, \frac{\partial \alpha_{l}}{\partial n} = 0, \frac{\partial \alpha_{s}}{\partial n} = 0 $  \\ \bottomrule[1pt]		
+	\end{tabular}
+	\centering
+	\caption{Boundary conditions for Stefan problem.}	
+	\label{3.19tab}
+\end{table}
+The internal field is initiallized at 283.15 ºC. The used thermophysical properties as well as the solver parameters are similar to the previous solidification cases.
+\newline
+The discontinuous exact solutions for the Stefan problem are:
 \begin{equation}
 	\begin{cases}T_{l}(x, t)=\frac{\operatorname{erfc}\left(\frac{x}{2 \sqrt{a_{1} t}}\right)}{\operatorname{erfc}\left(\lambda \sqrt{\frac{a_{\mathrm{s}}}{a_{1}}}\right)}\left(T_{\mathrm{m}}-T_{0}\right)+T_{0}, & x>\xi(t), \\ 
-	T_{\mathrm{s}}(x, t)=\frac{\operatorname{erf}\left(\frac{x}{2 \sqrt{a_{\mathrm{s}} t}}\right)}{\operatorname{erf \cdot\lambda }}\left(T_{\mathrm{m}}-T_{\mathrm{b}}\right)+T_{\mathrm{b}},& x \leq \xi(t)  .\end{cases}
-	\label{3.40}
+	T_{\mathrm{s}}(x, t)=\frac{\operatorname{erf}\left(\frac{x}{2 \sqrt{a_{\mathrm{s}} t}}\right)}{\operatorname{erf \lambda }}\left(T_{\mathrm{m}}-T_{\mathrm{b}}\right)+T_{\mathrm{b}},& x \leq \xi(t)  .\end{cases}
+	\label{3.44}
 \end{equation}
 By using a phase change interface condition, a solution to the trascendental equation may be found:
 \begin{equation}
 	\frac{e^{-\lambda^{2}}}{\operatorname{erf}(\lambda)}+\frac{k_{\mathrm{l}}}{k_{\mathrm{s}}} \sqrt{\frac{a_{\mathrm{s}}}{a_{1}}} \frac{T_{\mathrm{m}}-T_{0}}{T_{\mathrm{m}}-T_{\mathrm{b}}} \frac{e^{-\frac{a_{\mathrm{s}}}{a_{1}} \lambda^{2}}}{\operatorname{erfc}\left(\lambda \sqrt{\frac{a_{\mathrm{s}}}{a_{1}}}\right)}=\frac{\lambda L \sqrt{\pi}}{c_{\mathrm{ps}}\left(T_{\mathrm{m}}-T_{\mathrm{b}}\right)}
-	\label{3.41}
+	\label{3.45}
 \end{equation}
-The secant method is used as the iterative scheme to find the root of the given function with $tol<1e-12$. The root of $\gamma$ is 0.2204835149063661
-In the following figures, the accuracy of the method is tested trhough comparison with exact solutions to the Stefan problem.
+The secant method is used as the iterative scheme to find the root of the given function with $tol<1e-12$. The root of $\gamma$ is 0.2299545377262345.
+\newline
 
-%The discontinuous exact solution is of the form [\cite{vasilyev_vasilyeva_2020}:
-%\begin{equation}
-%	u(x, t)= \begin{cases}g\left[\operatorname{erf}\left(\frac{\xi}{2 a_{1} \sqrt{t}}\right)-\operatorname{erf}\left(\frac{x}{2 a_{1} \sqrt{t}}\right)\right] / \operatorname{erf}\left(\frac{\xi}{2 a_{1} \sqrt{t}}\right), & x \geq \xi(t), \\ u_{0}\left[\operatorname{erf}\left(\frac{x}{2 a_{2} \sqrt{t}}\right)-\operatorname{erf}\left(\frac{\xi}{2 a_{2} \sqrt{t}}\right)\right] /\left[1-\operatorname{erf}\left(\frac{\xi}{2 a_{2} \sqrt{t}}\right)\right], & x<\xi(t) .\end{cases}
-%\end{equation}
-%
-%By using a phase change interface condition, it is possible to find a solution to the trascendental equation.
-%\begin{equation}
-%	\frac{k_{1}}{a_{1}} g \frac{\exp \left(-\left(\frac{\gamma}{2 a_{1}}\right)^{2}\right)}{\operatorname{erf}\left(\frac{\gamma}{2 a_{1}}\right)}+\frac{k_{2}}{a_{2}} u_{0} \frac{\exp \left(-\left(\frac{\gamma}{2 a_{2}}\right)^{2}\right)}{1-\operatorname{erf}\left(\frac{\gamma}{2 a_{2}}\right)}+\gamma D \frac{\sqrt{\pi}}{2}=0
-%\end{equation}
-%
-%The secant method is used as the iterative scheme to find the root of the given function with $tol<1e-12$. The root of $\gamma$ is 0.00032622525325939834
+In the following figures, the method is tested against the exact solutions of the Stefan problem. 
+
+\begin{figure}[h!]
+	\begin{subfigure}{0.50\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{Neumann_CNT_6s.png}\hfill
+		\caption{Neumann solution vs numerical solution.} \label{3.15figa}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}{0.50\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{relative_err_Neumann_CNT_6s.png}	
+		\caption{Relative error of the numerical solution.}\label{3.15figb}
+	\end{subfigure}
+	\caption{Numerical solutions of the Lee model-CNT vs Neumann analytical solutions.}
+	\label{3.15fig}
+\end{figure}
+
+
+
+The first key thing to point out is that the Stefan problem does not take into consideration the interface tensions and contact angles. The solution considers a planar interface so that the curvature $\kappa$ vanishes and the effect of $\kappa$$\sigma$ on the interface is ignored. Another point to remark is the effect of the Stefan number properly. According to ...
+
+The kinematic undercooling...
+
 \subsubsection{Interface height}
 
-
-The evolution of the interface is:
+The theoretical solution for the evolution of the interface is:
 \begin{equation}
-X(t)=2 \lambda \sqrt{a_{\mathrm{s}} t}
-\label{3.42}
+	X(t)=2 \lambda \sqrt{a_{\mathrm{s}} t}
+	\label{3.46}
 \end{equation}
+Alongside, a post-process function to calculate the tracking of position of the interface is done. To do so, the values of the liquid fraction per timestep are first obtained. Thus, these values for each time are read to find the position in which alpha is 0.5. The python code is attached in Appendix \ref{AppendixA}.
 
+\begin{table}[h!]
+	\begin{tabular}{@{}lllll@{}}
+		\toprule[1pt]
+		\multicolumn{1}{c}{\textbf{Enthalpy-porosity}} \\ \midrule[2pt] 
+		\includegraphics[width=.5\linewidth]{alpha_6s_EP.png} & \includegraphics[width=.13\linewidth]{alpha_scale_EP_6s.png} \\ \bottomrule[1pt]		
+	\end{tabular}
+	\centering
+	\caption{Numerical results of alpha fraction for Enthalpy-porosity model at \textit{t = 6s}.}	
+	\label{3.20tab}
+\end{table}
+\begin{figure}[h!]
+	\begin{subfigure}{0.50\textwidth}
+		\includegraphics[width=\linewidth]{Interface_height_Neumann_CNT_6s.png}\hfill
+		\caption{Interface position in time.}\label{3.16figa}
+	\end{subfigure}
+	\begin{subfigure}{0.50\textwidth}
+		\includegraphics[width=\linewidth]{relative_err_interface_height_Neumann_CNT_6s.png}	
+		\caption{Relative error of interface position in time.}\label{3.16figb}
+	\end{subfigure}
+	\caption{Numerical solutions of the Lee model-CNT vs Neumann analytical solutions for interface position.}
+\label{3.16fig}
+\end{figure}
