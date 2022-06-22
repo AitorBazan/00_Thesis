@@ -4,28 +4,35 @@
 
 \label{Chapter3} % For referencing the chapter elsewhere, use \ref{Chapter1} 
 \section{OpenFOAM. General Aspects}
-OpenFOAM is a free open-source software written in C++ and mainly conceived to perform computational fluid dynamics (CFD) simulations based on a finite volume discretization (FVM). 
+
+\setlength{\parindent}{0.5cm} OpenFOAM is a free open-source software written in C++ and mainly conceived to perform computational fluid dynamics (CFD) simulations based on a finite volume discretization (FVM). 
+
 \subsection{The finite volume method}
-Fluid equations usually take the form of non-linear partial differential equations and so, most of time, no analytical solution can be derived from them. In that context, different numerical techniques are employed to reach an approximation of the solution to these problems. These methods require a discretization of the domain in which the solution is going to be calculated. As aforementioned, OpenFOAM uses the finite volume method, which is, indeed, one of the most widely techniques used in computational fluid dynamics, and the one used in this thesis.
-\newline
-This technique turns the partial differential equations, which at their turn represent conservation laws over differential volumes, into discrete algebraic equations over finite volumes. Similarly to the finite element method, the FVM also needs a discretization of the geometric domain but in this numerical method, the elements used to integrate the algebraic equations representing the conservation partial differential equations are finite volumes or non-overlapping elements.
-\newline
-Some of the terms in the conservation equation are converted into face fluxes and evaluated in the discretized finite volumes. These face fluxes are strictly conservative. This is that the flux entering the volume is equal to the flux leaving the adjacent volume. This property makes the finite volume method the preferred technique for CFD \cite{moukalled_mangani_darwish_2016}. 
+
+\setlength{\parindent}{0.5cm} Fluid equations usually take the form of non-linear partial differential equations and so, most of time, no analytical solution can be derived from them. In that context, different numerical techniques are employed to reach an approximation of the solution to these problems. These methods require a discretization of the domain in which the solution is going to be calculated. As aforementioned, OpenFOAM uses the finite volume method, which is, indeed, one of the most widely techniques used in computational fluid dynamics, and the one used in this thesis.
+
+\noindent This technique turns the partial differential equations, which at their turn represent conservation laws over differential volumes, into discrete algebraic equations over finite volumes. Similarly to the finite element method, the FVM also needs a discretization of the geometric domain but in this numerical method, the elements used to integrate the algebraic equations representing the conservation partial differential equations are finite volumes or non-overlapping elements.
+
+\noindent Some of the terms in the conservation equation are converted into face fluxes and evaluated in the discretized finite volumes. These face fluxes are strictly conservative. This is that the flux entering the volume is equal to the flux leaving the adjacent volume. This property makes the finite volume method the preferred technique for CFD \cite{moukalled_mangani_darwish_2016}. 
+
 \subsubsection*{Geometric domain discretization}
-The intrinsic properties of the finite volume method need the computational domain to be discretized in volume cells, known as control volumes (CV). Each one of these volumes has a centroid or computational point in which the solution is obtained. 
-Alongside with this idea, OpenFOAM follows a cell-centered approach in which the unknowns are defined at the center of these volumes or cells. The value of these are computed as an average value of the variable in that cell.
-\newline
-Moreover, the control volume is defined by the neighbours. This is, in the case the volume has an adjacent neighbour, an internal face is delimiting the separation of both. On the other hand, if the volume is not sharing a face with a neighour volume, the face is considered to be a boundary.
+
+\setlength{\parindent}{0.5cm} The intrinsic properties of the finite volume method need the computational domain to be discretized in volume cells, known as control volumes (CV). Each one of these volumes has a centroid or computational point in which the solution is obtained. 
+
+\noindent Alongside with this idea, OpenFOAM follows a cell-centered approach in which the unknowns are defined at the center of these volumes or cells. The value of these are computed as an average value of the variable in that cell.
+
+\noindent Moreover, the control volume is defined by the neighbours. This is, in the case the volume has an adjacent neighbour, an internal face is delimiting the separation of both. On the other hand, if the volume is not sharing a face with a neighour volume, the face is considered to be a boundary.
 
 \subsubsection*{Fluid dynamic equations discretization}
-The continuity equation, the Navier-Stokes equations and, the heat equation stated in section 2 can be stated in a more general form under the formulation of the Reynolds transport theorem:
+
+\setlength{\parindent}{0.5cm} The continuity equation, the Navier-Stokes equations and, the heat equation stated in section 2 can be stated in a more general form under the formulation of the Reynolds transport theorem:
 \begin{equation}
 	\underbrace{\int_{V_{P}} \frac{\partial \rho \phi}{\partial t} d V}_{\text {Temporal term }}+\underbrace{\int_{V_{P}} \nabla \cdot(\rho \vec{u} \phi) d V}_{\text {Convective term }}=\underbrace{\int_{V_{P}} \nabla \cdot\left(\rho \Gamma_{\phi} \nabla \phi\right) d V}_{\text {Diffusive term }}+\underbrace{\int_{V_{P}} S_{\phi} d V}_{\text {Source term }}
 	\label{3.1}
 \end{equation}
 where $V_{P}$ is the control volume cell, $\phi$ may be any scalar or vectorial variable of the continuum, $\Gamma_{\phi}$ is the diffusivity of the variable and $S_{\phi}$ is a source term. 
-\newline
-In order to recover the continuity, momentum and energy equations, the parameters shown in table \ref{fig:transportEq.} need to be shaped in the transport equation.
+
+\noindent In order to recover the continuity, momentum and energy equations, the parameters shown in table \ref{3.1tab} need to be shaped in the transport equation.
 \begin{table}[h!]
 	\begin{tabular}{@{}lllll@{}}
 		\toprule[1pt]
@@ -38,7 +45,7 @@ In order to recover the continuity, momentum and energy equations, the parameter
 	\caption{Parameters to recover continuity, momentum and energy equations.}	
 	\label{3.1tab}
 \end{table}
-
+\newline
 The fluid variable is defined as a ratio of itself integrated along the volume cell. Thus, it yelds the following form,
 \begin{equation}
 	\phi=\phi_{P}=\frac{1}{V_{p}} \int_{V_{P}} \phi(x) d V
@@ -46,9 +53,10 @@ The fluid variable is defined as a ratio of itself integrated along the volume c
 \end{equation}
 Therefore, a complete discretization of the previous terms is needed to solve the physics regarding a general fluid dynamics problem.
 \subsection{OpenFOAM functioning}
-In this first section, a brief introduction on the structure and functioning of the OpenFOAM software is given.
-In the folder structure tree shown in Fig. \ref{fig:structureOF}, it is shown a typical case setup for a phase change problem using \textit{icoReactingMultiphaseFoam} solver.
-\clearpage
+\setlength{\parindent}{0.5cm} In this first section, a brief introduction on the structure and functioning of the OpenFOAM software is given.
+
+\noindent In the folder structure tree shown in Fig. \ref{3.1fig},  it is shown a typical case setup for a phase change problem using \textit{icoReactingMultiphaseFoam} solver.
+
 \begin{figure}[h!]
 	\centering
 	\scalebox{0.75}{
@@ -98,16 +106,20 @@ In the folder structure tree shown in Fig. \ref{fig:structureOF}, it is shown a 
 		]
 		]
 	\end{forest}}
-	\label{3.1fig}
 	\caption{General structure of an OpenFOAM case.}
+	\label{3.1fig}
 \end{figure}
 
 \subsubsection{Boundary Conditions Directory}
-The "0" directory gathers all the boundary conditions at time zero and the initial conditions to set up the case. As the simulation starts running, the information of these fields is saved in folders at every timestep.
+
+\setlength{\parindent}{0.5cm} The "0" directory gathers all the boundary conditions at time zero and the initial conditions to set up the case. As the simulation starts running, the information of these fields is saved in folders at every timestep.
+
 \subsubsection{Constant Properties Directory}
-The "constant" directory contains all the information typically regarding the physical properties which are kept constant through the simulation. Moreover, once the dictionary \textit{blockMeshDict} is run, OpenFOAM creates a folder called \textit{polyMesh} containing all the information relevant to the mesh (points, faces,...) 
+
+\setlength{\parindent}{0.5cm} The "constant" directory contains all the information typically regarding the physical properties which are kept constant through the simulation. Moreover, once the dictionary \textit{blockMeshDict} is run, OpenFOAM creates a folder called \textit{polyMesh} containing all the information relevant to the mesh (points, faces,...). 
+
 \subsubsection{System Directory}
-This folder contains the files required by the control of the solver and the solution itself. The most common files are:
+\setlength{\parindent}{0.5cm} This folder contains the files required by the control of the solver and the solution itself. The most common files are:
 \begin{itemize}
 	\item \textbf{blockMeshDict:} in this file the parameters required to build up the computational domain, the mesh and the boundaries are found. The command \textbf{blockMesh} executes this dictionary creating the \textit{polyMesh} folder commented above.
 	\item \textbf{controlDict:} Time parameters associated to the computation are set in this file. 
@@ -116,17 +128,19 @@ This folder contains the files required by the control of the solver and the sol
 	\item \textbf{fvSolution:} contains sub-dictionaries used to control the solvers and the solution algorithms. It also allows the definition of the fields resolution.
 \end{itemize}
 
-
 \section{Solidification process. Methodology}
-A convection solver is used to represent the flow behavior generated by the density difference due to existing temperature gradients whithin the volume of control. A polynomic water density is implemented in the native OpenFOAM solver and compared with the standard Boussinesq approximation. The current model is validated against numerical results form the literature. The solution of this convection solver is later used as a boundary condition, before solidification phenomena plays a role.
+
+\setlength{\parindent}{0.5cm} A convection solver is used to represent the flow behavior generated by the density difference due to existing temperature gradients whithin the volume of control. A polynomic water density is implemented in the native OpenFOAM solver and compared with the standard Boussinesq approximation. Besides, a proposed buoyancy term by Bourdillon \cite{bourdillon_2016} is added in the computation of the momentum equation. The current model is validated against numerical results from the literature. The solution of this convection solver is later used as initial conditions, before solidification phenomena plays a role.
+
+\noindent For the solidification phenomena representation, the aforementioned Enthalpy-porosity technique and Lee model based on the \textit{Classical Nucleation theoy} are implemented within a multi-phase native solver. These methods are compared against \cite{bourdillon_2016}, Kowalesky et al. \cite{kowalewski_rebow_1999} and Chen et al. \cite{chen_lee_1998}. A final remark on the \textit{classic Stefan problem} is done. This part will be discussed later in this thesis.
 
 \newpage
 \section{OpenFOAM: BuoyantBoussinesqPimpleFOAM. Natural Convection solver}
 
-In a natural convection environment, the motion of the fluid is mainly driven by the density difference within the fluid volume of control. At its turn, the differences in the density, responsible for buoyancy forces, are generated by the existing temperature gradients. Within a physical context, the fluid near a hot heat source gets warmed up and, as a result, it becomes less dense moving up inside a domain. Consequently, the fluid in contact of the cold heat source is pushed from its zone to replace the hot fluid location. At this point, the cycle starts again repeating the phyisical phenomena.
+\setlength{\parindent}{0.5cm} In a natural convection environment, the motion of the fluid is mainly driven by the density difference within the fluid volume of control. At its turn, the differences in the density, responsible for buoyancy forces, are generated by the existing temperature gradients. Within a physical context, the fluid near a hot heat source gets warmed up and, as a result, it becomes less dense moving up inside a domain. Consequently, the fluid in contact of the cold heat source is pushed from its zone to replace the hot fluid location. At this point, the cycle starts again repeating the phyisical phenomena.
 
 \subsection{Case Description}
-Within the context of natural convection, the current case aims to develop a comprehensive state of the capabilities that OpenFoam solvers brings to solve this phenomena. To reach the objective, and on purpose of controlling the physics generated on the simulation, a regular squared geometry of 0.038 \textit{mm} side length is created:
+\setlength{\parindent}{0.5cm} Within the context of natural convection, the current case aims to develop a comprehensive state of the capabilities that OpenFoam solvers bring to solve this phenomena. To reach the objective, and on purpose of controlling the physics generated on the simulation, a regular squared geometry of 0.038 \textit{mm} side length is created:
 
 \begin{figure}[h!]
 	\centering
@@ -136,41 +150,46 @@ Within the context of natural convection, the current case aims to develop a com
 		\label{BBPF_NCMF}
 	\end{subfigure}
 	\label{3.2fig}
-	\caption{Geometric characteristics.}
+	\caption{Geometric characteristics for the cavity.}
 \end{figure} 
 The mesh is structured and consists of 1971212 nodes.
+
 \subsection{Hypotheses And Assumptions}
-To carry out the current problem, a series of assumptions are taken into account in order to simplify the solving of the fluid equations involved.
-\newline
+
+\setlength{\parindent}{0.5cm} To carry out the current problem, a series of assumptions are taken into account in order to simplify the solving of the fluid equations involved.
+
 \textbf{Laminar regime:} The Reynolds number, computed from the maximum velocity is not high enough to consider turbulent effects. 
-\newline
+
 \textbf{Convective heat transfer:} To determine whether the heat transfer is assumed to be convective, the Prandtl number and the Rayleigh number should be assessed.
-\newline
-The Prandtl number, as the relation between the viscosity and the thermal conductivity of a fluid or, in other words, the correlation between momentum transport and thermal transport capacity is calculated as:
+
+\noindent The Prandtl number, as the relation between the viscosity and the thermal conductivity of a fluid or, in other words, the correlation between momentum transport and thermal transport capacity is calculated as:
 \begin{equation}
-	\operatorname{Pr}=\frac{v}{\alpha}=\frac{\eta}{\rho \alpha}=\frac{\eta c_{p}}{\lambda}=\frac{\text { momentum transport }}{\text { heat transport }}
+	\operatorname{Pr}=\frac{v}{\alpha}=\frac{\mu}{\rho \alpha}=\frac{\mu c_{p}}{\lambda}=\frac{\text { momentum transport }}{\text { heat transport }}
 	\label{3.3}
 \end{equation}
-where
-Thus, a small Prandtl number are owned by free-flowing flows with high thermal conductivitiy.
-\newline
-On the other hand, the Rayleigh number is referred to the time scale relation between the diffusive and the convective thermal transports. It is thus used to determine wheter the buoyancy-driven natural convection plays an important role in the heat transfer. The dimensionless number is assessed in this context by this form:
+where $\mu$ is the dynamic viscosity, $c_{p}$ is the specific heat and $\lambda$ is the thermal conductivity.
+
+\noindent Thus, a small Prandtl number are owned by free-flowing flows with high thermal conductivitiy.
+
+\noindent On the other hand, the Rayleigh number is referred to the time scale relation between the diffusive and the convective thermal transports. It is thus used to determine wheter the buoyancy-driven natural convection plays an important role in the heat transfer. The dimensionless number is assessed in this context by this form:
 \begin{equation}
 	\mathrm{Ra}_{x}=\frac{g \cdot \beta}{\nu \cdot \alpha} \cdot\left(T_{s}-T_{\mathrm{inf}}\right) \cdot x^{3}
 	\label{3.4}
 \end{equation}
 Being \textit{g}, the gravity, \textit{$\beta$}, the coefficient of thermal expansion, \textit{$\nu$}, the kinematic viscosity, \textit{$\alpha$}, the thermal diffusivity, and \textit{$T_{s}$} and \textit{$T_{\mathrm{inf}}$}, the temperature on the wall surface and the temperature of the fluid far from the wall accordingly.
-\newline
-In the current case-scenario, a Prandtl close to 7 and a Rayleigh of 2517629 determine a convective heat transfer. The values used to estimate the Rayleigh number calculation are: $\beta = 6.734e-5 K^{-1}$, $\nu = 1.003e-6 m^{2}.s^{-1}$, $\alpha = 1.435e-7 m^{2}.s^{-1}$, $T_{s} = 283 K$, $T_{inf} = 273 K$ and $x = 0.038 m$. The values used for the laminar Prandtl number calculation are: $\mu = 0.001003 Kg.m^{-1}.s^{-1}$, $\lambda = 0.6 W.m^{-1}.K^{-1}$ and $C_{p}=4182 J.Kg.K^{-1}$.
-\newline
+
+\noindent In the current case-scenario, a Prandtl close to 7 and a Rayleigh of 2517629 determine a convective heat transfer. The values used to estimate the Rayleigh number calculation are: $\beta = 6.734e-5 K^{-1}$, $\nu = 1.003e-6 m^{2}.s^{-1}$, $\alpha = 1.435e-7 m^{2}.s^{-1}$, $T_{s} = 283 K$, $T_{inf} = 273 K$ and $x = 0.038 m$. The values used for the laminar Prandtl number calculation are: $\mu = 0.001003 Kg.m^{-1}.s^{-1}$, $\lambda = 0.6 W.m^{-1}.K^{-1}$ and $C_{p}=4182 J.Kg.K^{-1}$.
+
 \textbf{Newtonian fluid:} The viscosity of the fluid is assumed to be constant.
-\newline
+
 \textbf{Thermophysical properties:} specific heat, \textit{$C_p$}, the thermal expansion coefficient, \textit{$\beta$}, thermal conductivity, \textit{$\kappa$}, kinematic viscosity, \textit{$\nu$} are assumed to be non-dependent of temperature. However, the density will be dependent of temperature so as it plays an important role in the buoyancy effects through the later explained in this section.
 
-The conservative equations used to describe the motion of the fluid along time and space are described next.
+\noindent The conservative equations used to describe the motion of the fluid along time and space are described next.
+
 \subsection{Governing Equations}
-In this section, the governing equations for the used solver are described first.
-\newline
+
+\setlength{\parindent}{0.5cm} In this section, the governing equations for the used solver are described first.
+
 The conservation of mass states that the mass flowing into the volume of control (CV) must be equal to the mass flowing out of such volume. 
 \begin{equation}
 	\frac{\partial v}{\partial y}+\frac{\partial w}{\partial z}=0
@@ -178,7 +197,8 @@ The conservation of mass states that the mass flowing into the volume of control
 \end{equation}
 
 \subsubsection{Momentum Equation}
-Throughout the CV the momentum of the fluid flow is preserved and here below it is expressed for the y-direction and z-direction.
+
+\setlength{\parindent}{0.5cm} Throughout the CV the momentum of the fluid flow is preserved and here below it is expressed for the y-direction and z-direction.
 \begin{equation}
 	\begin{aligned}
 		\frac{\partial(\rho v)}{\partial t}+\operatorname{div}(\rho \mathbf{u} v)=\operatorname{div}(\mu \operatorname{grad} v)-\frac{\partial P}{\partial y}
@@ -216,10 +236,10 @@ As it will be pointed out later, the native solver uses the Boussinesq approxima
 	\frac{\Delta \rho}{\rho_{r}}<<1
 	\label{3.11}
 \end{equation}
-Therefore, to account for the inversion points present during the freezing process, a density variation like the described in \ref{3.9a} is implemented in the solver.
+Therefore, to account for the inversion points present during the freezing process, a density variation like the described in Eq. \ref{3.10} is implemented in the solver.
 
 \subsubsection{Temperature Equation}
-The temperature equation representing the convection phenomena yields as:
+\setlength{\parindent}{0.5cm} The temperature equation representing the convection phenomena yields as:
 \begin{equation}
 	\begin{aligned}
 	\frac{\partial T}{\partial t}+ \frac{\partial (u_{j} T)}{\partial x_{j}}=\frac{\partial}{\partial x_{j}}\left(\gamma \frac{\partial T}{\partial x_{j}}\right)
@@ -234,8 +254,10 @@ where the thermal diffusivity, $\gamma$, is defined as:
 \end{equation}
 
 All these equations are regarded by the solver \textit{buoyantBoussinesqPimpleFoam}.
+
 \subsection{Solver descripton. Control Loop}
-The \textit{buoyantBoussinesqPimpleFoam} is a solver used to solve non-steady buoyancy-driven fluids by using the Boussinesq approximation as a coupling between density and temperature fields. It considers the fluid as incompressible and uses the PIMPLE algorithm for the pressure-velocity coupling. The flowchart of the integration procedure for the presented solvers \textit{buoyantBoussinesqPimpleFoam} and \textit{icoReactingMultiphaseinterFoam} is presented below:
+
+\setlength{\parindent}{0.5cm} The \textit{buoyantBoussinesqPimpleFoam} is a solver used to solve non-steady buoyancy-driven fluids by using the Boussinesq approximation as a coupling between density and temperature fields. It considers the fluid as incompressible and uses the PIMPLE algorithm for the pressure-velocity coupling. The flowchart of the integration procedure for the presented solvers \textit{buoyantBoussinesqPimpleFoam} and \textit{icoReactingMultiphaseinterFoam} is presented below:
 
 \tikzstyle{decision} = [diamond, draw, fill=blue!20,
 text width=4.5em, text badly centered, node distance=2.5cm, inner sep=0pt]
@@ -273,12 +295,13 @@ minimum height=2em]
 	\caption{Flowchart of integration procedure. \textit{buoyantBoussinesqPimpleFoam}}
 \end{figure}
 
-
 \subsection{Code implementations}
-As described in the \textit{Governing equations} section, the need for a polynomial density expression and a variation of the momentum source terms devoted to reflect the buoyancy effects is derived.
-To do so, a new equation of state is implemented within the OpenFoam framework. Now and, in order to take into account this bouyancy forces, the pressure equation is studied. This is beacause in the context of a pressure-velocity corrector scheme, and in the case of ensuring stability and simplifying the boundary conditions definition, the modified pressure, \textit{$p_{rgh}$}, within the pressure equation implementation, is the term that accounts for the gravity terms.
-\newline
-Here, it is presented a general form of a momentum equation with the continuity equation corresponding to a incompressible flow.  
+
+\setlength{\parindent}{0.5cm} As described in the \textit{Governing equations} section, the need for a polynomial density expression and a variation of the momentum source terms devoted to reflect the buoyancy effects is derived.
+
+\noindent To do so, a new equation of state is implemented within the OpenFoam framework. Now and, in order to take into account this bouyancy forces, the pressure equation is studied. This is beacause in the context of a pressure-velocity corrector scheme, and in the case of ensuring stability and simplifying the boundary conditions definition, the modified pressure, \textit{$p_{rgh}$}, within the pressure equation implementation, is the term that accounts for the gravity terms.
+
+\noindent Here, it is presented a general form of a momentum equation with the continuity equation corresponding to a incompressible flow.  
 \begin{equation}
 	\left\{\begin{array}{l}
 	\frac{\partial (\rho \textbf{v})}{\partial t}+\nabla \cdot(\rho \textbf{v} \otimes \textbf{v})=-\nabla p+ \nabla \cdot(\mu (\nabla \textbf{v}+\nabla \textbf{v}^{T})) \\
@@ -287,8 +310,8 @@ Here, it is presented a general form of a momentum equation with the continuity 
 	\label{3.14}
 \end{equation}
 From this general equation, it will be given the term $H(\textbf{u})$, as later on will be needed for the pressure equation calculation.
-\newline
-Therefore, this term comes from considering the linearization of the advective term under the assumption of small Courant numbers (Co < 1). Leading the term $\textbf{v}^{0}\cong\textbf{v}$. 
+
+\noindent Therefore, this term comes from considering the linearization of the advective term under the assumption of small Courant numbers (Co < 1). Leading the term $\textbf{v}^{0}\cong\textbf{v}$. 
 \begin{equation}
 	\begin{aligned}
 	\int_{\Omega} \nabla \cdot\left(\textbf{v} \otimes \textbf{v}^{0}\right) d \Omega & \cong \sum_{f} \textbf{v}_{f} \textbf{v}_{f}^{0} \cdot \textbf{S}_{f} \\
@@ -307,10 +330,10 @@ Therefore, this term comes from considering the linearization of the advective t
 	\label{3.17}
 \end{equation}
 where $\textbf{v}^{0}$ is the velocity at previous time-step and $F^{0}$ is the face flux at the previous time-step.
-\newline
-In addition, by discretizing the continuity equation, it is possible to get the final form of the pressure equation.
-\newline
-So as to give stability to the solution and to simplify the boundary conditions definition \cite{berberovic_van_hinsberg_jakirlic_roisman_tropea_2009}, a modified pressure is defined as,
+
+\noindent In addition, by discretizing the continuity equation, it is possible to get the final form of the pressure equation.
+
+\noindent So as to give stability to the solution and to simplify the boundary conditions definition as described in Berberovic et al. \cite{berberovic_van_hinsberg_jakirlic_roisman_tropea_2009}, a modified pressure is defined as,
 \begin{equation}
 	p_{r g h}=p-\rho_{r} \textbf{g} \cdot \textbf{x} + \rho(T) \textbf{g} \cdot \textbf{x}
 	\label{3.18}
@@ -330,12 +353,12 @@ If one tries to describe the discretized pressure equation in \textit{buoyantBou
 	\Phi_{f}^{\nu+1}=\Phi_{u}^{\nu+1} - \left[(\textbf{g} \cdot \textbf{x})_{f}\left(\nabla \rho_{r}{ }^{n+1}\right)_{f}+(\textbf{g} \cdot \textbf{x})_{f}\left(\nabla \rho(T){ }^{n+1}\right)_{f}\right]\frac{\left|\textbf{S}_{f}\right|}{\left(a_{P}\right)_{f}}
 	\label{3.21}
 \end{equation}
-A face flux calculated by the term \textbf{H}(\textbf{v}), appearing in equation \ref{3.16}
+A face flux calculated by the term \textbf{H}(\textbf{v}), appearing in equation \ref{3.17}
 \begin{equation}
 	\Phi_{u}^{\nu+1}=\Phi_{f}^{\nu+1} + \left(\frac{H\left(\textbf{v}^{\nu}\right)}{a_{P}}\right)_{f} \cdot \textbf{S}_{f}+\left(\frac{1}{a_{P}}\right)_{f}\operatorname{ddt} \operatorname{PhiCorr}\left(\textbf{v}^{\nu}, \Phi^{\nu}\right)
 	\label{3.22}
 \end{equation}
-where $\operatorname{ddt} \operatorname{PhiCorr}$ is a flux adjustment due to the time-step. This is resolved by applying a \textit{Rhie-Chow interpolation}, \cite{rhie_chow_1983}, the next term in the pressure equation, \textbf{phiHbyA}, reads as,
+where $\operatorname{ddt} \operatorname{PhiCorr}$ is a flux adjustment due to the time-step. This is resolved by applying a \textit{Rhie-Chow interpolation} \cite{rhie_chow_1983}, the next term in the pressure equation, \textbf{phiHbyA}, reads as,
 \begin{equation}
 	\Phi_{f}^{\nu+1}=\Phi_{f}^{\nu+1}-\left[\left(\frac{1}{a_{P}}\right)_{f}\left(\nabla p_{r g h}\right)_{f}\right] \cdot \textbf{S}_{f}
 	\label{3.23}
@@ -371,18 +394,19 @@ Then, the static pressure, \textit{p}, is reconstructed from \textit{$p_{rgh}$},
 \end{equation}
  
 \subsection{Case Setup}
-Once the implementation is done, a first case is studied with the existing solver, \textit{buoyantBoussinesqPimpleFoam}. 
+
+\setlength{\parindent}{0.5cm} Once the implementation is done, a first case is studied with the existing solver, \textit{buoyantBoussinesqPimpleFoam}. 
 The boundary conditions, thermophysical properties and some other solver parameters are described along the following subsections.
 \newline
 As commented before, all studies are calculated on a computational domain of \textit{38mm x 38mm}. 
 \begin{figure}[h]
 	\label{3.4fig}	\centering	
 	\includegraphics[width=0.6\textwidth]{domain.png}
-	\caption{Setting of computational domain.}
+	\caption{Setting of cavity computational domain.}
 \end{figure} 
 
 \subsubsection*{Boundary conditions}
-Five boundaries are defined in the current case:
+\setlength{\parindent}{0.5cm} Five boundaries are defined in the current case:
 \newline
 \textbf{Left:} is considered a wall with a fixed value of temperature. This is the hot wall. No velocity is prescribed.
 \newline
@@ -406,9 +430,10 @@ Five boundaries are defined in the current case:
 	\caption{Boundary conditions for natural convection case.}	
 	\label{3.2tab}
 \end{table}
-
+\newline
 
 \subsubsection*{Thermophysical properties}
+The thermophysical properties for the natural convection calculation are described in \ref{3.3tab}. 
 \begin{table}[h!]
 	\begin{tabular}{@{}lllll@{}}
 		\toprule[1pt]
@@ -427,7 +452,8 @@ Five boundaries are defined in the current case:
 	\caption{Water properties for natural convection.}	
 	\label{3.3tab}
 \end{table}
-
+\newline
+Here below are presented the discretization schemes used for the terms appearing on the equations involved in the calculation. For more information on the used ones, refer to \cite{openfoamuserguide:cfddirect}.
 \begin{table}[h!]
 	\begin{adjustbox}{width=1\textwidth}
 		\small	
@@ -437,8 +463,8 @@ Five boundaries are defined in the current case:
 			Time derivatives & ddtSchemes    &  Euler  & First order, bounded, implicit \\
 			Divergence term    & divSchemes   &    & Second order, unbounded \\
 			Gradient term    & gradSchemes    &  Gauss linear  & Second order, unbounded \\
-			Laplacian term   &  laplacianSchemes    &  Gauss linear orthogonal  &  \\		 
-			Grad. normal to cell face & snGradSchemes    &  orthogonal  &  \\ 
+			Laplacian term   &  laplacianSchemes    &  Gauss linear orthogonal  & Second order \\		 
+			Grad. normal to cell face & snGradSchemes    &  orthogonal  &  Second order\\ 
 			Point to point interpolation&    			   interpolationSchemes    & linear   & Central differencing \\ \bottomrule[1pt]		
 		\end{tabular}
 	\end{adjustbox}
@@ -447,6 +473,7 @@ Five boundaries are defined in the current case:
 	\label{3.4tab}
 \end{table}
 \clearpage
+The equation solvers are shown in \ref{3.5tab}. 
 \begin{table}[h!]
 	\begin{tabular}{@{}lllll@{}}
 		\toprule[1pt]
@@ -459,6 +486,8 @@ Five boundaries are defined in the current case:
 	\caption{Solvers for the discretised equations.}	
 	\label{3.5tab}
 \end{table}
+\newline
+Table \ref{3.6tab} presents the parameters used for the inner and outter loops performed within the calculation.
 \begin{table}[h!]
 	\begin{tabular}{@{}lllll@{}}
 		\toprule[1pt]
@@ -475,8 +504,9 @@ Five boundaries are defined in the current case:
 	\caption{Parameters for the discretised equations.}	
 	\label{3.6tab}
 \end{table}
-
+\clearpage
 \subsection{Validation of Results and Conclusions}
+
 \begin{figure}[h!]
 	\centering
 	\begin{subfigure}{\linewidth}
@@ -493,8 +523,9 @@ Five boundaries are defined in the current case:
 	\label{3.5fig}
 	\caption{Comparison between BuoyantBoussinesqPimpleFoam and NCMF*}
 \end{figure} 
-NCMF*: Natural convection modified solver.
-\newline
+BBPF*: BuoyantBoussinesqPimpleFoam solver.
+NCMF**: Natural convection modified solver.
+
 In order to compare consistently the obtained results with those of the literature, the following dimensionless values are pointed out:
 \begin{equation}
 	\tilde{T}=\frac{T-T_{\text {cold }}}{T_{\text {hot }}-T_{\text {cold }}}=\frac{T-273}{10}
@@ -567,26 +598,41 @@ In order to compare consistently the obtained results with those of the literatu
 
 \clearpage
 \section{OpenFOAM: IcoReactingMultiphaseInterFOAM. Phase-Change Process}
-The solidification process is assessed in this section with two elaborated models. Both of the models are implemented within a multiphase solver based on the volume of fluid technique. This technique aims to capture interface and enhances contact angle and surface tension for each phase. Thus, the first model is based on the coupling of the VOF and the enthalpy-porosity method. To accomplish the inclusion of the enthalpy-porosity method, a library in which the latent heat is implemented as an explicit source term for the energy equation in the solver. On the other hand, the second model uses the VOF method combined with a semi-empirical model based on the work of Lee. The empirical constant is adapted here to be used in conjunction with the use of the \textit{Classical Nucleation Theory}.
+\setlength{\parindent}{0.5cm} The solidification process is assessed in this section with two elaborated models. Both of the models are implemented within a multi-phase solver based on the volume of fluid technique. This technique aims to capture interface and enhances contact angle and surface tension for each phase. Thus, the first model is based on the coupling of the VOF and the enthalpy-porosity method. To accomplish the inclusion of the enthalpy-porosity method, a library in which the latent heat is implemented as an explicit source term for the energy equation in the solver. 
+
+\noindent On the other hand, the second model uses the VOF method combined with a semi-empirical model based on the work of Lee. The empirical constant is adapted here to be used in conjunction with the use of the \textit{Classical Nucleation Theory}.
+
 \section{Case Description.}
-Two regular geomtries are created: a squared cavity, used in the pure convection case and cylindrical plane geometry. Both geometries test both solidification models.
+
+\setlength{\parindent}{0.5cm} Two regular geomtries are created: a squared cavity, used in the pure convection case and a cylindrical plane geometry. Both geometries test both solidification models.
+
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.6\linewidth]{cylinder_geom.png}\hfill	
-	\caption{Cylinder.}\label{3.7fig}
-\end{figure}
+	\begin{subfigure}{\linewidth}
+		\includegraphics[width=.55\linewidth]{cylinder_geom.png}\hfill
+		\includegraphics[width=.35\linewidth]{mesh_cylinder.png}	
+		\label{BBPF_NCMF}
+	\end{subfigure}
+	\label{3.7fig}
+	\caption{Geometric characteristics for cylinder.}
+\end{figure} 
+The computed structured mesh consists of 572404 nodes.
 
 \subsection{Hypotheses And Assumptions}
-To carry out the phase-transition process, some assumptions are taken into account so as to simplify the multiphysics ocurring during such arising phenomena. 
-\newline
+
+\setlength{\parindent}{0.5cm} To carry out the phase-transition process, some assumptions are taken into account so as to simplify the multiphysics ocurring during such arising phenomena. 
+
 \textbf{Laminar regime:} The Reynolds number, computed from the maximum velocity is not high enough to consider turbulent effects. 
-\newline
-In the current case-scenario, a Prandtl close to 7. The values used for the laminar Prandtl number calculation are: $\mu = 0.001003 Kg.m^{-1}.s^{-1}$, $\lambda = 0.6 W.m^{-1}.K^{-1}$ and $C_{p}=4182 J.Kg.K^{-1}$.
-\newline
+
+\noindent In the current case-scenario, a Prandtl close to 7. The values used for the laminar Prandtl number calculation are: $\mu = 0.001003 Kg.m^{-1}.s^{-1}$, $\lambda = 0.56 W.m^{-1}.K^{-1}$ and $C_{p}=4202 J.Kg.K^{-1}$.
+
 \textbf{Newtonian fluid:} The viscosity of the fluid is assumed to be constant.
 The thermophysical properties treatment is described below.
+
+\textbf{Quasy-steady state:} Bourdillon \cite{bourdillon_2016} used the hypothesis of quasy-steady solution of the natural convective solver as initial condition in the solidification process. As many researchers as Yan et al. \cite{yan_xu_qiu_gang_2017} suggest, water presents a high latent heat of solidification when the heat released during freezing plays a greater role than the transient process of heat accumulation in the layer of the phase being developed. In other words, when the latent heat of the phase change material is larger than its sensible heat, the latter is having little influence on the temperature distribution of the PCM. In such case, the interface is moving slowly and the temperature distribution, at a given time step, keeps constant. Therefore, for comparison purposes against literature results, the solidification process in a cavity is tested using a quasy-steady solution obtained in the pure convection case.
+
 \subsubsection*{Two phase properties}
-Within a multiphase framework, a model reflects a jump in properties through the interphase. Thus, a smooth transition between phase properties must be achieved.
+\setlength{\parindent}{0.5cm} Within a multiphase framework, a model reflects a jump in properties through the interphase. Thus, a smooth transition between phase properties must be achieved.
 \begin{equation}
 	\lambda=\lambda_{\ell} \alpha_{\ell}+\lambda_{s} f_{s}
 	\label{3.35}
@@ -600,20 +646,25 @@ Within a multiphase framework, a model reflects a jump in properties through the
 	\label{3.37}
 \end{equation}
 In the current case-scenario, $C_{p_{s}}=C_{p_{l}}$.
-\newline
-In the case of polynomial density variation it is settled in a similar manner. The polynomial is not thought to suit negative temperatures, and when the problem is within this range, the density should take ice's density.
+
+\noindent In the case of polynomial density variation it is settled in a similar manner. The polynomial is not thought to suit negative temperatures, and when the problem is within this range, the density should take ice's density.
 \begin{equation}
-	\rho(T)^{\prime}=\rho(T) \alpha_{\ell}+\rho_{s} f_{s}
+	\rho(T)^{\prime}=\rho(T) \alpha_{\ell}+\rho_{s} \alpha_{s}
 	\label{3.38}
 \end{equation}
-
+where $\alpha_{l}$ and $\alpha_{s}$ are liquid and solid volume fractions, respectively.		
 \subsection{Governing Equations}
-The solution of the system of equations given by the multiphase solver relies on a pressure-velocity coupling loop based on PISO (\textit{Pressure-Implicit with Splitting of Operators}). In order to give more stability to the solution and to simplify the boundary conditions, the pressure is treated by using a modified pressure:
-\newline
-Therefore, due to the commented before, the buoyancy terms appearing on the RHS of the momentum equation, are implemented on the pressure equation.
+
+\setlength{\parindent}{0.5cm} This section is devoted to describe the governing equations that the solidification process requires. Beside the presented conservation equation for the volume of fraction needed for the VOF method, Eq. \ref{VOFEQ},
+\begin{equation}
+	\frac{\partial \alpha_{\text {phase }}}{\partial t}+\frac{\partial\left(\alpha_{\text {phase }} u_{j}\right)}{\partial x_{j}}=0
+	\label{VOFEQ}
+\end{equation}
+in the next sections, momentum and energy equations are revisited.
 
 \subsubsection{Momentum Equation}
-The momentum equation has the same terms as per each one of the models. Here it is the equation recalled from previous section:
+
+\setlength{\parindent}{0.5cm} The momentum equation has the same terms as per each one of the models. Here it is the equation recalled from previous section:
 \begin{equation}
 	\label{3.39}
 	\begin{aligned}
@@ -621,32 +672,27 @@ The momentum equation has the same terms as per each one of the models. Here it 
 	&\quad=-\alpha_{i} \nabla p+\frac{\partial}{\partial x_{j}}\left(\mu \frac{\partial {u}_{i}}{\partial x_{j}}\right)+F_{\sigma i}+S_{u_{i}}
 	\end{aligned}
 \end{equation}
-\subsubsection{Energy Equation}
-On the other side, the energy equation slightly differs from one model to the other. As pointed out before, here there are recalled both energy equations.
 
-\subsection{Solver description. Control Loop}
-IcoReactingMultiphaseInterFoam solver is a multiphase, multicomponent incompressible solver based on volume of fluid method. The solver captures the interfaces and includes contact angle and surface tension effects for each phase. Moreover, this solver supports mass and heat transfer across phases.
+\subsubsection{Energy Equation}
+
+\setlength{\parindent}{0.5cm} On the other side, the energy equation slightly differs from one model to the other. As pointed out before, here there are recalled both energy equations.
 The energy equation for the Enthalpy-porosity model:
 \begin{equation}
-	\begin{aligned}
-	\frac{\partial (\rho C_{p} T)}{\partial t}+ \nabla \cdot\left(u_{j}\rho C_{p} T\right)+L\left[\frac{\partial (\rho \alpha_{l}\gamma_{l})}{\partial t}+ \frac{\partial (u_{j}\rho \alpha_{l}\gamma_{l})}{\partial x_{j}}\right]=\nabla \cdot\left(k_{i} \nabla T_{i}\right)
-	\end{aligned}
-	\label{3.40}
+\begin{aligned}
+\frac{\partial (\rho C_{p} T)}{\partial t}+ \nabla \cdot\left(u_{j}\rho C_{p} T\right)+L\left[\frac{\partial (\rho \alpha_{l}\gamma_{l})}{\partial t}+ \frac{\partial (u_{j}\rho \alpha_{l}\gamma_{l})}{\partial x_{j}}\right]=\nabla \cdot\left(k_{i} \nabla T_{i}\right)
+\end{aligned}
+\label{3.40}
 \end{equation}
 The energy equation for the Lee model in conjunction with the nucleation theory:
 \begin{equation}
-	\label{3.41}
-	\frac{\partial (\rho C_{p} T)}{\partial t}+\nabla \cdot\left(u_{j}\rho C_{p} T\right)=\nabla \cdot\left(k_{i} \nabla T_{i}\right)+S_{H_{i}}
+\label{3.41}
+\frac{\partial (\rho C_{p} T)}{\partial t}+\nabla \cdot\left(u_{j}\rho C_{p} T\right)=\nabla \cdot\left(k_{i} \nabla T_{i}\right)+S_{H_{i}}
 \end{equation}
 
-\subsection{Phase models}
-The solver allows for the use of three phase model types:
-\begin{itemize}
-	\item \textbf{pureStaticSolidPhaseModel:} For pure static phase, like a solid.
-	\item \textbf{pureMovingPhaseModel:} For pure moving phase, like a fluid.
-	\item \textbf{multiComponentMovingPhaseModel:} For multi-component moving phase, like a multi-component fluid.
-\end{itemize}
-In the current case-scenario, the \textit{pureStaticSolidPhaseModel} is selected for the solid phase and the \textit{pureMovingPhaseModel} is used for the liquid phase. 
+\subsection{Solver description. Control Loop}
+
+\setlength{\parindent}{0.5cm} IcoReactingMultiphaseInterFoam solver is a multiphase, multicomponent incompressible solver based on volume of fluid method. The solver captures the interfaces and includes contact angle and surface tension effects for each phase. Moreover, this solver supports mass and heat transfer across phases.
+
 \subsection{Mass transfer models}
 For each pair of phases, two mass transfer models might be used:
 \begin{itemize}
@@ -656,43 +702,38 @@ For each pair of phases, two mass transfer models might be used:
 In this thesis, only the Lee model will be considered for further explanation.
 
 
-
-
-
-
-
-
 \subsection{Code implementations}
-Within the entrophy-porosity model, the source term belonging to the calculation of the latent heat is added within the OpenFOAM framework. The energy equation of the solver shown in [ref].
+
+\setlength{\parindent}{0.5cm} Within the entrophy-porosity model, the source term belonging to the calculation of the latent heat is added within the OpenFOAM framework. The energy equation of the solver shown in Eq. \ref{3.41} is thereby implemented in Fig. \ref{3.8fig}
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.6\linewidth]{TEqn.png}\hfill	
 	\caption{Energy equation of IcoReactingMultiphaseInterFoam.}
 	\label{3.8fig}
 \end{figure}
-In the RHS of the equation, the solver calls the library \textit{mySolidificationMeltingSource} that calculates the latent heat source term as it appears in the Energy equation shown below.
+In the term belonging to the RHS of the equation, the solver calls the library \textit{mySolidificationMeltingSource} that calculates the latent heat source term as it appears in the figure \ref{3.9fig}:
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.8\linewidth]{solidificationMeltingSource.png}\hfill	
+	\includegraphics[width=0.8\linewidth]{solidificationAlpha.png}\hfill	
 	\caption{Latent heat source term present in mySolidificationMeltingSource library.}
 	\label{3.9fig}
 \end{figure}
-This library is adapted to be used in this solver. It exists in the context of being used for other solvers. Here, the alpha variable showing up in the calculation is obtained through a linear expression that gives the amount of energy contained in the fluid cell above the melting point. This is divided by the latent heat to obtain the liquid fraction. Then, this fraction is constained between 0 and 1. 
-\newline
-The latent heat source term is afterwards weighted by the volume fraction calculated by means of the transport equation in the context of the volume of fluid method as it appears in Richter et al. \cite{richter_turnow_kornev_hassel_2016}.
-\newline
+Here, the alpha variable showing up in the calculation is obtained through a linear expression that gives the amount of energy contained in the fluid cell above the melting point. This is divided by the latent heat to obtain the liquid fraction. Then, this fraction is constained between 0 and 1. Further details on the code can be found in \ref{Enthalpy-porosity library}.
 
-The \textbf{rhoCpPhi} term, which is called in this library, is created in \textit{createFields.H} as a variable field so that it can be called from everywhere within the code.
+The latent heat source term is afterwards weighted by the volume fraction calculated by means of the transport equation in the context of the volume of fluid method as it appears in Richter et al. \cite{richter_turnow_kornev_hassel_2016}.
+
+The \textbf{rhoCpPhiVoF} term, which is called in this library, is created in \textit{createFields.H} as a variable field so that it can be called from everywhere within the code.
+\clearpage
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.6\linewidth]{rhocpphicreate.png}\hfill	
+	\includegraphics[width=0.4\linewidth]{rhocpphicreate.png}\hfill	
 	\caption{\textbf{rhoCpPhi} field in \textit{createFields.H}}
 	\label{3.10fig}
 \end{figure}
  
-The implemented library can be found in the Appendix \ref{AppendixA}. 
+\noindent The implemented library can be found in the Appendix \ref{AppendixA}, section \ref{Enthalpy-porosity library}. 
 
-The Lee model is already implemented in OpenFOAM. However, there is a parameter, \textit{C}, devoted to act as a condensation rate. This is referred as an empirical coefficient used to speed-up or slow down the mass and heat transfer. Therefore, in favor of tunning this parameter in accordance with the characteristic behavior of the water when it freezes, the \textit{Classical Nucleation theory} is followed.
+\noindent On the core of the other model, the basis of the Lee model is already implemented in OpenFOAM. However, there is a parameter, \textit{C}, devoted to act as a condensation rate. This is referred as an empirical coefficient used to speed-up or slow down the mass and heat transfer. The physics behind are unknown for this solver, therefore, in favor of tunning this parameter in accordance with the characteristic behavior of the water when it freezes, the \textit{Classical Nucleation theory} is followed.
 \newline
 \begin{figure}[h!]
 	\centering
@@ -700,12 +741,15 @@ The Lee model is already implemented in OpenFOAM. However, there is a parameter,
 	\caption{Function used to ask for the required user inputs.}
 	\label{3.11fig}
 \end{figure}
-In the function shown above, all of the parameters concerning the formulas required to calculate the nucleation rate of the water are user-defined parameters. In the Appendix \ref{AppendixA}, the code related with the Lee model using this theory can be found.
+\newline
+In the function shown above, all of the parameters concerning the formulas required to calculate the nucleation rate of the water are user-defined parameters except for the \textbf{cellVolume} which is an implicit function that calculates the volume per each cell. In the Appendix \ref{AppendixA}, the code related with the Lee model using this theory can be found.
+
 \subsection{Case Setup}
 \subsubsection*{Boundary conditions}
 
 For the squared cavity:
 The initial conditions for the velocity and temperature fields are inherited from the last timestep of the natural convection case.
+
 \begin{table}[h!]
 	\begin{tabular}{@{}lllll@{}}
 		\toprule[1pt]
@@ -719,7 +763,9 @@ The initial conditions for the velocity and temperature fields are inherited fro
 	\caption{Boundary conditions for natural convection case.}	
 	\label{3.8tab}
 \end{table}
-frontAndBack boundary is set to \textit{empty} to define a 2-dimensional case-scenario. 
+
+\noindent frontAndBack boundary is set to \textit{empty} to define a 2-dimensional case-scenario. 
+
 For the cylinder:
 \begin{table}[h!]
 	\begin{tabular}{@{}lllll@{}}
@@ -733,9 +779,11 @@ For the cylinder:
 	\caption{Boundary conditions for natural convection case.}	
 	\label{3.9tab}
 \end{table}
-As in the previous geometry, there is an empty boundary called frontAndBack to define a planar case.
-\newline
-The thermophysical properties and solver parameters defined below are setted up for both geometries.
+
+\noindent As in the previous geometry, there is an empty boundary called frontAndBack to define a planar case.
+
+\noindent The thermophysical properties and solver parameters defined below are setted up for both geometries.
+\clearpage
 \subsubsection*{Thermophysical properties}
 \begin{table}[h!]
 	\begin{tabular}{@{}lllll@{}}
@@ -760,7 +808,7 @@ The thermophysical properties and solver parameters defined below are setted up 
 	\caption{Water properties for natural convection.}	
 	\label{3.10tab}
 \end{table}
-
+In table \ref{3.11tab} are detailed the parameters used in the implemented nucleation library for the Lee model.
 \begin{table}[h!]
 	\begin{tabular}{@{}lllll@{}}
 		\toprule[1pt]
@@ -780,24 +828,8 @@ The thermophysical properties and solver parameters defined below are setted up 
 The solver parameters used for the discretization of the different terms in the equations are pointed out next. 
 
 \subsubsection*{Solver parameters}
-\begin{table}[h!]
-\begin{adjustbox}{width=1\textwidth}
-	\small	
-	\begin{tabular}{@{}lllll@{}}
-		\toprule[1pt]
-		\textbf{Modeling Term} & \textbf{Keyword} & \textbf{Scheme} & \textbf{Remarks} &  \\ \midrule[2pt]
-		Time derivatives & ddtSchemes    &  Euler  & First order, bounded, implicit \\
-		Divergence term    & divSchemes   &    & Second order, unbounded \\
-		Gradient term    & gradSchemes    &  Gauss linear  & Second order, unbounded \\
-		Laplacian term   &  laplacianSchemes    &  Gauss linear orthogonal  &  \\		 
-		Grad. normal to cell face & snGradSchemes    &  orthogonal  &  \\ 
-		Point to point interpolation&    			   interpolationSchemes    & linear   & Central differencing \\ \bottomrule[1pt]		
-	\end{tabular}
-\end{adjustbox}
-	\centering
-	\caption{Discretization schemes.}	
-	\label{3.12tab}
-\end{table}
+So as to obtain a minimum expected accuracy during the calculation, in tables \ref{3.13tab} are the chosen parameters for the equation solvers.
+\clearpage
 \begin{table}[h!]
 \begin{adjustbox}{width=1\textwidth}
 	\small		
@@ -816,25 +848,9 @@ The solver parameters used for the discretization of the different terms in the 
 	\caption{Solvers for the discretised equations.}	
 	\label{3.13tab}
 \end{table}
-\begin{table}[h!]
-	\begin{tabular}{@{}lllll@{}}
-		\toprule[1pt]
-		\textbf{Parameter} & \textbf{Value} \\ \midrule[2pt]
-		nAlphaCorr & 1 &   \\
-		nAlphaSubCycles & 2 &   \\
-		cAlpha & 0 &   \\
-		momentumPredictor &  no     \\		 
-		nOuterCorrectors &  1    \\ 
-		nNonOrthogonalCorrectors & 0     \\ 		
-		nCorrectors &  	3  \\ \bottomrule[1pt]		
-	\end{tabular}
-	\centering
-	\caption{Parameters for the discretised equations.}	
-	\label{3.14tab}
-\end{table}
 
 \subsection{Validation of Results and Conclusions}
-The validation of the phase change problem is achieved by different methodologies. First, the enthalpy-porosity method is compared with available data found in the thesis of \cite{bourdillon_2016} and \cite{kowalewski_rebow_1999}. 
+\setlength{\parindent}{0.5cm} The validation of the phase change problem is achieved by different methodologies. First, the enthalpy-porosity method is compared with available data found in the doctoral thesis of Borudillon \cite{bourdillon_2016} and the experimental data of Kowalewski et al. \cite{kowalewski_rebow_1999}. 
 \begin{table}[h!]
 	\begin{tabular}{@{}b{2cm}ccc@{}}
 		\toprule[1pt]
@@ -850,7 +866,7 @@ The validation of the phase change problem is achieved by different methodologie
 	\caption{Numerical results of temperature distributions for Enthalpy-porosity and Lee-CNT models at \textit{t = 100, 200, 300s}.}	
 	\label{3.15tab}
 \end{table}
-
+\clearpage
 \begin{table}[h!]
 	\begin{tabular}{@{}b{2cm}ccc@{}}
 		\toprule[1pt]
@@ -866,7 +882,7 @@ The validation of the phase change problem is achieved by different methodologie
 	\caption{Numerical results of velocity distributions for Enthalpy-porosity and Lee-CNT models at \textit{t = 100, 200, 300s}.}	
 	\label{3.16tab}
 \end{table}
-
+\clearpage
 \begin{table}[h!]
 	\begin{tabular}{@{}b{2cm}ccc@{}}
 		\toprule[1pt]
@@ -882,34 +898,7 @@ The validation of the phase change problem is achieved by different methodologie
 	\caption{Numerical results of fluid fraction distributions for Enthalpy-porosity and Lee-CNT models at \textit{t = 100, 200, 300s}.}	
 	\label{3.17tab}
 \end{table}
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=.7\linewidth]{temperature_time_center.png}	
-	\label{3.12fig}
-	\caption{Numerical results of temperature profiles in center position of cylindrical geometry.}
-\end{figure} 
-\begin{table}[h!]
-	\begin{tabular}{@{}b{2cm}lll@{}}
-		\toprule[1pt]
-		&\multicolumn{1}{c}{\textbf{Enthalpy-porosity}} & 
- 		\multicolumn{1}{c}{\textbf{Lee model-CNT}} \\ \midrule[2pt]
-		\vbox to 3\baselineskip{\textbf{T=100s}}&\includegraphics[width=.25\linewidth]{T_100s_EP.png} & \includegraphics[width=.25\linewidth]{T_100s_CNT.png} &
-		\includegraphics[width=.0658\linewidth]{T_scale_100s_EP.png} \\
-		\vbox to 3\baselineskip{\textbf{T=300s}}&\includegraphics[width=.25\linewidth]{T_300s_EP.png} &
-		\includegraphics[width=.25\linewidth]{T_300s_CNT.png} & 
-		\includegraphics[width=.0658\linewidth]{T_scale_300s_EP.png} \\
-		\vbox to 3\baselineskip{\textbf{T=100s}}& \includegraphics[width=.25\linewidth]{U_100s_EP.png} & \includegraphics[width=.25\linewidth]{U_100s_CNT.png} &  \includegraphics[width=.0558\linewidth]{U_scale_100s_EP.png} \\
-		\vbox to 3\baselineskip{\textbf{T=300s}}& \includegraphics[width=.25\linewidth]{U_300s_EP.png} & \includegraphics[width=.25\linewidth]{U_300s_CNT.png} &  \includegraphics[width=.0558\linewidth]{U_scale_300s_EP.png} \\
-		\vbox to 3\baselineskip{\textbf{T=100s}}&\includegraphics[width=.25\linewidth]{alpha_100s_EP.png} & \includegraphics[width=.25\linewidth]{alpha_100s_CNT.png} &  \includegraphics[width=.0558\linewidth]{alpha_scale_cavity.png} \\
-		\vbox to 3\baselineskip{\textbf{T=300s}}&\includegraphics[width=.25\linewidth]{alpha_300s_EP.png} & \includegraphics[width=.25\linewidth]{alpha_300s_CNT.png} &  \includegraphics[width=.0558\linewidth]{alpha_scale_cavity.png} \\ \bottomrule[1pt]		
-	\end{tabular}
-	\centering
-	\caption{Numerical results of Enthalpy-porosity and Lee-CNT models at \textit{t = 100s} and \textit{300s} in a cylinder.}	
-	\label{3.18tab}
-\end{table}
-
-
-For the Lee model based on the \textit{Classical Nucleation Theory}, the results are validated against the analytical solution given by the Neumann solutions of the Stefan problem.
+\clearpage
 \begin{figure}[h!]
 	\begin{subfigure}{0.50\textwidth}
 		\centering
@@ -942,22 +931,88 @@ For the Lee model based on the \textit{Classical Nucleation Theory}, the results
 	\label{3.13fig}
 \end{figure}
 \clearpage
-\subsubsection{Stefan Problem}
-The Stefan problem, is an initial boundary value problem of a parabolic differential equation with discontinuous coefficients on the phase transitions interfaces [\cite{vasilyev_vasilyeva_2020}]. The analytical solution to the classical Stefan problem exists in a limited range of idealized situations. Some of them involve semi-infinite or infinite regions with simple and boundary conditions. Based on the work of \cite{vasilyev_vasilyeva_2020} and \cite{zhao_zhao_xu_2018}, a two-region solidification process in a semi-infinite region is used to study the characteristics of the VOF-Lee model based on the Nucleation Theory.
-\subsubsection*{One-dimensional problem}
-In seek of simplification, and recalling the 1D problem as shown in the figure:
+\begin{table}[h!]
+	\begin{tabular}{@{}b{2cm}lll@{}}
+		\toprule[1pt]
+		&\multicolumn{1}{c}{\textbf{Enthalpy-porosity}} & 
+ 		\multicolumn{1}{c}{\textbf{Lee model-CNT}} \\ \midrule[2pt]
+		\vbox to 3\baselineskip{\textbf{T=100s}}&\includegraphics[width=.25\linewidth]{T_100s_EP.png} & \includegraphics[width=.25\linewidth]{T_100s_CNT.png} &
+		\includegraphics[width=.0658\linewidth]{T_scale_100s_EP.png} \\
+		\vbox to 3\baselineskip{\textbf{T=300s}}&\includegraphics[width=.25\linewidth]{T_300s_EP.png} &
+		\includegraphics[width=.25\linewidth]{T_300s_CNT.png} & 
+		\includegraphics[width=.0658\linewidth]{T_scale_300s_EP.png} \\
+		\vbox to 3\baselineskip{\textbf{T=100s}}& \includegraphics[width=.25\linewidth]{U_100s_EP.png} & \includegraphics[width=.25\linewidth]{U_100s_CNT.png} &  \includegraphics[width=.0558\linewidth]{U_scale_100s_EP.png} \\
+		\vbox to 3\baselineskip{\textbf{T=300s}}& \includegraphics[width=.25\linewidth]{U_300s_EP.png} & \includegraphics[width=.25\linewidth]{U_300s_CNT.png} &  \includegraphics[width=.0558\linewidth]{U_scale_300s_EP.png} \\
+		\vbox to 3\baselineskip{\textbf{T=100s}}&\includegraphics[width=.25\linewidth]{alpha_100s_EP.png} & \includegraphics[width=.25\linewidth]{alpha_100s_CNT.png} &  \includegraphics[width=.0558\linewidth]{alpha_scale_cavity.png} \\
+		\vbox to 3\baselineskip{\textbf{T=300s}}&\includegraphics[width=.25\linewidth]{alpha_300s_EP.png} & \includegraphics[width=.25\linewidth]{alpha_300s_CNT.png} &  \includegraphics[width=.0558\linewidth]{alpha_scale_cavity.png} \\ \bottomrule[1pt]		
+	\end{tabular}
+	\centering
+	\caption{Numerical results of Enthalpy-porosity and Lee-CNT models at \textit{t = 100s} and \textit{300s} in a cylinder.}	
+	\label{3.18tab}
+\end{table}
+\clearpage
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=.3\linewidth]{alpha_interface_CNT.png}	
+	\label{zoomInterface}
+	\caption{Gradient of the interface between liquid and solid phases for Lee-CNT model.}
+\end{figure} 
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=.7\linewidth]{temperature_time_center.png}	
+	\label{3.12fig}
+	\caption{Numerical results of temperature profiles in center position of cylindrical geometry.}
+\end{figure} 
 
-the initial conditions are expressed as:
+\noindent For the Lee model based on the \textit{Classical Nucleation Theory}, the results are compared against the analytical solution given by the Neumann solutions of the Stefan problem.
+
+\clearpage
+\subsubsection{Stefan Problem}
+
+\setlength{\parindent}{0.5cm} The Stefan problem, is an initial boundary value problem of a parabolic differential equation with discontinuous coefficients on the phase transitions interfaces. The analytical solution to the classical Stefan problem exists in a limited range of idealized situations.
+
+\noindent The governing equations for a general solid-liquid phase change problem are:
+
+\noindent The heat equation for the solid phase,
+\begin{equation}
+\rho_{s} c_{s} \frac{\partial T_{s}}{\partial t}=\nabla \cdot\left(k_{s} \nabla T_{s}\right) \quad \text { on } \Omega_{s}
+\label{3.42}
+\end{equation}
+for the liquid phase, advective term is also considered:
+\begin{equation}
+\rho_{l} c_{l}\left(\frac{\partial T_{l}}{\partial t}+\mathbf{u} \cdot \nabla T_{l}\right)=\nabla \cdot\left(k_{l} \nabla T_{l}\right) \quad \text { on } \Omega_{l}
+\label{3.43}
+\end{equation}
+At the interface, the Stefan condition is satisfied and then,
+\begin{equation}
+\rho_{s} L(t) V_{n}=\left.k_{s} \nabla T\right|_{\Gamma}-\left.k_{l} \nabla T\right|_{\Gamma} \text { on } \Gamma
+\label{3.44}
+\end{equation}
+where $V_{n}$ is the normal velocity at the interface.
+\begin{equation}
+T=T_{\mathrm{m}} \quad \text { on } \Gamma
+\end{equation}
+\subsubsection*{One-dimensional problem}
+
+\setlength{\parindent}{0.5cm} In seek of simplification, and recalling the 1D problem as shown in the figure:
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=.4\linewidth]{stefan.png}	
+	\label{Stefanfig}
+	\caption{Schematic diagram of Stefan problem}
+\end{figure} 
+\newline
+the initial conditions are expressed as \cite{zhao_zhao_xu_2018}:
 \begin{equation}
 	u_{0}(x)=u_{0}, \quad t=0, \quad x \in[0, L],
-	\label{3.42}
+	\label{3.45}
 \end{equation}
 while the boundary conditions are the shown below:
 \begin{equation}
-	u(0, t)=-20ºC, \quad \frac{\partial u}{\partial x}(L, t)=0, \quad t>0
-	\label{3.43}
+	u(0, t)=-20^{\circ}C, \quad \frac{\partial u}{\partial x}(L, t)=0, \quad t>0
+	\label{3.46}
 \end{equation}
-
+In table \ref{3.19tab}, there are summarized the boundary conditions applied in the cavity geometry of previous cases.
 \begin{table}[h!]
 	\begin{tabular}{@{}lllll@{}}
 		\toprule[1pt]
@@ -971,23 +1026,24 @@ while the boundary conditions are the shown below:
 	\caption{Boundary conditions for Stefan problem.}	
 	\label{3.19tab}
 \end{table}
-The internal field is initiallized at 283.15 ºC. The used thermophysical properties as well as the solver parameters are similar to the previous solidification cases.
+The internal field is initiallized at 283.15 K. The used thermophysical properties as well as the solver parameters are similar to the previous solidification cases.
 \newline
 The discontinuous exact solutions for the Stefan problem are:
 \begin{equation}
 	\begin{cases}T_{l}(x, t)=\frac{\operatorname{erfc}\left(\frac{x}{2 \sqrt{a_{1} t}}\right)}{\operatorname{erfc}\left(\lambda \sqrt{\frac{a_{\mathrm{s}}}{a_{1}}}\right)}\left(T_{\mathrm{m}}-T_{0}\right)+T_{0}, & x>\xi(t), \\ 
 	T_{\mathrm{s}}(x, t)=\frac{\operatorname{erf}\left(\frac{x}{2 \sqrt{a_{\mathrm{s}} t}}\right)}{\operatorname{erf \lambda }}\left(T_{\mathrm{m}}-T_{\mathrm{b}}\right)+T_{\mathrm{b}},& x \leq \xi(t)  .\end{cases}
-	\label{3.44}
+	\label{3.47}
 \end{equation}
 By using a phase change interface condition, a solution to the trascendental equation may be found:
 \begin{equation}
 	\frac{e^{-\lambda^{2}}}{\operatorname{erf}(\lambda)}+\frac{k_{\mathrm{l}}}{k_{\mathrm{s}}} \sqrt{\frac{a_{\mathrm{s}}}{a_{1}}} \frac{T_{\mathrm{m}}-T_{0}}{T_{\mathrm{m}}-T_{\mathrm{b}}} \frac{e^{-\frac{a_{\mathrm{s}}}{a_{1}} \lambda^{2}}}{\operatorname{erfc}\left(\lambda \sqrt{\frac{a_{\mathrm{s}}}{a_{1}}}\right)}=\frac{\lambda L \sqrt{\pi}}{c_{\mathrm{ps}}\left(T_{\mathrm{m}}-T_{\mathrm{b}}\right)}
-	\label{3.45}
+	\label{3.48}
 \end{equation}
-The secant method is used as the iterative scheme to find the root of the given function with $tol<1e-12$. The root of $\gamma$ is 0.2299545377262345.
-\newline
+where ${\operatorname{erf(x)}}$ is the complementary error function expressed as $1-{\operatorname{erf(x)}}$.
+	
+\noindent The secant method is used as the iterative scheme to find the root of the given function with $tol<1e-12$. The root of $\lambda$ is 0.2299545377262345.
 
-In the following figures, the method is tested against the exact solutions of the Stefan problem. 
+\noindent In the following figures, the method is tested against the exact solutions of the Stefan problem. 
 
 \begin{figure}[h!]
 	\begin{subfigure}{0.50\textwidth}
@@ -1005,29 +1061,23 @@ In the following figures, the method is tested against the exact solutions of th
 	\label{3.15fig}
 \end{figure}
 
-
-
-The first key thing to point out is that the Stefan problem does not take into consideration the interface tensions and contact angles. The solution considers a planar interface so that the curvature $\kappa$ vanishes and the effect of $\kappa$$\sigma$ on the interface is ignored. Another point to remark is the effect of the Stefan number properly. According to ...
-
-The kinematic undercooling...
-
 \subsubsection{Interface height}
 
-The theoretical solution for the evolution of the interface is:
+\setlength{\parindent}{0.5cm} The theoretical solution for the evolution of the interface is:
 \begin{equation}
 	X(t)=2 \lambda \sqrt{a_{\mathrm{s}} t}
-	\label{3.46}
+	\label{3.49}
 \end{equation}
-Alongside, a post-process function to calculate the tracking of position of the interface is done. To do so, the values of the liquid fraction per timestep are first obtained. Thus, these values for each time are read to find the position in which alpha is 0.5. The python code is attached in Appendix \ref{AppendixA}.
+Alongside, a post-process function to calculate the tracking of position of the interface is done. To do so, the values of the liquid fraction per timestep are first obtained. Thus, these values for each time are read to find the position in which alpha is 0.5. The python code is attached in Appendix \ref{AppendixA}, section \ref{Python code for Stefan Problem}.
 
 \begin{table}[h!]
 	\begin{tabular}{@{}lllll@{}}
 		\toprule[1pt]
-		\multicolumn{1}{c}{\textbf{Enthalpy-porosity}} \\ \midrule[2pt] 
+		\multicolumn{1}{c}{\textbf{Lee-CNT model}} \\ \midrule[2pt] 
 		\includegraphics[width=.5\linewidth]{alpha_6s_EP.png} & \includegraphics[width=.13\linewidth]{alpha_scale_EP_6s.png} \\ \bottomrule[1pt]		
 	\end{tabular}
 	\centering
-	\caption{Numerical results of alpha fraction for Enthalpy-porosity model at \textit{t = 6s}.}	
+	\caption{Numerical results of interface evolution for Lee-CNT model at \textit{t = 6s}.}	
 	\label{3.20tab}
 \end{table}
 \begin{figure}[h!]
@@ -1042,3 +1092,26 @@ Alongside, a post-process function to calculate the tracking of position of the 
 	\caption{Numerical solutions of the Lee model-CNT vs Neumann analytical solutions for interface position.}
 \label{3.16fig}
 \end{figure}
+
+\subsubsection{Conclusions on the Stefan problem}
+From the figures \ref{3.16figa} and \ref{3.15figa} it is clearly visible that the Neumann solutions of the Stefan problem for the temperature distribution and the interface position do not match the numerical solution obtained with the Lee model undergoing nucleation characteristics. As depicted, the behavior of the analytical solution is faster than the numerical one. 
+ 
+\noindent The explanation resides behind the theory that macroscale models for phase-change generally take the assumptions of constant thermophysical properties, constant latent heat, $L(t) = L_{m}$ and constant melting/solidification temperatures within phases. 
+
+\noindent Alternatively, in this thesis it is proposed a model (Lee model) in which the $L(t)$ is not constant but dependent of the product of the net mass transfer and the difference of enthalpy of fusion between phases as indicated in Eq. \ref{3.50}. It is also remarkable that density is not constant for the fluid phase due to the implementation of the new equation of state in the solver. Thus, it adds more variability to the latent heat calculation.
+
+\noindent Therefore, as the evolution of the latent heat balances the temperature distribution (it is implicit in the energy equation), so it does the development of the interface position.
+
+\begin{equation}
+\label{3.50}
+L = \frac{d m_{l s}}{d t}\Delta T\Delta H_{f}=C_{f} \rho_{l} \alpha_{l}\left(\frac{T_{s a t}-T_{l}}{T_{s a t}}\right)\left(T_{sat}-T_{l}\right)(H_{l}-H_{s})
+\end{equation}
+
+\noindent In the nanoscale, the surface tension in the interface would affect the solution as well. The melting temperature could not be constant anymore since at the interface the condition that $T = T_{m}$ is not achieved. Leaving, at the interface $\Gamma$:
+\begin{equation}
+s\left(T-T_{\mathrm{m}}\right)=-\sigma\left(\kappa+\alpha V_{\mathrm{n}}\right) \quad \text { on } \Gamma
+\label{3.51}
+\end{equation}
+as pointed out by Zhao et al. \cite{zhao_zhao_xu_2018}. Where $\kappa$ is the interface curvature,  $\alpha$	is a kinetic coefficient, a proportional constant of the velocity of the interface and the kinetic undercooling, $S$, the entropy density difference between phases and $\sigma$ the surface tension. Being, the kinetic undercooling, the state of equilibrium of the liquid submitted to temperatures under melting point without undergoing phase transition. 
+
+\noindent This means that as the undercooling velocity (velocity of nuclei formation) increases, so it does this coefficient. Therefore, the kinetic coefficient jointly with the surface tensions are also the parameters to account for when modeling phase-changes in a nanoscale.
