@@ -31,7 +31,7 @@ The energy equation as listed in the native solver is:
 \end{equation}
 where \textit{\textbf{u}} is the velocity vector, \textit{h} is the enthalpy, \textit{K = 0.5*\textbf{u $\cdot$ u}} is the kinetic energy per unit mass, \textit{$p_{rgh}=p-\rho\textbf{g}\cdot\textbf{x}$} the modified pressure so that the momentum equation accounts for the buoyancy terms, and the remaining thermophysical properties, $\mu$, $\lambda$, $C_p$ being the kinematic viscosity, the thermal conductivity and the specific heat accordingly. The energy equation does not include radiation, heat generation term and chemical reaction.
 
-Therefore, the challenge of this part is to couple the multiphase solver (\textit{IcoReactingMultiPhaseInterFoam}) that allows for the solving of a fluid undergoing phase-change with a solid region.  
+\noindent Therefore, the challenge of this part is to couple the multiphase solver (\textit{IcoReactingMultiPhaseInterFoam}) that allows for the solving of a fluid undergoing phase-change with a solid region.  
 \subsection{Case description}
 
 \setlength{\parindent}{0.5cm} Within this new case, a mesh for the solid region is required. To do so, a second structured mesh region is implemented within the framework of a provided script which builts cylindrical computational meshes in OpenFOAM format. The script is attached in Appendix \ref{AppendixB}.
@@ -222,8 +222,8 @@ For the solid region, the thermophysical properties are chosen as for the polyet
 	\caption{Polyethylene properties for solind region definition.}	
 	\label{4.3tab}
 \end{table}
-
-\subsection{Validation of Results and Conclusions}
+\clearpage
+\subsection{Results and Conclusions}
 \begin{table}[h!]
 	\begin{tabular}{@{}llllll@{}}
 		\toprule[1pt]

@@ -144,13 +144,9 @@ Therefore, a complete discretization of the previous terms is needed to solve th
 
 \begin{figure}[h!]
 	\centering
-	\begin{subfigure}{\linewidth}
-		\includegraphics[width=.55\linewidth]{CF_GEOM.png}\hfill
-		\includegraphics[width=.35\linewidth]{mesh_cavity.png}	
-		\label{BBPF_NCMF}
-	\end{subfigure}
+	\includegraphics[width=.35\linewidth]{mesh_cavity.png}	
+	\caption{Zoom of the computational mesh for the cavity.}
 	\label{3.2fig}
-	\caption{Geometric characteristics for the cavity.}
 \end{figure} 
 The mesh is structured and consists of 1971212 nodes.
 
@@ -506,35 +502,56 @@ Table \ref{3.6tab} presents the parameters used for the inner and outter loops p
 \end{table}
 \clearpage
 \subsection{Validation of Results and Conclusions}
-
+For comparison purposes and so as to know the state of the art in the natural convection phenomena, a first analysis is performed using the convection solver provided by OpenFOAM. This solver is BuoyantBoussinesqPimpleFoam and it covers both laminar and turbulent unsteady heat transfer for single phase fluids using the Boussinesq approximation. 
 \begin{figure}[h!]
 	\centering
 	\begin{subfigure}{\linewidth}
 	\includegraphics[width=.55\linewidth]{BBPF_T_1500s.png}\hfill
 	\includegraphics[width=.55\linewidth]{CF_T_1500s_comp.png}	
 	\caption{Temperature magnitude comparison at t = 1500s. Left: BuoyantBoussinesqPimpleFoam. Right: NCMF}
-	\label{BBPF_NCMF}
+	\label{3.5figa}
 	\end{subfigure}\par\medskip
 	\begin{subfigure}{\linewidth}
 	\includegraphics[width=.55\linewidth]{BBPF_U_1500s.png}\hfill
 	\includegraphics[width=.55\linewidth]{CF_U_1500s_comp.png}	
 	\caption{Velocity magnitude comparison at t = 1500s. Left: BuoyantBoussinesqPimpleFoam. Right: NCMF}
+	\label{3.5figb}
 	\end{subfigure}\par\medskip
+	\caption{Comparison between BuoyantBoussinesqPimpleFoam and mBBPF*}
 	\label{3.5fig}
-	\caption{Comparison between BuoyantBoussinesqPimpleFoam and NCMF*}
-\end{figure} 
+\end{figure}
+\newline 
 BBPF*: BuoyantBoussinesqPimpleFoam solver.
-NCMF**: Natural convection modified solver.
+mBBPF**: myBuoyantBoussinesqPimpleFoam, natural convection modified solver.
 
-In order to compare consistently the obtained results with those of the literature, the following dimensionless values are pointed out:
+\noindent The gravity terms of the temperature and velocity magnitude distributions shown in Fig. \ref{3.5fig} (left) are as expressed in Equation \ref{3.8}, $(S_{b} = g\cdot\rho_{r}[1-\beta(T-T_{r})])$. In addition, the equation of state used to describe the behavior of the liquid density variation is linear. On the other hand, the proposed gravity terms proposed by \cite{bourdillon_2016} and described in Equation \ref{3.9}, $(S_{b} = g\cdot[\rho_{r}-\rho(T)])$, besides of the polynomial density variation have depicted a non-linear pattern for the temperature and velocity magnitude distibutions. It is seen that small changes in the density, $0.171925 kg.m^-3$ in this case, Fig. \ref{rhodifffig}, may induce different patterns within the flow. 
+\clearpage
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=.55\linewidth]{rhodiff_CF.png}\hfill
+	\caption{Density differences between linear and polynomial expressions.}
+	\label{rhodifffig}
+\end{figure} 
+
+\noindent The fact of achieving the description of the inversion point in the temperature distribution due to the density variation of the density will influence the growth of the ice layer in the phase change simulations.
+
+\noindent Therefore, in order to compare consistently the obtained results with those of the literature, the following dimensionless values are pointed out:
+
+\noindent Dimensionless values of temperature are described as:
 \begin{equation}
 	\tilde{T}=\frac{T-T_{\text {cold }}}{T_{\text {hot }}-T_{\text {cold }}}=\frac{T-273}{10}
 	\label{3.29}
 \end{equation}
+Horizontal and vertical dimensionless positions along the x and y mid-planes:
 \begin{equation}
 	\tilde{x}=\frac{x}{\ell}=\frac{x}{38 \times 10^{-3}}
 	\label{3.30}
 \end{equation}
+\begin{equation}
+\tilde{y}=\frac{y}{\ell}=\frac{y}{38 \times 10^{-3}}
+\label{3.34}
+\end{equation}
+Transversal and axial dimensionless velocities:
 \begin{equation}
 	\tilde{v}=\frac{v \ell}{\gamma}=\frac{v 38 \times 10^{-3}}{1.435 \times 10^{-7}}
 	\label{3.31}
@@ -543,14 +560,11 @@ In order to compare consistently the obtained results with those of the literatu
 	\tilde{u}=\frac{u \ell}{\gamma}=\frac{u 38 \times 10^{-3}}{1.435 \times 10^{-7}}
 	\label{3.32}
 \end{equation}
-\begin{equation}
-	\tilde{t}=\frac{t \gamma}{\ell^{2}}=\frac{t \times 1.435 \times 10^{-7}}{1.444 \times 10^{-6}}
-	\label{3.33}
-\end{equation}
-\begin{equation}
-	\tilde{y}=\frac{y}{\ell}=\frac{y}{38 \times 10^{-3}}
-	\label{3.34}
-\end{equation}
+
+\clearpage
+\noindent The presented dimensionless quantities obtained with the gravity related terms implemented in the convection solver are compared against the literature. Bourdillon et al. \cite{bourdillon_2016} used as a reference and guideline, worked out a solution using OpenFOAM and Kowalewski et al. \cite{kowalewski_rebow_1999} who in 1999 performed similar calculations using Fluent.
+
+\noindent The results obtained with myBuoyantBoussinesqPimpleFoam, the natural convection modified solver, show acceptable agreement with the results found in the literature. The highest local differences are found in the V-velocity along the vertical direction, Fig. \ref{3.6ffig}. The relative error of the proposed numerical solution with respect to the one shown in Kowaleswki et al. remains below 16\%. Moreover, as it is observable, the temperature dimensionless, Fig. \ref{3.6bfig}, distribution and the U-velocity, Fig. \ref{3.6dfig}, plotted along the vertical mid-plane seem to be in short disaccordance with respect to the literature's solutions. This differences might be due to a small shift of the dimensionless magnitudes along that direction. However, in overall, the results nearly overlap the ones found in the bibliography.
 \clearpage
 \begin{figure}[h!]
 	\begin{subfigure}{0.50\textwidth}
@@ -583,6 +597,8 @@ In order to compare consistently the obtained results with those of the literatu
 	\caption{Adimensional magnitudes comparison.}
 	\label{3.6fig}
 \end{figure} 
+
+In the table \ref{3.7tab}, there are shown the temperature, velocity magnitude and density distributions at different time steps. From these images, it can be understood the physical phenomena arising in the natural convection of the problem proposed. At time 100s, the left wall, initiallized at 283K, induces the propagation of the hottest flow through the volume of control and towards the right wall which is initially at 273K. Through time, it is observable how the coldest flow and thereby the less dense, is driven to the bottom region of the cavity while the denser one is redirected over the top. Another remarkable fact is that two flows are originated due to this density inversion point. One emerged near the left wall which moves clockwise and the other one arisen in the mid-bottom part of the right wall which moves on the opposite direction, thus, counter clockwise. This phenomena exhibits by the fact that the density variation is characterized by a polynomial function and it is of importance since this behavior has an impact in the ice layer formation.
 \begin{table}[h!]
 	\begin{tabular}{@{}lllll@{}}
 		\toprule[1pt]
@@ -593,6 +609,20 @@ In order to compare consistently the obtained results with those of the literatu
 	\end{tabular}
 	\centering
 	\caption{Numerical results of Natural convection modified solver between \textit{t = 100s} and \textit{1500s}.}	
+	\label{3.7tab}
+\end{table}
+\newline
+\noindent In the table shown below are compared the temperature, velocity magnitudes and density distributions for \textit{t = 750s} and \textit{1500s}. As it is observable, between these time steps, the magnitudes do not change substantially and, therefore, one could say that a quasy-steady state is obtained. The solution at \textit{1500s} is used as initial condition for the process of solidification. In the next chapter is commented the concept behind this assumption.
+\begin{table}[h!]
+	\begin{tabular}{@{}lllll@{}}
+		\toprule[1pt]
+		\multicolumn{1}{c}{\textbf{t = 750s}} & \multicolumn{1}{c}{\textbf{t = 1500s}} \\ \midrule[2pt] 
+		\includegraphics[width=.25\linewidth]{T_750s_CF.png} & \includegraphics[width=.25\linewidth]{CF_T_1500s.png} & \includegraphics[width=.0658\linewidth]{t.png} \\
+		\includegraphics[width=.25\linewidth]{U_750s_CF.png} &  \includegraphics[width=.25\linewidth]{CF_U_1500s.png} & \includegraphics[width=.0658\linewidth]{u.png} \\
+		\includegraphics[width=.25\linewidth]{rho_750s_CF.png} &  \includegraphics[width=.25\linewidth]{CF_rho_1500s.png} & \includegraphics[width=.0558\linewidth]{rho.png} \\ \bottomrule[1pt]		
+	\end{tabular}
+	\centering
+	\caption{Numerical results of Natural convection modified solver between \textit{t = 750s} and \textit{1500s}.}	
 	\label{3.7tab}
 \end{table}
 
@@ -714,7 +744,7 @@ In this thesis, only the Lee model will be considered for further explanation.
 In the term belonging to the RHS of the equation, the solver calls the library \textit{mySolidificationMeltingSource} that calculates the latent heat source term as it appears in the figure \ref{3.9fig}:
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.8\linewidth]{solidificationAlpha.png}\hfill	
+	\includegraphics[width=0.8\linewidth]{solidification_latent_heat.png}\hfill
 	\caption{Latent heat source term present in mySolidificationMeltingSource library.}
 	\label{3.9fig}
 \end{figure}
@@ -840,7 +870,7 @@ So as to obtain a minimum expected accuracy during the calculation, in tables \r
 		Momentum equation (U)& smoothSolver & symGaussSeidel  & 1e-06 \\
 		Volume fraction equation (alpha) & smoothSolver & symGaussSeidel  & 1e-8 \\
 		Species equation  (Y)   & smoothSolver   & symGaussSeidel &1e-09 \\		 
-		Energy equation (T)    &  PBiCG  &  DILU\\ 
+		Energy equation (T)    &  PBiCG  &  DILU
 		&  1e-08  \\ \bottomrule[1pt]		
 	\end{tabular}
 \end{adjustbox}
@@ -848,9 +878,74 @@ So as to obtain a minimum expected accuracy during the calculation, in tables \r
 	\caption{Solvers for the discretised equations.}	
 	\label{3.13tab}
 \end{table}
-
+\clearpage
 \subsection{Validation of Results and Conclusions}
-\setlength{\parindent}{0.5cm} The validation of the phase change problem is achieved by different methodologies. First, the enthalpy-porosity method is compared with available data found in the doctoral thesis of Borudillon \cite{bourdillon_2016} and the experimental data of Kowalewski et al. \cite{kowalewski_rebow_1999}. 
+\label{Convection-case}
+\setlength{\parindent}{0.5cm} The validation of the phase change problem is achieved by different methodologies. First, the enthalpy-porosity and Lee-CNT models are compared with available data found in the doctoral thesis of Borudillon \cite{bourdillon_2016} and the experimental data of Kowalewski et al. \cite{kowalewski_rebow_1999}. And later, the Lee-CNT model is tested against the classical Stefan problem.
+
+\noindent So as to understand the physical phenomena underlaying these plots, a first general explanation is given. 
+
+\noindent In figure \ref{3.13figa}, temperature distribution along x mid-plane shows a first sudden decrease whithin the initial position and $x < 0.2$ due to the existing temperature gradient between the left wall and the internal field temperature obtained from the quasi-steady solution in the natural convection solver. After that, nearly $0.1 \ge x \leq 0.2$, and induced by the upper clockwise recirculation, the temperature along this mid-plane and until $x \approx 0.6$, is submitted to an increase. From there on, the existence of two colliding and opposite recirculating flows induce a second decrease of the temperature which lasts until $x \approx 0.9$. Then, the influence of the proximity with the cold wall makes the temperature dimensionless to undergo a fast decrease.
+
+\noindent If one recalls now in the temperature distribution along the vertical mid-plane, Fig. \ref{3.13figb}, it is depicted how the temperature increases slowly at the bottom of the cavity $0 \ge y \leq 0.2$. This is mainly due to the gravity related terms which determine the buoyancy effects within the domain. Thereafter, when in the range of $0.2 \ge y \leq 0.4$ there is an increase speed-up by the effects of the recirculating flows colliding with each other. From $y \approx 0.4$ towards the top of the cavity, the recirculating flow induces a slowly increase in the temperature.
+
+\noindent Moving along the U-velocity dimensionless component, ,Fig. \ref{3.13figc}, a first oscillation is observed near the left wall at $x \approx 0.1$. Then, at $0.6 \ge x \leq 0.8$, it shows up a sudden decrease in the velocity magnitude due the clockwise direction that the upper flow exhibits as long as the ice layer formation advances in time. From $0.7 \ge x \leq 1$ the velocity component increases rapidly until it reaches a 0 constant value due to the appearence of the solid ice layer. 
+
+\noindent Describing the U-velocity profile along the vertical line, Fig. \ref{3.13figd}, one sees how the first negative peak in $0.2 \ge y \leq 0.3$ is highly influenced by the effect of the counter clockwise lower recirculating flow generated by the upper flow (rotating clockwise) when interacts with the ice layer advancing front. Moving up along the vertical line, the behavior of the velocity component tends to increase since it starts being influenced by the upper recirculating flow, in $0.3 \ge y \leq 0.9$, and until it reaches a 0 value induced by the adiabatic and the zero gradient velocity condition applied in top and bottom walls.
+
+\noindent Similarly, the V-velocity along the x mid-plane, Fig. \ref{3.13figc}, displays a peak near the left wall where the direction of the upper flow is clockwise. As one moves farther from the left wall, the velocity components are not constituted yet. Comparatively as with the U-velocity along the x mid-plane, the influence of the lower recirculating flow brings negative dimensionless velocity vectors in the vertical magnitudes. This is in the region where $0.6 \ge x \leq 0.7$. At $0.75 \ge x \leq 0.8$ the recirculating flows in this region slightly influences the increase of the velocity. From there on, the velocity gets reduced until it reaches a zero constant value due to the sink of velocity magnitude in the ice layer zone.
+
+\noindent Finally, the V-velocity plotted along the y mid-plane depicts a negative peak at $y \approx 0.3$. This is mainly influenced by the negative dimensionless velocity values arising from the recirculating flow taking place from the collision of the upper flow and the ice layer.
+
+\begin{table}[h!]
+	\begin{tabular}{@{}b{2cm}ccc@{}}
+		\toprule[1pt]
+		& 
+		\multicolumn{1}{c}{\textbf{Lee model-CNT}} & \\ \midrule[2pt]
+		\vbox to 3\baselineskip{\textbf{Temperature}}& \includegraphics[width=.25\linewidth]{t_x_streamlines.png} & \includegraphics[width=0.078\linewidth]{t_x_scale.png} \\		
+		\vbox to 3\baselineskip{\textbf{U-velocity}}&\includegraphics[width=.25\linewidth]{u_x_streamlines.png} & \includegraphics[width=0.078\linewidth]{u_x_scale.png}\\
+		\vbox to 3\baselineskip{\textbf{V-velocity}}& \includegraphics[width=.25\linewidth]{v_x_streamlines.png} & \includegraphics[width=0.078\linewidth]{v_x_scale.png} \\	 \bottomrule[1pt]		
+	\end{tabular}
+	\centering
+	\caption{Numerical results of dimensionless magnitudes for Lee-CNT model at \textit{t = 100s}.}	
+	\label{3.15tab}
+\end{table}
+
+
+\begin{figure}[h!]
+	\begin{subfigure}{0.50\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{T_xpos_cavity_comparative.png}\hfill
+		\caption{Temperature along horizontal line.} \label{3.13figa}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}{0.50\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{T_ypos_cavity_comparative.png}	
+		\caption{Temperature along vertical line.}\label{3.13figb}
+	\end{subfigure}
+	\begin{subfigure}{0.50\textwidth}
+		\includegraphics[width=\linewidth]{xvel_xpos_cavity_comparative.png}\hfill
+		\caption{U-velocity along horizontal line.}\label{3.13figc}
+	\end{subfigure}
+	\begin{subfigure}{0.50\textwidth}
+		\includegraphics[width=\linewidth]{xvel_ypos_cavity_comparative.png}	
+		\caption{U-velocity along vertical line.}\label{3.13figd}
+	\end{subfigure}
+	\begin{subfigure}{0.50\textwidth}
+		\includegraphics[width=\linewidth]{yvel_xpos_cavity_comparative.png}\hfill	
+		\caption{V-velocity along horizontal line.}\label{3.13fige}
+	\end{subfigure}
+	\begin{subfigure}{0.50\textwidth}
+		\includegraphics[width=\linewidth]{yvel_ypos_cavity_comparative.png}	
+		\caption{V-velocity along vertical line.}\label{3.13figf}
+	\end{subfigure}
+	\caption{Adimensional magnitudes comparison at \textit{100s}.}
+	\label{3.13fig}
+\end{figure}
+\clearpage
+\noindent Dimensionless quantities presented in the section \ref{Convection-case} are here discussed for solidification comparison purposes. Temperature dimensionless results for the Enthalpy-porosity and Lee-CNT models are in a good agreement with Fluent and IcingFoam results. However, large discrepancies arise in the evolution of the velocity magnitudes. With special mention to U-velocity along x mid-plane, \ref{3.13figc} and V-velocity along y mid-plane, \ref{3.13figf}. Comparatively, the Enthalpy-porosity model tends to overpredict the velocity magnitude with respect to the Lee-CNT model and therefore it predicts a faster formation of a well-developed shape front. The results also show a minimal shift between numerical solutions due to the advancing front which tends to slightly infer in the evolution of the physical magnitudes.
+
 \begin{table}[h!]
 	\begin{tabular}{@{}b{2cm}ccc@{}}
 		\toprule[1pt]
@@ -867,6 +962,7 @@ So as to obtain a minimum expected accuracy during the calculation, in tables \r
 	\label{3.15tab}
 \end{table}
 \clearpage
+
 \begin{table}[h!]
 	\begin{tabular}{@{}b{2cm}ccc@{}}
 		\toprule[1pt]
@@ -882,6 +978,7 @@ So as to obtain a minimum expected accuracy during the calculation, in tables \r
 	\caption{Numerical results of velocity distributions for Enthalpy-porosity and Lee-CNT models at \textit{t = 100, 200, 300s}.}	
 	\label{3.16tab}
 \end{table}
+In the figures shown in the tables \ref{3.15tab}, \ref{3.16tab}, and \ref{3.17tab} are depicted the main physical phenomena of the solidification process. Temperature fields, velocity magnitudes and liquid volume fraction are chosen in order to visually detect the minimum local differences as the phase change gets more developed. As commented above, and shown in table \ref{3.16tab}, the Enthalpy-porosity model overpredicts the velocity magnitude until the extent of exhibiting a well-developed "belly" shape front. Contrarily, the evolution of the velocity magnitude in the Lee-model is under-predicted in comparison with the Enthalpy-porosity model, fact that leads to a more planar shape of the advancing ice layer.
 \clearpage
 \begin{table}[h!]
 	\begin{tabular}{@{}b{2cm}ccc@{}}
@@ -898,38 +995,7 @@ So as to obtain a minimum expected accuracy during the calculation, in tables \r
 	\caption{Numerical results of fluid fraction distributions for Enthalpy-porosity and Lee-CNT models at \textit{t = 100, 200, 300s}.}	
 	\label{3.17tab}
 \end{table}
-\clearpage
-\begin{figure}[h!]
-	\begin{subfigure}{0.50\textwidth}
-		\centering
-		\includegraphics[width=\linewidth]{temperature_xpos_EL.png}\hfill
-		\caption{Temperature along horizontal line.} \label{3.13figa}
-	\end{subfigure}
-	\hfill
-	\begin{subfigure}{0.50\textwidth}
-		\centering
-		\includegraphics[width=\linewidth]{temperature_ypos_EL.png}	
-		\caption{Temperature along vertical line.}\label{3.13figb}
-	\end{subfigure}
-	\begin{subfigure}{0.50\textwidth}
-		\includegraphics[width=\linewidth]{xvel_xpos_EL.png}\hfill
-		\caption{U-velocity along horizontal line.}\label{3.13figc}
-	\end{subfigure}
-	\begin{subfigure}{0.50\textwidth}
-		\includegraphics[width=\linewidth]{xvel_ypos_EL.png}	
-		\caption{U-velocity along vertical line.}\label{3.13figd}
-	\end{subfigure}
-	\begin{subfigure}{0.50\textwidth}
-		\includegraphics[width=\linewidth]{yvel_xpos_EL.png}\hfill	
-		\caption{V-velocity along horizontal line.}\label{3.13fige}
-	\end{subfigure}
-	\begin{subfigure}{0.50\textwidth}
-		\includegraphics[width=\linewidth]{yvel_ypos_EL.png}	
-		\caption{V-velocity along vertical line.}\label{3.13figf}
-	\end{subfigure}
-	\caption{Adimensional magnitudes comparison.}
-	\label{3.13fig}
-\end{figure}
+\noindent In the next figures, simulations have been carried out with a cylindrical geometry for a physical time of \textit{5000s}. Initially good agreement between Lee-CNT and Enthalpy-porosity models compared with Fluent and IcingFoam. As results in table \ref{3.18} show, the evolution of temperature, velocity and liquid fraction magnitudes are quite similar, however, one might appreciate slight differences in the velocity magnitudes from \textit{t = 100s} to \textit{300s}. This will be further commented below.
 \clearpage
 \begin{table}[h!]
 	\begin{tabular}{@{}b{2cm}lll@{}}
@@ -951,20 +1017,26 @@ So as to obtain a minimum expected accuracy during the calculation, in tables \r
 	\label{3.18tab}
 \end{table}
 \clearpage
+Here in Fig. \ref{zoomInterface} it is shown the description of the interface. There it can be checked the mushy region where the liquid fraction is $0 < \alpha_{l} < 1$.
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=.3\linewidth]{alpha_interface_CNT.png}	
-	\label{zoomInterface}
+	\includegraphics[width=.3\linewidth]{alpha_zoom.png}	
 	\caption{Gradient of the interface between liquid and solid phases for Lee-CNT model.}
-\end{figure} 
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=.7\linewidth]{temperature_time_center.png}	
-	\label{3.12fig}
-	\caption{Numerical results of temperature profiles in center position of cylindrical geometry.}
+	\label{zoomInterface}
 \end{figure} 
 
-\noindent For the Lee model based on the \textit{Classical Nucleation Theory}, the results are compared against the analytical solution given by the Neumann solutions of the Stefan problem.
+\noindent In the figure \ref{3.12fig}, temperature magnitude is in the center of the cylinder along time. Here, it can be appreciated three different zones: for $0s < t < 400s$, it belongs to the convection heat transfer period, then, for $400s < t < 4000s$ there exists a mushy zone, the water is loosing heat by this time. For $t > 4000s$ solidification begins. As it might be observed in \ref{3.12fig}, but also in the temperature distribution at \textit{t=300s} in table \ref{3.18}, near $300s < t < 600s$ the effect of the density inversion begins to be visible at $T \approx 5 \deg C$. As it happened for the cavity case, the fact of characterizing the density with a polynomial function allows the solver to see a phenomena which appears in the experimental data of Chen et al.  \cite{chen_lee_1998}.
+
+\noindent Large discrepancies arise as the simulation evolves in time in the Enthalpy-model compared with IcingFoam, Lee-CNT model and the experimental data of Chen et al. For this model, solidification takes longer in the center part of the cylinder. Initially, for $0s < t < 300s$, the evolution of the temperature, velocity and liquid fraction seem to match. However, from this point on, convection tends to decrease, and so it does the rest of variables involved. This clearifies that the enthalpy-porosity model developed in conjunction with the VOF technique does not fit the numerical results found in the literature and the fact that does not match with the experimental data may lead to inaccuracies when representing the physical phenomena of solidification in transient simulations. This difference in the numerical solution is due to the use of an unaccurate expression for the volume of fluid implicitly calculated within the library \ref{Enthalpy-porosity library}.
+
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=.7\linewidth]{T_time_center_cylinder_comparative.png}	
+	\caption{Numerical results of temperature profiles in center position of cylindrical geometry.}
+	\label{3.12fig}
+\end{figure} 
+
+\noindent For the Lee model based on the \textit{Classical Nucleation Theory}, the results are compared in the next section against the analytical solution given by the Neumann solutions of the Stefan problem.
 
 \clearpage
 \subsubsection{Stefan Problem}
@@ -1012,7 +1084,8 @@ while the boundary conditions are the shown below:
 	u(0, t)=-20^{\circ}C, \quad \frac{\partial u}{\partial x}(L, t)=0, \quad t>0
 	\label{3.46}
 \end{equation}
-In table \ref{3.19tab}, there are summarized the boundary conditions applied in the cavity geometry of previous cases.
+\clearpage
+\noindent In table \ref{3.19tab}, there are summarized the boundary conditions applied in the cavity geometry of previous cases.
 \begin{table}[h!]
 	\begin{tabular}{@{}lllll@{}}
 		\toprule[1pt]
@@ -1026,7 +1099,8 @@ In table \ref{3.19tab}, there are summarized the boundary conditions applied in 
 	\caption{Boundary conditions for Stefan problem.}	
 	\label{3.19tab}
 \end{table}
-The internal field is initiallized at 283.15 K. The used thermophysical properties as well as the solver parameters are similar to the previous solidification cases.
+\newline
+\noindent The internal field is initiallized at 283.15 K. The used thermophysical properties as well as the solver parameters are similar to the previous solidification cases.
 \newline
 The discontinuous exact solutions for the Stefan problem are:
 \begin{equation}
@@ -1048,16 +1122,16 @@ where ${\operatorname{erf(x)}}$ is the complementary error function expressed as
 \begin{figure}[h!]
 	\begin{subfigure}{0.50\textwidth}
 		\centering
-		\includegraphics[width=\linewidth]{Neumann_CNT_6s.png}\hfill
-		\caption{Neumann solution vs numerical solution.} \label{3.15figa}
+		\includegraphics[width=\linewidth]{Neumann_CNT_9s.png}\hfill
+		\caption{Neumann solution vs numerical solution at \textit{t = 9s}.} \label{3.15figa}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}{0.50\textwidth}
 		\centering
-		\includegraphics[width=\linewidth]{relative_err_Neumann_CNT_6s.png}	
-		\caption{Relative error of the numerical solution.}\label{3.15figb}
+		\includegraphics[width=\linewidth]{Neumann_CNT_9s_relative_error.png}	
+		\caption{Relative error of the numerical solution at \textit{t = 9s}.}\label{3.15figb}
 	\end{subfigure}
-	\caption{Numerical solutions of the Lee model-CNT vs Neumann analytical solutions.}
+	\caption{Numerical solutions of the Lee model-CNT vs Neumann analytical solutions at \textit{t = 9s}.}
 	\label{3.15fig}
 \end{figure}
 
@@ -1073,23 +1147,23 @@ Alongside, a post-process function to calculate the tracking of position of the 
 \begin{table}[h!]
 	\begin{tabular}{@{}lllll@{}}
 		\toprule[1pt]
-		\multicolumn{1}{c}{\textbf{Lee-CNT model}} \\ \midrule[2pt] 
-		\includegraphics[width=.5\linewidth]{alpha_6s_EP.png} & \includegraphics[width=.13\linewidth]{alpha_scale_EP_6s.png} \\ \bottomrule[1pt]		
+		\multicolumn{1}{c}{\textbf{$\alpha_{l}$}}& & \multicolumn{1}{c}{\textbf{$T$}} & \\ \midrule[2pt] 
+		\includegraphics[width=.3\linewidth]{alpha_6s_EP.png} & \includegraphics[width=.075\linewidth]{alpha_scale_EP_6s.png} & \includegraphics[width=.3\linewidth]{T_CNT_9s.png} & \includegraphics[width=.075\linewidth]{T_CNT_9s_scale.png}\\ \bottomrule[1pt]		
 	\end{tabular}
 	\centering
-	\caption{Numerical results of interface evolution for Lee-CNT model at \textit{t = 6s}.}	
+	\caption{Numerical results of temperature and interface evolution for Lee-CNT model at \textit{t = 9s}.}	
 	\label{3.20tab}
 \end{table}
 \begin{figure}[h!]
 	\begin{subfigure}{0.50\textwidth}
-		\includegraphics[width=\linewidth]{Interface_height_Neumann_CNT_6s.png}\hfill
+		\includegraphics[width=\linewidth]{Neumann_CNT_9s_interface.png}\hfill
 		\caption{Interface position in time.}\label{3.16figa}
 	\end{subfigure}
 	\begin{subfigure}{0.50\textwidth}
-		\includegraphics[width=\linewidth]{relative_err_interface_height_Neumann_CNT_6s.png}	
+		\includegraphics[width=\linewidth]{Neumann_CNT_9s_interface_relative_error.png}	
 		\caption{Relative error of interface position in time.}\label{3.16figb}
 	\end{subfigure}
-	\caption{Numerical solutions of the Lee model-CNT vs Neumann analytical solutions for interface position.}
+	\caption{Numerical solutions of the Lee model-CNT vs Neumann analytical solutions for interface position for t=0-9s.}
 \label{3.16fig}
 \end{figure}
 

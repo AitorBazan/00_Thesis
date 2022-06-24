@@ -62,7 +62,7 @@ void Foam::fv::mySolidificationMeltingSource::update()
     }
 
     // update old time alpha1 field
-    alphaC_.oldTime();
+    alpha_.oldTime();
     const auto& CpVoF = mesh_.lookupObject<volScalarField>(CpName_);
         
     const auto& T = mesh_.lookupObject<volScalarField>(TName_);
@@ -75,9 +75,9 @@ void Foam::fv::mySolidificationMeltingSource::update()
 
         scalar Tc = T[celli];
         scalar Cpc = CpVoF[celli];
-        scalar alpha1New = alphaC_[celli] + relax_*Cpc*(Tc - Tmelt_)/L_;
+        scalar alpha1New = alpha_[celli] + relax_*Cpc*(Tc - Tmelt_)/L_;
         // scalar alpha1New = 0.5 + 0.5*std::erf(4 * ((Tc - (Tliq + Tsol)/2)/(Tliq - Tsol + eps)));
-        alphaC_[celli] = max(0, min(alpha1New, 1));
+        alpha_[celli] = max(0, min(alpha1New, 1));
     }
 
     alpha1_.correctBoundaryConditions();
@@ -104,21 +104,7 @@ Foam::fv::mySolidificationMeltingSource::mySolidificationMeltingSource
     CpName_(coeffs_.getOrDefault<word>("Cp", "Cp")),
     UName_(coeffs_.getOrDefault<word>("U", "U")),
     rhoCpPhiName_(coeffs_.getOrDefault<word>("rhoCpPhi", "rhoCpPhi")),
-    alphaC_
-    (
-        IOobject
-        (
-            "alphaPCM",
-            mesh.time().timeName(),
-            mesh,
-            IOobject::READ_IF_PRESENT,
-            IOobject::NO_WRITE
-        ),
-        mesh,
-        dimensionedScalar(dimless, Zero),
-        zeroGradientFvPatchScalarField::typeName
-    ),
-    alpha1_
+    alpha_
     (
         IOobject
         (

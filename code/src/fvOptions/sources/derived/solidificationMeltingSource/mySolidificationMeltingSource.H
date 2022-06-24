@@ -179,11 +179,8 @@ class mySolidificationMeltingSource
         //- Name of operand flux field
         word rhoCpPhiName_;
 
-        //- Calculated Phase fraction indicator field for PCM
-        volScalarField alphaC_;
-
         //- Phase fraction indicator field for VOF
-        volScalarField alpha1_;
+        volScalarField alpha_;
 
         //- Current time index (used for updating)
         label curTimeIndex_;

@@ -53,13 +53,13 @@ void Foam::fv::mySolidificationMeltingSource::apply
     if (eqn.psi().dimensions() == dimTemperature)
     {
 
-        eqn -= (L*alpha1_)/CpVoF*(fvc::ddt(rho, alphaC_) + fvc::div(rhoCpPhiVoF, alphaC_));
+        eqn -= L/CpVoF*(fvc::ddt(rho, alpha_) + fvc::div(rhoCpPhiVoF, alpha_));
 
     }
     else
     {
         //This option is not activated since fvOptions in TEqn does not enable this condition
-        eqn -= L*alpha1_*(fvc::ddt(rho, alphaC_));
+        eqn -= L*(fvc::ddt(rho, alpha_));
     }
 }
 
