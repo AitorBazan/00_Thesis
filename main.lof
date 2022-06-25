@@ -33,7 +33,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Setting of cavity computational domain.\relax }}{31}{figure.caption.131}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Comparison between BuoyantBoussinesqPimpleFoam and mBBPF*\relax }}{34}{figure.caption.140}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Comparison between BBPF* and mBBPF**\relax }}{34}{figure.caption.140}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Density differences between linear and polynomial expressions.\relax }}{35}{figure.caption.141}%
 \defcounter {refsection}{0}\relax 
@@ -70,6 +70,10 @@
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Control loop for the fluid region in CHT.\relax }}{65}{figure.caption.233}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Energy equation for the fluid in CHT.\relax }}{66}{figure.caption.237}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Initial residual of hydrostatic pressure in \textit {chtMultiRegionFoam}.\relax }}{71}{figure.caption.251}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Initial and final residuals of hydrostatic pressure in \textit {chtMultiPhaseInterFoam}.\relax }}{71}{figure.caption.252}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

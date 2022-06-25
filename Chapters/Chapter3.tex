@@ -508,7 +508,7 @@ For comparison purposes and so as to know the state of the art in the natural co
 	\begin{subfigure}{\linewidth}
 	\includegraphics[width=.55\linewidth]{BBPF_T_1500s.png}\hfill
 	\includegraphics[width=.55\linewidth]{CF_T_1500s_comp.png}	
-	\caption{Temperature magnitude comparison at t = 1500s. Left: BuoyantBoussinesqPimpleFoam. Right: NCMF}
+	\caption{Temperature magnitude comparison at t = 1500s. Left: BBPF. Right: mBBPF}
 	\label{3.5figa}
 	\end{subfigure}\par\medskip
 	\begin{subfigure}{\linewidth}
@@ -517,7 +517,7 @@ For comparison purposes and so as to know the state of the art in the natural co
 	\caption{Velocity magnitude comparison at t = 1500s. Left: BuoyantBoussinesqPimpleFoam. Right: NCMF}
 	\label{3.5figb}
 	\end{subfigure}\par\medskip
-	\caption{Comparison between BuoyantBoussinesqPimpleFoam and mBBPF*}
+	\caption{Comparison between BBPF* and mBBPF**}
 	\label{3.5fig}
 \end{figure}
 \newline 
@@ -978,7 +978,7 @@ So as to obtain a minimum expected accuracy during the calculation, in tables \r
 	\caption{Numerical results of velocity distributions for Enthalpy-porosity and Lee-CNT models at \textit{t = 100, 200, 300s}.}	
 	\label{3.16tab}
 \end{table}
-In the figures shown in the tables \ref{3.15tab}, \ref{3.16tab}, and \ref{3.17tab} are depicted the main physical phenomena of the solidification process. Temperature fields, velocity magnitudes and liquid volume fraction are chosen in order to visually detect the minimum local differences as the phase change gets more developed. As commented above, and shown in table \ref{3.16tab}, the Enthalpy-porosity model overpredicts the velocity magnitude until the extent of exhibiting a well-developed "belly" shape front. Contrarily, the evolution of the velocity magnitude in the Lee-model is under-predicted in comparison with the Enthalpy-porosity model, fact that leads to a more planar shape of the advancing ice layer.
+\noindent In the figures shown in the tables \ref{3.15tab}, \ref{3.16tab}, and \ref{3.17tab} are depicted the main physical phenomena of the solidification process. Temperature fields, velocity magnitudes and liquid volume fraction are chosen in order to visually detect the minimum local differences as the phase change gets more developed. As commented above, and shown in table \ref{3.16tab}, the Enthalpy-porosity model overpredicts the velocity magnitude until the extent of exhibiting a well-developed "belly" shape front. Contrarily, the evolution of the velocity magnitude in the Lee-model is under-predicted in comparison with the Enthalpy-porosity model, fact that leads to a more planar shape of the advancing ice layer.
 \clearpage
 \begin{table}[h!]
 	\begin{tabular}{@{}b{2cm}ccc@{}}

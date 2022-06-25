@@ -1,0 +1,1247 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{akyurt_zaki_habeebullah_2002}{article}{}
+      \name{author}{3}{}{%
+        {{hash=6b60d6b1e0857fc6ab3e3e15fa321b1e}{%
+           family={Akyurt},
+           familyi={A\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=4c8826b5fffe0f269e114877a25c5e7d}{%
+           family={Zaki},
+           familyi={Z\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=49d06c995339330660488570671d1e7c}{%
+           family={Habeebullah},
+           familyi={H\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{9dc4b7aded9d88e20cb7b55fbd446581}
+      \strng{fullhash}{9dc4b7aded9d88e20cb7b55fbd446581}
+      \strng{bibnamehash}{9dc4b7aded9d88e20cb7b55fbd446581}
+      \strng{authorbibnamehash}{9dc4b7aded9d88e20cb7b55fbd446581}
+      \strng{authornamehash}{9dc4b7aded9d88e20cb7b55fbd446581}
+      \strng{authorfullhash}{9dc4b7aded9d88e20cb7b55fbd446581}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Energy Conversion and Management}
+      \field{number}{14}
+      \field{title}{Freezing phenomena in ice-water systems}
+      \field{volume}{43}
+      \field{year}{2002}
+      \field{pages}{1773\bibrangedash 1789}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1016/s0196-8904(01)00129-7
+      \endverb
+    \endentry
+    \entry{berberovic_van_hinsberg_jakirlic_roisman_tropea_2009}{article}{}
+      \name{author}{5}{}{%
+        {{hash=423a6be33f7c8efb79a5fa24558c480f}{%
+           family={Berberovic},
+           familyi={B\bibinitperiod},
+           given={Edin},
+           giveni={E\bibinitperiod}}}%
+        {{hash=1afab14a77036465a3b591ed474fe886}{%
+           family={Hinsberg},
+           familyi={H\bibinitperiod},
+           given={Nils\bibnamedelima P.},
+           giveni={N\bibinitperiod\bibinitdelim P\bibinitperiod},
+           prefix={van},
+           prefixi={v\bibinitperiod}}}%
+        {{hash=e398958e00e3949582a53fe7aa06489c}{%
+           family={Jakirlic},
+           familyi={J\bibinitperiod},
+           given={Suad},
+           giveni={S\bibinitperiod}}}%
+        {{hash=c110d268fb48aa0b849c80fecab96aef}{%
+           family={Roisman},
+           familyi={R\bibinitperiod},
+           given={Ilia\bibnamedelima V.},
+           giveni={I\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=94777ba5c1fc5df05fdcee7f5dff16fc}{%
+           family={Tropea},
+           familyi={T\bibinitperiod},
+           given={Cameron},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{e8de1dfd1c033a6eb49192561395d4c3}
+      \strng{fullhash}{fac36d273ebe8dd6dc6a93e8076001e0}
+      \strng{bibnamehash}{e8de1dfd1c033a6eb49192561395d4c3}
+      \strng{authorbibnamehash}{e8de1dfd1c033a6eb49192561395d4c3}
+      \strng{authornamehash}{e8de1dfd1c033a6eb49192561395d4c3}
+      \strng{authorfullhash}{fac36d273ebe8dd6dc6a93e8076001e0}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review E}
+      \field{number}{3}
+      \field{title}{Drop impact onto a liquid layer of finite thickness: Dynamics of the cavity evolution}
+      \field{volume}{79}
+      \field{year}{2009}
+      \verb{doi}
+      \verb 10.1103/physreve.79.036306
+      \endverb
+    \endentry
+    \entry{bourdillon_2016}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=848131aed4aa8c44a5d6564b1134f42f}{%
+           family={Bourdillon},
+           familyi={B\bibinitperiod},
+           given={Arnaud},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Cranfield University}%
+      }
+      \strng{namehash}{848131aed4aa8c44a5d6564b1134f42f}
+      \strng{fullhash}{848131aed4aa8c44a5d6564b1134f42f}
+      \strng{bibnamehash}{848131aed4aa8c44a5d6564b1134f42f}
+      \strng{authorbibnamehash}{848131aed4aa8c44a5d6564b1134f42f}
+      \strng{authornamehash}{848131aed4aa8c44a5d6564b1134f42f}
+      \strng{authorfullhash}{848131aed4aa8c44a5d6564b1134f42f}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Investigation towards a coupling between population balance and solidification models}
+      \field{type}{phdthesis}
+      \field{year}{2016}
+    \endentry
+    \entry{chen_2002}{article}{}
+      \name{author}{1}{}{%
+        {{hash=34354d652ff2839355203c5afea956fd}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Long-Qing},
+           giveni={L\bibinithyphendelim Q\bibinitperiod}}}%
+      }
+      \strng{namehash}{34354d652ff2839355203c5afea956fd}
+      \strng{fullhash}{34354d652ff2839355203c5afea956fd}
+      \strng{bibnamehash}{34354d652ff2839355203c5afea956fd}
+      \strng{authorbibnamehash}{34354d652ff2839355203c5afea956fd}
+      \strng{authornamehash}{34354d652ff2839355203c5afea956fd}
+      \strng{authorfullhash}{34354d652ff2839355203c5afea956fd}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Annual Review of Materials Research}
+      \field{number}{1}
+      \field{title}{Phase-Field Models for Microstructure Evolution}
+      \field{volume}{32}
+      \field{year}{2002}
+      \field{pages}{113\bibrangedash 140}
+      \range{pages}{28}
+      \verb{doi}
+      \verb 10.1146/annurev.matsci.32.112001.132041
+      \endverb
+    \endentry
+    \entry{chen_lee_1998}{article}{}
+      \name{author}{2}{}{%
+        {{hash=4d91d500793b9dc17414349016167394}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Sih-Li},
+           giveni={S\bibinithyphendelim L\bibinitperiod}}}%
+        {{hash=c40d00187ebfaf047574c8dc0e153994}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Tzong-Shing},
+           giveni={T\bibinithyphendelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{1a54b4b2595cd49db51db2594c94b2cf}
+      \strng{fullhash}{1a54b4b2595cd49db51db2594c94b2cf}
+      \strng{bibnamehash}{1a54b4b2595cd49db51db2594c94b2cf}
+      \strng{authorbibnamehash}{1a54b4b2595cd49db51db2594c94b2cf}
+      \strng{authornamehash}{1a54b4b2595cd49db51db2594c94b2cf}
+      \strng{authorfullhash}{1a54b4b2595cd49db51db2594c94b2cf}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Heat and Mass Transfer}
+      \field{number}{4-5}
+      \field{title}{A study of supercooling phenomenon and freezing probability of water inside horizontal cylinders}
+      \field{volume}{41}
+      \field{year}{1998}
+      \field{pages}{769\bibrangedash 783}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1016/s0017-9310(97)00134-8
+      \endverb
+    \endentry
+    \entry{el_ganaoui_lamazouade_bontoux_morvan_2002}{article}{}
+      \name{author}{4}{}{%
+        {{hash=e8888150a4b7854f3c87d02bdd2fc99a}{%
+           family={El\bibnamedelima Ganaoui},
+           familyi={E\bibinitperiod\bibinitdelim G\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+        {{hash=06b4a4cb27b3fde95f7baca1e2a36a0b}{%
+           family={Lamazouade},
+           familyi={L\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod}}}%
+        {{hash=026b636415bf6e2cea56ee8036d2dd5f}{%
+           family={Bontoux},
+           familyi={B\bibinitperiod},
+           given={P},
+           giveni={P\bibinitperiod}}}%
+        {{hash=dfa0f8fbf5ab8426fdd9a1375c0ad629}{%
+           family={Morvan},
+           familyi={M\bibinitperiod},
+           given={D},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{39cde4c997e92a6c25617ed6494bdac5}
+      \strng{fullhash}{0409fc1b55ac63c4d55c60f00b898c5e}
+      \strng{bibnamehash}{39cde4c997e92a6c25617ed6494bdac5}
+      \strng{authorbibnamehash}{39cde4c997e92a6c25617ed6494bdac5}
+      \strng{authornamehash}{39cde4c997e92a6c25617ed6494bdac5}
+      \strng{authorfullhash}{0409fc1b55ac63c4d55c60f00b898c5e}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computers and Fluids}
+      \field{number}{4-7}
+      \field{title}{Computational solution for fluid flow under solid/liquid phase change conditions}
+      \field{volume}{31}
+      \field{year}{2002}
+      \field{pages}{539\bibrangedash 556}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1016/s0045-7930(01)00067-6
+      \endverb
+    \endentry
+    \entry{esen_kutluay_2004}{article}{}
+      \name{author}{2}{}{%
+        {{hash=49ccf790f0e9a0a2b338f2b18d815dbb}{%
+           family={Esen},
+           familyi={E\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod}}}%
+        {{hash=d22a9c92d510a087226d009dc1ed9b94}{%
+           family={Kutluay},
+           familyi={K\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{612c926ee8c108b876b66b408ddf4df3}
+      \strng{fullhash}{612c926ee8c108b876b66b408ddf4df3}
+      \strng{bibnamehash}{612c926ee8c108b876b66b408ddf4df3}
+      \strng{authorbibnamehash}{612c926ee8c108b876b66b408ddf4df3}
+      \strng{authornamehash}{612c926ee8c108b876b66b408ddf4df3}
+      \strng{authorfullhash}{612c926ee8c108b876b66b408ddf4df3}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Applied Mathematics and Computation}
+      \field{number}{2}
+      \field{title}{A numerical solution of the Stefan problem with a Neumann-type boundary condition by enthalpy method}
+      \field{volume}{148}
+      \field{year}{2004}
+      \field{pages}{321\bibrangedash 329}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1016/s0096-3003(02)00846-9
+      \endverb
+    \endentry
+    \entry{harlow_welch_1965}{article}{}
+      \name{author}{2}{}{%
+        {{hash=0f7555642fa36bfef59cb0baa7d28f1f}{%
+           family={Harlow},
+           familyi={H\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=0ec35726e859e5a7d26821d31b71742f}{%
+           family={Welch},
+           familyi={W\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{94366ba41447940e52ed9e3be26e6ff3}
+      \strng{fullhash}{94366ba41447940e52ed9e3be26e6ff3}
+      \strng{bibnamehash}{94366ba41447940e52ed9e3be26e6ff3}
+      \strng{authorbibnamehash}{94366ba41447940e52ed9e3be26e6ff3}
+      \strng{authornamehash}{94366ba41447940e52ed9e3be26e6ff3}
+      \strng{authorfullhash}{94366ba41447940e52ed9e3be26e6ff3}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physics of Fluids}
+      \field{number}{12}
+      \field{title}{Numerical Calculation of Time-Dependent Viscous Incompressible Flow of Fluid with Free Surface}
+      \field{volume}{8}
+      \field{year}{1965}
+      \field{pages}{2182}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1063/1.1761178
+      \endverb
+    \endentry
+    \entry{hirt_nichols_1981}{article}{}
+      \name{author}{2}{}{%
+        {{hash=9324752ec5101bfbe0cebe13b907dc4c}{%
+           family={Hirt},
+           familyi={H\bibinitperiod},
+           given={C.W},
+           giveni={C\bibinitperiod}}}%
+        {{hash=a6ed12dcad8490b4fc9597e71e89a445}{%
+           family={Nichols},
+           familyi={N\bibinitperiod},
+           given={B.D},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{b7356d929d77a727487fdc6a79c37f48}
+      \strng{fullhash}{b7356d929d77a727487fdc6a79c37f48}
+      \strng{bibnamehash}{b7356d929d77a727487fdc6a79c37f48}
+      \strng{authorbibnamehash}{b7356d929d77a727487fdc6a79c37f48}
+      \strng{authornamehash}{b7356d929d77a727487fdc6a79c37f48}
+      \strng{authorfullhash}{b7356d929d77a727487fdc6a79c37f48}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Computational Physics}
+      \field{number}{1}
+      \field{title}{Volume of fluid (VOF) method for the dynamics of free boundaries}
+      \field{volume}{39}
+      \field{year}{1981}
+      \field{pages}{201\bibrangedash 225}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.1016/0021-9991(81)90145-5
+      \endverb
+    \endentry
+    \entry{huang_wang_li_2020}{article}{}
+      \name{author}{3}{}{%
+        {{hash=044f98dcc344819e103613bbe3ed5abf}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=8c0d8d495d30364a6fdc14d3ee19f5b7}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod}}}%
+        {{hash=6e5b0e6cca2615e3baa1c9fd08a1f208}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{f2c35e6d37e5a708a2ab8f0dc29529f1}
+      \strng{fullhash}{f2c35e6d37e5a708a2ab8f0dc29529f1}
+      \strng{bibnamehash}{f2c35e6d37e5a708a2ab8f0dc29529f1}
+      \strng{authorbibnamehash}{f2c35e6d37e5a708a2ab8f0dc29529f1}
+      \strng{authornamehash}{f2c35e6d37e5a708a2ab8f0dc29529f1}
+      \strng{authorfullhash}{f2c35e6d37e5a708a2ab8f0dc29529f1}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Applied Sciences}
+      \field{number}{9}
+      \field{title}{A Novel 2D Model for Freezing Phase Change Simulation during Cryogenic Fracturing Considering Nucleation Characteristics}
+      \field{volume}{10}
+      \field{year}{2020}
+      \field{pages}{3308}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/app10093308
+      \endverb
+    \endentry
+    \entry{ickes_welti_hoose_lohmann_2015}{article}{}
+      \name{author}{4}{}{%
+        {{hash=3d4b8a0272e357c9daa5e2f9863986df}{%
+           family={Ickes},
+           familyi={I\bibinitperiod},
+           given={Luisa},
+           giveni={L\bibinitperiod}}}%
+        {{hash=bc3629ace75daf80f1e1c9c523653dc7}{%
+           family={Welti},
+           familyi={W\bibinitperiod},
+           given={Andre},
+           giveni={A\bibinitperiod}}}%
+        {{hash=ef161aef45294789c148e689a1c786c7}{%
+           family={Hoose},
+           familyi={H\bibinitperiod},
+           given={Corinna},
+           giveni={C\bibinitperiod}}}%
+        {{hash=2f3de49377eb85e7dc69b4d608d6f4a1}{%
+           family={Lohmann},
+           familyi={L\bibinitperiod},
+           given={Ulrike},
+           giveni={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{222e37f2f00805f81a9e25532c65d805}
+      \strng{fullhash}{862593d664cfeea9bd72ec64701c7d4d}
+      \strng{bibnamehash}{222e37f2f00805f81a9e25532c65d805}
+      \strng{authorbibnamehash}{222e37f2f00805f81a9e25532c65d805}
+      \strng{authornamehash}{222e37f2f00805f81a9e25532c65d805}
+      \strng{authorfullhash}{862593d664cfeea9bd72ec64701c7d4d}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Chemistry Chemical Physics}
+      \field{number}{8}
+      \field{title}{Classical nucleation theory of homogeneous freezing of water: thermodynamic and kinetic parameters}
+      \field{volume}{17}
+      \field{year}{2015}
+      \field{pages}{5514\bibrangedash 5537}
+      \range{pages}{24}
+      \verb{doi}
+      \verb 10.1039/c4cp04184d
+      \endverb
+    \endentry
+    \entry{juric_tryggvason_1996}{article}{}
+      \name{author}{2}{}{%
+        {{hash=a74021fd86811f439c45251b87c577fa}{%
+           family={Juric},
+           familyi={J\bibinitperiod},
+           given={Damir},
+           giveni={D\bibinitperiod}}}%
+        {{hash=e0b5ddd69379d55aa106f4de6615edcf}{%
+           family={Tryggvason},
+           familyi={T\bibinitperiod},
+           given={Gretar},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{34d19cfebd53d37fde6ba76c1e08dab4}
+      \strng{fullhash}{34d19cfebd53d37fde6ba76c1e08dab4}
+      \strng{bibnamehash}{34d19cfebd53d37fde6ba76c1e08dab4}
+      \strng{authorbibnamehash}{34d19cfebd53d37fde6ba76c1e08dab4}
+      \strng{authornamehash}{34d19cfebd53d37fde6ba76c1e08dab4}
+      \strng{authorfullhash}{34d19cfebd53d37fde6ba76c1e08dab4}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Computational Physics}
+      \field{number}{1}
+      \field{title}{A Front-Tracking Method for Dendritic Solidification}
+      \field{volume}{123}
+      \field{year}{1996}
+      \field{pages}{127\bibrangedash 148}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1006/jcph.1996.0011
+      \endverb
+    \endentry
+    \entry{kim_goldenfeld_dantzig_2000}{article}{}
+      \name{author}{3}{}{%
+        {{hash=afd78b6cc9fe6d4b3539dc4f06fd45a2}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Yung},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=759283a59942ff546567b2ee6d4a489e}{%
+           family={Goldenfeld},
+           familyi={G\bibinitperiod},
+           given={Nigel},
+           giveni={N\bibinitperiod}}}%
+        {{hash=b7d16a383c485eaf80ee7a4f1e7c3ea0}{%
+           family={Dantzig},
+           familyi={D\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{f3557cbe649d3a629b458f313fbe75a3}
+      \strng{fullhash}{f3557cbe649d3a629b458f313fbe75a3}
+      \strng{bibnamehash}{f3557cbe649d3a629b458f313fbe75a3}
+      \strng{authorbibnamehash}{f3557cbe649d3a629b458f313fbe75a3}
+      \strng{authornamehash}{f3557cbe649d3a629b458f313fbe75a3}
+      \strng{authorfullhash}{f3557cbe649d3a629b458f313fbe75a3}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review}
+      \field{number}{2}
+      \field{title}{Computation of dendritic microstructures using a level set method}
+      \field{volume}{62}
+      \field{year}{2000}
+      \field{pages}{2471\bibrangedash 2474}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1103/physreve.62.2471
+      \endverb
+    \endentry
+    \entry{kowalewski_rebow_1999}{article}{}
+      \name{author}{2}{}{%
+        {{hash=6c4074c3c472573b57ec9f3d942cc68b}{%
+           family={Kowalewski},
+           familyi={K\bibinitperiod},
+           given={T.\bibnamedelimi A.},
+           giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=2b4440b0ce27adaedae47ca43eb416f1}{%
+           family={Rebow},
+           familyi={R\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{7906d47156d702a590693db9ab1757ab}
+      \strng{fullhash}{7906d47156d702a590693db9ab1757ab}
+      \strng{bibnamehash}{7906d47156d702a590693db9ab1757ab}
+      \strng{authorbibnamehash}{7906d47156d702a590693db9ab1757ab}
+      \strng{authornamehash}{7906d47156d702a590693db9ab1757ab}
+      \strng{authorfullhash}{7906d47156d702a590693db9ab1757ab}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Computational Fluid Dynamics}
+      \field{number}{3-4}
+      \field{title}{Freezing of Water in a Differentially Heated Cubic Cavity}
+      \field{volume}{11}
+      \field{year}{1999}
+      \field{pages}{193\bibrangedash 210}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1080/10618569908940874
+      \endverb
+    \endentry
+    \entry{krabbenhoft_damkilde_nazem_2006}{article}{}
+      \name{author}{3}{}{%
+        {{hash=0721de3426a35a3061dd53203db0beca}{%
+           family={Krabbenhoft},
+           familyi={K\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=aa3eadd97a42174f2cba9ccf87c58094}{%
+           family={Damkilde},
+           familyi={D\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=249e3fcb59b67ae803d649388187810f}{%
+           family={Nazem},
+           familyi={N\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{c83444268169c08f6bd1197815421200}
+      \strng{fullhash}{c83444268169c08f6bd1197815421200}
+      \strng{bibnamehash}{c83444268169c08f6bd1197815421200}
+      \strng{authorbibnamehash}{c83444268169c08f6bd1197815421200}
+      \strng{authornamehash}{c83444268169c08f6bd1197815421200}
+      \strng{authorfullhash}{c83444268169c08f6bd1197815421200}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Heat and Mass Transfer}
+      \field{number}{3}
+      \field{title}{An implicit mixed enthalpy-temperature method for phase-change problems}
+      \field{volume}{43}
+      \field{year}{2006}
+      \field{pages}{233\bibrangedash 241}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1007/s00231-006-0090-1
+      \endverb
+    \endentry
+    \entry{li_garimella_simpson_2003}{article}{}
+      \name{author}{3}{}{%
+        {{hash=80e78e83290176b48647907192e83de3}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Chin},
+           giveni={C\bibinitperiod}}}%
+        {{hash=3bef433916c844e83b8c8d75931ea2e1}{%
+           family={Garimella},
+           familyi={G\bibinitperiod},
+           given={Suresh},
+           giveni={S\bibinitperiod}}}%
+        {{hash=e2bc7b423f594f8a027f18ade7473052}{%
+           family={Simpson},
+           familyi={S\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{e288ca8f19e0e46d7e3b1602972a4ddc}
+      \strng{fullhash}{e288ca8f19e0e46d7e3b1602972a4ddc}
+      \strng{bibnamehash}{e288ca8f19e0e46d7e3b1602972a4ddc}
+      \strng{authorbibnamehash}{e288ca8f19e0e46d7e3b1602972a4ddc}
+      \strng{authornamehash}{e288ca8f19e0e46d7e3b1602972a4ddc}
+      \strng{authorfullhash}{e288ca8f19e0e46d7e3b1602972a4ddc}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Numerical Heat Transfer, Part B: Fundamentals}
+      \field{number}{2}
+      \field{title}{Fixed-grid front-tracking algorithm for solidification problems, part I: method and validation}
+      \field{volume}{43}
+      \field{year}{2003}
+      \field{pages}{117\bibrangedash 141}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.1080/713836172
+      \endverb
+    \endentry
+    \entry{moukalled_mangani_darwish_2016}{book}{}
+      \name{author}{3}{}{%
+        {{hash=ac5b74967c358d54c282716e13faf30d}{%
+           family={Moukalled},
+           familyi={M\bibinitperiod},
+           given={Fadl\bibnamedelima Hassan},
+           giveni={F\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=1ff4954c3e58a8b001eb53e8269c3438}{%
+           family={Mangani},
+           familyi={M\bibinitperiod},
+           given={L},
+           giveni={L\bibinitperiod}}}%
+        {{hash=2ab2b6dd25340d302e0592af4ff96e03}{%
+           family={Darwish},
+           familyi={D\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{50df6c8a81e8d9c8b67fb16d40703b18}
+      \strng{fullhash}{50df6c8a81e8d9c8b67fb16d40703b18}
+      \strng{bibnamehash}{50df6c8a81e8d9c8b67fb16d40703b18}
+      \strng{authorbibnamehash}{50df6c8a81e8d9c8b67fb16d40703b18}
+      \strng{authornamehash}{50df6c8a81e8d9c8b67fb16d40703b18}
+      \strng{authorfullhash}{50df6c8a81e8d9c8b67fb16d40703b18}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The finite volume method in computational fluid dynamics}
+      \field{year}{2016}
+      \field{pages}{4\bibrangedash 5}
+      \range{pages}{2}
+    \endentry
+    \entry{myers_2016}{article}{}
+      \name{author}{1}{}{%
+        {{hash=365db8362b4f84d7da43c4806cf2b7f5}{%
+           family={Myers},
+           familyi={M\bibinitperiod},
+           given={T.G.},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{365db8362b4f84d7da43c4806cf2b7f5}
+      \strng{fullhash}{365db8362b4f84d7da43c4806cf2b7f5}
+      \strng{bibnamehash}{365db8362b4f84d7da43c4806cf2b7f5}
+      \strng{authorbibnamehash}{365db8362b4f84d7da43c4806cf2b7f5}
+      \strng{authornamehash}{365db8362b4f84d7da43c4806cf2b7f5}
+      \strng{authorfullhash}{365db8362b4f84d7da43c4806cf2b7f5}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Communications in Heat and Mass Transfer}
+      \field{title}{Mathematical modelling of phase change at the nanoscale}
+      \field{volume}{76}
+      \field{year}{2016}
+      \field{pages}{59\bibrangedash 62}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1016/j.icheatmasstransfer.2016.05.005
+      \endverb
+    \endentry
+    \entry{rauschenberger_criscione_eisenschmidt_kintea_jakirlic_tukovic_roisman_weigand_tropea_2013}{article}{}
+      \name{author}{9}{}{%
+        {{hash=2d158e2f475d2f20cc8acb63764e8b16}{%
+           family={Rauschenberger},
+           familyi={R\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=3b8db870d3b9069eb5df8213f274b420}{%
+           family={Criscione},
+           familyi={C\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=4c1bc2b494daa4758c1919e7e3ced26d}{%
+           family={Eisenschmidt},
+           familyi={E\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=68da5426b022ac7dfa83b4abde60730c}{%
+           family={Kintea},
+           familyi={K\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=c88c7d1abca619f6ae34a7f8e0118921}{%
+           family={Jakirlic},
+           familyi={J\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=939de517e4fcad33cf88cd8097922c15}{%
+           family={Tukovic},
+           familyi={T\bibinitperiod},
+           given={Z.},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=a1ec4d0a8928cb473ca62aeb7c2f240f}{%
+           family={Roisman},
+           familyi={R\bibinitperiod},
+           given={I.V.},
+           giveni={I\bibinitperiod}}}%
+        {{hash=4e4228f70f54f07e52a09f1005f44c85}{%
+           family={Weigand},
+           familyi={W\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=cdaa60a9a99913b5e61baa5e71242c44}{%
+           family={Tropea},
+           familyi={T\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{9234d37cc9373762e8eee173276ae438}
+      \strng{fullhash}{5a00917d86d4564dfb59697a38e5ebce}
+      \strng{bibnamehash}{9234d37cc9373762e8eee173276ae438}
+      \strng{authorbibnamehash}{9234d37cc9373762e8eee173276ae438}
+      \strng{authornamehash}{9234d37cc9373762e8eee173276ae438}
+      \strng{authorfullhash}{5a00917d86d4564dfb59697a38e5ebce}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computers and Fluids}
+      \field{title}{Comparative assessment of Volume-of-Fluid and Level-Set methods by relevance to dendritic ice growth in supercooled water}
+      \field{volume}{79}
+      \field{year}{2013}
+      \field{pages}{44\bibrangedash 52}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1016/j.compfluid.2013.03.010
+      \endverb
+    \endentry
+    \entry{al-rawahi_tryggvason_2002}{article}{}
+      \name{author}{2}{}{%
+        {{hash=d41294a66aedbda598fc679b5cdd68ab}{%
+           family={Al-Rawahi},
+           familyi={A\bibinithyphendelim R\bibinitperiod},
+           given={Nabeel},
+           giveni={N\bibinitperiod}}}%
+        {{hash=e0b5ddd69379d55aa106f4de6615edcf}{%
+           family={Tryggvason},
+           familyi={T\bibinitperiod},
+           given={Gretar},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{167d14355d27e05200ba486e7ec1edb0}
+      \strng{fullhash}{167d14355d27e05200ba486e7ec1edb0}
+      \strng{bibnamehash}{167d14355d27e05200ba486e7ec1edb0}
+      \strng{authorbibnamehash}{167d14355d27e05200ba486e7ec1edb0}
+      \strng{authornamehash}{167d14355d27e05200ba486e7ec1edb0}
+      \strng{authorfullhash}{167d14355d27e05200ba486e7ec1edb0}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Computational Physics}
+      \field{number}{2}
+      \field{title}{Numerical Simulation of Dendritic Solidification with Convection: Two-Dimensional Geometry}
+      \field{volume}{180}
+      \field{year}{2002}
+      \field{pages}{471\bibrangedash 496}
+      \range{pages}{26}
+      \verb{doi}
+      \verb 10.1006/jcph.2002.7092
+      \endverb
+    \endentry
+    \entry{rhie_chow_1983}{article}{}
+      \name{author}{2}{}{%
+        {{hash=20143e17cc5cc0b065dd7c87eb008db8}{%
+           family={Rhie},
+           familyi={R\bibinitperiod},
+           given={C.\bibnamedelimi M.},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=17431021d4c89f4faabb34a33d1d2fbb}{%
+           family={Chow},
+           familyi={C\bibinitperiod},
+           given={W.\bibnamedelimi L.},
+           giveni={W\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{1d37d8a39e7af410ce930a5d5c79605b}
+      \strng{fullhash}{1d37d8a39e7af410ce930a5d5c79605b}
+      \strng{bibnamehash}{1d37d8a39e7af410ce930a5d5c79605b}
+      \strng{authorbibnamehash}{1d37d8a39e7af410ce930a5d5c79605b}
+      \strng{authornamehash}{1d37d8a39e7af410ce930a5d5c79605b}
+      \strng{authorfullhash}{1d37d8a39e7af410ce930a5d5c79605b}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{AIAA Journal}
+      \field{number}{11}
+      \field{title}{Numerical study of the turbulent flow past an airfoil with trailing edge separation}
+      \field{volume}{21}
+      \field{year}{1983}
+      \field{pages}{1525\bibrangedash 1532}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.2514/3.8284
+      \endverb
+    \endentry
+    \entry{richter_turnow_kornev_hassel_2016}{article}{}
+      \name{author}{4}{}{%
+        {{hash=ca51a7153d24cecf35c6e1e337f6e274}{%
+           family={Richter},
+           familyi={R\bibinitperiod},
+           given={Ole},
+           giveni={O\bibinitperiod}}}%
+        {{hash=bcfdf596dccd72a8b929895cbda092c1}{%
+           family={Turnow},
+           familyi={T\bibinitperiod},
+           given={Johann},
+           giveni={J\bibinitperiod}}}%
+        {{hash=ad2af88b0f48e08666e13b4a522f1c23}{%
+           family={Kornev},
+           familyi={K\bibinitperiod},
+           given={Nikolai},
+           giveni={N\bibinitperiod}}}%
+        {{hash=9996650ded3cf0a005dca88df5b6b34f}{%
+           family={Hassel},
+           familyi={H\bibinitperiod},
+           given={Egon},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{b64b0b315feb139948b82dfb363acee1}
+      \strng{fullhash}{dee05d49cbdcf08fc9084b0bc3455dff}
+      \strng{bibnamehash}{b64b0b315feb139948b82dfb363acee1}
+      \strng{authorbibnamehash}{b64b0b315feb139948b82dfb363acee1}
+      \strng{authornamehash}{b64b0b315feb139948b82dfb363acee1}
+      \strng{authorfullhash}{dee05d49cbdcf08fc9084b0bc3455dff}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Heat and Mass Transfer}
+      \field{number}{6}
+      \field{title}{Numerical simulation of casting processes: coupled mould filling and solidification using VOF and enthalpy-porosity method}
+      \field{volume}{53}
+      \field{year}{2016}
+      \field{pages}{1957\bibrangedash 1969}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1007/s00231-016-1954-7
+      \endverb
+    \endentry
+    \entry{rösler_brüggemann_2011}{article}{}
+      \name{author}{2}{}{%
+        {{hash=c51368e1fc7110f1abc3a794985d91f9}{%
+           family={Rösler},
+           familyi={R\bibinitperiod},
+           given={Fabian},
+           giveni={F\bibinitperiod}}}%
+        {{hash=6c1987c574ae0a8db98ad9f2af2d12c9}{%
+           family={Brüggemann},
+           familyi={B\bibinitperiod},
+           given={Dieter},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{38807691c4d12a4e415ab28d550f77e5}
+      \strng{fullhash}{38807691c4d12a4e415ab28d550f77e5}
+      \strng{bibnamehash}{38807691c4d12a4e415ab28d550f77e5}
+      \strng{authorbibnamehash}{38807691c4d12a4e415ab28d550f77e5}
+      \strng{authornamehash}{38807691c4d12a4e415ab28d550f77e5}
+      \strng{authorfullhash}{38807691c4d12a4e415ab28d550f77e5}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Heat and Mass Transfer}
+      \field{number}{8}
+      \field{title}{Shell-and-tube type latent heat thermal energy storage: numerical analysis and comparison with experiments}
+      \field{volume}{47}
+      \field{year}{2011}
+      \field{pages}{1027\bibrangedash 1033}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1007/s00231-011-0866-9
+      \endverb
+    \endentry
+    \entry{steinbach_2009}{article}{}
+      \name{author}{1}{}{%
+        {{hash=c230a34552b3a6643641215d45bc1b5f}{%
+           family={Steinbach},
+           familyi={S\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{c230a34552b3a6643641215d45bc1b5f}
+      \strng{fullhash}{c230a34552b3a6643641215d45bc1b5f}
+      \strng{bibnamehash}{c230a34552b3a6643641215d45bc1b5f}
+      \strng{authorbibnamehash}{c230a34552b3a6643641215d45bc1b5f}
+      \strng{authornamehash}{c230a34552b3a6643641215d45bc1b5f}
+      \strng{authorfullhash}{c230a34552b3a6643641215d45bc1b5f}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Modelling and Simulation in Materials Science and Engineering}
+      \field{number}{7}
+      \field{title}{Phase-field models in materials science}
+      \field{volume}{17}
+      \field{year}{2009}
+      \field{pages}{073001}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/0965-0393/17/7/073001
+      \endverb
+    \endentry
+    \entry{sugimoto_kuramae_matsumoto_watanabe_2021}{article}{}
+      \name{author}{4}{}{%
+        {{hash=1347a527aaec84900987b6040f430281}{%
+           family={Sugimoto},
+           familyi={S\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=288aed1faf85c22dffb76c3db683ff49}{%
+           family={Kuramae},
+           familyi={K\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=f04f590fd694ecbd8dce77abc6e40c3e}{%
+           family={Matsumoto},
+           familyi={M\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e2a0fd8764516c895abc9aa3e72953f2}{%
+           family={Watanabe},
+           familyi={W\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{59e6cbd39fefbd72016e32052e31ed44}
+      \strng{fullhash}{d2f93dea99afc692a4d443e89731e08e}
+      \strng{bibnamehash}{59e6cbd39fefbd72016e32052e31ed44}
+      \strng{authorbibnamehash}{59e6cbd39fefbd72016e32052e31ed44}
+      \strng{authornamehash}{59e6cbd39fefbd72016e32052e31ed44}
+      \strng{authorfullhash}{d2f93dea99afc692a4d443e89731e08e}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{14th WCCM-ECCOMAS Congress}
+      \field{title}{Thermal Fluid Coupled Analysis of Hydrothermal Destruction Reactor}
+      \field{year}{2021}
+      \verb{doi}
+      \verb 10.23967/wccm-eccomas.2020.342
+      \endverb
+    \endentry
+    \entry{tan_zabaras_2007}{article}{}
+      \name{author}{2}{}{%
+        {{hash=4aded6de6d80b15825b483ae11a335f0}{%
+           family={Tan},
+           familyi={T\bibinitperiod},
+           given={Lijian},
+           giveni={L\bibinitperiod}}}%
+        {{hash=338a8079a3ccfab0cf6f5defd230a834}{%
+           family={Zabaras},
+           familyi={Z\bibinitperiod},
+           given={Nicholas},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{ccb26ded92d92e1529deb93500080f90}
+      \strng{fullhash}{ccb26ded92d92e1529deb93500080f90}
+      \strng{bibnamehash}{ccb26ded92d92e1529deb93500080f90}
+      \strng{authorbibnamehash}{ccb26ded92d92e1529deb93500080f90}
+      \strng{authornamehash}{ccb26ded92d92e1529deb93500080f90}
+      \strng{authorfullhash}{ccb26ded92d92e1529deb93500080f90}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Computational Physics}
+      \field{number}{1}
+      \field{title}{A level set simulation of dendritic solidification of multi-component alloys}
+      \field{volume}{221}
+      \field{year}{2007}
+      \field{pages}{9\bibrangedash 40}
+      \range{pages}{32}
+      \verb{doi}
+      \verb 10.1016/j.jcp.2006.06.003
+      \endverb
+    \endentry
+    \entry{tsai_kou_1989}{article}{}
+      \name{author}{2}{}{%
+        {{hash=44484306e8718646694e683c33014c69}{%
+           family={Tsai},
+           familyi={T\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=936ff056f1cc997a5691a8fa815e705f}{%
+           family={Kou},
+           familyi={K\bibinitperiod},
+           given={Sindo},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{f120b1568822c62500c21ef9d90f9c29}
+      \strng{fullhash}{f120b1568822c62500c21ef9d90f9c29}
+      \strng{bibnamehash}{f120b1568822c62500c21ef9d90f9c29}
+      \strng{authorbibnamehash}{f120b1568822c62500c21ef9d90f9c29}
+      \strng{authornamehash}{f120b1568822c62500c21ef9d90f9c29}
+      \strng{authorfullhash}{f120b1568822c62500c21ef9d90f9c29}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal for Numerical Methods in Fluids}
+      \field{number}{12}
+      \field{title}{Marangoni convection in weld pools with a free surface}
+      \field{volume}{9}
+      \field{year}{1989}
+      \field{pages}{1503\bibrangedash 1516}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1002/fld.1650091206
+      \endverb
+    \endentry
+    \entry{vasilyev_vasilyeva_2020}{article}{}
+      \name{author}{2}{}{%
+        {{hash=77428fa6804149fc5f933820c66f0fde}{%
+           family={Vasilyev},
+           familyi={V\bibinitperiod},
+           given={Vasily},
+           giveni={V\bibinitperiod}}}%
+        {{hash=0514f065ad0dd8f5e726e1e045ccc8a5}{%
+           family={Vasilyeva},
+           familyi={V\bibinitperiod},
+           given={Maria},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{46a25603d5b41765725f5c452bbafe46}
+      \strng{fullhash}{46a25603d5b41765725f5c452bbafe46}
+      \strng{bibnamehash}{46a25603d5b41765725f5c452bbafe46}
+      \strng{authorbibnamehash}{46a25603d5b41765725f5c452bbafe46}
+      \strng{authornamehash}{46a25603d5b41765725f5c452bbafe46}
+      \strng{authorfullhash}{46a25603d5b41765725f5c452bbafe46}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Mathematics}
+      \field{number}{11}
+      \field{title}{An Accurate Approximation of the Two-Phase Stefan Problem with Coefficient Smoothing}
+      \field{volume}{8}
+      \field{year}{2020}
+      \field{pages}{1924}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/math8111924
+      \endverb
+    \endentry
+    \entry{voller_prakash_1987}{article}{}
+      \name{author}{2}{}{%
+        {{hash=da0c2ba908f589ae0e4d3cbc652c5950}{%
+           family={Voller},
+           familyi={V\bibinitperiod},
+           given={V.\bibnamedelimi R.},
+           giveni={V\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=d5eb0912186cfac2331e3fc9be968f13}{%
+           family={Prakash},
+           familyi={P\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{a9f29dcd9d8fad531a1ac5aa569fca4c}
+      \strng{fullhash}{a9f29dcd9d8fad531a1ac5aa569fca4c}
+      \strng{bibnamehash}{a9f29dcd9d8fad531a1ac5aa569fca4c}
+      \strng{authorbibnamehash}{a9f29dcd9d8fad531a1ac5aa569fca4c}
+      \strng{authornamehash}{a9f29dcd9d8fad531a1ac5aa569fca4c}
+      \strng{authorfullhash}{a9f29dcd9d8fad531a1ac5aa569fca4c}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Heat and Mass Transfer}
+      \field{number}{8}
+      \field{title}{A fixed grid numerical modelling methodology for convection-diffusion mushy region phase-change problems}
+      \field{volume}{30}
+      \field{year}{1987}
+      \field{pages}{1709\bibrangedash 1719}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1016/0017-9310(87)90317-6
+      \endverb
+    \endentry
+    \entry{voller_2008}{article}{}
+      \name{author}{1}{}{%
+        {{hash=da0c2ba908f589ae0e4d3cbc652c5950}{%
+           family={Voller},
+           familyi={V\bibinitperiod},
+           given={V.R.},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{da0c2ba908f589ae0e4d3cbc652c5950}
+      \strng{fullhash}{da0c2ba908f589ae0e4d3cbc652c5950}
+      \strng{bibnamehash}{da0c2ba908f589ae0e4d3cbc652c5950}
+      \strng{authorbibnamehash}{da0c2ba908f589ae0e4d3cbc652c5950}
+      \strng{authornamehash}{da0c2ba908f589ae0e4d3cbc652c5950}
+      \strng{authorfullhash}{da0c2ba908f589ae0e4d3cbc652c5950}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Heat and Mass Transfer}
+      \field{number}{3-4}
+      \field{title}{An enthalpy method for modeling dendritic growth in a binary alloy}
+      \field{volume}{51}
+      \field{year}{2008}
+      \field{pages}{823\bibrangedash 834}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1016/j.ijheatmasstransfer.2007.04.025
+      \endverb
+    \endentry
+    \entry{wu_lai_zhang_2015}{article}{}
+      \name{author}{3}{}{%
+        {{hash=9e386b5abd3e32a64c99e996659af44c}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Daoyong},
+           giveni={D\bibinitperiod}}}%
+        {{hash=c1b88a875bcc3bcffd474b4d47efc472}{%
+           family={Lai},
+           familyi={L\bibinitperiod},
+           given={Yuanming},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=c9df1eb35e76af80baab97700c757ca4}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Mingyi},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{064de659969d5bfa153a153d59c73119}
+      \strng{fullhash}{064de659969d5bfa153a153d59c73119}
+      \strng{bibnamehash}{064de659969d5bfa153a153d59c73119}
+      \strng{authorbibnamehash}{064de659969d5bfa153a153d59c73119}
+      \strng{authornamehash}{064de659969d5bfa153a153d59c73119}
+      \strng{authorfullhash}{064de659969d5bfa153a153d59c73119}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Heat and Mass Transfer}
+      \field{title}{Heat and mass transfer effects of ice growth mechanisms in a fully saturated soil}
+      \field{volume}{86}
+      \field{year}{2015}
+      \field{pages}{699\bibrangedash 709}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1016/j.ijheatmasstransfer.2015.03.044
+      \endverb
+    \endentry
+    \entry{yan_xu_qiu_gang_2017}{article}{}
+      \name{author}{4}{}{%
+        {{hash=d41a5474ed950f0b98951f2abc46a0e1}{%
+           family={Yan},
+           familyi={Y\bibinitperiod},
+           given={Tian},
+           giveni={T\bibinitperiod}}}%
+        {{hash=f6ee155644d2fe5729f5d1f7341fc1a9}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Xinhua},
+           giveni={X\bibinitperiod}}}%
+        {{hash=f00e4f0fd03482b4e84de8f59e0b8966}{%
+           family={Qiu},
+           familyi={Q\bibinitperiod},
+           given={Dun},
+           giveni={D\bibinitperiod}}}%
+        {{hash=56147fcf19ff06d75fe17d2b387d0e68}{%
+           family={Gang},
+           familyi={G\bibinitperiod},
+           given={Wenjie},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{5b3d9a50c9eab1c7371893bc3fb37a21}
+      \strng{fullhash}{037b090bcd33b7a986aa3b50869dc8a9}
+      \strng{bibnamehash}{5b3d9a50c9eab1c7371893bc3fb37a21}
+      \strng{authorbibnamehash}{5b3d9a50c9eab1c7371893bc3fb37a21}
+      \strng{authornamehash}{5b3d9a50c9eab1c7371893bc3fb37a21}
+      \strng{authorfullhash}{037b090bcd33b7a986aa3b50869dc8a9}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Procedia Engineering}
+      \field{title}{A Quasi-Steady-State Simplified Model for Pipe-encapsulated PCM}
+      \field{volume}{205}
+      \field{year}{2017}
+      \field{pages}{3243\bibrangedash 3250}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1016/j.proeng.2017.10.309
+      \endverb
+    \endentry
+    \entry{zhao_zhao_xu_2018}{article}{}
+      \name{author}{3}{}{%
+        {{hash=d5ff4bd5ca210dc62374b1352daac212}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=871e84a4ccee254b8c3309283a22cb5f}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={C.Y.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=3b3f9c446b6de7560ecff481196e6004}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Z.G.},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \strng{namehash}{c6fc044cf625413cd34807a4a5e4f717}
+      \strng{fullhash}{c6fc044cf625413cd34807a4a5e4f717}
+      \strng{bibnamehash}{c6fc044cf625413cd34807a4a5e4f717}
+      \strng{authorbibnamehash}{c6fc044cf625413cd34807a4a5e4f717}
+      \strng{authornamehash}{c6fc044cf625413cd34807a4a5e4f717}
+      \strng{authorfullhash}{c6fc044cf625413cd34807a4a5e4f717}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computers and Fluids}
+      \field{title}{Numerical study of solid-liquid phase change by phase field method}
+      \field{volume}{164}
+      \field{year}{2018}
+      \field{pages}{94\bibrangedash 101}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1016/j.compfluid.2017.05.032
+      \endverb
+    \endentry
+  \enddatalist
+  \missing{openfoamuserguide:cfddirect}
+\endrefsection
+\endinput
+

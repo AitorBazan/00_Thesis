@@ -129,7 +129,7 @@ If substituting terms, it yields:
 \end{equation}
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.9\linewidth]{TEqn_CHT.png}	
+	\includegraphics[width=0.9\linewidth]{TEqn_cht.png}	
 	\label{4.4fig}
 	\caption{Energy equation for the fluid in CHT.}
 \end{figure} 
@@ -224,6 +224,12 @@ For the solid region, the thermophysical properties are chosen as for the polyet
 \end{table}
 \clearpage
 \subsection{Results and Conclusions}
+Within this section, the coupling of a multiregion solver with a multiphase solver is intended. However, results cannot be validated against the native solver.
+For the native solver, the library of solidification is used so as to represent the evolution of the liquid fraction. Besides, the use of the polynomial density variation is included. Whereas for the new solver, the Lee-CNT model is used so as to represent the phase change phenomena. The same mesh is used for both calculations. 
+
+\noindent In the chtMultiRegionFoam the temperature distribution is as one could expect. The evolution is very similar to the one found in the previous solidification section. However, as it is observable, it is generated slower due to the influence of the solid region which surrounds the inner fluid field. The conduction enables a temperature gradient in the shared patches between solid and fluid regions. And from there, the convection in the liquid is enabled. 
+
+\noindent In the chtMultiPhaseInterFoam the temperature, velocity magnitude and liquid fraction (ice layer evolution) display a radial distribution. This exhibits the ausence of the gravity related terms. 
 \begin{table}[h!]
 	\begin{tabular}{@{}llllll@{}}
 		\toprule[1pt]
@@ -238,3 +244,17 @@ For the solid region, the thermophysical properties are chosen as for the polyet
 	\caption{Numerical results of chtMultiRegionFoam (first row) and chtMultiPhaseInterFoam (second row) at \textit{t = 2100s} in a cylinder.}	
 	\label{4.4tab}
 \end{table}
+\clearpage
+In figures \ref{4.14fig} and \ref{4.15fig} it is shown the evolution of the residuals of the hydrostatic pressure for both used solvers. The tolerance for solving the hydrostatic pressure is set to $1-03$ and both solvers reach the solution beyond this value. This control is used so as to avoid non-physical solutions. 
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\linewidth]{chtMultiRegionFoam_initialResidual_prgh.png}
+	\caption{Initial residual of hydrostatic pressure in \textit{chtMultiRegionFoam}.}
+	\label{4.14fig}
+\end{figure}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\linewidth]{chtMultiPhaseInterFoam_residuals_prgh.png}	
+	\caption{Initial and final residuals of hydrostatic pressure in \textit{chtMultiPhaseInterFoam}.}
+	\label{4.15fig}
+\end{figure}

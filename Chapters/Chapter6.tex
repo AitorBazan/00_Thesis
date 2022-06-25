@@ -1,3 +1,8 @@
 \chapter{Future Works} % Main chapter title
 
 \label{Chapter6}
+\setlength{\parindent}{0.5cm} The completed work in this master's thesis has allowed to identify some models which can be used to accuratedly represent solidification phenomena. 
+
+\noindent It has been identified thorugh the analysis of the enthalpy-porosity model some differences in the evolution of the temperature along time. The proposed library for the latent heat term uses a liquid fraction function instead of the one calculated by the phase transport equation already implemented on the solver. This is done so it could be used in the \textit{chtMultiRegionFoam} native solver for comparison purposes. The author encourages to use the liquid fraction calculated by the VOF technique instead.
+
+\noindent It has also been shown that the proposed formulation for the implementation of the multiregion solver which accounts for multiphase fluids has not achieved the expected results.  
