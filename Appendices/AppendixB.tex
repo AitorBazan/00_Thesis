@@ -5,9 +5,18 @@
 \section{Computational Mesh script}
 \label{mesh script}
 \lstinputlisting[language=Python,style=mystylePython]{code/mesh_script/cht_geom.py}
+\section{myBuoyantBoussinesqPimpleFoam solver}
+\lstinputlisting[language=C++,style=mystyleCPP]{code/myBuoyantBoussinesqPimpleFoam/myBuoyantBoussinesqPimpleFoam.C}
+\subsubsection*{createFields}
+\lstinputlisting[language=C++,style=mystyleCPP]{code/myBuoyantBoussinesqPimpleFoam/createFields.H}
+\subsubsection*{pEqn}
+\lstinputlisting[language=C++,style=mystyleCPP]{code/myBuoyantBoussinesqPimpleFoam/pEqn.H}
+\subsubsection*{TEqn}
+\lstinputlisting[language=C++,style=mystyleCPP]{code/myBuoyantBoussinesqPimpleFoam/TEqn.H}
+\subsubsection*{UEqn}
+\lstinputlisting[language=C++,style=mystyleCPP]{code/myBuoyantBoussinesqPimpleFoam/UEqn.H}
 \section{chtMultiphaseInterFoam solver}
 \label{chtMultiphaseInterFoam}
-\lstinputlisting[language=C++,style=mystyleCPP]{code/chtMultiPhaseInterFoam/chtMultiPhaseInterFoam.C}
 \subsubsection*{createFields}
 \lstinputlisting[language=C++,style=mystyleCPP]{code/chtMultiPhaseInterFoam/createFields.H}
 \subsubsection*{createMeshes}

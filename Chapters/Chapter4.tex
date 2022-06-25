@@ -189,7 +189,7 @@ while the magnitude for the heat fluxes is derived from the one-dimensional expr
 \end{equation}
 where $\kappa$ is the termal conductivity and $n$ the direction normal to the patch.
 
-\noindent Discretizing linearly the temperature gradient of the previous equation, and with respect of the scheme of the Figure [], the differential equation that yields 
+\noindent Discretizing linearly the temperature gradient of the previous equation, the differential equation that yields as
 \begin{equation}
 	k_{1} \Delta_{1}\left(T_{c, 1}-T_{p}\right)=k_{2} \Delta_{2}\left(T_{p}-T_{c, 2}\right)
 	\label{4.12}
@@ -202,7 +202,7 @@ where the temperatures and fluxes at the center of the patches are described as
 	\end{gathered}
 	\label{4.13}
 \end{equation}
-This boundary condition is given in OpenFOAM under the name \textit{turbulentTemperatureCoupledBaffleMixed}. The required input is the temperature at the patch. Therefore, that temperature for the interface between the liquid and the solid regions is initially setted at 298ºC.
+This boundary condition is given in OpenFOAM under the name \textit{turbulentTemperatureCoupledBaffleMixed}. The required input is the temperature at the patch. Therefore, that temperature for the interface between the liquid and the solid regions is initially setted at 298 K.
 
 \subsubsection{Thermophysical properties}
 
