@@ -19,11 +19,11 @@
 
 \setlength{\parindent}{0.5cm} During the last decade, the use of phase change materials has been growing in the automotive industry. 
 
-\noindent These substances release or absorb large amounts of latent heat when they go through a change in their physical state, as the material reaches its specific phase change temperature. Thus, in the process of latent heat release or absorption, the temperature of the PCM remains constant. Therefore, PCMs are considered to be efficient in terms of thermal storage. 
+\noindent These substances release or absorb large amounts of latent heat when they go through a change in their physical state, as the material reaches its specific phase change temperature. Thus, in the process of latent heat release or absorption, the temperature of the phase change material (PCM) remains constant. Therefore, PCMs are considered to be efficient in terms of thermal storage. 
 
-\noindent However, some of these PCM's may present physical effects which most of times require special conditions for the containers in where they are placed. Thus, in such geometries, problems involving, i.e., solidification are of considerable relevance. And this is mainly due to a volumetric expansion originated by the thermal effects within the PCM which at its turn, generates stresses in the tank in which is bottled up.
+\noindent However, some of these PCM's may present physical effects which most of the times require special conditions for the containers in where they are placed. Thus, in such geometries, problems involving, i.e., solidification are of considerable relevance. And this is mainly due to a volumetric expansion originated by the thermal effects within the PCM which at its turn, generates stresses in the tank in which is bottled up.
 
-\noindent Therefore, this master's thesis main objective aims to study different numerical techniques to represent solidification process and, specially, pure water phase change. This is accomplished by first stuying the physics of a pure convective solver.
+\noindent On that basis, this master's thesis main objective aims to study different numerical techniques to represent solidification process and, specially, pure water phase change. This is accomplished by first stuying the physics of a pure convective solver. That will bring a new solver with a rather different gravity-related term and a polynomial density variation purely temperature dependent. This is validated against literature.
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=1\linewidth]{buoyancy_roadmap.png}
@@ -31,11 +31,11 @@
 	\label{1.1fig}
 \end{figure}
 \clearpage
-\noindent And later, imlementing an enthalpy-porosity technique within the frame of a multi-phase incompressible solver based on volume-of-fluid (VOF) method for interface tracking. The objective of this first stage is to apply sensible and latent heat as source terms in the energy equation. 
+\noindent And later, imlementing an enthalpy-porosity technique within the frame of a multi-phase incompressible solver based on volume-of-fluid (VOF) method for interface tracking. The objective of this first stage is to apply the latent heat as source term in the energy equation. 
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=1\linewidth]{EP_roadmap.png}
-	\caption{Workpath for latent heat implementation in Enthalpy-porosity model.} 
+	\caption{Workpath for latent heat implementation in enthalpy-porosity model.} 
 	\label{1.2fig}
 \end{figure}
 \newline
@@ -47,7 +47,7 @@ On a second stage of the thesis, a 2D semi-empirical model based on the work of 
 	\label{1.3fig}
 \end{figure}
 \newline
-\noindent The final stage of this thesis is devoted to an implementation of a multiregion solver to calculate conjugate heat transfer problems between solid and fluid zones with the singularity of being, the fluid zone, capable of handling phase change materials. 
+\noindent The final stage of this thesis is devoted to an implementation of a multiregion solver to calculate conjugate heat transfer problems between solid and fluid zones with the singularity of being, the fluid zone, capable of handling phase change materials. Both models are validated against literature.
 \clearpage
 \begin{figure}[h!]
 	\centering
@@ -161,9 +161,9 @@ Although there are at least 11 crystalline ice shapes, the only which is found i
 \frac{d Q}{d t}=h A\left(T_{s}(t)-T_{\infty}\right)
 \label{1.1}
 \end{equation}
-where \textit{Q} is the heat source (thermal energy), $T_s$ is the temperature on the surface of the object, $T_{\infty}$ the temperature far away from the object, \textit{h} is the heat transfer coefficient and A the heat transfer surface area.
+where \textit{Q} is the heat source (thermal energy), $T_s$ is the temperature on the surface of the object, $T_{\infty}$ the temperature far away from the object, \textit{h} is the heat transfer coefficient and A, the heat transfer surface area.
 
-\noindent The equation \ref{1.1} states that the rate of heat loss is proportional to the temperature difference between the object itself and the medium by which is surrounded.
+\noindent The equation \ref{1.1} states that the rate of heat loss is proportional to the temperature difference between the object itself and the medium by which it is surrounded.
 
 \noindent The process of water freezing in enclosures is common in engineering. When there exist temperature gradients within the liquid phase in the process of solidification, a natural buoyancy driven flow is initiated and such behavior is determined to affect the shape of the liquid/solid interface as well as the progress of solidification.
 

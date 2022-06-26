@@ -35,7 +35,7 @@ parskip, % Uncomment to add space between paragraphs
 %nohyperref, % Uncomment to not load the hyperref package
 headsepline, % Uncomment to get a line under the header
 %chapterinoneline, % Uncomment to place the chapter title next to the number on one line
-%consistentlayout, % Uncomment to change the layout of the declaration, abstract and acknowledgements pages to match the default layout
+consistentlayout, % Uncomment to change the layout of the declaration, abstract and acknowledgements pages to match the default layout
 ]{MastersDoctoralThesis} % The class file specifying the document structure
 \usepackage{pdfpages}
 \usepackage{booktabs}
@@ -93,7 +93,7 @@ headsepline, % Uncomment to get a line under the header
 \keywords{} % Keywords for your thesis, this is not currently used anywhere in the template, print it elsewhere with \keywordnames
 \university{\href{http://www.university.com}{Universitat Politècnica de Catalunya}} % Your university's name and URL, this is used in the title page and abstract, print it elsewhere with \univname
 \department{\href{http://department.university.com}{Escola Tècnica Superior d'Enginyeria de Camins, Canals i Ports de Barcelona}} % Your department's name and URL, this is used in the title page and abstract, print it elsewhere with \deptname
-\group{\href{http://researchgroup.university.com}{Research Group Name}} % Your research group's name and URL, this is used in the title page, print it elsewhere with \groupname
+\group{\href{http://researchgroup.university.com}{Fluid Mechanics Department}} % Your research group's name and URL, this is used in the title page, print it elsewhere with \groupname
 \faculty{\href{http://faculty.university.com}{Faculty Name}} % Your faculty's name and URL, this is used in the title page and abstract, print it elsewhere with \facname
 
 \AtBeginDocument{
@@ -160,36 +160,38 @@ headsepline, % Uncomment to get a line under the header
 \noindent I, \authorname, declare that this thesis titled, \enquote{\ttitle} and the work presented in it are my own. I confirm that:
 
 \begin{itemize} 
-\item This work was done wholly or mainly while in candidature for a research degree at this University.
-\item Where any part of this thesis has previously been submitted for a degree or any other qualification at this University or any other institution, this has been clearly stated.
 \item Where I have consulted the published work of others, this is always clearly attributed.
 \item Where I have quoted from the work of others, the source is always given. With the exception of such quotations, this thesis is entirely my own work.
 \item I have acknowledged all main sources of help.
 \item Where the thesis is based on work done by myself jointly with others, I have made clear exactly what was done by others and what I have contributed myself.\\
 \end{itemize}
  
-\noindent Signed:\\
+\noindent Signed: Aitor Bazán Escoda\\
 \rule[0.5em]{25em}{0.5pt} % This prints a line for the signature
  
-\noindent Date:\\
+\noindent Date: 29.06.2022\\
 \rule[0.5em]{25em}{0.5pt} % This prints a line to write the date
 \end{declaration}
 
-\cleardoublepage
+
 
 %----------------------------------------------------------------------------------------
 %	ABSTRACT PAGE
 %----------------------------------------------------------------------------------------
 
 \begin{abstract}
-\addchaptertocentry{\abstractname} % Add the abstract to the table of contents
-\indent Phase change materials (PCMs) are of great interest within the automotive industry field. Not only when used in thermal management applications but also in different areas where these materials are of vital importance for both a safe and comfortable driving. For such objective, the present project arises from the idea of understanding solidification processes in such areas. In this context, this master's thesis produces a comprehensive state of the art of some of the current numerical methods to effectively represent water solidification. 
+\addchaptertocentry{\abstractname} 
+\setlength{\parindent}{0.5cm} Phase change materials (PCMs) are of great interest within the automotive industry field. Not only when used in thermal management applications but also in different areas where these materials are of vital importance for both a safe and comfortable driving. For such objective, the present project arises from the idea of understanding solidification processes in such areas. In this context, this master's thesis produces a comprehensive state of the art of some of the current numerical methods to effectively represent water solidification. 
 
-\noindent An OpenFOAM 21.12. solver based on a multi-phase solver, multicomponent incompressible solver based on a volume of fluid method is adapted to deal with diffusive-convective phase change. So as to reach this goal, an implementation of the enthalpy-porosity techinque is carried out. The work of Voller is closely followed, and a detailed explanation of the used equations and the assumptions taken is given. Validation of the model is accomplished by comparing the numerical results with the authors in Bourdillon and Kowaleski.
+\noindent An OpenFOAM 21.12. solver based on a multi-phase solver, multicomponent incompressible solver based on a volume of fluid method is adapted to deal with diffusive-convective water phase change. So as to reach this goal, two different models for water solidification representation are investigated. 
 
-\noindent On a second stage, a 2D semi-empirical model based on the work of Lee is adapted to account for the nucleation characteristics during the process of the water phase change. Validation of the model is done by comparing the obtained results to Neumann solutions for classical Stefan problem. 
+\noindent Firstly, research on the pure convective part is done by implementing both a new expression for the gravity related terms and an equation of state which properly fits the accounted physical phenomena. 
 
-\noindent Finally, the current work is extended to couple a fluid region in which the liquid undergoes a phase-change and a solid region. This is done in the context of a conjugate heat transfer scenario. 
+\noindent On a second stage, an implementation of the enthalpy-porosity techinque is carried out. The work of Voller is closely followed, and a detailed explanation of the used equations and the assumptions taken is given. Validation of the model is accomplished by comparing the numerical results with the authors in Bourdillon and Kowaleski.
+
+\noindent On a third stage, a 2D semi-empirical model based on the work of Lee is adapted to account for the nucleation characteristics during the process of the water freezing. Validation of the model is done by comparing the obtained results to the literature aforementioned. Numerical results are tested against Neumann solutions for classical Stefan problem. 
+
+\noindent Finally, the current work is extended to a multiregion solver implementation based on the coupling of a fluid region, in which the liquid undergoes a phase-change, with a solid region. This is done in the context of a conjugate heat transfer scenario. 
 
 \textbf{Keywords:} PCMs, multi-phase, Enthalpy-porosity technique, Voller, Lee model, Stefan problem, conjugate heat transfer, OpenFOAM.
 \end{abstract}
@@ -201,8 +203,8 @@ headsepline, % Uncomment to get a line under the header
 \begin{acknowledgements}
 \addchaptertocentry{\acknowledgementname} % Add the acknowledgements to the table of contents
 My first and biggest thanks goes to my supervisors, Dr. Robert Castilla and Dr. Gustavo Raush for their invaluable help throughout this work. 
-\linebreak
-I would like to thank my family and all my workmates in Barcelona Technical Center S.L. for giving me support in the darkest hours.
+
+\noindent I would like to thank my family and all my workmates in Barcelona Technical Center S.L. for giving me support in the darkest hours.
 \end{acknowledgements}
 
 %----------------------------------------------------------------------------------------

@@ -26,7 +26,7 @@ To reach this point, it is important to summarize some of the numerous researche
 
 \subsection*{Volume-of-fluid method}
 
-\setlength{\parindent}{0.5cm} Initially introduced by Harlow et al. \cite{harlow_welch_1965}, a technique called the marker and cell method tracked the interface by wightless particles which were transported convectively by the velocity of the fluid. Cells that were filled with marked particles were considered occupied by the fluid while, contrarily, these which were not filled with marked particles were not occupied by fluid. Later in time, the idea was extended to track the interface based on phase fractions in the volume-of-fluid method which is discussed in detail below.
+\setlength{\parindent}{0.5cm} Initially introduced by Harlow et al. \cite{harlow_welch_1965}, a technique called the marker and cell method tracked the interface by wightless particles which were transported convectively by the velocity of the fluid. Cells that were filled with marked particles were considered occupied by the fluid while, contrarily, these which were not filled with marked particles were not occupied by fluid. Later in time, the idea was extended to track the interface based on phase fractions in the volume-of-fluid method which is discussed in detail later in this chapter.
 
 \subsection*{Level set method}
 
@@ -49,9 +49,9 @@ To reach this point, it is important to summarize some of the numerous researche
 \noindent One of the most used methods is the enthalpy-porosity technique, originally developed by Voller and Prakash \cite{voller_prakash_1987}, which uses the typical conservation equations on a fixed Eulerian grid. The main concepts underlaying such method are: on the one side, an additional source term to the energy conservation equation is applied to describe the release of latent heat. On the other side, the solidification effects on the mass transport are modelled as a porosity variable and this is introduced as a Darcy-type source term to the momentum equation.
 
 
-\noindent In the first aim of this thesis is the coupled use of the enthalpy-porosity technique with the VOF method. Some of the studies found on this topic, the coupling of both VOF and enthalpy-porosity methods, are mainly related to casting processes. Rösler and Brüggermann \cite{rösler_brüggemann_2011} introduced a numerical model for a solid-liquid phase change inside a latent heat thermal energy storage. Richter et al. \cite{richter_turnow_kornev_hassel_2016}, worked out a method for the simultaneous moult filling and solidification process which settles the developing of free surface flow and the liquid-solid phase transition under the volume-of-fluid and enthalpy-porosity methods.
+\noindent In the first aim of this thesis is the coupled use of the enthalpy-porosity technique with the VOF method. Some of the studies found on this topic, the coupling of both VOF and enthalpy-porosity methods, are mainly related to casting processes. Rösler and Brüggermann \cite{rösler_brüggemann_2011} introduced a numerical model for a solid-liquid phase change inside a latent heat thermal energy storage. Richter et al. \cite{richter_turnow_kornev_hassel_2016}, worked out a method for the simultaneous mould filling and solidification process which settles the developing of free surface flow and the liquid-solid phase transition under the volume-of-fluid and enthalpy-porosity methods.
 
-\noindent However, no adaptation of these methods to purely solidification processes has been found. Therefore, and, the objectives of the first stage of the research are:
+\noindent However, no adaptation of these methods to purely solidification processes has been found. Therefore, the objectives of the first stage of the research are:
 \begin{itemize}
 	\item To introduce a new solver based on the coupling of VOF and enthalpy-porosity techniques which covers the relevant physical effects during the process of solidification.
 	\item	To validate simulation results by using benchmark cases found in the literature.
@@ -75,7 +75,7 @@ In which $\alpha_{phase}$ corresponds to the phase fraction and it applies:
 	\label{2.2}
 \end{equation}
 \clearpage
-\noindent As Eq. \ref{2.1} exposes, the principle that lies behind the method is the definition of the phase field ($\alpha$), Eq. \ref{2.2}, which has a value between '0' and '1'. The value of '1' corresponds to any point filled with fluid and zero otherwise. Thus, the average value of $\alpha$	in a cell indicates the fractional volume of that cell occupied by the fluid. Consequently, if a cell has an average value of $\alpha=1$ implies a fully filled cell of fluid and oppositely, a value of $\alpha=0$ means that the fluid is not present in the cell. However, a cell presenting an average value between 0 and 1 would lead the presence of an interface in that region as it is clearly seen in Fig. \ref{2.1}.
+\noindent As Eq. \ref{2.1} exposes, the principle that lies behind the method is the definition of the phase field ($\alpha$), Eq. \ref{2.2}, which has a value between '0' and '1'. The value of '1' corresponds to any point filled with fluid and zero, otherwise. Thus, the average value of $\alpha$	in a cell indicates the fractional volume of that cell occupied by the fluid. Consequently, if a cell has an average value of $\alpha=1$ implies a fully filled cell of fluid and oppositely, a value of $\alpha=0$ means that the fluid is not present in the cell. However, a cell presenting an average value between 0 and 1 would lead the presence of an interface in that region as it is clearly seen in Fig. \ref{2.1}.
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=.55\linewidth]{Volume-of-Fluid-approach.jpg}	
@@ -97,7 +97,7 @@ In which $\alpha_{phase}$ corresponds to the phase fraction and it applies:
 	\label{2.3}
 \end{equation}
 
-\noindent where \textit{u} is the velocity component and $\kappa_{i}$ is the thermal conductivity of the fluid. \textit{h} can be expressed as a function of its latent heat and the specific sensible parts,
+\noindent where \textit{u} is the velocity component and $\kappa_{i}$ is the thermal conductivity of the fluid.
 
 \noindent However, the enthalpy-porosity method describes the enthalpy \textit{h} of the mixture by its sensible part and the latent heat of solidification.
 The release of the latent heat is dependent on the stage of the phase change, and must be restricted to the phase change material.
@@ -112,11 +112,11 @@ where the latent heat is is driven by the evolution of the liquid $\alpha_{l}$. 
 	\end{cases}
 	\label{2.5}
 \end{equation}
-For seek of brevity on the following expressions, it is adapted the term $\gamma_{phase}$ to $\gamma_{l}$ 
+For seek of brevity on the following expressions, it is adapted the term $\alpha_{phase}$ to $\alpha_{l}$ 
 If expression \ref{2.5} is replaced in \ref{2.4},
 \begin{equation}
 	\begin{aligned}
-		&\frac{\partial\left(\rho c_{p} T + \gamma_{l} \alpha_{l} L\right)}{\partial t}+\frac{\partial\left(\rho u_{j} c_{p} T + u_{j}\gamma_{l} \alpha_{l} L\right)}{\partial x_{j}} \\
+		&\frac{\partial\left(\rho c_{p} T + \alpha_{l} L\right)}{\partial t}+\frac{\partial\left(\rho u_{j} c_{p} T + u_{j} \alpha_{l} L\right)}{\partial x_{j}} \\
 		&=\nabla \cdot\left(k_{i} \nabla T_{i}\right)
 	\end{aligned}
 	\label{2.6}
@@ -124,8 +124,8 @@ If expression \ref{2.5} is replaced in \ref{2.4},
 Rearranging terms, it yields the complete energy equation with the sensible and latent heat parts for the correct representation of solidification processes.
 \begin{equation}
 	\begin{aligned}
-		\frac{\partial (\rho C_{p} T)}{\partial t}+ \nabla \cdot\left(u_{j}\rho C_{p} T\right)+L\left[\frac{\partial (\rho \alpha_{l}\gamma_{l})}{\partial t}+ \frac{\partial (u_{j}\rho \alpha_{l}\gamma_{l})}{\partial x_{j}}\right]=\nabla \cdot\left(k_{i} \nabla T_{i}\right)  \\
-		S = -L\left[\frac{\partial (\rho \alpha_{l}\gamma_{l})}{\partial t}+ \frac{\partial (u_{j}\rho \alpha_{l}\gamma_{l})}{\partial x_{j}}\right]
+		\frac{\partial (\rho C_{p} T)}{\partial t}+ \nabla \cdot\left(u_{j}\rho C_{p} T\right)+L\left[\frac{\partial (\rho \alpha_{l})}{\partial t}+ \frac{\partial (u_{j}\rho \alpha_{l})}{\partial x_{j}}\right]=\nabla \cdot\left(k_{i} \nabla T_{i}\right)  \\
+		S = -L\left[\frac{\partial (\rho \alpha_{l})}{\partial t}+ \frac{\partial (u_{j}\rho \alpha_{l})}{\partial x_{j}}\right]
 	\end{aligned}
 	\label{2.7}
 \end{equation}
@@ -207,7 +207,7 @@ where \textit{$H_l$} is the latent heat induced by the phase transition and \tex
 
 \noindent The concept behind the \textit{Classical Nucleation Theory}, CNT, as described in \cite{ickes_welti_hoose_lohmann_2015} resides in the idea of droplet freezing. This is initiated in the fluctuation of molecules of a supercooled liquid due to thermal vibration which lead, at its turn, to spontaneous formation of ordered solid molecule clusters (ice embryos). The size of these embryos oscillates as individual water molecules are crystallized or lost from the liquid phase. When the size of the embryo reaches a critical value, it leads a faster and auspicious thermodynamic joining of further water molecules to the crystal lattice. This means the critical embryo enhancing the "parent phase", supercooled liquid, to undergo a macroscopic phase transition: droplet freezing.
 
-\noindent And this is what CNT aims to describe; the freezing process in terms of temperature-dependent nucleation rate by joining two components: thermodynamic and kinetic. These components, briefly described in the following chapters, are based on the theory found at Lai et al. \cite{wu_lai_zhang_2015} and Huang et al. \cite{huang_wang_li_2020}.
+\noindent And this is what CNT aims to describe; the freezing process in terms of temperature-dependent nucleation rate by joining two components: thermodynamic and kinetic. These components, briefly described in the following chapters, are based on the theory found in Lai et al. \cite{wu_lai_zhang_2015} and Huang et al. \cite{huang_wang_li_2020}.
 
 \noindent As a remark, in this thesis a brief introduction of this theory is given. However, for further details on the assumptions used refer to the literature.
 
@@ -296,13 +296,14 @@ As a final step, inserting Eq. \ref{2.25}, which at its turn is equal to Eq. \re
 	\end{aligned}
 \end{equation}
 Fig. \ref{2.2fig} characterizes the variation of the crystallization rate in function of the temperature. In the image, the dotted line shows how the nucleation effect is 0 close to the cooling, and as the temperature values decrease, this lines tend to 1. Moreover, the dashed line shows how the effect of the diffusion of the molecules increases as the temperature does. This prompts out the ease of the embryo formation when at low temperatures since the molecules cannot overcome the energy barrier to enter the embryo. However, the crystal growth becomes harder. This may be seen as constant search of equilibrium among the nucleation and the crystal growth.
+\clearpage
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.6\textwidth]{crystallization_rate.png}
-	\caption{Crystallization rate versus temperature.}	
+	\caption{Crystallization rate in function of temperature.}	
 	\label{2.2fig}
 \end{figure} 
-Finally, the coefficient $C_f$ that appears on Equations \ref{2.9} and \ref{2.10} as commented above, is defined for the Lee model as:
+\noindent Finally, the coefficient $C_f$ that appears on Equations \ref{2.9} and \ref{2.10} as commented above, is defined for the Lee model as:
 \begin{equation}
 	\label{2.28}
 	C_f=J_{\mathrm{hom}} \cdot V_{l}
@@ -313,7 +314,7 @@ where $V_{l}$ is the volume of water in each cell.
 
 \setlength{\parindent}{0.5cm} Interphase porosity models add an aritificial momentum source over the interface between phases to compute the sink of velocity in the solidified region. Therefore, influencing the behavior of the physics during the process of solidification or melting.
 
-\noindent The model implemented in OpenFOAM is \textit{Voller Prakash method} \cite{voller_prakash_1987}, and it defines the source terms, \textit{$S_y$} and \textit{$S_z$} such that when along the fluid domain these terms take on a value of zero, the momentum equations are driven by the actual values of the velocities. On the other side, when it comes to treat the mushy region (i.e. porous region), the value of these source terms dominate convective, diffusive and transient terms and the momentum equation tends to approximate de Darcy law.
+\noindent The model implemented in OpenFOAM is \textit{Voller Prakash method} \cite{voller_prakash_1987}, and it defines the source terms, \textit{$S_y$} and \textit{$S_z$} such that when along the fluid domain these terms take on a value of zero, the momentum equations are driven by the actual values of the velocities. On the other side, when it comes to treat the mushy region (i.e. porous region), the value of these source terms dominate convective, diffusive and transient terms and the momentum equation tends to approximate the Darcy's law.
 
 \noindent The two source terms as specified above,
 \begin{equation}
@@ -323,7 +324,7 @@ where $V_{l}$ is the volume of water in each cell.
 	\end{array}\right.
 	\label{2.29}
 \end{equation}
-Then, to specify a term for the function A, it is used the \textit{Carman-Koseny equation}, which is derived from the Darcy law. The former expresses the gradient for the pressure as a combination of the velocity, \textbf{u}, and the porosity, $\lambda$. The coefficient \textit{C} depends on the morphology of the medium.
+Then, to specify a term for the function A, it is used the \textit{Carman-Koseny equation}, which is derived from the Darcy's law. The former expresses the gradient for the pressure as a combination of the velocity, \textbf{u}, and the porosity, $\lambda$. The coefficient \textit{C} depends on the morphology of the medium.
 \begin{equation}
 	gradP=-\left(\frac{C(1-\lambda)^{2}}{\lambda^{3}}\right) \mathbf{u}
 	\label{2.30}
@@ -333,7 +334,7 @@ To avoid division by zero, \textit{q} is added to the equations shown
 	A=-\left(\frac{C(1-\lambda)^{2}}{\lambda^{3}+q}\right)
 	\label{2.31}
 \end{equation}
-The source terms $S_{y}$ and $S_{z}$ in \ref{2.29} are added in the Eq. \ref{2.32} and \ref{2.33}. The source term $S_{b}$ corresponds to the body forces of the fluid and will be discused later on this thesis.
+The source terms $S_{y}$ and $S_{z}$ in \ref{2.29} are added in the Eq. \ref{2.32} and \ref{2.33}. The source term $S_{b}$ corresponds to the body forces of the fluid and will be discussed later on this thesis.
 \begin{equation}
 	\begin{aligned}
 		\frac{\partial(\rho v)}{\partial t}+\operatorname{div}(\rho \mathbf{u} v)=\operatorname{div}(\mu \operatorname{grad} v)-\frac{\partial P}{\partial y}+S_{y} 

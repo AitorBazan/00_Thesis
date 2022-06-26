@@ -5,7 +5,7 @@
 \section{OpenFOAM: chtMultiphaseInterFOAM. Conjugate Heat Transfer}
 \setlength{\parindent}{0.5cm} The last objective of this thesis is to extend the multiphase solver of the previous section so it can account for multiregion purposes. To do so, a new solver derived from the concept of an existing multiregion solver is implemented. 
 
-\noindent The existing solver, \textit{chtMultiRegionFoam} is developed on the basis that the fluid it solves undergoes the compressible Navier-Stokes equations with buoyancy forces and the energy equation per unit mass with gravity terms as follows:
+\noindent The existing solver, \textit{chtMultiRegionFoam} is developed on the basis that the fluid it solves undergoes the compressible Navier-Stokes equations. The governing equations for this solver are pointed out here below.
 \subsubsection*{Continuity Equation}
 The continuity equation reads as:
 \begin{equation}
@@ -34,7 +34,7 @@ where \textit{\textbf{u}} is the velocity vector, \textit{h} is the enthalpy, \t
 \noindent Therefore, the challenge of this part is to couple the multiphase solver (\textit{IcoReactingMultiPhaseInterFoam}) that allows for the solving of a fluid undergoing phase-change with a solid region.  
 \subsection{Case description}
 
-\setlength{\parindent}{0.5cm} Within this new case, a mesh for the solid region is required. To do so, a second structured mesh region is implemented within the framework of a provided script which builts cylindrical computational meshes in OpenFOAM format. The script is attached in Appendix \ref{AppendixB}.
+\setlength{\parindent}{0.5cm} Within this new case, a mesh for the solid region is required. To do so, a second structured mesh region is implemented within the framework of a provided script which builds cylindrical computational meshes in OpenFOAM format. The script is attached in Appendix \ref{AppendixB}.
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.6\linewidth]{mesh_CHT.png}	
@@ -48,12 +48,14 @@ In the image shown above, a structured mesh of 731734 nodes is generated.
 
 \textbf{Laminar regime:} The Reynolds number, computed from the maximum velocity is not high enough to consider turbulent effects. 
 
-In the current case-scenario, a Prandtl close to 7. The values used for the laminar Prandtl number calculation are: $\mu = 0.001003 Kg.m^{-1}.s^{-1}$, $\lambda = 0.6 W.m^{-1}.K^{-1}$ and $C_{p}=4182 J.Kg.K^{-1}$.
+In the current case-scenario, a Prandtl close to 7.
 
 \textbf{Newtonian fluid:} The viscosity of the fluid is assumed to be constant.
 As per the solidification cases, the treatment of the thermophysical properties is performed in a similar manner.
 
 \subsection{Governing Equations of the Fluid Region}
+The governing equations for the fluid region are obtained from the solidification solver. 
+
 \subsubsection*{Momentum equation}
 
 \setlength{\parindent}{0.5cm} The momentum equation is recalled here in terms of viscous stress tensor. The surface tension forces as the body forces and the Darcy term is added in the momentum equation as shown below.
@@ -136,7 +138,13 @@ If substituting terms, it yields:
 \subsection{Case Setup}
 
 \setlength{\parindent}{0.5cm} The case geometry is a plane cylinder, taking profit form the fluid mesh generated for the solidification case presented in the previous section. However, in this section, symmetry conditions are applied on the vertical axis (axis Y) so as to reduce the computational cost. 
-
+\clearpage
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.2\linewidth]{geom_CHT.png}	
+	\label{4.4fig}
+	\caption{Scheme of the geometry used in CHT.}
+\end{figure}
 \subsubsection{Boundary conditions}
 
 \setlength{\parindent}{0.5cm} The boundary conditions are, in this case, setted up for both solid and fluid regions. Here it is shown a table summarizing the used ones.
@@ -219,7 +227,7 @@ For the solid region, the thermophysical properties are chosen as for the polyet
 		Latent heat & $L$ &  178600  & $J.K^{-1}$ \\		 \bottomrule[1pt]		
 	\end{tabular}
 	\centering
-	\caption{Polyethylene properties for solind region definition.}	
+	\caption{Polyethylene properties for solid region definition.}	
 	\label{4.3tab}
 \end{table}
 \clearpage
@@ -229,7 +237,7 @@ For the native solver, the library of solidification is used so as to represent 
 
 \noindent In the chtMultiRegionFoam the temperature distribution is as one could expect. The evolution is very similar to the one found in the previous solidification section. However, as it is observable, it is generated slower due to the influence of the solid region which surrounds the inner fluid field. The conduction enables a temperature gradient in the shared patches between solid and fluid regions. And from there, the convection in the liquid is enabled. 
 
-\noindent In the chtMultiPhaseInterFoam the temperature, velocity magnitude and liquid fraction (ice layer evolution) display a radial distribution. This exhibits the ausence of the gravity related terms. 
+\noindent In the chtMultiPhaseInterFoam the temperature, velocity magnitude and liquid fraction (ice layer evolution) display a radial distribution. This exhibits the ausence of the gravity related terms. For incompressible fluids, the density is assumed to be constant and therefore, the energy becomes decoupled from the momentum equation. Typically, this is corrected by solving first the continuity and momentum equations and then, the temperature distribution is obtained by inserting the velocity and pressure values in the energy equation. As it is described in equation \ref{4.5}, the pressure and velocity related terms are pugged-in the energy equation. Moreover, the density variation is defined by means of the implemented 4th order polynomial function. It is also observed continuity in the heat flux and temperature at solid-fluid interface and heat transfer by conduction in the solid region.
 \begin{table}[h!]
 	\begin{tabular}{@{}llllll@{}}
 		\toprule[1pt]
