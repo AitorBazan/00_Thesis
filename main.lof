@@ -5,77 +5,77 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Workpath for buoyancy effects study.\relax }}{2}{figure.caption.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Workpath for latent heat implementation in enthalpy-porosity model.\relax }}{3}{figure.caption.10}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Workpath for latent heat implementation in enthalpy-porosity model.\relax }}{2}{figure.caption.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.3}{\ignorespaces Workpath for nucleation theory implementation in Lee model.\relax }}{3}{figure.caption.11}%
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Workpath for nucleation theory implementation in Lee model.\relax }}{2}{figure.caption.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.4}{\ignorespaces Workpath for conjugate heat transfer implementation.\relax }}{4}{figure.caption.12}%
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Workpath for conjugate heat transfer implementation.\relax }}{3}{figure.caption.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.5}{\ignorespaces Phase change comparison.\relax }}{5}{figure.caption.14}%
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Phase change comparison.\relax }}{4}{figure.caption.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.6}{\ignorespaces Phase diagram of ice.\relax }}{6}{figure.caption.17}%
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Phase diagram of ice.\relax }}{5}{figure.caption.17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.7}{\ignorespaces Process of crystallization of water.\relax }}{8}{figure.caption.21}%
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Volume-of-fluid approach.\relax }}{15}{figure.caption.37}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Crystallization rate in function of temperature.\relax }}{21}{figure.caption.71}%
+\contentsline {figure}{\numberline {1.7}{\ignorespaces Process of crystallization of water.\relax }}{7}{figure.caption.21}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces General structure of an OpenFOAM case.\relax }}{25}{figure.caption.89}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Volume-of-fluid approach.\relax }}{13}{figure.caption.37}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Zoom of the computational mesh for the cavity.\relax }}{28}{figure.caption.96}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Flowchart of integration procedure. \textit {buoyantBoussinesqPimpleFoam}\relax }}{31}{figure.caption.113}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Setting of cavity computational domain.\relax }}{34}{figure.caption.131}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Comparison between BBPF* and mBBPF**\relax }}{37}{figure.caption.140}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Density differences between linear and polynomial expressions.\relax }}{38}{figure.caption.141}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Adimensional magnitudes comparison.\relax }}{40}{figure.caption.147}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Geometric characteristics for cylinder.\relax }}{43}{figure.caption.152}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Energy equation of IcoReactingMultiphaseInterFoam.\relax }}{46}{figure.caption.169}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Latent heat source term present in mySolidificationMeltingSource library.\relax }}{46}{figure.caption.170}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.11}{\ignorespaces \textbf {rhoCpPhi} field in \textit {createFields.H}\relax }}{47}{figure.caption.171}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Library function in LeeCNT.\relax }}{47}{figure.caption.172}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Adimensional magnitudes comparison at \textit {t = 100s}.\relax }}{53}{figure.caption.184}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Gradient of the interface between liquid and solid phases for Lee-CNT model.\relax }}{58}{figure.caption.189}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Numerical results of temperature profiles in center position of cylindrical geometry.\relax }}{59}{figure.caption.190}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Schematic diagram of Stefan problem.\relax }}{60}{figure.caption.197}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.17}{\ignorespaces Numerical solutions of the Lee model-CNT vs Neumann analytical solutions at \textit {t = 9s}.\relax }}{62}{figure.caption.203}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.18}{\ignorespaces Numerical solutions of the Lee model-CNT vs Neumann analytical solutions for interface position for \textit {t=0-9s}.\relax }}{62}{figure.caption.207}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Crystallization rate in function of temperature.\relax }}{19}{figure.caption.71}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Computational mesh for the conjugate heat transfer case.\relax }}{66}{figure.caption.220}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces General structure of an OpenFOAM case.\relax }}{23}{figure.caption.89}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Flowchart of the conjugate heat transfer solver \cite {sugimoto_kuramae_matsumoto_watanabe_2021}.\relax }}{68}{figure.caption.231}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Zoom of the computational mesh for the cavity.\relax }}{26}{figure.caption.96}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Control loop for the fluid region in CHT.\relax }}{69}{figure.caption.233}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Flowchart of integration procedure. \textit {buoyantBoussinesqPimpleFoam}\relax }}{29}{figure.caption.113}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Energy equation for the fluid in CHT.\relax }}{70}{figure.caption.237}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Setting of cavity computational domain.\relax }}{32}{figure.caption.131}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Scheme of the geometry used in CHT.\relax }}{71}{figure.caption.239}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Comparison between BBPF* and mBBPF**\relax }}{35}{figure.caption.140}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Initial residual of hydrostatic pressure in \textit {chtMultiRegionFoam}.\relax }}{76}{figure.caption.257}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Density differences between linear and polynomial expressions.\relax }}{36}{figure.caption.141}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Initial and final residuals of hydrostatic pressure in \textit {chtMultiPhaseInterFoam}.\relax }}{76}{figure.caption.258}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Adimensional magnitudes comparison.\relax }}{38}{figure.caption.147}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Geometric characteristics for cylinder.\relax }}{41}{figure.caption.152}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Energy equation of IcoReactingMultiphaseInterFoam.\relax }}{44}{figure.caption.169}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Latent heat source term present in mySolidificationMeltingSource library.\relax }}{44}{figure.caption.170}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.11}{\ignorespaces \textbf {rhoCpPhi} field in \textit {createFields.H}\relax }}{45}{figure.caption.171}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Library function in LeeCNT.\relax }}{45}{figure.caption.172}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Adimensional magnitudes comparison at \textit {t = 100s}.\relax }}{51}{figure.caption.184}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Gradient of the interface between liquid and solid phases for Lee-CNT model.\relax }}{56}{figure.caption.189}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Numerical results of temperature profiles in center position of cylindrical geometry.\relax }}{57}{figure.caption.190}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Schematic diagram of Stefan problem.\relax }}{58}{figure.caption.197}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Numerical solutions of the Lee model-CNT vs Neumann analytical solutions at \textit {t = 9s}.\relax }}{60}{figure.caption.203}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Numerical solutions of the Lee model-CNT vs Neumann analytical solutions for interface position for \textit {t=0-9s}.\relax }}{60}{figure.caption.207}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Computational mesh for the conjugate heat transfer case.\relax }}{64}{figure.caption.220}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Flowchart of the conjugate heat transfer solver \cite {sugimoto_kuramae_matsumoto_watanabe_2021}.\relax }}{66}{figure.caption.231}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Control loop for the fluid region in CHT.\relax }}{67}{figure.caption.233}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Energy equation for the fluid in CHT.\relax }}{68}{figure.caption.237}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Scheme of the geometry used in CHT.\relax }}{69}{figure.caption.239}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Initial residual of hydrostatic pressure in \textit {chtMultiRegionFoam}.\relax }}{74}{figure.caption.257}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Initial and final residuals of hydrostatic pressure in \textit {chtMultiPhaseInterFoam}.\relax }}{74}{figure.caption.258}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

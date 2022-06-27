@@ -3,61 +3,61 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {1.1}{\ignorespaces Variation of ice density for every phase at 110K.\relax }}{7}{table.caption.19}%
+\contentsline {table}{\numberline {1.1}{\ignorespaces Variation of ice density for every phase at 110K.\relax }}{6}{table.caption.19}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {3.1}{\ignorespaces Parameters to recover continuity, momentum and energy equations.\relax }}{24}{table.caption.86}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces Parameters to recover continuity, momentum and energy equations.\relax }}{22}{table.caption.86}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {3.2}{\ignorespaces Boundary conditions for natural convection case.\relax }}{35}{table.caption.133}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces Boundary conditions for natural convection case.\relax }}{33}{table.caption.133}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {3.3}{\ignorespaces Water properties for natural convection.\relax }}{35}{table.caption.135}%
+\contentsline {table}{\numberline {3.3}{\ignorespaces Water properties for natural convection.\relax }}{33}{table.caption.135}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {3.4}{\ignorespaces Discretization schemes.\relax }}{35}{table.caption.136}%
+\contentsline {table}{\numberline {3.4}{\ignorespaces Discretization schemes.\relax }}{33}{table.caption.136}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {3.5}{\ignorespaces Solvers for the discretised equations.\relax }}{36}{table.caption.137}%
+\contentsline {table}{\numberline {3.5}{\ignorespaces Solvers for the discretised equations.\relax }}{34}{table.caption.137}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {3.6}{\ignorespaces Parameters for the discretised equations.\relax }}{36}{table.caption.138}%
+\contentsline {table}{\numberline {3.6}{\ignorespaces Parameters for the discretised equations.\relax }}{34}{table.caption.138}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {3.7}{\ignorespaces Numerical results of natural convection modified solver between \textit {t = 100s} and \textit {1500s}.\relax }}{41}{table.caption.148}%
+\contentsline {table}{\numberline {3.7}{\ignorespaces Numerical results of natural convection modified solver between \textit {t = 100s} and \textit {1500s}.\relax }}{39}{table.caption.148}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {3.8}{\ignorespaces Numerical results of Natural convection modified solver between \textit {t = 750s} and \textit {1500s}.\relax }}{42}{table.caption.149}%
+\contentsline {table}{\numberline {3.8}{\ignorespaces Numerical results of Natural convection modified solver between \textit {t = 750s} and \textit {1500s}.\relax }}{40}{table.caption.149}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {3.9}{\ignorespaces Boundary conditions for natural convection case. Cavity case.\relax }}{48}{table.caption.175}%
+\contentsline {table}{\numberline {3.9}{\ignorespaces Boundary conditions for natural convection case. Cavity case.\relax }}{46}{table.caption.175}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {3.10}{\ignorespaces Boundary conditions for natural convection case. Cylinder case.\relax }}{48}{table.caption.176}%
+\contentsline {table}{\numberline {3.10}{\ignorespaces Boundary conditions for natural convection case. Cylinder case.\relax }}{46}{table.caption.176}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {3.11}{\ignorespaces Water properties for natural convection.\relax }}{49}{table.caption.178}%
+\contentsline {table}{\numberline {3.11}{\ignorespaces Water properties for natural convection.\relax }}{47}{table.caption.178}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {3.12}{\ignorespaces Water properties for solidification.\relax }}{49}{table.caption.179}%
+\contentsline {table}{\numberline {3.12}{\ignorespaces Water properties for solidification.\relax }}{47}{table.caption.179}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {3.13}{\ignorespaces Solvers for the discretised equations.\relax }}{50}{table.caption.181}%
+\contentsline {table}{\numberline {3.13}{\ignorespaces Solvers for the discretised equations.\relax }}{48}{table.caption.181}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {3.14}{\ignorespaces Numerical results of dimensionless magnitudes for Lee-CNT model at \textit {t = 100s}.\relax }}{52}{table.caption.183}%
+\contentsline {table}{\numberline {3.14}{\ignorespaces Numerical results of dimensionless magnitudes for Lee-CNT model at \textit {t = 100s}.\relax }}{50}{table.caption.183}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {3.15}{\ignorespaces Numerical results of temperature distributions for Enthalpy-porosity and Lee-CNT models at \textit {t = 100, 200, 300s}.\relax }}{54}{table.caption.185}%
+\contentsline {table}{\numberline {3.15}{\ignorespaces Numerical results of temperature distributions for Enthalpy-porosity and Lee-CNT models at \textit {t = 100, 200, 300s}.\relax }}{52}{table.caption.185}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {3.16}{\ignorespaces Numerical results of velocity distributions for Enthalpy-porosity and Lee-CNT models at \textit {t = 100, 200, 300s}.\relax }}{55}{table.caption.186}%
+\contentsline {table}{\numberline {3.16}{\ignorespaces Numerical results of velocity distributions for Enthalpy-porosity and Lee-CNT models at \textit {t = 100, 200, 300s}.\relax }}{53}{table.caption.186}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {3.17}{\ignorespaces Numerical results of fluid fraction distributions for Enthalpy-porosity and Lee-CNT models at \textit {t = 100, 200, 300s}.\relax }}{56}{table.caption.187}%
+\contentsline {table}{\numberline {3.17}{\ignorespaces Numerical results of fluid fraction distributions for Enthalpy-porosity and Lee-CNT models at \textit {t = 100, 200, 300s}.\relax }}{54}{table.caption.187}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {3.18}{\ignorespaces Numerical results of Enthalpy-porosity and Lee-CNT models at \textit {t = 100s} and \textit {300s} in a cylinder.\relax }}{57}{table.caption.188}%
+\contentsline {table}{\numberline {3.18}{\ignorespaces Numerical results of Enthalpy-porosity and Lee-CNT models at \textit {t = 100s} and \textit {300s} in a cylinder.\relax }}{55}{table.caption.188}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {3.19}{\ignorespaces Boundary conditions for Stefan problem.\relax }}{61}{table.caption.200}%
+\contentsline {table}{\numberline {3.19}{\ignorespaces Boundary conditions for Stefan problem.\relax }}{59}{table.caption.200}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {3.20}{\ignorespaces Numerical results of temperature and interface evolution for Lee-CNT model at \textit {t = 9s}.\relax }}{62}{table.caption.206}%
+\contentsline {table}{\numberline {3.20}{\ignorespaces Numerical results of temperature and interface evolution for Lee-CNT model at \textit {t = 9s}.\relax }}{60}{table.caption.206}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {4.1}{\ignorespaces Boundary conditions for the fluid region in CHT problem.\relax }}{71}{table.caption.241}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Boundary conditions for the fluid region in CHT problem.\relax }}{69}{table.caption.241}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {4.2}{\ignorespaces Boundary conditions for the solid region in CHT problem.\relax }}{71}{table.caption.242}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Boundary conditions for the solid region in CHT problem.\relax }}{69}{table.caption.242}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {4.3}{\ignorespaces Polyethylene properties for solid region definition.\relax }}{72}{table.caption.249}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Polyethylene properties for solid region definition.\relax }}{70}{table.caption.249}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {4.4}{\ignorespaces Numerical results of chtMultiRegionFoam (first row) and chtMultiPhaseInterFoam (second row) at \textit {t = 2100s} in a cylinder.\relax }}{75}{table.caption.256}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces Numerical results of chtMultiRegionFoam (first row) and chtMultiPhaseInterFoam (second row) at \textit {t = 2100s} in a cylinder.\relax }}{73}{table.caption.256}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
