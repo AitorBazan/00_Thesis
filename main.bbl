@@ -458,45 +458,6 @@
       \verb 10.1006/jcph.1996.0011
       \endverb
     \endentry
-    \entry{kim_goldenfeld_dantzig_2000}{article}{}
-      \name{author}{3}{}{%
-        {{hash=afd78b6cc9fe6d4b3539dc4f06fd45a2}{%
-           family={Kim},
-           familyi={K\bibinitperiod},
-           given={Yung},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=759283a59942ff546567b2ee6d4a489e}{%
-           family={Goldenfeld},
-           familyi={G\bibinitperiod},
-           given={Nigel},
-           giveni={N\bibinitperiod}}}%
-        {{hash=b7d16a383c485eaf80ee7a4f1e7c3ea0}{%
-           family={Dantzig},
-           familyi={D\bibinitperiod},
-           given={Jonathan},
-           giveni={J\bibinitperiod}}}%
-      }
-      \strng{namehash}{f3557cbe649d3a629b458f313fbe75a3}
-      \strng{fullhash}{f3557cbe649d3a629b458f313fbe75a3}
-      \strng{bibnamehash}{f3557cbe649d3a629b458f313fbe75a3}
-      \strng{authorbibnamehash}{f3557cbe649d3a629b458f313fbe75a3}
-      \strng{authornamehash}{f3557cbe649d3a629b458f313fbe75a3}
-      \strng{authorfullhash}{f3557cbe649d3a629b458f313fbe75a3}
-      \field{sortinit}{K}
-      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Physical Review}
-      \field{number}{2}
-      \field{title}{Computation of dendritic microstructures using a level set method}
-      \field{volume}{62}
-      \field{year}{2000}
-      \field{pages}{2471\bibrangedash 2474}
-      \range{pages}{4}
-      \verb{doi}
-      \verb 10.1103/physreve.62.2471
-      \endverb
-    \endentry
     \entry{kowalewski_rebow_1999}{article}{}
       \name{author}{2}{}{%
         {{hash=6c4074c3c472573b57ec9f3d942cc68b}{%
@@ -644,34 +605,6 @@
       \field{year}{2016}
       \field{pages}{4\bibrangedash 5}
       \range{pages}{2}
-    \endentry
-    \entry{myers_2016}{article}{}
-      \name{author}{1}{}{%
-        {{hash=365db8362b4f84d7da43c4806cf2b7f5}{%
-           family={Myers},
-           familyi={M\bibinitperiod},
-           given={T.G.},
-           giveni={T\bibinitperiod}}}%
-      }
-      \strng{namehash}{365db8362b4f84d7da43c4806cf2b7f5}
-      \strng{fullhash}{365db8362b4f84d7da43c4806cf2b7f5}
-      \strng{bibnamehash}{365db8362b4f84d7da43c4806cf2b7f5}
-      \strng{authorbibnamehash}{365db8362b4f84d7da43c4806cf2b7f5}
-      \strng{authornamehash}{365db8362b4f84d7da43c4806cf2b7f5}
-      \strng{authorfullhash}{365db8362b4f84d7da43c4806cf2b7f5}
-      \field{sortinit}{M}
-      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{International Communications in Heat and Mass Transfer}
-      \field{title}{Mathematical modelling of phase change at the nanoscale}
-      \field{volume}{76}
-      \field{year}{2016}
-      \field{pages}{59\bibrangedash 62}
-      \range{pages}{4}
-      \verb{doi}
-      \verb 10.1016/j.icheatmasstransfer.2016.05.005
-      \endverb
     \endentry
     \entry{rauschenberger_criscione_eisenschmidt_kintea_jakirlic_tukovic_roisman_weigand_tropea_2013}{article}{}
       \name{author}{9}{}{%
@@ -887,35 +820,6 @@
       \verb 10.1007/s00231-011-0866-9
       \endverb
     \endentry
-    \entry{steinbach_2009}{article}{}
-      \name{author}{1}{}{%
-        {{hash=c230a34552b3a6643641215d45bc1b5f}{%
-           family={Steinbach},
-           familyi={S\bibinitperiod},
-           given={I.},
-           giveni={I\bibinitperiod}}}%
-      }
-      \strng{namehash}{c230a34552b3a6643641215d45bc1b5f}
-      \strng{fullhash}{c230a34552b3a6643641215d45bc1b5f}
-      \strng{bibnamehash}{c230a34552b3a6643641215d45bc1b5f}
-      \strng{authorbibnamehash}{c230a34552b3a6643641215d45bc1b5f}
-      \strng{authornamehash}{c230a34552b3a6643641215d45bc1b5f}
-      \strng{authorfullhash}{c230a34552b3a6643641215d45bc1b5f}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Modelling and Simulation in Materials Science and Engineering}
-      \field{number}{7}
-      \field{title}{Phase-field models in materials science}
-      \field{volume}{17}
-      \field{year}{2009}
-      \field{pages}{073001}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1088/0965-0393/17/7/073001
-      \endverb
-    \endentry
     \entry{sugimoto_kuramae_matsumoto_watanabe_2021}{article}{}
       \name{author}{4}{}{%
         {{hash=1347a527aaec84900987b6040f430281}{%
@@ -988,74 +892,6 @@
       \range{pages}{32}
       \verb{doi}
       \verb 10.1016/j.jcp.2006.06.003
-      \endverb
-    \endentry
-    \entry{tsai_kou_1989}{article}{}
-      \name{author}{2}{}{%
-        {{hash=44484306e8718646694e683c33014c69}{%
-           family={Tsai},
-           familyi={T\bibinitperiod},
-           given={M.},
-           giveni={M\bibinitperiod}}}%
-        {{hash=936ff056f1cc997a5691a8fa815e705f}{%
-           family={Kou},
-           familyi={K\bibinitperiod},
-           given={Sindo},
-           giveni={S\bibinitperiod}}}%
-      }
-      \strng{namehash}{f120b1568822c62500c21ef9d90f9c29}
-      \strng{fullhash}{f120b1568822c62500c21ef9d90f9c29}
-      \strng{bibnamehash}{f120b1568822c62500c21ef9d90f9c29}
-      \strng{authorbibnamehash}{f120b1568822c62500c21ef9d90f9c29}
-      \strng{authornamehash}{f120b1568822c62500c21ef9d90f9c29}
-      \strng{authorfullhash}{f120b1568822c62500c21ef9d90f9c29}
-      \field{sortinit}{T}
-      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{International Journal for Numerical Methods in Fluids}
-      \field{number}{12}
-      \field{title}{Marangoni convection in weld pools with a free surface}
-      \field{volume}{9}
-      \field{year}{1989}
-      \field{pages}{1503\bibrangedash 1516}
-      \range{pages}{14}
-      \verb{doi}
-      \verb 10.1002/fld.1650091206
-      \endverb
-    \endentry
-    \entry{vasilyev_vasilyeva_2020}{article}{}
-      \name{author}{2}{}{%
-        {{hash=77428fa6804149fc5f933820c66f0fde}{%
-           family={Vasilyev},
-           familyi={V\bibinitperiod},
-           given={Vasily},
-           giveni={V\bibinitperiod}}}%
-        {{hash=0514f065ad0dd8f5e726e1e045ccc8a5}{%
-           family={Vasilyeva},
-           familyi={V\bibinitperiod},
-           given={Maria},
-           giveni={M\bibinitperiod}}}%
-      }
-      \strng{namehash}{46a25603d5b41765725f5c452bbafe46}
-      \strng{fullhash}{46a25603d5b41765725f5c452bbafe46}
-      \strng{bibnamehash}{46a25603d5b41765725f5c452bbafe46}
-      \strng{authorbibnamehash}{46a25603d5b41765725f5c452bbafe46}
-      \strng{authornamehash}{46a25603d5b41765725f5c452bbafe46}
-      \strng{authorfullhash}{46a25603d5b41765725f5c452bbafe46}
-      \field{sortinit}{V}
-      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Mathematics}
-      \field{number}{11}
-      \field{title}{An Accurate Approximation of the Two-Phase Stefan Problem with Coefficient Smoothing}
-      \field{volume}{8}
-      \field{year}{2020}
-      \field{pages}{1924}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.3390/math8111924
       \endverb
     \endentry
     \entry{voller_prakash_1987}{article}{}

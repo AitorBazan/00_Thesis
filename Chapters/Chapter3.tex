@@ -148,7 +148,7 @@ Therefore, a complete discretization of the previous terms is needed to solve th
 	\caption{Zoom of the computational mesh for the cavity.}
 	\label{3.2fig}
 \end{figure} 
-The mesh is structured and consists of 1971212 nodes.
+A mesh sensitivity test is done with three different meshes of 553352, 982802 and 1971212 nodes giving same values and thus, one can consider results are independent for these eligible meshes. The chosen structured mesh is the finest one and it consists of 1971212 nodes. Cell type is hexahedra. 
 
 \subsection{Hypotheses And Assumptions}
 
@@ -649,7 +649,7 @@ In the table \ref{3.7tab}, there are shown the temperature, velocity magnitude a
 	\label{3.7fig}
 	\caption{Geometric characteristics for cylinder.}
 \end{figure} 
-The computed structured mesh consists of 572404 nodes.
+The computed structured mesh consists of 572404 nodes. Cell type is hexahedra. 
 
 \subsection{Hypotheses And Assumptions}
 
@@ -1174,13 +1174,13 @@ From the figures \ref{3.16figa} and \ref{3.15figa} it is clearly visible that th
  
 \noindent The explanation resides behind the theory that macroscale models for phase-change generally take the assumptions of constant thermophysical properties, constant latent heat, $L(t) = L_{m}$ and constant melting/solidification temperatures within phases. 
 
-\noindent Alternatively, in this thesis it is proposed a model (Lee model) in which the $L(t)$ is not constant but dependent of the product of the net mass transfer and the difference of enthalpy of fusion between phases as indicated in Eq. \ref{3.50}. It is also remarkable that density is not constant for the fluid phase due to the implementation of the new equation of state in the solver. Thus, it adds more variability to the latent heat calculation.
+\noindent Alternatively, in this thesis it is proposed a model (Lee model) in which the latent heat term is not constant but coupled to the mass transfer. Therefore, dependent of the product of the net mass transfer and the difference of enthalpy of fusion between phases as indicated in Eq. \ref{3.50}. It is also remarkable that density is not constant for the fluid phase due to the implementation of the new equation of state in the solver. Thus, it adds more variability to the latent heat source term calculation.
 
 \noindent Therefore, as the evolution of the latent heat balances the temperature distribution (it is implicit in the energy equation), so it does the development of the interface position.
 
 \begin{equation}
 \label{3.50}
-L = \frac{d m_{l s}}{d t}\Delta T\Delta H_{f}=C_{f} \rho_{l} \alpha_{l}\left(\frac{T_{s a t}-T_{l}}{T_{s a t}}\right)\left(T_{sat}-T_{l}\right)(H_{l}-H_{s})
+\dot{m}\Delta T L = \frac{d m_{l s}}{d t}\Delta T\Delta H_{f}=C_{f} \rho_{l} \alpha_{l}\left(\frac{T_{s a t}-T_{l}}{T_{s a t}}\right)\left(T_{sat}-T_{l}\right)(H_{l}-H_{s})
 \end{equation}
 
 \noindent In the nanoscale, the surface tension in the interface would affect the solution as well. The melting temperature could not be constant anymore since at the interface the condition that $T = T_{m}$ is not achieved. Leaving, at the interface $\Gamma$:

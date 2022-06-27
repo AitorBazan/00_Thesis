@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2021.12.9)  26 JUN 2022 21:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2021.12.9)  27 JUN 2022 09:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1983,8 +1983,8 @@ Package scrlayer-scrpage Warning: \headheight to low.
 (scrlayer-scrpage)                processing, but you should do this yourself,
 (scrlayer-scrpage)                e.g., setting geometry's option
 (scrlayer-scrpage)                `head=28.99998pt'.
-(scrlayer-scrpage)                I'll also decrease \topmargin on input line 2
-03.
+(scrlayer-scrpage)                I'll also decrease \topmargin on input line 1
+93.
 
 
 Overfull \vbox (8.33836pt too high) has occurred while \output is active []
@@ -2007,7 +2007,7 @@ Overfull \hbox (15.8919pt too wide) detected at line 380
  []
 
 [33]
-<Figures//domain.png, id=1037, 409.53pt x 281.55188pt>
+<Figures//domain.png, id=1036, 409.53pt x 281.55188pt>
 File: Figures//domain.png Graphic file (type png)
 <use Figures//domain.png>
 Package pdftex.def Info: Figures//domain.png  used on input line 402.
@@ -2016,12 +2016,6 @@ Package pdftex.def Info: Figures//domain.png  used on input line 402.
 Underfull \hbox (badness 10000) in paragraph at lines 407--432
 
  []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [34 <./Figures//domain.png (PNG copy)>] [35]
 Overfull \hbox (59.52701pt too wide) in paragraph at lines 476--484
@@ -3088,12 +3082,6 @@ ront-tracking
  []
 
 
-Overfull \hbox (6.66284pt too wide) in paragraph at lines 249--249
-[]\T1/ppl/m/n/12 T.G. My-ers.   Math-e-mat-i-cal mod-elling of phase change at
- the nanoscale.
- []
-
-
 Overfull \hbox (4.5239pt too wide) in paragraph at lines 249--249
 \T1/ppl/m/n/12 Den-dritic So-lid-i-fi-ca-tion with Con-vec-tion: Two-Dimensiona
 l Ge-om-e-try.
@@ -3111,13 +3099,13 @@ Overfull \hbox (0.67282pt too wide) in paragraph at lines 249--249
 la-tent heat
  []
 
-[84]
+
 Overfull \hbox (1.66281pt too wide) in paragraph at lines 249--249
 []\T1/ppl/m/n/12 Daoyong Wu, Yuan-ming Lai, and Mingyi Zhang.   Heat and mass 
 trans-
  []
 
-
+[84]
 Overfull \hbox (32.31682pt too wide) in paragraph at lines 249--249
 []\T1/ppl/m/n/12 Tian Yan et al.   A Quasi-Steady-State Sim-pli-fied Model for
  Pipe-encapsulated
@@ -3379,10 +3367,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 65865 strings out of 478696
- 1460374 string characters out of 2850191
- 2592068 words of memory out of 3000000
- 77561 multiletter control sequences out of 15000+600000
+ 65850 strings out of 478696
+ 1459753 string characters out of 2850191
+ 2587950 words of memory out of 3000000
+ 77551 multiletter control sequences out of 15000+600000
  486675 words of font info for 175 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  133i,20n,133p,2100b,2901s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3403,9 +3391,9 @@ ts/type1/urw/palatino/uplb8a.pfb></home/aitor/.miktex/texmfs/install/fonts/type
 palatino/uplr8a.pfb></home/aitor/.miktex/texmfs/install/fonts/type1/urw/palatin
 o/uplr8a.pfb></home/aitor/.miktex/texmfs/install/fonts/type1/urw/palatino/uplri
 8a.pfb>
-Output written on main.pdf (201 pages, 9997480 bytes).
+Output written on main.pdf (201 pages, 9995193 bytes).
 PDF statistics:
- 7848 PDF objects out of 8907 (max. 8388607)
- 5213 named destinations out of 6186 (max. 500000)
+ 7837 PDF objects out of 8907 (max. 8388607)
+ 5208 named destinations out of 6186 (max. 500000)
  1384 words of extra memory for PDF output out of 10000 (max. 10000000)
 
