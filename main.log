@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2021.12.9)  27 JUN 2022 09:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2021.12.9)  27 JUN 2022 21:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2904,115 +2904,110 @@ Package pdftex.def Info: Figures//geom_CHT.png  used on input line 144.
 (pdftex.def)             Requested size: 80.80458pt x 159.70659pt.
  [71
 
- <./Figures//geom_CHT.png (PNG copy)>] [72]
-<Figures//T_CHT_NATIVE.png, id=1494, 342.27875pt x 676.5275pt>
+ <./Figures//geom_CHT.png (PNG copy)>] [72] [73
+
+]
+<Figures//T_CHT_NATIVE.png, id=1502, 342.27875pt x 676.5275pt>
 File: Figures//T_CHT_NATIVE.png Graphic file (type png)
 <use Figures//T_CHT_NATIVE.png>
-Package pdftex.def Info: Figures//T_CHT_NATIVE.png  used on input line 246.
+Package pdftex.def Info: Figures//T_CHT_NATIVE.png  used on input line 290.
 (pdftex.def)             Requested size: 84.84882pt x 167.70688pt.
-<Figures//T_2100s_scale_EP_CHT.png, id=1495, 170.6375pt x 676.5275pt>
+<Figures//T_2100s_scale_EP_CHT.png, id=1503, 170.6375pt x 676.5275pt>
 File: Figures//T_2100s_scale_EP_CHT.png Graphic file (type png)
 <use Figures//T_2100s_scale_EP_CHT.png>
 Package pdftex.def Info: Figures//T_2100s_scale_EP_CHT.png  used on input line 
-246.
+290.
 (pdftex.def)             Requested size: 40.40536pt x 160.19176pt.
-<Figures//U_CHT_NATIVE.png, id=1496, 342.27875pt x 676.5275pt>
+<Figures//U_CHT_NATIVE.png, id=1504, 342.27875pt x 676.5275pt>
 File: Figures//U_CHT_NATIVE.png Graphic file (type png)
 <use Figures//U_CHT_NATIVE.png>
-Package pdftex.def Info: Figures//U_CHT_NATIVE.png  used on input line 247.
+Package pdftex.def Info: Figures//U_CHT_NATIVE.png  used on input line 291.
 (pdftex.def)             Requested size: 84.84882pt x 167.70688pt.
-<Figures//U_2100s_scale_EP_CHT.png, id=1497, 170.6375pt x 676.5275pt>
+<Figures//U_2100s_scale_EP_CHT.png, id=1505, 170.6375pt x 676.5275pt>
 File: Figures//U_2100s_scale_EP_CHT.png Graphic file (type png)
 <use Figures//U_2100s_scale_EP_CHT.png>
 Package pdftex.def Info: Figures//U_2100s_scale_EP_CHT.png  used on input line 
-247.
+291.
 (pdftex.def)             Requested size: 40.40536pt x 160.19176pt.
-<Figures//ALPHA_CHT_NATIVE.png, id=1498, 342.27875pt x 676.5275pt>
+<Figures//ALPHA_CHT_NATIVE.png, id=1506, 342.27875pt x 676.5275pt>
 File: Figures//ALPHA_CHT_NATIVE.png Graphic file (type png)
 <use Figures//ALPHA_CHT_NATIVE.png>
-Package pdftex.def Info: Figures//ALPHA_CHT_NATIVE.png  used on input line 247.
+Package pdftex.def Info: Figures//ALPHA_CHT_NATIVE.png  used on input line 291.
 
 (pdftex.def)             Requested size: 84.84882pt x 167.70688pt.
-<Figures//alpha_2100s_scale_EP_CHT.png, id=1499, 170.6375pt x 676.5275pt>
+<Figures//alpha_2100s_scale_EP_CHT.png, id=1507, 170.6375pt x 676.5275pt>
 File: Figures//alpha_2100s_scale_EP_CHT.png Graphic file (type png)
 <use Figures//alpha_2100s_scale_EP_CHT.png>
 Package pdftex.def Info: Figures//alpha_2100s_scale_EP_CHT.png  used on input l
-ine 247.
+ine 291.
 (pdftex.def)             Requested size: 40.40536pt x 160.19176pt.
-<Figures//T_CHT.png, id=1500, 342.27875pt x 676.5275pt>
+<Figures//T_CHT.png, id=1508, 342.27875pt x 676.5275pt>
 File: Figures//T_CHT.png Graphic file (type png)
 <use Figures//T_CHT.png>
-Package pdftex.def Info: Figures//T_CHT.png  used on input line 248.
+Package pdftex.def Info: Figures//T_CHT.png  used on input line 292.
 (pdftex.def)             Requested size: 84.84882pt x 167.70688pt.
 File: Figures//T_2100s_scale_EP_CHT.png Graphic file (type png)
 <use Figures//T_2100s_scale_EP_CHT.png>
 Package pdftex.def Info: Figures//T_2100s_scale_EP_CHT.png  used on input line 
-248.
+292.
 (pdftex.def)             Requested size: 40.40536pt x 160.19176pt.
-<Figures//U_CHT.png, id=1501, 342.27875pt x 676.5275pt>
+<Figures//U_CHT.png, id=1509, 342.27875pt x 676.5275pt>
 File: Figures//U_CHT.png Graphic file (type png)
 <use Figures//U_CHT.png>
-Package pdftex.def Info: Figures//U_CHT.png  used on input line 249.
+Package pdftex.def Info: Figures//U_CHT.png  used on input line 293.
 (pdftex.def)             Requested size: 84.84882pt x 167.70688pt.
-<Figures//U_scale_CHT.png, id=1502, 170.6375pt x 676.5275pt>
+<Figures//U_scale_CHT.png, id=1510, 170.6375pt x 676.5275pt>
 File: Figures//U_scale_CHT.png Graphic file (type png)
 <use Figures//U_scale_CHT.png>
-Package pdftex.def Info: Figures//U_scale_CHT.png  used on input line 249.
+Package pdftex.def Info: Figures//U_scale_CHT.png  used on input line 293.
 (pdftex.def)             Requested size: 40.40536pt x 160.19176pt.
-<Figures//alpha_CHT.png, id=1503, 342.27875pt x 676.5275pt>
+<Figures//alpha_CHT.png, id=1511, 342.27875pt x 676.5275pt>
 File: Figures//alpha_CHT.png Graphic file (type png)
 <use Figures//alpha_CHT.png>
-Package pdftex.def Info: Figures//alpha_CHT.png  used on input line 249.
+Package pdftex.def Info: Figures//alpha_CHT.png  used on input line 293.
 (pdftex.def)             Requested size: 84.84882pt x 167.70688pt.
 File: Figures//alpha_2100s_scale_EP_CHT.png Graphic file (type png)
 <use Figures//alpha_2100s_scale_EP_CHT.png>
 Package pdftex.def Info: Figures//alpha_2100s_scale_EP_CHT.png  used on input l
-ine 249.
+ine 293.
 (pdftex.def)             Requested size: 40.40536pt x 160.19176pt.
 
-Overfull \hbox (31.73355pt too wide) in paragraph at lines 242--252
+Overfull \hbox (31.73355pt too wide) in paragraph at lines 286--296
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[73
-
-] [74 <./Figures//T_CHT_NATIVE.png> <./Figures//T_2100s_scale_EP_CHT.png> <./Fi
-gures//U_CHT_NATIVE.png> <./Figures//U_2100s_scale_EP_CHT.png> <./Figures//ALPH
-A_CHT_NATIVE.png> <./Figures//alpha_2100s_scale_EP_CHT.png> <./Figures//T_CHT.p
-ng> <./Figures//U_CHT.png> <./Figures//U_scale_CHT.png> <./Figures//alpha_CHT.p
-ng>]
-<Figures//chtMultiRegionFoam_initialResidual_prgh.png, id=1525, 1389.69188pt x 
+[74] [75 <./Figures//T_CHT_NATIVE.png> <./Figures//T_2100s_scale_EP_CHT.png> <.
+/Figures//U_CHT_NATIVE.png> <./Figures//U_2100s_scale_EP_CHT.png> <./Figures//A
+LPHA_CHT_NATIVE.png> <./Figures//alpha_2100s_scale_EP_CHT.png> <./Figures//T_CH
+T.png> <./Figures//U_CHT.png> <./Figures//U_scale_CHT.png> <./Figures//alpha_CH
+T.png>]
+<Figures//chtMultiRegionFoam_initialResidual_prgh.png, id=1535, 1389.69188pt x 
 717.43031pt>
 File: Figures//chtMultiRegionFoam_initialResidual_prgh.png Graphic file (type p
 ng)
 <use Figures//chtMultiRegionFoam_initialResidual_prgh.png>
 Package pdftex.def Info: Figures//chtMultiRegionFoam_initialResidual_prgh.png  
-used on input line 259.
+used on input line 303.
 (pdftex.def)             Requested size: 404.02908pt x 208.57492pt.
-<Figures//chtMultiPhaseInterFoam_residuals_prgh.png, id=1526, 1389.69188pt x 71
+<Figures//chtMultiPhaseInterFoam_residuals_prgh.png, id=1536, 1389.69188pt x 71
 7.43031pt>
 File: Figures//chtMultiPhaseInterFoam_residuals_prgh.png Graphic file (type png
 )
 <use Figures//chtMultiPhaseInterFoam_residuals_prgh.png>
 Package pdftex.def Info: Figures//chtMultiPhaseInterFoam_residuals_prgh.png  us
-ed on input line 265.
+ed on input line 309.
 (pdftex.def)             Requested size: 404.02908pt x 208.57492pt.
-) [75
+) [76
 
  <./Figures//chtMultiRegionFoam_initialResidual_prgh.png (PNG copy)> <./Figures
 //chtMultiPhaseInterFoam_residuals_prgh.png (PNG copy)>]
 \openout2 = `Chapters/Chapter5.aux'.
 
 
-(Chapters/Chapter5.tex [76
-
-
-
-
-]
+(Chapters/Chapter5.tex
 Chapter 5.
 
 Overfull \hbox (5.72961pt too wide) in paragraph at lines 6--7
@@ -3021,7 +3016,12 @@ Overfull \hbox (5.72961pt too wide) in paragraph at lines 6--7
  []
 
 1: section
-[77] [78]) [79]
+[77
+
+
+
+
+] [78]) [79]
 \openout2 = `Chapters/Chapter6.aux'.
 
  (Chapters/Chapter6.tex [80
@@ -3361,16 +3361,16 @@ Appendix B.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: CFB9E819920DF1AF3CD281988F13DE72;17278.
+(rerunfilecheck)             Checksum: 6F2FF9A8D6B207445278C5654D4F99DD;17279.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 65850 strings out of 478696
- 1459753 string characters out of 2850191
- 2587950 words of memory out of 3000000
- 77551 multiletter control sequences out of 15000+600000
+ 65860 strings out of 478696
+ 1459849 string characters out of 2850191
+ 2588215 words of memory out of 3000000
+ 77556 multiletter control sequences out of 15000+600000
  486675 words of font info for 175 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  133i,20n,133p,2100b,2901s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3391,9 +3391,9 @@ ts/type1/urw/palatino/uplb8a.pfb></home/aitor/.miktex/texmfs/install/fonts/type
 palatino/uplr8a.pfb></home/aitor/.miktex/texmfs/install/fonts/type1/urw/palatin
 o/uplr8a.pfb></home/aitor/.miktex/texmfs/install/fonts/type1/urw/palatino/uplri
 8a.pfb>
-Output written on main.pdf (201 pages, 9995193 bytes).
+Output written on main.pdf (201 pages, 9999346 bytes).
 PDF statistics:
- 7837 PDF objects out of 8907 (max. 8388607)
- 5208 named destinations out of 6186 (max. 500000)
+ 7844 PDF objects out of 8907 (max. 8388607)
+ 5213 named destinations out of 6186 (max. 500000)
  1384 words of extra memory for PDF output out of 10000 (max. 10000000)
 

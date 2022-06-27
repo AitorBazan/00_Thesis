@@ -179,7 +179,7 @@ For the solid region:
 
 \noindent At the interface between solid and liquid regions, it is required to set an appropriate boundary condition which couples the energy equations in these areas.
 
-\noindent Considering two cells at each side of an interface in where $T_c$ and $T_p$ is the temperature at the cell center and on the patch (2D boundary) accordingly. $q_1$ is the heat flux going out of the $cell_1$ and $q_2$ the heat flux entering the $cell_2$. The energy conservation in this zone constrains the temperature and heat fluxes to be equat at both sides of the interface. 
+\noindent Considering two cells at each side of an interface in where $T_c$ and $T_p$ is the temperature at the cell center and on the patch (2D boundary) accordingly. $q_1$ is the heat flux going out of the $cell_1$ and $q_2$ the heat flux entering the $cell_2$. The energy conservation in this zone constrains the temperature and heat fluxes to be equal at both sides of the interface. 
 Then, temperature, in magnitude yields as
 \begin{equation}
 	T_{p, 1}=T_{p, 2}=T_{p},
@@ -199,14 +199,14 @@ where $\kappa$ is the termal conductivity and $n$ the direction normal to the pa
 
 \noindent Discretizing linearly the temperature gradient of the previous equation, the differential equation that yields as
 \begin{equation}
-	k_{1} \Delta_{1}\left(T_{c, 1}-T_{p}\right)=k_{2} \Delta_{2}\left(T_{p}-T_{c, 2}\right)
+	\frac{k_{1}\left(T_{c, 1}-T_{p}\right)}{\Delta_{1}n} = \frac{k_{2}\left(T_{p}-T_{c, 2}\right)}{\Delta_{2}n} 
 	\label{4.12}
 \end{equation}
 where the temperatures and fluxes at the center of the patches are described as
 \begin{equation}
 	\begin{gathered}
-	T_{p}=\frac{k_{1} \Delta_{1} T_{c, 1}+k_{2} \Delta_{2} T_{c, 2}}{k_{1} \Delta_{1}+k_{2} \Delta_{2}} \\
-	q^{\prime \prime}=k_{1} \Delta_{1}\left(T_{c, 1}-T_{p}\right)=k_{2} \Delta_{2}\left(T_{p}-T_{c, 2}\right) .
+	T_{p}=\frac{k_{1} \Delta_{1}n T_{c, 1}+k_{2} \Delta_{2}n T_{c, 2}}{k_{1} \Delta_{1}n+k_{2} \Delta_{2}n} \\
+	q^{\prime \prime}=\frac{k_{1}\left(T_{c, 1}-T_{p}\right)}{\Delta_{1}n} =\frac{k_{2}\left(T_{p}-T_{c, 2}\right)}{ \Delta_{2}n} .
 	\end{gathered}
 	\label{4.13}
 \end{equation}
@@ -214,7 +214,7 @@ This boundary condition is given in OpenFOAM under the name \textit{turbulentTem
 
 \subsubsection{Thermophysical properties}
 
-\setlength{\parindent}{0.5cm} The thermophysical properties for the fluid are similarly applied as in previous solidification cases.
+\setlength{\parindent}{0.5cm} The thermo	physical properties for the fluid are similarly applied as in previous solidification cases.
 For the solid region, the thermophysical properties are chosen as for the polyethylene.
 
 \begin{table}[h!]
@@ -237,7 +237,51 @@ For the native solver, the library of solidification is used so as to represent 
 
 \noindent In the chtMultiRegionFoam the temperature distribution is as one could expect. The evolution is very similar to the one found in the previous solidification section. However, as it is observable, it is generated slower due to the influence of the solid region which surrounds the inner fluid field. The conduction enables a temperature gradient in the shared patches between solid and fluid regions. And from there, the convection in the liquid is enabled. 
 
-\noindent In the chtMultiPhaseInterFoam the temperature, velocity magnitude and liquid fraction (ice layer evolution) display a radial distribution. This exhibits the ausence of the gravity related terms. For incompressible fluids, the density is assumed to be constant and therefore, the energy becomes decoupled from the momentum equation. Typically, this is corrected by solving first the continuity and momentum equations and then, the temperature distribution is obtained by inserting the velocity and pressure values in the energy equation. As it is described in equation \ref{4.5}, the pressure and velocity related terms are pugged-in the energy equation. Moreover, the density variation is defined by means of the implemented 4th order polynomial function. It is also observed continuity in the heat flux and temperature at solid-fluid interface and heat transfer by conduction in the solid region.
+\noindent In the chtMultiPhaseInterFoam the temperature, velocity magnitude and liquid fraction (ice layer evolution) display a radial distribution. This exhibits the ausence of the gravity related terms. 
+
+\noindent For incompressible fluids, the density is assumed to be constant and therefore, the energy becomes decoupled from the momentum equation. Typically, this is corrected by solving first the continuity and momentum equations and then, the temperature distribution is obtained by inserting the velocity and pressure values in the energy equation. As it is described in equation \ref{4.5}, the pressure and velocity related terms are pugged-in the energy equation. Moreover, the density variation is defined by means of the implemented 4th order polynomial function. 
+
+\noindent It is also observed continuity in the heat flux and temperature at solid-fluid interface and heat transfer by conduction in the solid region. However, the gradients of temperature are not the expected ones. This leads to this higher orders of magnitude of difference in the velocity map. 
+Due to time restrictions, the proposal is to extend the boundary condition presented above to a two-phase flow. Here it is explained how:
+On one hand, there are the conditions affecting the liquid-phase:
+\begin{equation}
+\left\{\begin{array}{lll}
+T_{s 1}=T_{l} & \text { on } & \Gamma_{1} \\
+-k_{s} \frac{\partial T_{s 1}}{\partial n_{s 1}}=k_{l} \frac{\partial T_{l}}{\partial n_{l}} \quad & \text { on } & \Gamma_{1}
+\end{array}\right.
+\label{4.14}
+\end{equation}
+being, $T_{s 1}$, the temperature of the solid region in contact with the first phase at the interface (wall), $T_{l}$, temperature of the liquid-phase at the wall and $k_{s}$, $k_{l}$ the thermal condutivities of the solid region and liquid-phases respectively. $\Gamma_{1}$ belongs to the interface between solid region and liquid-phase.
+
+\noindent Then. the conditions affecting the solid-phase:
+\begin{equation}
+\left\{\begin{array}{lll}
+T_{ice}=T_{s 2} & \text { on } & \Gamma_{2} \\
+-k_{ice} \frac{\partial T_{ice}}{\partial n_{ice}}=k_{s} \frac{\partial T_{s 2}}{\partial n_{s 2}} & \text { on } & \Gamma_{2}
+\end{array}\right.
+\label{4.15}
+\end{equation}
+being, $T_{s 2}$, the temperature of the solid region in contact with the second phase at the interface (wall), $T_{ice}$, temperature of the solid-phase (ice) at the wall and $k_{ice}$ the thermal condutivity of the solid-phase. $\Gamma_{2}$ belongs to the interface between solid region and solid-phase.
+
+\noindent Again, discretizing linearly the temperature gradients and weighting accordingly with the liquid/solid fraction, the balance at both sides of the interfaces yields as:
+\begin{equation}
+	-\frac{\alpha_{l} k_{l}}{\Delta n_{ice}}\left(T_{w 2}-T_{l}\right)-\frac{\alpha_{l} k_{l}}{\Delta n_{ice}}\left(T_{w 2}-T_{l}\right)=\frac{k_{s}}{\Delta n_{s 2}}\left(T_{s 2}-T_{w 2}\right)
+	\label{4.16}
+\end{equation}
+Leaving a temperature distribution at the interface $\Gamma_{2}$ equal to:
+\begin{equation}
+	T_{w 2}=\frac{\Delta n_{ice} k_{s} T_{s 2}+\Delta n_{s 1} \alpha_{l} k_{l} T_{l}+\Delta n_{s 1} \alpha_{ice} k_{ice} T_{ice}}{\Delta n_{ice} k_{s}+\Delta n_{s 2} \alpha_{l} k_{l}+\Delta n_{s 2} \alpha_{ice} k_{ice}}
+	\label{4.17}
+\end{equation}
+where $\alpha_{l}$ and $\alpha_{ice}$ are the liquid-phase volume fraction and the solid-phase volume fraction.
+
+\noindent And recalling for a single phase fluid, the expression for the temperature, at the interface, between solid region and liquid-phase would be something similar to the equation \ref{4.13}:
+\begin{equation}
+	T_{w 1}=\frac{\Delta n_{l} k_{s} T_{s 1}+\Delta n_{s 1} k_{l} T_{l}}{\Delta n_{s 1} k_{l}+\Delta n_{l} k_{s}}
+	\label{4.18}
+\end{equation}
+
+
 \begin{table}[h!]
 	\begin{tabular}{@{}llllll@{}}
 		\toprule[1pt]
